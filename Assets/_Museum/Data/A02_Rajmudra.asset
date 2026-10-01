@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: A02_Rajmudra
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: A02
+  era: "c. 1630\u20131680"
+  titleEn: "Rajmudra \u2014 Royal Seal"
+  panelEn: The royal seal of Shivaji Maharaj. Its Sanskrit verse likens the seal to the new moon's crescent, which grows day by day and is honoured by all. It authenticated official letters and orders. (Replica, shown enlarged.)
+  narrationEn: {fileID: 0}
+  titleMr: "\u0930\u093E\u091C\u092E\u0941\u0926\u094D\u0930\u093E"
+  panelMr: "(\u092E\u0930\u093E\u0920\u0940 \u092E\u091C\u0915\u0942\u0930 \u0932\u0935\u0915\u0930\u091A)"
+  narrationMr: {fileID: 0}
+  panelMrRendered: {fileID: 0}
+  image: {fileID: 0}
+  shownEnlarged: 1

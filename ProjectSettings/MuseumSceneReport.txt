@@ -1,0 +1,6 @@
+RESULT: BUILT Assets/_Museum/Scenes/Museum.unity
+Artifacts: 16  Teleport points: 10
+Tour: A01 > A02 > A03 > A04 > A09 > A10 > A11 > A12 > A13 > A14 > A08 > A15 > A16 > A05 > A06 > A07
+Build Settings scenes: Assets/_Museum/Scenes/Museum.unity
+Not built (per brief): Storage, Restroom x2, Hall, Utility, AC
+Placeholders: artifact models are primitives; no narration audio or images yet; no Devanagari font yet.

@@ -61,7 +61,8 @@ public class InfoPanel : MonoBehaviour
         bool mr = MuseumSettings.Language == Lang.Mr;
         bool useRendered = mr && d.panelMrRendered;
 
-        titleText.font = bodyText.font = mr ? devanagariFont : latinFont;
+        var font = mr && devanagariFont ? devanagariFont : latinFont;
+        if (font) titleText.font = bodyText.font = font;
         titleText.text = mr ? d.titleMr : d.titleEn;
         eraText.text = d.era;
 
@@ -79,7 +80,7 @@ public class InfoPanel : MonoBehaviour
 
         picture.sprite = d.image;
         picture.enabled = d.image;
-        if (languageLabel) languageLabel.text = mr ? "English" : "मराठी";
+        if (languageLabel) languageLabel.text = mr ? "English" : (devanagariFont ? "मराठी" : "Marathi");
     }
 
     AudioClip CurrentClip()

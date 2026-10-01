@@ -1,0 +1,32 @@
+RESULT: PASS
+Reused Assets/_Museum/Settings/URP-Cardboard.asset
+Graphics: URP-Cardboard
+Quality 0 Very Low: URP-Cardboard
+Quality 1 Low: URP-Cardboard
+Quality 2 Medium: URP-Cardboard
+Quality 3 High: URP-Cardboard
+Quality 4 Very High: URP-Cardboard
+Quality 5 Ultra: URP-Cardboard
+Default renderer: URP-Cardboard_Renderer
+Asset: HDR=False MSAA=2 scale=1 shadowDist=20
+Materials:
+  skip  Universal Render Pipeline/Lit  CubeRoom.obj
+  skip  Universal Render Pipeline/Unlit  CubeRoomEnvMat.mat
+  skip  Universal Render Pipeline/Lit  Icosahedron.obj
+  skip  Universal Render Pipeline/Unlit  IcosahedronBlue.mat
+  skip  Universal Render Pipeline/Unlit  IcosahedronPink.mat
+  skip  Universal Render Pipeline/Unlit  QuadSphereBlue.mat
+  skip  Universal Render Pipeline/Unlit  QuadSpherePink.mat
+  skip  Universal Render Pipeline/Unlit  TriSphereBlue.mat
+  skip  Universal Render Pipeline/Unlit  TriSpherePink.mat
+  skip  Universal Render Pipeline/Lit  QuadSphere.obj
+  skip  Universal Render Pipeline/Lit  TriSphere.obj
+  skip  GUI/Text Shader  LiberationSans.ttf
+  skip  TextMeshPro/Mobile/Distance Field  LiberationSans SDF - Drop Shadow.mat
+  skip  TextMeshPro/Mobile/Distance Field  LiberationSans SDF - Fallback.asset
+  skip  TextMeshPro/Mobile/Distance Field  LiberationSans SDF - Outline.mat
+  skip  TextMeshPro/Mobile/Distance Field  LiberationSans SDF.asset
+  skip  TextMeshPro/SRP/TMP_SDF-HDRP LIT  TMP_SDF-HDRP LIT.shadergraph
+  skip  TextMeshPro/SRP/TMP_SDF-HDRP UNLIT  TMP_SDF-HDRP UNLIT.shadergraph
+  skip  TextMeshPro/SRP/TMP_SDF-URP Lit  TMP_SDF-URP Lit.shadergraph
+  skip  TextMeshPro/SRP/TMP_SDF-URP Unlit  TMP_SDF-URP Unlit.shadergraph
