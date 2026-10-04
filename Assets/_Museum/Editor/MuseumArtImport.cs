@@ -26,9 +26,22 @@ public class MuseumArtImport : AssetPostprocessor
         var type = sprite ? TextureImporterType.Sprite : TextureImporterType.Default;
         var wrap = tile ? UnityEngine.TextureWrapMode.Repeat : UnityEngine.TextureWrapMode.Clamp;
         int max = big ? 2048 : 1024;
+        // Phones: ASTC (iOS and Android). 5x5 keeps board text crisp; 6x6 for pictures and patterns.
+        bool textHeavy = rel.StartsWith("Boards/") || rel.StartsWith("Sections/") || rel.StartsWith("Lobby/") || rel.StartsWith("Wings/");
+        var fmt = textHeavy ? TextureImporterFormat.ASTC_5x5 : TextureImporterFormat.ASTC_6x6;
+        bool platformChanged = false;
+        foreach (var platform in new[] { "iPhone", "Android" })
+        {
+            var ps = ti.GetPlatformTextureSettings(platform);
+            if (ps.overridden && ps.format == fmt && ps.maxTextureSize == max) continue;
+            ps.overridden = true; ps.format = fmt; ps.maxTextureSize = max;
+            ps.compressionQuality = (int)TextureCompressionQuality.Normal;
+            ti.SetPlatformTextureSettings(ps);
+            platformChanged = true;
+        }
         bool changed = ti.textureType != type || ti.wrapMode != wrap || ti.maxTextureSize != max ||
                        ti.npotScale != TextureImporterNPOTScale.None || ti.mipmapEnabled == sprite;
-        if (!changed) return false;
+        if (!changed) return platformChanged;
         ti.textureType = type;
         if (sprite) ti.spriteImportMode = SpriteImportMode.Single;
         ti.wrapMode = wrap;

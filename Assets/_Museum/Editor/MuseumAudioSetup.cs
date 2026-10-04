@@ -36,8 +36,10 @@ public static class MuseumAudioSetup
             var ai = AssetImporter.GetAtPath(file.Replace('\\', '/')) as AudioImporter;
             if (ai == null) continue;
             var s = ai.defaultSampleSettings;
-            if (ai.forceToMono && s.loadType == AudioClipLoadType.CompressedInMemory) continue;
+            if (ai.forceToMono && s.loadType == AudioClipLoadType.CompressedInMemory && !s.preloadAudioData && ai.loadInBackground) continue;
             s.loadType = AudioClipLoadType.CompressedInMemory;   // narration: small, starts instantly
+            s.preloadAudioData = false;                          // phones: load a clip only when it is played (fast scene loads)
+            ai.loadInBackground = true;
             s.compressionFormat = AudioCompressionFormat.Vorbis;
             s.quality = 0.5f;
             ai.defaultSampleSettings = s;

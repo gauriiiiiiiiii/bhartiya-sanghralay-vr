@@ -49,3 +49,4 @@ crashlytics-build.properties
 *.slnx
 Tools/kokoro/
 Tools/narration_log.txt
+Builds/

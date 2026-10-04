@@ -11,6 +11,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.InputSystem.UI;
+using UnityEngine.EventSystems;
+using UnityEditor.Build;
+using UnityEditor.XR.Management;
+using UnityEngine.XR.Management;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
@@ -107,8 +112,11 @@ public static class MuseumBuilder
             ring = MakeCircleSprite("Reticle", 0.62f);
             disc = MakeCircleSprite("TeleportDisc", 0f);
 
+            ApplyMobileSettings(report);
             var scenes = new List<string>();
             int items = 0;
+            EditorUtility.DisplayProgressBar("Museum of Indian History", "Menu", 0.02f);
+            scenes.Add(BuildMenu(museum));
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Lobby", 0.05f);
             scenes.Add(BuildLobby(museum, ref items));
             for (int i = 0; i < museum.wings.Count; i++)
@@ -130,6 +138,7 @@ public static class MuseumBuilder
                              $"Scenes (build order): {string.Join(", ", scenes.Select(Path.GetFileNameWithoutExtension))}\n" +
                              $"Art import settings fixed: {fixedImports}\nFont: {(font ? font.name : "TMP default")}\n{audio}\n");
             EditorSceneManager.OpenScene(scenes[0]);
+            EditorApplication.delayCall += MuseumIOSBuild.ContinueIfPending;
         }
         catch (Exception e)
         {
@@ -560,7 +569,8 @@ public static class MuseumBuilder
         camGo.tag = "MainCamera";
         camGo.transform.SetParent(look.transform, false);
         var cam = camGo.AddComponent<Camera>();
-        cam.nearClipPlane = 0.05f; cam.farClipPlane = 60f;
+        cam.nearClipPlane = 0.05f; cam.farClipPlane = 40f;
+        cam.useOcclusionCulling = true;
         cam.clearFlags = CameraClearFlags.SolidColor;
         cam.backgroundColor = new Color(0.08f, 0.07f, 0.06f);
         camGo.AddComponent<AudioListener>();
@@ -1102,10 +1112,8 @@ public static class MuseumBuilder
         panel.tour = new[] { welcomeArt };
         panel.nextFallback = hallCentre;      // Next on the welcome panel walks into the Grand Hall
 
-        var path = $"{SceneDir}/Lobby.unity";
-        EditorSceneManager.MarkSceneDirty(scene);
-        if (!EditorSceneManager.SaveScene(scene, path)) throw new Exception("Could not save " + path);
-        return path;
+        BuildPhoneHUD();
+        return SaveWithOcclusion(scene, $"{SceneDir}/Lobby.unity");
     }
 
     // ------------------------------------------------------------------ WINGS
@@ -1232,10 +1240,8 @@ public static class MuseumBuilder
         var panel = BuildInfoPanel(root);
         panel.tour = tour.ToArray();
 
-        var path = $"{SceneDir}/Wing{wi + 1}.unity";
-        EditorSceneManager.MarkSceneDirty(scene);
-        if (!EditorSceneManager.SaveScene(scene, path)) throw new Exception("Could not save " + path);
-        return path;
+        BuildPhoneHUD();
+        return SaveWithOcclusion(scene, $"{SceneDir}/Wing{wi + 1}.unity");
     }
 
     /// Floor, ceiling and the two long walls of a room spanning x0..x1 (inner width 2*HW).
@@ -1292,5 +1298,221 @@ public static class MuseumBuilder
         }
         Box("Sign_Back", new Vector3(x, 3.5f, 0), new Vector3(0.02f, 0.5f, 2.8f), M["Teak_Dark"], p);
         Text3D("Sign", text, new Vector3(x - 0.012f, 3.5f, 0), Vector3.left, new Vector2(2.6f, 0.42f), c, p, true, 4f);
+    }
+
+    // ------------------------------------------------------------------ mobile: save + occlusion, HUD, menu, settings
+    static string SaveWithOcclusion(UnityEngine.SceneManagement.Scene scene, string path)
+    {
+        EditorSceneManager.MarkSceneDirty(scene);
+        if (!EditorSceneManager.SaveScene(scene, path)) throw new Exception("Could not save " + path);
+        // Bake occlusion culling: rooms hidden behind walls and arches are not drawn (big win in the long wings)
+        StaticOcclusionCulling.smallestOccluder = 1.5f;
+        StaticOcclusionCulling.smallestHole = 0.25f;
+        StaticOcclusionCulling.backfaceThreshold = 100f;
+        StaticOcclusionCulling.Compute();
+        EditorSceneManager.MarkSceneDirty(scene);
+        EditorSceneManager.SaveScene(scene, path);
+        return path;
+    }
+
+    static void EnsureEventSystem()
+    {
+        if (UnityEngine.Object.FindAnyObjectByType<EventSystem>()) return;
+        var es = new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
+        es.transform.SetAsLastSibling();
+    }
+
+    static Canvas ScreenCanvas(string name, int order)
+    {
+        var go = new GameObject(name, typeof(RectTransform));
+        var c = go.AddComponent<Canvas>();
+        c.renderMode = RenderMode.ScreenSpaceOverlay; c.sortingOrder = order;
+        var sc = go.AddComponent<CanvasScaler>();
+        sc.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        sc.referenceResolution = new Vector2(1920, 1080); sc.matchWidthOrHeight = 0.5f;
+        go.AddComponent<GraphicRaycaster>();
+        return c;
+    }
+
+    static RectTransform Rect(string name, Transform parent, Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax)
+    {
+        var go = new GameObject(name, typeof(RectTransform));
+        go.transform.SetParent(parent, false);
+        var rt = (RectTransform)go.transform;
+        rt.anchorMin = aMin; rt.anchorMax = aMax; rt.offsetMin = oMin; rt.offsetMax = oMax;
+        return rt;
+    }
+
+    static TextMeshProUGUI Label(Transform parent, string name, string text, float size, Color c, FontStyles style, TextAlignmentOptions align,
+                                 Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax)
+    {
+        var t = Rect(name, parent, aMin, aMax, oMin, oMax).gameObject.AddComponent<TextMeshProUGUI>();
+        if (font) t.font = font;
+        t.text = text; t.fontSize = size; t.color = c; t.fontStyle = style; t.alignment = align;
+        t.raycastTarget = false; t.textWrappingMode = TextWrappingModes.Normal;
+        return t;
+    }
+
+    /// Phone-mode overlay in every museum scene: Menu button + a hint (hidden while Cardboard is running).
+    static void BuildPhoneHUD()
+    {
+        EnsureEventSystem();
+        var hud = new GameObject("PhoneHUD").AddComponent<PhoneHUD>();
+        var canvas = ScreenCanvas("HUDCanvas", 10);
+        canvas.transform.SetParent(hud.transform, false);
+        var safe = Rect("SafeArea", canvas.transform, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        safe.gameObject.AddComponent<SafeArea>();
+
+        var btn = Rect("MenuButton", safe, new Vector2(0, 1), new Vector2(0, 1), new Vector2(36, -132), new Vector2(276, -36));
+        var img = btn.gameObject.AddComponent<Image>(); img.color = new Color(0.1f, 0.05f, 0.03f, 0.75f);
+        var b = btn.gameObject.AddComponent<Button>(); b.targetGraphic = img;
+        UnityEventTools.AddPersistentListener(b.onClick, hud.GoMenu);
+        Label(btn, "Label", "< Menu", 40, new Color(1f, 0.85f, 0.55f), FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+
+        var hint = Rect("Hint", safe, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(-640, 36), new Vector2(640, 116));
+        hint.gameObject.AddComponent<Image>().color = new Color(0.1f, 0.05f, 0.03f, 0.7f);
+        hint.GetComponent<Image>().raycastTarget = false;
+        Label(hint, "Text", "Drag to look around  ·  Tap a glowing circle to walk  ·  Tap a board or archway to open it", 30, Color.white, FontStyles.Normal,
+              TextAlignmentOptions.Center, Vector2.zero, Vector2.one, new Vector2(20, 0), new Vector2(-20, 0));
+        hud.root = canvas.gameObject; hud.hint = hint.gameObject;
+    }
+
+    /// 2D start screen for phones: viewer mode + a card per scene.
+    static string BuildMenu(MuseumJ museum)
+    {
+        var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+        SetupLighting();
+        var camGo = new GameObject("Main Camera"); camGo.tag = "MainCamera";
+        var cam = camGo.AddComponent<Camera>();
+        cam.clearFlags = CameraClearFlags.SolidColor; cam.backgroundColor = new Color(0.12f, 0.05f, 0.04f); cam.cullingMask = 0;
+        EnsureEventSystem();
+
+        var menu = new GameObject("MainMenu").AddComponent<MainMenu>();
+        var canvas = ScreenCanvas("MenuCanvas", 0);
+        var ct = canvas.transform;
+        var bg = Rect("Background", ct, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero).gameObject.AddComponent<RawImage>();
+        bg.texture = Art("Lobby/lobby_title.png"); bg.color = new Color(0.55f, 0.5f, 0.48f); bg.raycastTarget = false;
+        bg.uvRect = new UnityEngine.Rect(0f, 0.12f, 1f, 0.76f);
+        var shade = Rect("Shade", ct, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero).gameObject.AddComponent<Image>();
+        shade.color = new Color(0.1f, 0.04f, 0.03f, 0.84f); shade.raycastTarget = false;
+
+        var safe = Rect("SafeArea", ct, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        safe.gameObject.AddComponent<SafeArea>();
+        var gold = new Color(1f, 0.82f, 0.5f);
+        int nEx = museum.wings.Sum(w => w.sections.Sum(s => s.exhibits.Count)), nSec = museum.wings.Sum(w => w.sections.Count);
+        Label(safe, "Title", museum.title, 76, gold, FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -150), new Vector2(0, -50));
+        Label(safe, "Subtitle", $"From the first stone tools to the present day  ·  {museum.wings.Count} wings  ·  {nSec} sections  ·  {nEx} exhibits",
+              30, new Color(1f, 0.92f, 0.8f, 0.85f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -210), new Vector2(0, -150));
+
+        // viewer mode pills (top right)
+        Label(safe, "ModeLabel", "VIEW WITH", 24, new Color(1f, 1f, 1f, 0.6f), FontStyles.Bold, TextAlignmentOptions.Right, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-660, -100), new Vector2(-80, -64));
+        (Image, TMP_Text) Pill(string name, string text, float x0, bool vr)
+        {
+            var r = Rect(name, safe, new Vector2(1, 1), new Vector2(1, 1), new Vector2(x0, -196), new Vector2(x0 + 286, -110));
+            var im = r.gameObject.AddComponent<Image>();
+            var bt = r.gameObject.AddComponent<Button>(); bt.targetGraphic = im;
+            UnityEventTools.AddBoolPersistentListener(bt.onClick, menu.SetVR, vr);
+            var l = Label(r, "Label", text, 30, Color.white, FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            return (im, l);
+        }
+        (menu.vrPill, menu.vrLabel) = Pill("Pill_Cardboard", "Cardboard viewer", -666, true);
+        (menu.phonePill, menu.phoneLabel) = Pill("Pill_Phone", "Phone only", -366, false);
+
+        // horizontally scrolling cards
+        var view = Rect("Cards", safe, new Vector2(0, 0), new Vector2(1, 1), new Vector2(0, 200), new Vector2(0, -250));
+        var scroll = view.gameObject.AddComponent<ScrollRect>();
+        view.gameObject.AddComponent<RectMask2D>();
+        view.gameObject.AddComponent<Image>().color = new Color(0, 0, 0, 0.001f);       // catches drags between cards
+        var content = Rect("Content", view, new Vector2(0, 0), new Vector2(0, 1), Vector2.zero, Vector2.zero);
+        content.pivot = new Vector2(0, 0.5f);
+        var hl = content.gameObject.AddComponent<HorizontalLayoutGroup>();
+        hl.padding = new RectOffset(80, 80, 10, 10); hl.spacing = 36; hl.childControlHeight = true; hl.childControlWidth = true;
+        hl.childForceExpandHeight = true; hl.childForceExpandWidth = false;
+        content.gameObject.AddComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+        scroll.content = content; scroll.viewport = view; scroll.horizontal = true; scroll.vertical = false;
+        scroll.movementType = ScrollRect.MovementType.Elastic; scroll.decelerationRate = 0.12f;
+
+        void Card(string sceneName, Texture art, Color col, string kicker, string title, string sub, string stats)
+        {
+            var c = Rect("Card_" + sceneName, content, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            c.gameObject.AddComponent<LayoutElement>().preferredWidth = 440;
+            var im = c.gameObject.AddComponent<Image>(); im.color = new Color(0.16f, 0.08f, 0.05f, 0.96f);
+            var bt = c.gameObject.AddComponent<Button>(); bt.targetGraphic = im;
+            var colors = bt.colors; colors.highlightedColor = new Color(1f, 0.92f, 0.8f); colors.pressedColor = new Color(1f, 0.7f, 0.4f); bt.colors = colors;
+            UnityEventTools.AddStringPersistentListener(bt.onClick, menu.Enter, sceneName);
+            var pic = Rect("Art", c, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, -283), Vector2.zero).gameObject.AddComponent<RawImage>();
+            pic.texture = art; pic.raycastTarget = false;
+            var bar = Rect("Bar", c, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, -293), new Vector2(0, -283)).gameObject.AddComponent<Image>();
+            bar.color = col; bar.raycastTarget = false;
+            Label(c, "Kicker", kicker, 24, Color.Lerp(col, Color.white, 0.55f), FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(1, 1), new Vector2(28, -345), new Vector2(-28, -310));
+            Label(c, "Title", title, 40, gold, FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(1, 1), new Vector2(28, -450), new Vector2(-28, -345));
+            Label(c, "Subtitle", sub, 26, new Color(1f, 0.92f, 0.82f, 0.9f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 0), new Vector2(1, 1), new Vector2(28, 60), new Vector2(-28, -455));
+            Label(c, "Stats", stats, 24, new Color(1f, 1f, 1f, 0.6f), FontStyles.Normal, TextAlignmentOptions.BottomLeft, new Vector2(0, 0), new Vector2(1, 0), new Vector2(28, 18), new Vector2(-28, 56));
+        }
+        Card("Lobby", Art("Lobby/lobby_title.png"), new Color(1f, 0.53f, 0.08f), "START HERE", "Grand Hall", "Welcome, directory, visitor guide and a timeline of India. Archways lead to every wing.", "Lobby");
+        for (int i = 0; i < museum.wings.Count; i++)
+        {
+            var w = museum.wings[i];
+            int ex = w.sections.Sum(s => s.exhibits.Count);
+            Card("Wing" + (i + 1), Art($"Wings/{w.id}_title.png"), Hex(w.color), $"WING {i + 1}", w.title, w.subtitle,
+                 $"Sections {w.sections.First().num}–{w.sections.Last().num}  ·  {ex} exhibits");
+        }
+
+        menu.modeHint = Label(safe, "ModeHint", "", 27, new Color(1f, 1f, 1f, 0.75f), FontStyles.Normal, TextAlignmentOptions.MidlineLeft,
+                              new Vector2(0, 0), new Vector2(1, 0), new Vector2(80, 40), new Vector2(-80, 180));
+
+        var path = $"{SceneDir}/{MuseumApp.MenuScene}.unity";
+        EditorSceneManager.MarkSceneDirty(scene);
+        if (!EditorSceneManager.SaveScene(scene, path)) throw new Exception("Could not save " + path);
+        return path;
+    }
+
+    /// Phone / iOS / Android settings for a Cardboard app that starts in a 2D menu.
+    static void ApplyMobileSettings(StringBuilder report)
+    {
+        // XR must not start with the app: the menu is 2D; MuseumApp starts Cardboard when VR mode is chosen
+        if (EditorBuildSettings.TryGetConfigObject(XRGeneralSettings.k_SettingsKey, out XRGeneralSettingsPerBuildTarget perTarget) && perTarget)
+        {
+            foreach (var g in new[] { BuildTargetGroup.iOS, BuildTargetGroup.Android })
+            {
+                var st = perTarget.SettingsForBuildTarget(g);
+                if (st != null && st.InitManagerOnStart) { st.InitManagerOnStart = false; EditorUtility.SetDirty(st); }
+            }
+            EditorUtility.SetDirty(perTarget);
+        }
+        else report.AppendLine("Warning: XR settings not found (Cardboard may start before the menu)");
+
+        const string bundle = "com.jaykumarpatel.indianhistorymuseumvr";
+        PlayerSettings.productName = "Museum of Indian History VR";
+        PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.iOS, bundle);
+        PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, bundle);
+        PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
+        PlayerSettings.statusBarHidden = true;
+        PlayerSettings.iOS.requiresFullScreen = true;
+        PlayerSettings.iOS.targetOSVersionString = "15.0";
+        PlayerSettings.iOS.targetDevice = iOSTargetDevice.iPhoneAndiPad;
+        if (string.IsNullOrEmpty(PlayerSettings.iOS.cameraUsageDescription))
+            PlayerSettings.iOS.cameraUsageDescription = "The camera is used to scan the QR code on your Cardboard viewer.";
+        PlayerSettings.SetManagedStrippingLevel(NamedBuildTarget.iOS, ManagedStrippingLevel.Low);
+        PlayerSettings.SetManagedStrippingLevel(NamedBuildTarget.Android, ManagedStrippingLevel.Low);
+        PlayerSettings.mipStripping = true;
+        PlayerSettings.stripUnusedMeshComponents = true;
+
+        // URP: no shadows at all (none of the lights cast them) -> fewer shader variants and passes
+        var urp = GraphicsSettings.defaultRenderPipeline;
+        if (urp)
+        {
+            var so = new SerializedObject(urp);
+            void SetB(string n, bool v) { var p = so.FindProperty(n); if (p != null) p.boolValue = v; }
+            void SetI(string n, int v) { var p = so.FindProperty(n); if (p != null) p.intValue = v; }
+            SetB("m_MainLightShadowsSupported", false);
+            SetB("m_AdditionalLightShadowsSupported", false);
+            SetB("m_SupportsHDR", false);
+            SetB("m_RequireDepthTexture", false);
+            SetB("m_RequireOpaqueTexture", false);
+            SetI("m_AdditionalLightsPerObjectLimit", 4);
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+        report.AppendLine($"Mobile: bundle {bundle}, iOS 15+, landscape, XR starts from the menu, URP shadows off, occlusion culling baked");
     }
 }
