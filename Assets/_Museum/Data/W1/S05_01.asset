@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S05_01
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S05_01
+  era: "Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
+  title: Sixteen Mahajanapadas
+  text: Buddhist and Jain texts list sixteen great states, or mahajanapadas, around the 6th century BCE, among them Magadha, Kosala, Vatsa, Avanti, Kashi, Anga, Vajji, Malla, Kuru, Panchala, Gandhara, Kamboja, Chedi, Matsya, Surasena and Assaka.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 0ad8c0d14d75b4ca794a7c1a933c1317, type: 3}
+  shownEnlarged: 0

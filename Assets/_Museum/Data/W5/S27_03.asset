@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S27_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S27_03
+  era: "Section 27 \xB7 Constitutional Development \xB7 1773 \u2013 1949"
+  title: Charter Acts
+  text: Charter Acts renewed the Company's charter. The Act of 1813 ended its trade monopoly except in tea and with China and set aside money for education; 1833 created the Governor-General of India and ended its trade; 1853 opened the civil services to competition.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: b3b30b79bafcb4051aa8a5f8e087562c, type: 3}
+  shownEnlarged: 0

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S26_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S26_05
+  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  title: Surya Sen
+  text: Surya Sen, known as Masterda, led the Chittagong Armoury Raid in April 1930 with the Indian Republican Army, which included young women such as Pritilata Waddedar and Kalpana Dutt. He was hanged in 1934.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
+  shownEnlarged: 0

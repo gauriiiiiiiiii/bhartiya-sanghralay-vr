@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S04_00
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S04_00
+  era: "6th \u2013 5th century BCE onwards"
+  title: 'Section 4: Religious Movements'
+  text: In the cities of the Ganga plain, new teachers questioned ritual and caste and offered paths to liberation through ethics and insight. Jainism and Buddhism grew into world religions.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  shownEnlarged: 0

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S27_09
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S27_09
+  era: "Section 27 \xB7 Constitutional Development \xB7 1773 \u2013 1949"
+  title: Constituent Assembly
+  text: Elected indirectly by the provincial assemblies in 1946, the Constituent Assembly first met on 9 December 1946, with Dr Rajendra Prasad as its president. Over nearly three years it debated and adopted the Constitution.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: b3b30b79bafcb4051aa8a5f8e087562c, type: 3}
+  shownEnlarged: 0

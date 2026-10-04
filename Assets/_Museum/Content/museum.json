@@ -1,0 +1,2564 @@
+{
+ "title": "Museum of Indian History",
+ "welcome": "Welcome to the Museum of Indian History. Six wings take you from the first stone tools, more than a million years ago, to India today. Select a glowing archway in the Grand Hall to enter a wing. Inside, select any board to read it and hear its story, and use Next to follow the guided tour. The directory and the visitor guide are in the two rooms beside this entrance.",
+ "wings": [
+  {
+   "id": "W1",
+   "title": "Ancient India",
+   "subtitle": "Prehistory to the Mauryas' eve",
+   "color": "8A5A2B",
+   "intro": "Welcome to Ancient India. Walk from the first stone tools through the cities of the Indus, the Vedic age, the new religions of the Ganga plain and the great states that followed.",
+   "sections": [
+    {
+     "num": 1,
+     "id": "S01",
+     "title": "Prehistoric India",
+     "period": "c. 1.5 million years ago – 700 BCE",
+     "intro": "Long before writing, people in India made stone tools, painted rock shelters, tamed animals and began to farm. This section follows the Stone Ages and the Copper–Stone Age.",
+     "centrepiece": "handaxe",
+     "exhibits": [
+      {
+       "id": "S01_01",
+       "title": "Palaeolithic Age (Old Stone Age)",
+       "briefTitle": "Palaeolithic Age (Old Stone Age)",
+       "text": "The Palaeolithic, or Old Stone Age, is the longest phase of the human past. In India it begins with stone tools at least 1.5 million years old, such as those from Attirampakkam in Tamil Nadu, and lasts until about 10,000 BCE, when the last Ice Age ended."
+      },
+      {
+       "id": "S01_02",
+       "title": "Lower Palaeolithic",
+       "briefTitle": "Lower Palaeolithic",
+       "text": "Acheulean hand-axes and cleavers, shaped by flaking large pebbles and cobbles, mark the Lower Palaeolithic. Their makers were early humans such as Homo erectus. Sites include Attirampakkam, Isampur and Hunsgi in Karnataka, and Hathnora on the Narmada, where a fossil hominin skull was found."
+      },
+      {
+       "id": "S01_03",
+       "title": "Middle Palaeolithic",
+       "briefTitle": "Middle Palaeolithic",
+       "text": "From roughly 385,000 years ago, toolmakers turned to smaller flake tools: scrapers, borers and points struck from carefully prepared cores. Middle Palaeolithic sites are found across India, including the Belan valley, Bhimbetka, and Nevasa on the Pravara river."
+      },
+      {
+       "id": "S01_04",
+       "title": "Upper Palaeolithic",
+       "briefTitle": "Upper Palaeolithic",
+       "text": "The Upper Palaeolithic, from about 40,000 years ago, brought long, thin stone blades, burins, bone tools and the first ornaments, such as ostrich-eggshell beads. Modern humans, Homo sapiens, spread across the subcontinent. Patne in Maharashtra and the Belan valley are key sites."
+      },
+      {
+       "id": "S01_05",
+       "title": "Stone Age tools and technology",
+       "briefTitle": "Tools and technology",
+       "text": "Stone Age people chose fine-grained stones such as quartzite and chert. Over time they moved from heavy core tools to flakes and then to blades, getting more cutting edge from every stone. Wooden spears, bone points and the control of fire completed their tool kit."
+      },
+      {
+       "id": "S01_06",
+       "title": "Hunter-gatherer lifestyle",
+       "briefTitle": "Hunter-gatherer lifestyle",
+       "text": "Palaeolithic people lived in small, mobile bands. They hunted deer, wild cattle and pigs, and gathered fruit, roots and honey. They camped near rivers and in rock shelters, moving with the seasons. There was no farming, pottery or permanent village yet."
+      },
+      {
+       "id": "S01_07",
+       "title": "Palaeolithic sites",
+       "briefTitle": "Important sites",
+       "text": "Key Palaeolithic sites include Attirampakkam in Tamil Nadu, Hunsgi and Isampur in Karnataka, Bhimbetka in Madhya Pradesh, Didwana in Rajasthan, the Belan valley in Uttar Pradesh, Hathnora on the Narmada, and the Sohan valley, now in Pakistan."
+      },
+      {
+       "id": "S01_08",
+       "title": "Mesolithic Age",
+       "briefTitle": "Mesolithic Age",
+       "text": "The Mesolithic, or Middle Stone Age, began about 10,000 BCE as the climate warmed after the Ice Age. People still hunted and gathered, but they used tiny stone tools, stayed longer in one place, and in some areas began to tame animals."
+      },
+      {
+       "id": "S01_09",
+       "title": "Microliths",
+       "briefTitle": "Microliths",
+       "text": "Microliths are tiny stone blades, often less than five centimetres long, shaped into triangles, crescents and trapezes. Set in rows into wooden or bone handles, they made arrows, sickles and harpoons. They are the signature tool of the Mesolithic."
+      },
+      {
+       "id": "S01_10",
+       "title": "Rock art",
+       "briefTitle": "Rock art",
+       "text": "The rock shelters of Bhimbetka in Madhya Pradesh, a UNESCO World Heritage Site, hold thousands of paintings, the earliest probably from the Mesolithic. Painted mostly in red and white, they show hunting, dancing, animals and scenes of daily life."
+      },
+      {
+       "id": "S01_11",
+       "title": "Early domestication",
+       "briefTitle": "Domestication",
+       "text": "Late in the Mesolithic, some groups began keeping animals. Bones from Adamgarh in Madhya Pradesh and Bagor in Rajasthan suggest early domestication of sheep, goats and cattle, a step towards herding and settled life."
+      },
+      {
+       "id": "S01_12",
+       "title": "Mesolithic sites",
+       "briefTitle": "Major sites",
+       "text": "Important Mesolithic sites include Bagor in Rajasthan, Adamgarh and Bhimbetka in Madhya Pradesh, Langhnaj in Gujarat, Sarai Nahar Rai and Mahadaha in Uttar Pradesh, and Birbhanpur in West Bengal. Several have yielded burials and workshops for microliths."
+      },
+      {
+       "id": "S01_13",
+       "title": "Neolithic Age",
+       "briefTitle": "Neolithic Age",
+       "text": "The Neolithic, or New Stone Age, brought farming, herding, polished stone tools and village life. In the north-west it began early, at Mehrgarh around 7000 BCE. In other parts of India it appeared later, at different times in different regions."
+      },
+      {
+       "id": "S01_14",
+       "title": "Neolithic agriculture",
+       "briefTitle": "Agriculture",
+       "text": "At Mehrgarh, early farmers grew barley and wheat. Rice was cultivated in the Ganga valley, for example at Lahuradewa, and millets and pulses in the south. Farming produced surpluses that let people settle and populations grow."
+      },
+      {
+       "id": "S01_15",
+       "title": "Animal domestication",
+       "briefTitle": "Animal domestication",
+       "text": "Neolithic communities herded cattle, sheep and goats. The humped zebu cattle of India was domesticated in the north-west, probably around Mehrgarh. In the south, Neolithic ash mounds formed where cattle pens were periodically burned."
+      },
+      {
+       "id": "S01_16",
+       "title": "Neolithic pottery",
+       "briefTitle": "Pottery",
+       "text": "Pottery appeared during the Neolithic, first made by hand and later turned on a slow wheel. It let people store grain, cook food and carry water. Different shapes, colours and decorations help archaeologists identify and date cultures."
+      },
+      {
+       "id": "S01_17",
+       "title": "Permanent settlements",
+       "briefTitle": "Permanent settlements",
+       "text": "Farming tied people to their fields. They built houses of mud brick, as at Mehrgarh, or pit dwellings, as at Burzahom in Kashmir, and stored grain in bins and pits. The village became the basic unit of life."
+      },
+      {
+       "id": "S01_18",
+       "title": "Neolithic sites",
+       "briefTitle": "Major sites",
+       "text": "Key Neolithic sites include Mehrgarh in Balochistan, Burzahom and Gufkral in Kashmir, Chirand in Bihar, Koldihwa and Lahuradewa in Uttar Pradesh, Daojali Hading in Assam, and Brahmagiri, Maski, Piklihal and Utnur in the Deccan."
+      },
+      {
+       "id": "S01_19",
+       "title": "Chalcolithic Age",
+       "briefTitle": "Chalcolithic Age",
+       "text": "The Chalcolithic, or Copper–Stone Age, saw farming villages begin to use copper alongside stone. In different regions it ran from about 3000 to 700 BCE, and many of these cultures flourished outside or after the Harappan cities."
+      },
+      {
+       "id": "S01_20",
+       "title": "Copper tools",
+       "briefTitle": "Copper tools",
+       "text": "Copper was smelted and hammered into axes, chisels, fish-hooks and bangles. Because copper was scarce and soft, stone blades stayed in use. The Copper Hoards of the Ganga–Yamuna doab include harpoons and human-shaped figures."
+      },
+      {
+       "id": "S01_21",
+       "title": "Chalcolithic villages",
+       "briefTitle": "Village cultures",
+       "text": "Chalcolithic farmers lived in villages of round or rectangular huts. They grew wheat, barley, rice, lentils and cotton, kept cattle, and made fine painted pottery, such as the black-on-red wares of Malwa and Jorwe."
+      },
+      {
+       "id": "S01_22",
+       "title": "Chalcolithic burials",
+       "briefTitle": "Burial practices",
+       "text": "In Maharashtra, Chalcolithic people often buried their dead beneath house floors, children sometimes in urns, with pots and copper objects beside them, suggesting a belief in an afterlife. The burials of Inamgaon are well known."
+      },
+      {
+       "id": "S01_23",
+       "title": "Chalcolithic regional cultures",
+       "briefTitle": "Regional cultures",
+       "text": "Major Chalcolithic cultures include Ahar–Banas in Rajasthan, Kayatha and Malwa in Madhya Pradesh, Jorwe in Maharashtra, with sites such as Inamgaon and Daimabad, and the Ochre Coloured Pottery culture of the Ganga plain."
+      }
+     ]
+    },
+    {
+     "num": 2,
+     "id": "S02",
+     "title": "Indus Valley Civilisation",
+     "period": "c. 3300 – 1300 BCE (mature phase c. 2600 – 1900 BCE)",
+     "intro": "One of the world's first urban civilisations grew along the Indus and the Ghaggar-Hakra rivers, with planned cities, drains, standard weights and an undeciphered script.",
+     "centrepiece": "seal",
+     "exhibits": [
+      {
+       "id": "S02_01",
+       "title": "Discovery of the Indus cities",
+       "briefTitle": "Discovery",
+       "text": "In 1921 Daya Ram Sahni excavated at Harappa in Punjab, and in 1922 R. D. Banerji at Mohenjo-daro in Sindh. In 1924 John Marshall announced a new Bronze Age civilisation, among the earliest urban cultures in the world."
+      },
+      {
+       "id": "S02_02",
+       "title": "Extent of the civilisation",
+       "briefTitle": "Extent",
+       "text": "It was the largest Bronze Age civilisation in area, stretching from Sutkagen Dor near the Iran border to Alamgirpur near Delhi, and from Manda in Jammu to Daimabad in Maharashtra, with Shortugai in Afghanistan as an outpost."
+      },
+      {
+       "id": "S02_03",
+       "title": "Town planning",
+       "briefTitle": "Town planning",
+       "text": "Harappan cities were laid out on a grid, with main streets crossing at right angles. Many had a raised, walled citadel and a larger lower town. Houses opened onto side lanes, and standard bricks in the ratio one to two to four were used everywhere."
+      },
+      {
+       "id": "S02_04",
+       "title": "Harappan architecture",
+       "briefTitle": "Architecture",
+       "text": "Builders used baked and mud bricks. Notable structures include the Great Bath of Mohenjo-daro, waterproofed with bitumen, large halls once called granaries, houses with courtyards and private wells, and massive city walls."
+      },
+      {
+       "id": "S02_05",
+       "title": "Drainage system",
+       "briefTitle": "Drainage system",
+       "text": "Almost every house had a bathing area and drains leading into covered brick sewers along the streets, with inspection holes for cleaning. This planned drainage was unmatched by most cities of the ancient world."
+      },
+      {
+       "id": "S02_06",
+       "title": "Harappan economy",
+       "briefTitle": "Economy",
+       "text": "The economy rested on farming, herding, crafts and long-distance trade. Cities depended on surplus grain from villages, while specialised craftspeople produced beads, pottery, metalwork and shell objects for local use and export."
+      },
+      {
+       "id": "S02_07",
+       "title": "Harappan agriculture",
+       "briefTitle": "Agriculture",
+       "text": "Farmers grew wheat, barley, pulses, sesame and cotton; the Harappans were among the earliest to grow cotton. A ploughed field was found at Kalibangan, and a terracotta plough model at Banawali. Rice and millets appear at some sites."
+      },
+      {
+       "id": "S02_08",
+       "title": "Harappan trade",
+       "briefTitle": "Trade",
+       "text": "Harappans traded across the region and overseas. Mesopotamian texts mention Meluhha, probably the Indus region. Harappan seals and beads have been found in Mesopotamia and the Gulf, and carnelian, timber, ivory and cotton were likely exports."
+      },
+      {
+       "id": "S02_09",
+       "title": "Weights and measures",
+       "briefTitle": "Weights and measures",
+       "text": "Standard cubical weights of chert followed a system that doubled from one to sixty-four and then rose in decimal steps. Measuring scales, including one made of shell from Lothal, show careful and consistent measurement."
+      },
+      {
+       "id": "S02_10",
+       "title": "The Indus script",
+       "briefTitle": "Script",
+       "text": "The Indus script appears on seals, tablets and pottery, with about 400 signs, mostly in very short inscriptions. It was probably written from right to left. Despite many attempts, it has not yet been deciphered."
+      },
+      {
+       "id": "S02_11",
+       "title": "Harappan religion",
+       "briefTitle": "Religion",
+       "text": "Evidence suggests reverence for a mother goddess, sacred animals and trees such as the pipal, and possibly a horned figure on the so-called Pashupati seal. Fire altars at Kalibangan and Lothal hint at ritual, but without readable texts much remains uncertain."
+      },
+      {
+       "id": "S02_12",
+       "title": "Harappan art and craft",
+       "briefTitle": "Art and craft",
+       "text": "Famous works include the bronze Dancing Girl and the stone Priest-King from Mohenjo-daro, square steatite seals carved with animals such as the unicorn, terracotta figurines and toys, and red pottery painted in black."
+      },
+      {
+       "id": "S02_13",
+       "title": "Harappan technology",
+       "briefTitle": "Technology",
+       "text": "Harappans worked copper and bronze, made glazed faience, drilled long carnelian beads with special drills, and fired bricks in kilns. Lothal had a large brick basin often interpreted as a dockyard, though some scholars see it as a reservoir."
+      },
+      {
+       "id": "S02_14",
+       "title": "Harappan society",
+       "briefTitle": "Society",
+       "text": "Society seems to have included farmers, artisans, merchants and perhaps priests. Differences in house size and burial goods suggest some inequality, but no grand palaces or royal tombs have been found."
+      },
+      {
+       "id": "S02_15",
+       "title": "Harappan administration",
+       "briefTitle": "Administration",
+       "text": "Uniform bricks, weights, seals and town plans across a vast area suggest strong coordination, perhaps by merchant or priestly elites or city councils. No palaces, kings or armies have been clearly identified."
+      },
+      {
+       "id": "S02_16",
+       "title": "Major Harappan cities",
+       "briefTitle": "Major cities",
+       "text": "More than a thousand Harappan sites are known, but a few large cities stand out: Harappa, Mohenjo-daro and Ganweriwala in Pakistan, and Dholavira, Rakhigarhi, Lothal and Kalibangan in India."
+      },
+      {
+       "id": "S02_17",
+       "title": "Harappa",
+       "briefTitle": "Harappa",
+       "text": "On the Ravi river in Punjab, Pakistan, Harappa was the first site excavated, in 1921, and gave its name to the civilisation. It had a citadel, rows of workers' houses, working platforms and large storage halls."
+      },
+      {
+       "id": "S02_18",
+       "title": "Mohenjo-daro",
+       "briefTitle": "Mohenjo-daro",
+       "text": "On the Indus in Sindh, Pakistan, Mohenjo-daro was one of the largest cities, perhaps home to forty thousand people. Its Great Bath, grid streets and drains are famous, and it is a UNESCO World Heritage Site. Its name means mound of the dead."
+      },
+      {
+       "id": "S02_19",
+       "title": "Dholavira",
+       "briefTitle": "Dholavira",
+       "text": "On Khadir island in the Rann of Kutch, Gujarat, Dholavira was divided into three parts and had remarkable water reservoirs cut into the rock. A large signboard of ten Indus signs was found near a gateway. It is a UNESCO World Heritage Site."
+      },
+      {
+       "id": "S02_20",
+       "title": "Lothal",
+       "briefTitle": "Lothal",
+       "text": "Near the Gulf of Khambhat in Gujarat, Lothal was a port and bead-making centre with a large brick basin, a warehouse and evidence of sea trade. It was excavated by S. R. Rao from 1955."
+      },
+      {
+       "id": "S02_21",
+       "title": "Kalibangan",
+       "briefTitle": "Kalibangan",
+       "text": "On the Ghaggar river in Rajasthan, Kalibangan has the earliest ploughed field known, from the Early Harappan phase, as well as fire altars and a citadel. Its name means black bangles."
+      },
+      {
+       "id": "S02_22",
+       "title": "Rakhigarhi",
+       "briefTitle": "Rakhigarhi",
+       "text": "In Haryana, Rakhigarhi is among the largest Harappan sites. Ancient DNA from a woman buried there, published in 2019, offered new evidence about the ancestry of the Harappan people."
+      },
+      {
+       "id": "S02_23",
+       "title": "Why did the cities decline?",
+       "briefTitle": "Decline theories",
+       "text": "From about 1900 BCE the cities declined. Explanations include climate change and weaker monsoons, the drying of the Ghaggar-Hakra river, shifting rivers and floods, and the collapse of trade. The once-popular idea of an Aryan invasion is no longer accepted as the cause."
+      }
+     ]
+    },
+    {
+     "num": 3,
+     "id": "S03",
+     "title": "Vedic Period",
+     "period": "c. 1500 – 600 BCE",
+     "intro": "The Vedas, India's oldest texts, describe a world of cattle herders becoming farmers, tribes becoming kingdoms, and ideas about ritual, society and the self that shaped later Indian thought.",
+     "centrepiece": "fire_altar",
+     "exhibits": [
+      {
+       "id": "S03_01",
+       "title": "Early Vedic Period",
+       "briefTitle": "Early Vedic Period",
+       "text": "The Early, or Rigvedic, period, about 1500 to 1000 BCE, is known mainly from the Rigveda. Its people lived in the land of seven rivers, the Sapta Sindhu, in present-day Punjab, north-west India and Afghanistan."
+      },
+      {
+       "id": "S03_02",
+       "title": "Who were the Aryans?",
+       "briefTitle": "Aryans",
+       "text": "In the Rigveda, arya means noble, a cultural and linguistic term. Most scholars hold that Indo-Aryan-speaking groups migrated into north-west India around 1500 BCE and mixed with local peoples; others argue for an indigenous origin. The debate continues."
+      },
+      {
+       "id": "S03_03",
+       "title": "Rigveda",
+       "briefTitle": "Rigveda",
+       "text": "The Rigveda, the oldest Veda, has 1,028 hymns in ten books, or mandalas, addressed to gods such as Indra, Agni and Soma. Passed down orally with great precision for centuries, its manuscripts are on UNESCO's Memory of the World register."
+      },
+      {
+       "id": "S03_04",
+       "title": "Tribal organisation",
+       "briefTitle": "Tribal organisation",
+       "text": "Society was organised in kin-based tribes, or jana, led by a chief called the rajan, whose main duty was to protect cattle and people. Assemblies such as the sabha and samiti advised him, and women could attend some assemblies."
+      },
+      {
+       "id": "S03_05",
+       "title": "Early Vedic economy",
+       "briefTitle": "Economy",
+       "text": "The early Vedic economy was largely pastoral. Cattle were the main wealth and wars were fought over them; gavishti, the search for cows, meant battle. There was also some barley farming, weaving, carpentry and work in copper and bronze."
+      },
+      {
+       "id": "S03_06",
+       "title": "Early Vedic religion",
+       "briefTitle": "Religion",
+       "text": "Rigvedic people worshipped the forces of nature: Indra, god of thunder and war; Agni, fire; Varuna, guardian of cosmic order; and Soma. Worship centred on hymns and offerings into fire. There were no temples or images."
+      },
+      {
+       "id": "S03_07",
+       "title": "Later Vedic Period",
+       "briefTitle": "Later Vedic Period",
+       "text": "The Later Vedic period, about 1000 to 600 BCE, is known from the later Vedas, the Brahmanas and the Upanishads. Settlement moved east into the Ganga plain, and society became more agricultural, hierarchical and focused on ritual."
+      },
+      {
+       "id": "S03_08",
+       "title": "Vedic expansion eastward",
+       "briefTitle": "Expansion",
+       "text": "People moved from Punjab into the Ganga–Yamuna doab and on to Kosala and Videha. The Painted Grey Ware culture of this region, found at sites such as Hastinapur and Ahichchhatra, is linked with this period."
+      },
+      {
+       "id": "S03_09",
+       "title": "Iron technology",
+       "briefTitle": "Iron technology",
+       "text": "Iron, called krishna ayas, the black metal, came into wider use from about 1000 BCE. Iron tools helped clear forests and till the land, and iron weapons strengthened rulers."
+      },
+      {
+       "id": "S03_10",
+       "title": "Later Vedic agriculture",
+       "briefTitle": "Agriculture",
+       "text": "Farming became the main occupation. Texts mention heavy ploughs drawn by many oxen, and crops such as rice, called vrihi, wheat and barley. Agricultural surplus supported larger settlements and rulers."
+      },
+      {
+       "id": "S03_11",
+       "title": "Later Vedic social hierarchy",
+       "briefTitle": "Social hierarchy",
+       "text": "The four varnas became more rigid and increasingly fixed by birth. Brahmins and kshatriyas claimed privileged positions, while shudras were placed at the bottom. Women's status declined compared with the earlier period."
+      },
+      {
+       "id": "S03_12",
+       "title": "Later Vedic kingship",
+       "briefTitle": "Political institutions",
+       "text": "Tribal chiefdoms grew into territorial kingdoms called janapadas. Kings performed grand sacrifices such as the Rajasuya and Ashvamedha to assert power, collected tribute called bali, and were helped by officials. The sabha and samiti lost importance."
+      },
+      {
+       "id": "S03_13",
+       "title": "Vedic Literature",
+       "briefTitle": "Vedic Literature",
+       "text": "Vedic literature is shruti, that which is heard. It was memorised and recited for centuries before it was written down. It includes the four Vedas, each with its Brahmanas, Aranyakas and Upanishads."
+      },
+      {
+       "id": "S03_14",
+       "title": "The four Vedas",
+       "briefTitle": "Vedas",
+       "text": "The four Vedas are the Rigveda of hymns, the Samaveda of melodies for chanting, the Yajurveda of sacrificial formulas, and the Atharvaveda of spells, charms and everyday concerns. The tradition of Vedic chanting is recognised by UNESCO as intangible heritage."
+      },
+      {
+       "id": "S03_15",
+       "title": "Brahmanas",
+       "briefTitle": "Brahmanas",
+       "text": "The Brahmanas are prose texts explaining the meaning and correct performance of sacrifices. The Shatapatha Brahmana is among the most important, and records social and geographical details of its time."
+      },
+      {
+       "id": "S03_16",
+       "title": "Aranyakas",
+       "briefTitle": "Aranyakas",
+       "text": "The Aranyakas, or forest texts, were meant for study in seclusion. They move from outward ritual towards symbolic and mystical interpretation, bridging the Brahmanas and the Upanishads."
+      },
+      {
+       "id": "S03_17",
+       "title": "Upanishads",
+       "briefTitle": "Upanishads",
+       "text": "The Upanishads, over a hundred in number with about thirteen principal ones, explore the self, or atman, ultimate reality, or brahman, karma and liberation. They form Vedanta, the end of the Vedas. India's motto, Satyameva Jayate, comes from the Mundaka Upanishad."
+      },
+      {
+       "id": "S03_18",
+       "title": "Varna system",
+       "briefTitle": "Varna system",
+       "text": "The Purusha Sukta of the Rigveda names four varnas: brahmin, kshatriya, vaishya and shudra. At first more flexible, the system hardened over time into a birth-based hierarchy that shaped Indian society for centuries."
+      },
+      {
+       "id": "S03_19",
+       "title": "Ashrama system",
+       "briefTitle": "Ashrama system",
+       "text": "Later texts describe four stages of life for men of the upper varnas: brahmacharya, the student; grihastha, the householder; vanaprastha, retreat to the forest; and sannyasa, renunciation. It was an ideal rather than a universal practice."
+      }
+     ]
+    },
+    {
+     "num": 4,
+     "id": "S04",
+     "title": "Religious Movements",
+     "period": "6th – 5th century BCE onwards",
+     "intro": "In the cities of the Ganga plain, new teachers questioned ritual and caste and offered paths to liberation through ethics and insight. Jainism and Buddhism grew into world religions.",
+     "centrepiece": "stupa",
+     "exhibits": [
+      {
+       "id": "S04_01",
+       "title": "Jainism",
+       "briefTitle": "Jainism",
+       "text": "Jainism teaches that the soul can be freed through right faith, right knowledge and right conduct. Jains revere twenty-four tirthankaras, or ford-makers; the first was Rishabhanatha, the twenty-third Parshvanatha and the twenty-fourth Mahavira."
+      },
+      {
+       "id": "S04_02",
+       "title": "Mahavira",
+       "briefTitle": "Mahavira",
+       "text": "Vardhamana Mahavira was born, according to tradition, around 599 BCE near Vaishali in Bihar, though some scholars place him later. After twelve years of austerity he attained kevala jnana, perfect knowledge, and taught for about thirty years before his death at Pavapuri."
+      },
+      {
+       "id": "S04_03",
+       "title": "Teachings of Mahavira",
+       "briefTitle": "Teachings",
+       "text": "Mahavira taught five vows: ahimsa, non-violence; satya, truth; asteya, not stealing; aparigraha, non-possession; and brahmacharya, chastity. Jainism also teaches anekantavada, the idea that truth has many sides."
+      },
+      {
+       "id": "S04_04",
+       "title": "Jain sects",
+       "briefTitle": "Sects",
+       "text": "Jainism divided into the Digambaras, the sky-clad, whose monks renounce clothing, and the Shvetambaras, the white-clad. Tradition links the split to a famine in Magadha and the migration of the monk Bhadrabahu's followers to the south."
+      },
+      {
+       "id": "S04_05",
+       "title": "Spread of Jainism",
+       "briefTitle": "Spread",
+       "text": "Jainism found support among merchants and rulers, including, by tradition, Chandragupta Maurya, and later Kharavela of Kalinga. It spread to Karnataka, Gujarat and Rajasthan, with great centres such as Shravanabelagola and Mount Abu."
+      },
+      {
+       "id": "S04_06",
+       "title": "Buddhism",
+       "briefTitle": "Buddhism",
+       "text": "Buddhism, founded by Gautama Buddha around the 5th century BCE, teaches a path to end suffering through wisdom, ethics and meditation. It rejected sacrificial ritual and privilege by birth, and spread across Asia."
+      },
+      {
+       "id": "S04_07",
+       "title": "Gautama Buddha",
+       "briefTitle": "Gautama Buddha",
+       "text": "Siddhartha Gautama was born at Lumbini, in present-day Nepal, into the Shakya clan. He left home at twenty-nine, attained enlightenment at Bodh Gaya, gave his first sermon at Sarnath and died at Kushinagar at the age of eighty."
+      },
+      {
+       "id": "S04_08",
+       "title": "Four Noble Truths",
+       "briefTitle": "Four Noble Truths",
+       "text": "The Buddha's first teaching: life involves suffering, or dukkha; suffering arises from craving; suffering can end, in nirvana; and the way to end it is the Noble Eightfold Path."
+      },
+      {
+       "id": "S04_09",
+       "title": "Eightfold Path",
+       "briefTitle": "Eightfold Path",
+       "text": "The Middle Way between luxury and harsh austerity: right view, right intention, right speech, right action, right livelihood, right effort, right mindfulness and right concentration, grouped as wisdom, ethics and meditation."
+      },
+      {
+       "id": "S04_10",
+       "title": "Buddhist councils",
+       "briefTitle": "Councils",
+       "text": "Four major councils preserved and debated the teachings: at Rajagriha after the Buddha's death, at Vaishali about a century later, at Pataliputra under Ashoka, and in Kashmir under Kanishka, which is linked with the rise of Mahayana."
+      },
+      {
+       "id": "S04_11",
+       "title": "Buddhist schools",
+       "briefTitle": "Sects",
+       "text": "Theravada, the teaching of the elders, spread to Sri Lanka and South-East Asia. Mahayana, the great vehicle, emphasised the bodhisattva ideal and spread to China, Korea and Japan. Vajrayana developed later in Tibet and the Himalaya."
+      },
+      {
+       "id": "S04_12",
+       "title": "Spread of Buddhism",
+       "briefTitle": "Spread",
+       "text": "Royal patronage, especially from Ashoka, together with monasteries, trade routes and missionaries, carried Buddhism to Sri Lanka, Central Asia, China and South-East Asia. Great monasteries such as Nalanda became centres of learning."
+      },
+      {
+       "id": "S04_13",
+       "title": "Other Shramana traditions",
+       "briefTitle": "Other Shramana traditions",
+       "text": "Many wandering ascetics, the shramanas, questioned Vedic ritual. They included the Ajivikas led by Makkhali Gosala, who believed in fate, or niyati, and the materialist Charvaka or Lokayata school, which denied rebirth and the afterlife."
+      }
+     ]
+    },
+    {
+     "num": 5,
+     "id": "S05",
+     "title": "Mahajanapadas",
+     "period": "c. 600 – 321 BCE",
+     "intro": "Sixteen great states, some ruled by kings and some by assemblies, competed in the Ganga plain. Out of this contest Magadha rose to build India's first empire.",
+     "centrepiece": "punch_coin",
+     "exhibits": [
+      {
+       "id": "S05_01",
+       "title": "Sixteen Mahajanapadas",
+       "briefTitle": "Sixteen Mahajanapadas",
+       "text": "Buddhist and Jain texts list sixteen great states, or mahajanapadas, around the 6th century BCE, among them Magadha, Kosala, Vatsa, Avanti, Kashi, Anga, Vajji, Malla, Kuru, Panchala, Gandhara, Kamboja, Chedi, Matsya, Surasena and Assaka."
+      },
+      {
+       "id": "S05_02",
+       "title": "Gana-sanghas: the republics",
+       "briefTitle": "Republics",
+       "text": "Some states, called gana-sanghas, were governed by assemblies of clan heads rather than a single king. The Vajji confederacy, with its capital at Vaishali, and the Mallas were prominent. Both the Buddha and Mahavira came from such clans."
+      },
+      {
+       "id": "S05_03",
+       "title": "Monarchies",
+       "briefTitle": "Monarchies",
+       "text": "Most mahajanapadas, such as Magadha, Kosala, Vatsa and Avanti, were monarchies. Kings collected taxes, kept armies and officials, and built fortified capitals such as Rajagriha, Shravasti, Kaushambi and Ujjain."
+      },
+      {
+       "id": "S05_04",
+       "title": "Rise of Magadha",
+       "briefTitle": "Rise of Magadha",
+       "text": "Magadha, in Bihar, became the most powerful state thanks to fertile land, iron ore, rivers for transport, elephants and able rulers: Bimbisara and Ajatashatru of the Haryanka dynasty, then the Shishunagas and the Nandas. Pataliputra became its capital."
+      },
+      {
+       "id": "S05_05",
+       "title": "Political and economic change",
+       "briefTitle": "Political developments",
+       "text": "This age saw the second urbanisation of the Ganga plain, punch-marked silver coins, standing armies, regular land revenue and growing trade, laying the foundations for India's first empire."
+      }
+     ]
+    },
+    {
+     "num": 6,
+     "id": "S06",
+     "title": "Persian and Greek Invasions",
+     "period": "c. 520 – 300 BCE",
+     "intro": "The north-west of the subcontinent came into contact with the Persian empire and with Alexander of Macedon, opening routes for trade, art and ideas.",
+     "centrepiece": "column",
+     "exhibits": [
+      {
+       "id": "S06_01",
+       "title": "The Persian Achaemenid Empire",
+       "briefTitle": "Achaemenid Empire",
+       "text": "In the late 6th century BCE Darius the First of Persia conquered Gandhara and the Indus region, which became a province paying rich tribute. Persian contact brought the Aramaic script, from which Kharosthi developed, and influenced later Mauryan art and administration."
+      },
+      {
+       "id": "S06_02",
+       "title": "Alexander's invasion",
+       "briefTitle": "Alexander’s invasion",
+       "text": "In 326 BCE Alexander of Macedon crossed the Indus and defeated King Porus at the Battle of the Hydaspes, on the Jhelum. But his weary army refused to go beyond the Beas. He withdrew, and died in Babylon in 323 BCE."
+      },
+      {
+       "id": "S06_03",
+       "title": "Effects of Greek contact",
+       "briefTitle": "Effects of Greek contact",
+       "text": "Alexander's campaign was brief, but it opened routes between India and the Greek world. Greek writers described India, Greek settlements remained in the north-west, and Greek influence later shaped Gandhara art and Indian coinage."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W2",
+   "title": "Classical India",
+   "subtitle": "Mauryas to the post-Gupta kingdoms",
+   "color": "2E5E4E",
+   "intro": "Welcome to Classical India: the Maurya and Gupta empires, the kingdoms of the Deccan and the far south, and the trade and art that linked India with the wider world.",
+   "sections": [
+    {
+     "num": 7,
+     "id": "S07",
+     "title": "Mauryan Empire",
+     "period": "c. 321 – 185 BCE",
+     "intro": "From Pataliputra the Mauryas ruled India's first great empire. Under Ashoka it turned from conquest to Dhamma, leaving edicts carved in stone across the land.",
+     "centrepiece": "lion_capital",
+     "exhibits": [
+      {
+       "id": "S07_01",
+       "title": "Chandragupta Maurya",
+       "briefTitle": "Chandragupta Maurya",
+       "text": "Chandragupta Maurya overthrew the Nanda king around 321 BCE and founded the Maurya empire, the first to unite most of the subcontinent. He defeated Seleucus Nicator and gained lands in the north-west. By Jain tradition, he ended his life as a monk at Shravanabelagola."
+      },
+      {
+       "id": "S07_02",
+       "title": "Chanakya",
+       "briefTitle": "Chanakya",
+       "text": "Chanakya, also called Kautilya or Vishnugupta, was Chandragupta's teacher and minister. The Arthashastra, a treatise on statecraft, economy and law, is attributed to him, though parts of it may have been written later."
+      },
+      {
+       "id": "S07_03",
+       "title": "Bindusara",
+       "briefTitle": "Bindusara",
+       "text": "Bindusara, son of Chandragupta, ruled from about 297 to 273 BCE and extended the empire into the Deccan. Greek sources call him Amitrochates, slayer of foes. He kept diplomatic ties with the Seleucid kingdom of Syria."
+      },
+      {
+       "id": "S07_04",
+       "title": "Ashoka",
+       "briefTitle": "Ashoka",
+       "text": "Ashoka ruled from about 268 to 232 BCE. After the Kalinga war he turned to Buddhism and a policy of Dhamma. His edicts, carved on rocks and pillars across the subcontinent, are the earliest deciphered Indian inscriptions, mostly in Prakrit in the Brahmi script."
+      },
+      {
+       "id": "S07_05",
+       "title": "Kalinga War",
+       "briefTitle": "Kalinga War",
+       "text": "Around 261 BCE Ashoka conquered Kalinga, in present-day Odisha. In his Thirteenth Rock Edict he records that a hundred thousand people were killed and a hundred and fifty thousand deported, and expresses deep remorse. He turned from conquest by war to conquest by Dhamma."
+      },
+      {
+       "id": "S07_06",
+       "title": "Ashoka's Dhamma",
+       "briefTitle": "Dhamma",
+       "text": "Ashoka's Dhamma was a moral code: respect for elders, kindness to servants and animals, tolerance of all sects and restraint in speech. He appointed dhamma-mahamattas to spread it and sent missions abroad, including his son Mahinda to Sri Lanka."
+      },
+      {
+       "id": "S07_07",
+       "title": "Mauryan administration",
+       "briefTitle": "Administration",
+       "text": "The empire was ruled from Pataliputra and divided into provinces under princes. A large bureaucracy collected taxes and ran a standing army and a network of spies. Megasthenes, the Greek envoy, described the city councils of Pataliputra in his Indica."
+      },
+      {
+       "id": "S07_08",
+       "title": "Mauryan economy",
+       "briefTitle": "Economy",
+       "text": "The state controlled mines, forests and many industries, collected land revenue of about a quarter of the produce, and regulated trade, weights and prices. Punch-marked silver coins circulated widely, and roads linked the empire."
+      },
+      {
+       "id": "S07_09",
+       "title": "Mauryan art and architecture",
+       "briefTitle": "Art and architecture",
+       "text": "Polished sandstone pillars crowned with animal capitals, such as the Lion Capital of Sarnath, now India's national emblem; the rock-cut Barabar caves; early stupas such as Sanchi; and the Didarganj Yakshi show the court art of the age."
+      },
+      {
+       "id": "S07_10",
+       "title": "Decline of the Mauryas",
+       "briefTitle": "Decline",
+       "text": "After Ashoka the empire weakened under less able successors, financial strain and regional revolts. In about 185 BCE the general Pushyamitra Shunga killed the last Maurya, Brihadratha, and founded the Shunga dynasty."
+      }
+     ]
+    },
+    {
+     "num": 8,
+     "id": "S08",
+     "title": "Post-Mauryan India",
+     "period": "c. 200 BCE – 300 CE",
+     "intro": "After the Mauryas, rulers from Central Asia and the Deccan created new kingdoms. Trade with Rome and along the Silk Route made this an age of wealth, art and exchange.",
+     "centrepiece": "kushana_coin",
+     "exhibits": [
+      {
+       "id": "S08_01",
+       "title": "Indo-Greeks",
+       "briefTitle": "Indo-Greeks",
+       "text": "Greek rulers from Bactria entered north-west India in the 2nd century BCE. The most famous, Menander, or Milinda, discussed philosophy with the monk Nagasena in the Milindapanha. The Indo-Greeks issued fine coins bearing their kings' portraits and names."
+      },
+      {
+       "id": "S08_02",
+       "title": "Shakas",
+       "briefTitle": "Shakas",
+       "text": "The Shakas, or Scythians, from Central Asia ruled parts of northern and western India. The Western Kshatrapas held Gujarat and Malwa, and Rudradaman's Junagadh inscription of about 150 CE is an early long inscription in Sanskrit. The Shaka era of 78 CE is used in India's national calendar."
+      },
+      {
+       "id": "S08_03",
+       "title": "Parthians",
+       "briefTitle": "Parthians",
+       "text": "The Indo-Parthians, or Pahlavas, ruled the north-west in the 1st century CE. Gondophares is the best known of them; Christian tradition links the apostle Saint Thomas to his court."
+      },
+      {
+       "id": "S08_04",
+       "title": "Kushanas",
+       "briefTitle": "Kushanas",
+       "text": "The Kushanas, a branch of the Yuezhi of Central Asia, built an empire from Central Asia to the Ganga plain between the 1st and 3rd centuries CE. They issued many gold coins and fostered the Gandhara and Mathura schools of art."
+      },
+      {
+       "id": "S08_05",
+       "title": "Kanishka",
+       "briefTitle": "Kanishka",
+       "text": "Kanishka, the greatest Kushana ruler, is usually dated to the late 1st or early 2nd century CE. He patronised Buddhism and convened the Fourth Buddhist Council in Kashmir, and the poet Ashvaghosha and the physician Charaka are associated with his court."
+      },
+      {
+       "id": "S08_06",
+       "title": "Satavahanas",
+       "briefTitle": "Satavahanas",
+       "text": "The Satavahanas ruled the Deccan from about the 1st century BCE to the 3rd century CE. Gautamiputra Satakarni defeated the Shakas. They issued lead and potin coins, granted land to Brahmins and Buddhists, and patronised caves at Karla, Nashik and the stupa at Amaravati."
+      },
+      {
+       "id": "S08_07",
+       "title": "Trade with Rome",
+       "briefTitle": "Trade",
+       "text": "Trade boomed. Indian pepper, spices, textiles, gems and ivory went to the Roman empire, and Roman gold coins and wine came back. Ports such as Barygaza, now Bharuch, and Muziris thrived, and merchant guilds funded monasteries and caves."
+      },
+      {
+       "id": "S08_08",
+       "title": "Silk Route",
+       "briefTitle": "Silk Route",
+       "text": "The Silk Route linked China with the Mediterranean through Central Asia. The Kushanas controlled key sections, and branches ran into India. Along it travelled silk, spices, horses and ideas, including Buddhism, which reached China this way."
+      }
+     ]
+    },
+    {
+     "num": 9,
+     "id": "S09",
+     "title": "Sangam Age",
+     "period": "c. 3rd century BCE – 3rd century CE",
+     "intro": "In the far south, the Chera, Chola and Pandya kingdoms flourished, and Tamil poets composed the earliest literature of the region, rich in love, war and the life of the land.",
+     "centrepiece": "ship",
+     "exhibits": [
+      {
+       "id": "S09_01",
+       "title": "Sangam literature",
+       "briefTitle": "Sangam literature",
+       "text": "Sangam literature is the earliest Tamil poetry, composed roughly between the 3rd century BCE and the 3rd century CE, traditionally at assemblies, or sangams, in Madurai. Its poems of love, called akam, and of war and public life, called puram, fill anthologies such as Ettuthokai and Pattuppattu. Tolkappiyam is its grammar."
+      },
+      {
+       "id": "S09_02",
+       "title": "The early Cholas",
+       "briefTitle": "Cholas",
+       "text": "The early Cholas ruled the Kaveri delta from Uraiyur and the port of Puhar, also called Kaveripattinam. Karikala Chola is remembered for his victories and for building an embankment on the Kaveri, linked by tradition to the Kallanai dam."
+      },
+      {
+       "id": "S09_03",
+       "title": "Cheras",
+       "briefTitle": "Cheras",
+       "text": "The Cheras ruled the Malabar coast of Kerala, with their capital at Vanji and ports such as Muziris. Their trade with Rome is recorded in Greek and Roman texts. Senguttuvan is a celebrated Chera king."
+      },
+      {
+       "id": "S09_04",
+       "title": "The early Pandyas",
+       "briefTitle": "Pandyas",
+       "text": "The Pandyas ruled the southern tip of India from Madurai, the seat of the Sangam assemblies. They were known to Megasthenes and controlled the pearl fisheries of the Gulf of Mannar. Nedunjeliyan is a famous Pandya king of the Sangam age."
+      },
+      {
+       "id": "S09_05",
+       "title": "Sangam society",
+       "briefTitle": "Society",
+       "text": "Sangam poems divide the land into five tinais: hills, forest, farmland, coast and dry land, each with its own way of life and emotions. Warriors, poets, including women such as Avvaiyar, farmers and traders appear, and hero stones honoured those who fell in battle."
+      },
+      {
+       "id": "S09_06",
+       "title": "Sangam economy",
+       "briefTitle": "Economy",
+       "text": "Wet rice farming in the river valleys, cotton weaving, pearl fishing, and the export of pepper, ivory and gems supported the economy. Uraiyur was famous for its fine cotton cloth."
+      },
+      {
+       "id": "S09_07",
+       "title": "Sangam ports",
+       "briefTitle": "Ports",
+       "text": "Muziris, Korkai, Puhar and Arikamedu traded with Rome, South-East Asia and Sri Lanka. At Arikamedu, near Puducherry, Roman pottery and wine jars have been excavated."
+      },
+      {
+       "id": "S09_08",
+       "title": "Sangam religion",
+       "briefTitle": "Religion",
+       "text": "Murugan was the most popular deity, along with Mayon, or Vishnu, Vendan, or Indra, and Korravai, a goddess of war. Hero stones were worshipped, and Buddhism, Jainism and Vedic sacrifice also had a place."
+      }
+     ]
+    },
+    {
+     "num": 10,
+     "id": "S10",
+     "title": "Gupta Empire",
+     "period": "c. 319 – 550 CE",
+     "intro": "Under the Guptas, north India saw great achievements in mathematics, astronomy, literature and art, though historians now debate how golden this age really was.",
+     "centrepiece": "iron_pillar",
+     "exhibits": [
+      {
+       "id": "S10_01",
+       "title": "Chandragupta I",
+       "briefTitle": "Chandragupta I",
+       "text": "Chandragupta the First, who ruled from about 319 to 335 CE, raised the Gupta dynasty to power, helped by his marriage to the Lichchhavi princess Kumaradevi. The Gupta era is counted from 319 to 320 CE."
+      },
+      {
+       "id": "S10_02",
+       "title": "Samudragupta",
+       "briefTitle": "Samudragupta",
+       "text": "Samudragupta, who ruled from about 335 to 375 CE, campaigned across north and south India. His Allahabad Pillar inscription, composed by the poet Harishena, lists his conquests. A musician too, he appears playing the veena on his coins."
+      },
+      {
+       "id": "S10_03",
+       "title": "Chandragupta II",
+       "briefTitle": "Chandragupta II",
+       "text": "Chandragupta the Second, also called Vikramaditya, ruled from about 375 to 415 CE. He defeated the Western Shakas, adding Gujarat and Malwa and access to the western ports. The Chinese pilgrim Faxian visited India in his reign, and tradition links the poet Kalidasa to his court."
+      },
+      {
+       "id": "S10_04",
+       "title": "Gupta administration",
+       "briefTitle": "Administration",
+       "text": "Gupta kings took grand titles such as Maharajadhiraja, king of great kings. Provinces, called bhuktis, and districts, called vishayas, were run by officials; many posts became hereditary, and land grants to Brahmins and officials increased."
+      },
+      {
+       "id": "S10_05",
+       "title": "Gupta economy",
+       "briefTitle": "Economy",
+       "text": "The Guptas issued the largest number of gold coins of any ancient Indian dynasty, called dinaras. Agriculture, crafts and guilds flourished, though some historians see a decline in long-distance trade with Rome and a rise in land grants."
+      },
+      {
+       "id": "S10_06",
+       "title": "Gupta science",
+       "briefTitle": "Science",
+       "text": "Aryabhata proposed that the earth rotates on its axis and explained eclipses scientifically. Varahamihira wrote the Brihat Samhita on astronomy and natural science. Metalworkers produced the rust-resistant Iron Pillar that now stands in Delhi."
+      },
+      {
+       "id": "S10_07",
+       "title": "Gupta-era mathematics",
+       "briefTitle": "Mathematics",
+       "text": "The decimal place-value system with zero developed in India in this era. Aryabhata's Aryabhatiya, of 499 CE, gave a value of pi close to 3.1416 and methods in algebra and trigonometry. These ideas later reached Europe through the Arab world."
+      },
+      {
+       "id": "S10_08",
+       "title": "Gupta literature",
+       "briefTitle": "Literature",
+       "text": "Sanskrit literature flourished. Kalidasa wrote Abhijnanashakuntalam, Meghaduta and Raghuvamsha; Vishakhadatta wrote Mudrarakshasa; and Shudraka, Mrichchhakatika. The Panchatantra and the later forms of the Puranas belong to this broad period."
+      },
+      {
+       "id": "S10_09",
+       "title": "Gupta art",
+       "briefTitle": "Art",
+       "text": "Gupta art set classical standards: the serene Buddha images of Sarnath, the Dashavatara temple at Deogarh, early stone temples, and the paintings of the Ajanta caves, produced largely under the neighbouring Vakatakas."
+      },
+      {
+       "id": "S10_10",
+       "title": "Religion in the Gupta age",
+       "briefTitle": "Religion",
+       "text": "Gupta kings were mainly devotees of Vishnu, and Puranic Hinduism with temple worship grew. Buddhism and Jainism also flourished; the great monastery of Nalanda was founded in the 5th century under Kumaragupta."
+      },
+      {
+       "id": "S10_11",
+       "title": "A golden age?",
+       "briefTitle": "Golden Age debate",
+       "text": "The Gupta period was once called India's golden age for its art, science and literature. Historians now point out that this view overlooks growing caste rigidity, the spread of untouchability, the declining status of women and the growth of land grants."
+      },
+      {
+       "id": "S10_12",
+       "title": "Decline of the Guptas",
+       "briefTitle": "Decline",
+       "text": "From the late 5th century, Huna invasions from Central Asia, weak successors, rising feudatories and falling revenue weakened the empire. By the mid-6th century it had broken into regional kingdoms."
+      }
+     ]
+    },
+    {
+     "num": 11,
+     "id": "S11",
+     "title": "Post-Gupta Period",
+     "period": "c. 550 – 1000 CE",
+     "intro": "After the Guptas, regional dynasties rose across India, fought over Kannauj, and built magnificent rock-cut and stone temples.",
+     "centrepiece": "rock_temple",
+     "exhibits": [
+      {
+       "id": "S11_01",
+       "title": "Harshavardhana",
+       "briefTitle": "Harshavardhana",
+       "text": "Harshavardhana ruled much of north India from Kannauj between 606 and 647 CE. Banabhatta wrote his biography, the Harshacharita, and the Chinese pilgrim Xuanzang described his court and the great assembly at Prayag. He was halted on the Narmada by Pulakeshin the Second."
+      },
+      {
+       "id": "S11_02",
+       "title": "Pushyabhutis",
+       "briefTitle": "Pushyabhutis",
+       "text": "The Pushyabhuti, or Vardhana, dynasty began at Thanesar in Haryana. Prabhakaravardhana resisted the Hunas, and his sons Rajyavardhana and Harshavardhana followed him. Harsha moved the capital to Kannauj, which became the great prize of north Indian politics."
+      },
+      {
+       "id": "S11_03",
+       "title": "Chalukyas of Badami",
+       "briefTitle": "Chalukyas",
+       "text": "The Chalukyas of Badami, or Vatapi, in Karnataka, ruled the Deccan from the 6th to the 8th centuries. Pulakeshin the Second defeated Harsha. Their temples at Aihole, Badami and Pattadakal, a UNESCO site, mark a key stage in temple architecture."
+      },
+      {
+       "id": "S11_04",
+       "title": "Pallavas",
+       "briefTitle": "Pallavas",
+       "text": "The Pallavas ruled from Kanchipuram in Tamil Nadu from about the 6th to the 9th centuries. Mahendravarman and Narasimhavarman built the rock-cut monuments of Mamallapuram, including the Shore Temple and the Pancha Rathas. They fought long wars with the Chalukyas."
+      },
+      {
+       "id": "S11_05",
+       "title": "Rashtrakutas",
+       "briefTitle": "Rashtrakutas",
+       "text": "The Rashtrakutas of Manyakheta, in Karnataka, were among the strongest powers of the 8th to 10th centuries. Krishna the First built the Kailasa temple at Ellora, carved from a single rock. Amoghavarsha was a noted patron of literature."
+      },
+      {
+       "id": "S11_06",
+       "title": "Gurjara-Pratiharas",
+       "briefTitle": "Gurjara-Pratiharas",
+       "text": "The Gurjara-Pratiharas ruled western and northern India from the 8th to the 10th centuries, eventually from Kannauj. Rulers such as Nagabhata the First and Mihira Bhoja resisted Arab expansion from Sindh."
+      },
+      {
+       "id": "S11_07",
+       "title": "Palas",
+       "briefTitle": "Palas",
+       "text": "The Palas ruled Bengal and Bihar from the 8th to the 12th centuries. Gopala, their founder, was reportedly chosen by local chiefs. Dharmapala founded the monastery of Vikramashila and supported Nalanda, and Pala art influenced Tibet and South-East Asia."
+      },
+      {
+       "id": "S11_08",
+       "title": "Rise of regional kingdoms",
+       "briefTitle": "Regional kingdoms",
+       "text": "After the Guptas, power shifted to regional kingdoms. The long contest among the Palas, Pratiharas and Rashtrakutas for Kannauj is called the tripartite struggle. Regional languages, scripts and temple styles grew alongside these states."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W3",
+   "title": "Medieval India",
+   "subtitle": "Rajputs, Sultans, saints and Mughals",
+   "color": "6E1E3A",
+   "intro": "Welcome to Medieval India: temple builders and Rajput kings, the sultans of Delhi, the poet-saints of bhakti and Sufism, the Mughal empire and the regional powers that followed.",
+   "sections": [
+    {
+     "num": 12,
+     "id": "S12",
+     "title": "Early Medieval India",
+     "period": "c. 700 – 1200 CE",
+     "intro": "Rajput kingdoms, great temples and the first waves of devotional poetry shaped the early medieval centuries, as regional states and identities took root.",
+     "centrepiece": "shikhara",
+     "exhibits": [
+      {
+       "id": "S12_01",
+       "title": "Rajputs",
+       "briefTitle": "Rajputs",
+       "text": "From the 8th century, Rajput clans such as the Chauhans, Paramaras, Chandelas, Gahadavalas and Solankis ruled much of northern and western India. Prithviraj Chauhan defeated Muhammad of Ghor at Tarain in 1191, but lost to him there in 1192."
+      },
+      {
+       "id": "S12_02",
+       "title": "Temple architecture",
+       "briefTitle": "Temple architecture",
+       "text": "Temple styles matured: the Nagara style of the north, with curved towers, as at Khajuraho and Konark; the Dravida style of the south, with pyramidal towers and gateway gopurams; and the Vesara style of the Deccan, which blends the two."
+      },
+      {
+       "id": "S12_03",
+       "title": "Early bhakti",
+       "briefTitle": "Bhakti movement",
+       "text": "Bhakti, loving devotion to a personal god, began among the Tamil Alvars and Nayanars between the 6th and 9th centuries. They sang in Tamil rather than Sanskrit and welcomed devotees of every caste."
+      },
+      {
+       "id": "S12_04",
+       "title": "Regional states",
+       "briefTitle": "Regional states",
+       "text": "Kingdoms such as those of Kashmir, described in Kalhana's Rajatarangini, the Eastern Gangas of Odisha, the Kalachuris and the Kakatiyas built regional identities through language, temples and land grants."
+      },
+      {
+       "id": "S12_05",
+       "title": "Early medieval trade",
+       "briefTitle": "Trade",
+       "text": "Some historians see a decline in coinage and long-distance trade in the early medieval north, while others stress its continuity. Arab merchants were active on the west coast, and South Indian guilds such as the Ainnurruvar traded overseas."
+      },
+      {
+       "id": "S12_06",
+       "title": "Early medieval society",
+       "briefTitle": "Society",
+       "text": "Castes, or jatis, multiplied as tribes and occupational groups were absorbed into society; land grants created a landed class; and Rajput codes of honour shaped elite values."
+      }
+     ]
+    },
+    {
+     "num": 13,
+     "id": "S13",
+     "title": "South Indian Kingdoms",
+     "period": "c. 850 – 1650 CE",
+     "intro": "Chola admirals, Hoysala sculptors, Kakatiya builders and the rulers of Vijayanagara made the south a centre of power, trade and art.",
+     "centrepiece": "nataraja",
+     "exhibits": [
+      {
+       "id": "S13_01",
+       "title": "Imperial Cholas",
+       "briefTitle": "Imperial Cholas",
+       "text": "Founded by Vijayalaya in the 9th century, the Chola empire peaked under Rajaraja the First and Rajendra the First. They built the Brihadishvara temple at Thanjavur, sent naval expeditions to Sri Lanka and South-East Asia, and are famed for village assemblies and bronze sculpture."
+      },
+      {
+       "id": "S13_02",
+       "title": "Hoysalas",
+       "briefTitle": "Hoysalas",
+       "text": "The Hoysalas ruled southern Karnataka from the 11th to the 14th centuries, from Dvarasamudra, now Halebidu. Their star-shaped temples at Belur, Halebidu and Somanathapura, richly carved in soapstone, are UNESCO World Heritage Sites."
+      },
+      {
+       "id": "S13_03",
+       "title": "Kakatiyas",
+       "briefTitle": "Kakatiyas",
+       "text": "The Kakatiyas ruled Telangana and Andhra from Warangal in the 12th to 14th centuries. Rudramadevi was one of India's few reigning queens. The Ramappa temple is a UNESCO World Heritage Site, and their lake tanks supported farming."
+      },
+      {
+       "id": "S13_04",
+       "title": "The later Pandyas",
+       "briefTitle": "Pandyas",
+       "text": "The Pandyas revived in the 13th century and briefly dominated the south; Marco Polo visited their coast. Malik Kafur's raid in 1311 and civil wars weakened them, and the short-lived Madurai Sultanate followed."
+      },
+      {
+       "id": "S13_05",
+       "title": "Vijayanagara Empire",
+       "briefTitle": "Vijayanagara Empire",
+       "text": "Founded in 1336 by Harihara and Bukka, the Vijayanagara empire dominated the south for over two centuries. Krishnadevaraya was its greatest ruler. After the battle of Talikota in 1565 its capital, Hampi, was sacked; its ruins are a UNESCO World Heritage Site."
+      },
+      {
+       "id": "S13_06",
+       "title": "Bahmani Sultanate",
+       "briefTitle": "Bahmani Sultanate",
+       "text": "The Bahmani Sultanate was founded in 1347 by Alauddin Hasan Bahman Shah in the Deccan, with capitals at Gulbarga and Bidar. The minister Mahmud Gawan reformed its administration. It later split into five Deccan sultanates, including Bijapur and Golconda."
+      }
+     ]
+    },
+    {
+     "num": 14,
+     "id": "S14",
+     "title": "Delhi Sultanate",
+     "period": "1206 – 1526",
+     "intro": "Five dynasties ruled from Delhi for over three centuries, introducing new forms of government, architecture and culture.",
+     "centrepiece": "qutub",
+     "exhibits": [
+      {
+       "id": "S14_01",
+       "title": "The Mamluk or Slave dynasty",
+       "briefTitle": "Slave Dynasty",
+       "text": "The Mamluk, or Slave, dynasty, from 1206 to 1290, was founded by Qutbuddin Aibak. Iltutmish consolidated the sultanate and introduced the silver tanka; Razia was the only woman to rule as sultan of Delhi; and Balban strengthened royal power."
+      },
+      {
+       "id": "S14_02",
+       "title": "Khalji Dynasty",
+       "briefTitle": "Khalji Dynasty",
+       "text": "The Khaljis, from 1290 to 1320, were led by Alauddin Khalji, who repelled Mongol invasions, sent his general Malik Kafur on raids deep into the south, and introduced market controls and land revenue based on measured land."
+      },
+      {
+       "id": "S14_03",
+       "title": "Tughlaq Dynasty",
+       "briefTitle": "Tughlaq Dynasty",
+       "text": "The Tughlaqs, from 1320 to 1414, included Muhammad bin Tughlaq, known for bold but failed experiments such as shifting the capital to Daulatabad and a token currency, and Firoz Shah Tughlaq, who built canals and towns. Timur sacked Delhi in 1398."
+      },
+      {
+       "id": "S14_04",
+       "title": "Sayyid Dynasty",
+       "briefTitle": "Sayyid Dynasty",
+       "text": "The Sayyids, from 1414 to 1451, were founded by Khizr Khan, who had served as Timur's governor. Their power was limited to the area around Delhi."
+      },
+      {
+       "id": "S14_05",
+       "title": "Lodi Dynasty",
+       "briefTitle": "Lodi Dynasty",
+       "text": "The Lodis, Afghan rulers from 1451 to 1526, included Bahlul, Sikandar, who founded the city of Agra, and Ibrahim Lodi, who was defeated and killed by Babur at the First Battle of Panipat in 1526, ending the sultanate."
+      },
+      {
+       "id": "S14_06",
+       "title": "Sultanate administration",
+       "briefTitle": "Administration",
+       "text": "The sultan was the supreme ruler, helped by ministers such as the wazir. Land was assigned as iqtas to officers, who collected revenue and maintained troops. Persian was the language of administration."
+      },
+      {
+       "id": "S14_07",
+       "title": "Sultanate economy",
+       "briefTitle": "Economy",
+       "text": "Land revenue was the main source of income. Towns and crafts grew, along with trade with Central and West Asia. The Persian wheel and the spinning wheel spread, and the silver tanka and copper jital became standard coins."
+      },
+      {
+       "id": "S14_08",
+       "title": "Sultanate military",
+       "briefTitle": "Military",
+       "text": "The sultans kept a large standing army of cavalry, with horses imported from Central Asia and Arabia, and war elephants. Alauddin Khalji introduced the branding of horses, called dagh, and descriptive rolls of soldiers, called huliya."
+      },
+      {
+       "id": "S14_09",
+       "title": "Sultanate architecture",
+       "briefTitle": "Architecture",
+       "text": "Indo-Islamic architecture introduced the true arch and dome: the Qutub Minar and the Quwwat-ul-Islam mosque, the Alai Darwaza, Tughlaqabad fort and the Lodi tombs. The Qutub complex is a UNESCO World Heritage Site."
+      },
+      {
+       "id": "S14_10",
+       "title": "Sultanate society",
+       "briefTitle": "Society",
+       "text": "Society included Turkish, Afghan and Indian nobles, religious scholars, merchants, artisans and peasants. Persian culture met Indian traditions, giving rise to new music, poetry and the Hindavi language, as in the work of Amir Khusrau."
+      }
+     ]
+    },
+    {
+     "num": 15,
+     "id": "S15",
+     "title": "Bhakti and Sufi Movements",
+     "period": "c. 6th – 17th century",
+     "intro": "Saints and mystics taught that love of God matters more than ritual or birth, and sang their message in the languages of the people.",
+     "centrepiece": "veena",
+     "exhibits": [
+      {
+       "id": "S15_01",
+       "title": "Bhakti saints",
+       "briefTitle": "Bhakti saints",
+       "text": "Bhakti saints taught that sincere devotion matters more than ritual or caste. Across regions they sang in local languages: Basavanna in Kannada; Jnaneshwar, Namdev and Tukaram in Marathi; Tulsidas and Surdas in Hindi; and many more."
+      },
+      {
+       "id": "S15_02",
+       "title": "Alvars",
+       "briefTitle": "Alvars",
+       "text": "The twelve Alvars were Tamil poet-saints devoted to Vishnu, active between about the 6th and 9th centuries. Their hymns are collected in the Nalayira Divya Prabandham, and Andal is the only woman among them."
+      },
+      {
+       "id": "S15_03",
+       "title": "Nayanars",
+       "briefTitle": "Nayanars",
+       "text": "The sixty-three Nayanars were Tamil saints devoted to Shiva. Their hymns form the Tevaram. Saints such as Appar, Sambandar and Sundarar came from different castes, and Karaikkal Ammaiyar was a woman saint."
+      },
+      {
+       "id": "S15_04",
+       "title": "Kabir",
+       "briefTitle": "Kabir",
+       "text": "Kabir, a 15th-century weaver of Varanasi, rejected ritual and caste in both Hinduism and Islam and praised a formless God. His sharp couplets, or dohas, are in everyday Hindi, and some appear in the Guru Granth Sahib."
+      },
+      {
+       "id": "S15_05",
+       "title": "Guru Nanak",
+       "briefTitle": "Guru Nanak",
+       "text": "Guru Nanak, born in 1469 at Talwandi, now Nankana Sahib, founded Sikhism. He taught devotion to one God, honest work, sharing and equality, began the langar, the community kitchen, and travelled widely to spread his message. He died in 1539."
+      },
+      {
+       "id": "S15_06",
+       "title": "Mirabai",
+       "briefTitle": "Mirabai",
+       "text": "Mirabai, a 16th-century Rajput princess, devoted herself to Krishna, defying royal and social expectations. Her songs in Rajasthani and Braj are still sung across India."
+      },
+      {
+       "id": "S15_07",
+       "title": "Chaitanya",
+       "briefTitle": "Chaitanya",
+       "text": "Chaitanya Mahaprabhu of Bengal, who lived from 1486 to 1534, led ecstatic devotion to Krishna through kirtan, group singing and dancing. His followers founded Gaudiya Vaishnavism, which later inspired the ISKCON movement."
+      },
+      {
+       "id": "S15_08",
+       "title": "Sufi orders",
+       "briefTitle": "Sufi orders",
+       "text": "Sufism, the mystical path in Islam, reached India with orders, or silsilas, such as the Chishti, Suhrawardi, Qadiri and Naqshbandi. Chishti saints like Moinuddin Chishti of Ajmer and Nizamuddin Auliya of Delhi welcomed people of every background."
+      },
+      {
+       "id": "S15_09",
+       "title": "Impact of Bhakti and Sufism",
+       "briefTitle": "Cultural impact",
+       "text": "Bhakti and Sufi movements enriched regional languages and music, including qawwali and kirtan, challenged caste barriers, and encouraged dialogue between Hindu and Muslim traditions. Their shrines and songs remain living traditions."
+      }
+     ]
+    },
+    {
+     "num": 16,
+     "id": "S16",
+     "title": "Mughal Empire",
+     "period": "1526 – 1857",
+     "intro": "From Babur to Aurangzeb, the Mughals built one of the world's largest and richest empires, famous for its administration, gardens, paintings and monuments.",
+     "centrepiece": "taj",
+     "exhibits": [
+      {
+       "id": "S16_01",
+       "title": "Babur",
+       "briefTitle": "Babur",
+       "text": "Babur, a Timurid prince from Fergana, defeated Ibrahim Lodi at Panipat in 1526 using field guns and cavalry tactics, founding the Mughal empire. He then defeated Rana Sanga at Khanwa in 1527. His memoir, the Baburnama, describes India vividly."
+      },
+      {
+       "id": "S16_02",
+       "title": "Humayun",
+       "briefTitle": "Humayun",
+       "text": "Humayun lost his kingdom to Sher Shah Suri in 1540 and spent fifteen years in exile, partly in Persia. He regained Delhi in 1555 but died the following year. His garden tomb in Delhi is a UNESCO World Heritage Site."
+      },
+      {
+       "id": "S16_03",
+       "title": "Sher Shah Suri",
+       "briefTitle": "Sher Shah Suri",
+       "text": "Sher Shah Suri, who ruled from 1540 to 1545, built an efficient administration: land measurement, the silver rupiya coin, roadside inns called sarais, and the highway later known as the Grand Trunk Road. Akbar adopted many of his reforms."
+      },
+      {
+       "id": "S16_04",
+       "title": "Akbar",
+       "briefTitle": "Akbar",
+       "text": "Akbar, who ruled from 1556 to 1605, expanded the empire across north India and into the Deccan, built alliances with Rajput rulers, abolished the jizya tax and encouraged debate among faiths at Fatehpur Sikri. His policy of sulh-i-kul, peace with all, shaped Mughal rule."
+      },
+      {
+       "id": "S16_05",
+       "title": "Jahangir",
+       "briefTitle": "Jahangir",
+       "text": "Jahangir, who ruled from 1605 to 1627, loved art and nature, and painting flourished under him. His wife Nur Jahan held great influence. He received the English envoy Sir Thomas Roe, and is remembered for his chain of justice."
+      },
+      {
+       "id": "S16_06",
+       "title": "Shah Jahan",
+       "briefTitle": "Shah Jahan",
+       "text": "Shah Jahan, who ruled from 1628 to 1658, presided over the empire's grandest building: the Taj Mahal, the Red Fort and the Jama Masjid of Delhi, and the Peacock Throne. He was deposed by his son Aurangzeb and died a captive in Agra."
+      },
+      {
+       "id": "S16_07",
+       "title": "Aurangzeb",
+       "briefTitle": "Aurangzeb",
+       "text": "Aurangzeb, who ruled from 1658 to 1707, expanded the empire to its greatest size, including the Deccan sultanates. Long wars against the Marathas, revolts, the reimposition of jizya and his orthodox policies strained the empire."
+      },
+      {
+       "id": "S16_08",
+       "title": "Mughal administration",
+       "briefTitle": "Administration",
+       "text": "The emperor ruled through ministers such as the wakil, diwan, mir bakhshi and sadr. The empire was divided into provinces called subas, then sarkars and parganas, with Persian as the language of government."
+      },
+      {
+       "id": "S16_09",
+       "title": "Mansabdari system",
+       "briefTitle": "Mansabdari system",
+       "text": "Akbar's mansabdari system ranked every officer by zat, personal rank, and sawar, the number of cavalry to be maintained. Mansabdars were usually paid through jagirs, assignments of land revenue that were transferred to prevent local power bases."
+      },
+      {
+       "id": "S16_10",
+       "title": "Mughal revenue system",
+       "briefTitle": "Revenue system",
+       "text": "Under Raja Todar Mal, Akbar's revenue system, called zabt or dahsala, assessed land tax from measured land and average yields and prices over ten years. Revenue was usually about a third of the produce, collected in cash."
+      },
+      {
+       "id": "S16_11",
+       "title": "Religion under the Mughals",
+       "briefTitle": "Religion",
+       "text": "Akbar held debates in the Ibadat Khana and promoted tolerance; the Din-i-Ilahi was a small spiritual circle around him. Later emperors differed, and Aurangzeb followed a stricter orthodoxy. Many Mughals patronised shrines of several faiths."
+      },
+      {
+       "id": "S16_12",
+       "title": "Mughal architecture",
+       "briefTitle": "Architecture",
+       "text": "Mughal architecture blended Persian, Central Asian and Indian styles: Humayun's Tomb, Fatehpur Sikri, the Taj Mahal, the Red Fort and the four-part charbagh gardens. Its domes, arches, inlay work, red sandstone and marble are famous worldwide."
+      },
+      {
+       "id": "S16_13",
+       "title": "Mughal literature",
+       "briefTitle": "Literature",
+       "text": "Persian literature thrived: Abul Fazl's Akbarnama and Ain-i-Akbari, Persian translations of the Mahabharata and Ramayana, and Dara Shikoh's work on the Upanishads. Tulsidas wrote the Ramcharitmanas during Akbar's reign."
+      },
+      {
+       "id": "S16_14",
+       "title": "Mughal economy",
+       "briefTitle": "Economy",
+       "text": "The Mughal empire was among the largest economies in the world, exporting textiles, indigo and spices. The silver rupee, bankers called sarrafs with bills of exchange called hundis, and cities such as Agra, Lahore and Surat flourished."
+      },
+      {
+       "id": "S16_15",
+       "title": "Decline of the Mughals",
+       "briefTitle": "Decline",
+       "text": "After 1707, wars of succession, a crisis in the jagir system, rising regional powers such as the Marathas and Sikhs, and invasions by Nadir Shah in 1739 and Ahmad Shah Abdali weakened the empire. By 1803 the emperor was under British protection."
+      }
+     ]
+    },
+    {
+     "num": 17,
+     "id": "S17",
+     "title": "Regional Powers",
+     "period": "18th century",
+     "intro": "As Mughal power declined, new regional states rose across India, from the Marathas and Sikhs to Mysore, Awadh, Hyderabad and Bengal.",
+     "centrepiece": "fort",
+     "exhibits": [
+      {
+       "id": "S17_01",
+       "title": "Marathas",
+       "briefTitle": "Marathas",
+       "text": "The Marathas rose in the Deccan in the 17th century, building on hill forts and mobile cavalry. After Shivaji, they resisted Aurangzeb, and in the 18th century became the leading power in India."
+      },
+      {
+       "id": "S17_02",
+       "title": "Shivaji",
+       "briefTitle": "Shivaji",
+       "text": "Shivaji, who lived from 1630 to 1680, carved out an independent kingdom from Bijapur and Mughal territory, built forts and a navy, and was crowned Chhatrapati at Raigad in 1674. He ruled with a council of eight ministers, the Ashta Pradhan."
+      },
+      {
+       "id": "S17_03",
+       "title": "Peshwas",
+       "briefTitle": "Peshwas",
+       "text": "From Balaji Vishwanath in 1713, the Peshwas, or chief ministers, led the Maratha state from Pune. Baji Rao the First expanded Maratha power north, and the Marathas reached Delhi and Attock, but suffered a heavy defeat by Ahmad Shah Abdali at Panipat in 1761."
+      },
+      {
+       "id": "S17_04",
+       "title": "Sikhs",
+       "briefTitle": "Sikhs",
+       "text": "After Guru Gobind Singh created the Khalsa in 1699, Sikh groups called misls rose in Punjab. Maharaja Ranjit Singh united them and ruled a strong kingdom from Lahore from 1799 to 1839, with a modern army."
+      },
+      {
+       "id": "S17_05",
+       "title": "Mysore",
+       "briefTitle": "Mysore",
+       "text": "The kingdom of Mysore became a major power in the 18th century when Haidar Ali took control from the Wodeyar rulers. Mysore modernised its army and resisted British expansion in four wars."
+      },
+      {
+       "id": "S17_06",
+       "title": "Haidar Ali",
+       "briefTitle": "Haidar Ali",
+       "text": "Haidar Ali, a soldier who rose to command Mysore's army, became its effective ruler from 1761. He built a modern army with European help and defeated the British in the First Anglo-Mysore War, from 1767 to 1769."
+      },
+      {
+       "id": "S17_07",
+       "title": "Tipu Sultan",
+       "briefTitle": "Tipu Sultan",
+       "text": "Tipu Sultan, Haidar's son, ruled from 1782 to 1799. He used iron-cased rockets in war, introduced new coins, a new calendar and trade policies, and sought French help. He died defending Srirangapatna in the Fourth Anglo-Mysore War."
+      },
+      {
+       "id": "S17_08",
+       "title": "Awadh",
+       "briefTitle": "Awadh",
+       "text": "Saadat Khan Burhan-ul-Mulk founded the autonomous state of Awadh in 1722. Its nawabs, ruling from Faizabad and later Lucknow, patronised music, poetry and cuisine. The British annexed Awadh in 1856."
+      },
+      {
+       "id": "S17_09",
+       "title": "Hyderabad under the Nizams",
+       "briefTitle": "Hyderabad",
+       "text": "Nizam-ul-Mulk Asaf Jah founded the state of Hyderabad in 1724 as Mughal governor of the Deccan. The Nizams became allies of the British and ruled until 1948, when Hyderabad joined India."
+      },
+      {
+       "id": "S17_10",
+       "title": "Bengal Nawabs",
+       "briefTitle": "Bengal Nawabs",
+       "text": "Murshid Quli Khan made Bengal virtually independent; Alivardi Khan and Siraj-ud-Daula followed him. Siraj's defeat at Plassey in 1757 opened the way to British control."
+      },
+      {
+       "id": "S17_11",
+       "title": "Jats",
+       "briefTitle": "Jats",
+       "text": "The Jats, peasant-warriors of the region around Delhi and Agra, built a powerful state under Churaman and Badan Singh. It peaked under Suraj Mal, who died in 1763 and built the fort-palaces of Bharatpur and Deeg."
+      },
+      {
+       "id": "S17_12",
+       "title": "Rohillas",
+       "briefTitle": "Rohillas",
+       "text": "Afghan Rohillas settled in Rohilkhand, in western Uttar Pradesh, in the 18th century under leaders such as Ali Muhammad Khan and Hafiz Rahmat Khan. They were defeated by Awadh with British help in 1774."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W4",
+   "title": "Colonial India",
+   "subtitle": "Europeans, the Company and the Raj",
+   "color": "3C3F58",
+   "intro": "Welcome to Colonial India: how European traders became rulers, how the Company governed, the great revolt of 1857, the reformers who remade society, and the economy under British rule.",
+   "sections": [
+    {
+     "num": 18,
+     "id": "S18",
+     "title": "Arrival of Europeans",
+     "period": "1498 – 1760s",
+     "intro": "European trading companies arrived by sea in search of spices and textiles, built fortified factories, and soon became players in Indian politics.",
+     "centrepiece": "caravel",
+     "exhibits": [
+      {
+       "id": "S18_01",
+       "title": "Portuguese",
+       "briefTitle": "Portuguese",
+       "text": "Vasco da Gama reached Calicut in 1498, sailing round Africa. Afonso de Albuquerque captured Goa in 1510. The Portuguese controlled sea lanes through a system of passes called cartaz, and held Goa until 1961."
+      },
+      {
+       "id": "S18_02",
+       "title": "Dutch",
+       "briefTitle": "Dutch",
+       "text": "The Dutch East India Company, founded in 1602, set up trading posts at Masulipatnam, Pulicat and Chinsura and traded in spices and textiles. Defeated by the English at Bedara in 1759, they turned their focus to Indonesia."
+      },
+      {
+       "id": "S18_03",
+       "title": "Danish",
+       "briefTitle": "Danish",
+       "text": "The Danish East India Company established Tranquebar, now Tharangambadi, in 1620, and later Serampore in Bengal. Missionaries at Serampore pioneered printing in Indian languages. Denmark sold its Indian settlements to Britain in 1845."
+      },
+      {
+       "id": "S18_04",
+       "title": "French",
+       "briefTitle": "French",
+       "text": "The French East India Company, founded in 1664, was based at Pondicherry. Governor Dupleix built alliances with Indian rulers, but the French lost the Carnatic Wars to Britain, notably at Wandiwash in 1760. Pondicherry joined India in 1954."
+      },
+      {
+       "id": "S18_05",
+       "title": "British",
+       "briefTitle": "British",
+       "text": "The English East India Company received its charter in 1600. Its first factory in India was at Surat, in 1613. It later founded Madras in 1639, acquired Bombay in 1668 and founded Calcutta in 1690, its three presidencies."
+      },
+      {
+       "id": "S18_06",
+       "title": "European trading companies",
+       "briefTitle": "Trading companies",
+       "text": "European trading companies were joint-stock ventures backed by their governments, with the power to trade, keep armies and make treaties. They bought Indian cotton textiles, indigo, saltpetre and spices, paying largely in silver."
+      },
+      {
+       "id": "S18_07",
+       "title": "Factories: fortified trading posts",
+       "briefTitle": "Factories",
+       "text": "A factory was a fortified trading post where company agents, called factors, lived and stored and bought goods. Fort St George in Madras and Fort William in Calcutta began this way."
+      },
+      {
+       "id": "S18_08",
+       "title": "European rivalry",
+       "briefTitle": "Competition",
+       "text": "European companies fought one another and joined Indian politics. The Anglo-French Carnatic Wars, from 1746 to 1763, showed that small European-trained armies could decide Indian successions, a lesson the British used to expand their power."
+      }
+     ]
+    },
+    {
+     "num": 19,
+     "id": "S19",
+     "title": "British Expansion",
+     "period": "1757 – 1856",
+     "intro": "Through battles, treaties and annexations, the East India Company grew from a trading company into the ruler of most of India.",
+     "centrepiece": "cannon",
+     "exhibits": [
+      {
+       "id": "S19_01",
+       "title": "Battle of Plassey",
+       "briefTitle": "Battle of Plassey",
+       "text": "On 23 June 1757 Robert Clive defeated Siraj-ud-Daula at Plassey in Bengal, helped by the betrayal of Mir Jafar, who was made Nawab. The battle marked the beginning of British political power in India."
+      },
+      {
+       "id": "S19_02",
+       "title": "Battle of Buxar",
+       "briefTitle": "Battle of Buxar",
+       "text": "In 1764 the Company defeated the combined forces of Mir Qasim, Shuja-ud-Daula of Awadh and the Mughal emperor Shah Alam the Second at Buxar. The Treaty of Allahabad in 1765 gave the Company the diwani, the right to collect revenue, of Bengal, Bihar and Orissa."
+      },
+      {
+       "id": "S19_03",
+       "title": "Subsidiary Alliance",
+       "briefTitle": "Subsidiary Alliance",
+       "text": "Under Lord Wellesley's Subsidiary Alliance, from 1798, Indian rulers had to keep British troops at their own cost, accept a British resident and not deal with other powers. Hyderabad was the first state to accept it."
+      },
+      {
+       "id": "S19_04",
+       "title": "Doctrine of Lapse",
+       "briefTitle": "Doctrine of Lapse",
+       "text": "Under Lord Dalhousie, from 1848 to 1856, a dependent state whose ruler died without a natural heir would lapse to the British; adopted sons were not recognised. Satara, Jhansi and Nagpur were annexed this way."
+      },
+      {
+       "id": "S19_05",
+       "title": "Anglo-Mysore Wars",
+       "briefTitle": "Anglo-Mysore Wars",
+       "text": "Four wars between 1767 and 1799 between the Company and Mysore, under Haidar Ali and Tipu Sultan, ended with Tipu's death at Srirangapatna in 1799 and the restoration of the Wodeyars under British control."
+      },
+      {
+       "id": "S19_06",
+       "title": "Anglo-Maratha Wars",
+       "briefTitle": "Anglo-Maratha Wars",
+       "text": "Three wars between 1775 and 1818 broke Maratha power. The Treaty of Bassein in 1802 made the Peshwa a subsidiary ally, and the third war ended with the Peshwa pensioned off and Maratha territories annexed."
+      },
+      {
+       "id": "S19_07",
+       "title": "Anglo-Sikh Wars",
+       "briefTitle": "Anglo-Sikh Wars",
+       "text": "After Ranjit Singh's death, two wars, in 1845 to 1846 and 1848 to 1849, led to the annexation of Punjab in 1849. The Koh-i-Noor diamond was taken from the young Maharaja Duleep Singh."
+      }
+     ]
+    },
+    {
+     "num": 20,
+     "id": "S20",
+     "title": "East India Company Rule",
+     "period": "1765 – 1858",
+     "intro": "To govern and profit from its new territories, the Company built systems of revenue, courts, police and education whose effects lasted long after it.",
+     "centrepiece": "ledger",
+     "exhibits": [
+      {
+       "id": "S20_01",
+       "title": "Company administration",
+       "briefTitle": "Administration",
+       "text": "Company rule developed under governors-general such as Warren Hastings, Cornwallis and Dalhousie, overseen by the British Parliament. A civil service of covenanted officers ran districts through collectors."
+      },
+      {
+       "id": "S20_02",
+       "title": "Land revenue systems",
+       "briefTitle": "Revenue systems",
+       "text": "To fund itself, the Company experimented with land revenue settlements that fixed who paid tax and how much. Three main systems emerged in different regions: the Permanent Settlement, Ryotwari and Mahalwari."
+      },
+      {
+       "id": "S20_03",
+       "title": "Permanent Settlement",
+       "briefTitle": "Permanent Settlement",
+       "text": "Introduced by Cornwallis in 1793 in Bengal, Bihar and Orissa, the Permanent Settlement made zamindars owners of the land, with revenue fixed forever. It ensured a steady income but left peasants at the mercy of zamindars."
+      },
+      {
+       "id": "S20_04",
+       "title": "Ryotwari system",
+       "briefTitle": "Ryotwari",
+       "text": "Introduced by Thomas Munro and Alexander Read in Madras and later in Bombay, the Ryotwari system collected revenue directly from cultivators, or ryots, with periodic reassessment, often at high rates."
+      },
+      {
+       "id": "S20_05",
+       "title": "Mahalwari system",
+       "briefTitle": "Mahalwari",
+       "text": "Introduced by Holt Mackenzie in 1822 in the North-Western Provinces and later Punjab, the Mahalwari system assessed revenue on a village or estate, called a mahal, as a whole, collected through village headmen."
+      },
+      {
+       "id": "S20_06",
+       "title": "Courts and law",
+       "briefTitle": "Judiciary",
+       "text": "Warren Hastings set up civil and criminal courts in districts, and Cornwallis separated judicial and revenue work. The Supreme Court at Calcutta, in 1774, and later the High Courts, in 1862, applied codified laws such as the Indian Penal Code of 1860."
+      },
+      {
+       "id": "S20_07",
+       "title": "Colonial police",
+       "briefTitle": "Police",
+       "text": "Cornwallis created a district police system under officers called daroghas. After 1857 the Police Act of 1861 created a centralised police force, a framework that still shapes policing in India."
+      },
+      {
+       "id": "S20_08",
+       "title": "Colonial education",
+       "briefTitle": "Education",
+       "text": "Macaulay's Minute of 1835 made English the medium of higher education. Wood's Despatch of 1854 outlined a system from primary schools to universities, and universities opened at Calcutta, Bombay and Madras in 1857."
+      },
+      {
+       "id": "S20_09",
+       "title": "Company economic policies",
+       "briefTitle": "Economic policies",
+       "text": "Free entry for British manufactures, heavy land taxes and a shift to export crops served British industry. India became a supplier of raw materials and a market for British goods."
+      },
+      {
+       "id": "S20_10",
+       "title": "Drain of Wealth",
+       "briefTitle": "Drain of Wealth",
+       "text": "Dadabhai Naoroji, in Poverty and Un-British Rule in India, argued that much of India's wealth was drained to Britain through home charges, salaries, pensions and profits, without equal return."
+      }
+     ]
+    },
+    {
+     "num": 21,
+     "id": "S21",
+     "title": "Revolt of 1857",
+     "period": "1857 – 1859",
+     "intro": "A great uprising of soldiers, rulers and peasants shook British rule across north and central India and ended the rule of the East India Company.",
+     "centrepiece": "rifle",
+     "exhibits": [
+      {
+       "id": "S21_01",
+       "title": "Causes of the revolt",
+       "briefTitle": "Causes",
+       "text": "Annexations, heavy revenue demands, the loss of status of rulers and landlords, fears of religious interference and the grievances of sepoys combined. The immediate spark was the new Enfield rifle cartridge, rumoured to be greased with cow and pig fat."
+      },
+      {
+       "id": "S21_02",
+       "title": "Centres of the revolt",
+       "briefTitle": "Centres",
+       "text": "The revolt began at Meerut on 10 May 1857 and spread to Delhi, Kanpur, Lucknow, Jhansi, Bareilly, Arrah and parts of central India. Punjab, eastern Bengal and most of the south remained largely quiet."
+      },
+      {
+       "id": "S21_03",
+       "title": "Leaders of 1857",
+       "briefTitle": "Leaders",
+       "text": "Bahadur Shah Zafar was proclaimed emperor at Delhi. Other leaders included Rani Lakshmibai of Jhansi, Nana Saheb and Tantia Tope at Kanpur, Begum Hazrat Mahal at Lucknow, Kunwar Singh in Bihar and Maulvi Ahmadullah of Faizabad."
+      },
+      {
+       "id": "S21_04",
+       "title": "Course of the revolt",
+       "briefTitle": "Course",
+       "text": "The British retook Delhi in September 1857 and Lucknow after a long siege. Rani Lakshmibai died fighting near Gwalior in June 1858. By 1859 the revolt had been suppressed with great severity."
+      },
+      {
+       "id": "S21_05",
+       "title": "Consequences of the revolt",
+       "briefTitle": "Consequences",
+       "text": "The Government of India Act of 1858 ended Company rule, and India came under the British Crown, with a Viceroy. The army was reorganised, annexations stopped, and Queen Victoria's Proclamation promised respect for princes and religions."
+      },
+      {
+       "id": "S21_06",
+       "title": "How 1857 has been understood",
+       "briefTitle": "Historiography",
+       "text": "British writers called it the Sepoy Mutiny. V. D. Savarkar, in 1909, called it the First War of Independence. Historians such as S. N. Sen and R. C. Majumdar debated its nature, and recent studies highlight the part played by peasants and ordinary people."
+      }
+     ]
+    },
+    {
+     "num": 22,
+     "id": "S22",
+     "title": "Social and Religious Reform Movements",
+     "period": "19th – early 20th century",
+     "intro": "Reformers questioned caste, ritual and the treatment of women, and founded schools, societies and new ways of living their faiths.",
+     "centrepiece": "lamp",
+     "exhibits": [
+      {
+       "id": "S22_01",
+       "title": "Brahmo Samaj",
+       "briefTitle": "Brahmo Samaj",
+       "text": "Founded by Raja Rammohan Roy in 1828, the Brahmo Samaj worshipped one formless God and opposed idol worship, sati and caste. Roy's campaign helped bring about the ban on sati in 1829. Debendranath Tagore and Keshab Chandra Sen carried the movement forward."
+      },
+      {
+       "id": "S22_02",
+       "title": "Arya Samaj",
+       "briefTitle": "Arya Samaj",
+       "text": "Swami Dayananda Saraswati founded the Arya Samaj in 1875, calling for a return to the Vedas. It opposed idol worship and caste by birth, promoted education through DAV schools and gurukuls, and began the shuddhi movement."
+      },
+      {
+       "id": "S22_03",
+       "title": "Ramakrishna Mission",
+       "briefTitle": "Ramakrishna Mission",
+       "text": "Swami Vivekananda founded the Ramakrishna Mission in 1897 in the name of his teacher, Ramakrishna Paramahamsa. It joins spirituality with social service. Vivekananda's address to the Parliament of Religions in Chicago in 1893 is famous."
+      },
+      {
+       "id": "S22_04",
+       "title": "Prarthana Samaj",
+       "briefTitle": "Prarthana Samaj",
+       "text": "The Prarthana Samaj was founded in Bombay in 1867 by Atmaram Pandurang, inspired by the Brahmo Samaj. M. G. Ranade and R. G. Bhandarkar promoted inter-caste dining, widow remarriage and education for women."
+      },
+      {
+       "id": "S22_05",
+       "title": "Aligarh Movement",
+       "briefTitle": "Aligarh Movement",
+       "text": "Sir Syed Ahmad Khan promoted modern, scientific education among Muslims, founding the Muhammadan Anglo-Oriental College at Aligarh in 1875. It became Aligarh Muslim University in 1920."
+      },
+      {
+       "id": "S22_06",
+       "title": "Theosophical Society",
+       "briefTitle": "Theosophical Society",
+       "text": "Founded in New York in 1875 by Helena Blavatsky and Henry Olcott, the Theosophical Society moved its headquarters to Adyar in Madras. Annie Besant led it, praised Indian culture, founded the Central Hindu College and later the Home Rule League."
+      },
+      {
+       "id": "S22_07",
+       "title": "Young Bengal",
+       "briefTitle": "Young Bengal",
+       "text": "Henry Louis Vivian Derozio, a teacher at Hindu College in Calcutta, inspired students in the late 1820s to question tradition and think freely. His followers were known as Young Bengal."
+      },
+      {
+       "id": "S22_08",
+       "title": "Women reformers",
+       "briefTitle": "Women reformers",
+       "text": "Savitribai Phule opened schools for girls with Jyotirao Phule from 1848. Pandita Ramabai founded Sharada Sadan for widows, Tarabai Shinde wrote against gender inequality, and Begum Rokeya promoted education for Muslim girls."
+      },
+      {
+       "id": "S22_09",
+       "title": "Education reforms",
+       "briefTitle": "Education reforms",
+       "text": "Reformers founded schools and colleges for all. Ishwar Chandra Vidyasagar championed girls' schooling and widow remarriage, legalised in 1856; the Phules opened schools for girls and lower castes; and D. K. Karve founded a university for women in 1916."
+      }
+     ]
+    },
+    {
+     "num": 23,
+     "id": "S23",
+     "title": "Economic History under British Rule",
+     "period": "1757 – 1947",
+     "intro": "Colonial rule reshaped India's economy: old industries declined, railways and plantations spread, and famines exposed the costs of empire.",
+     "centrepiece": "locomotive",
+     "exhibits": [
+      {
+       "id": "S23_01",
+       "title": "Early modern industry",
+       "briefTitle": "Industrialisation",
+       "text": "Modern industry began in the 1850s: cotton mills in Bombay from 1854, jute mills in Bengal, coal mining, and later the Tata Iron and Steel Company at Jamshedpur in 1907. Growth was limited and largely in British or a few Indian hands."
+      },
+      {
+       "id": "S23_02",
+       "title": "Deindustrialisation",
+       "briefTitle": "Deindustrialisation",
+       "text": "Cheap machine-made British cloth and one-sided tariffs ruined many Indian handicraft industries in the 19th century. Weavers of Dhaka and other centres lost their livelihoods, pushing more people into agriculture."
+      },
+      {
+       "id": "S23_03",
+       "title": "Railways",
+       "briefTitle": "Railways",
+       "text": "The first passenger train ran from Bombay to Thane on 16 April 1853. Railways served British trade and military needs, but also linked markets and people. By 1947 India had one of the largest rail networks in the world."
+      },
+      {
+       "id": "S23_04",
+       "title": "Famines under British rule",
+       "briefTitle": "Famines",
+       "text": "Repeated famines killed millions, including the Great Famine of 1876 to 1878 and the Bengal Famine of 1943, in which about three million people died. Export policies, high revenue and slow relief made them worse."
+      },
+      {
+       "id": "S23_05",
+       "title": "Colonial agriculture",
+       "briefTitle": "Agriculture",
+       "text": "Agriculture stagnated under heavy revenue demands, debt to moneylenders, fragmentation of land and little investment, although canals in Punjab expanded cultivation."
+      },
+      {
+       "id": "S23_06",
+       "title": "Commercialisation of agriculture",
+       "briefTitle": "Commercialisation",
+       "text": "Farmers increasingly grew cash crops such as cotton, jute, indigo, opium and groundnut for export, often under pressure. The Indigo Revolt in Bengal, in 1859 and 1860, exposed the coercion used by planters."
+      },
+      {
+       "id": "S23_07",
+       "title": "Plantation economy",
+       "briefTitle": "Plantation economy",
+       "text": "British planters set up tea plantations in Assam and Bengal, coffee in South India and rubber in Kerala. Indentured workers faced harsh conditions, and Indian labourers were also sent to plantations in Mauritius, Fiji, the Caribbean and Africa."
+      },
+      {
+       "id": "S23_08",
+       "title": "Workers and labour",
+       "briefTitle": "Labour",
+       "text": "Mill and plantation workers faced long hours and low pay. Factory Acts from 1881 brought limited protection, trade unions grew, and the All India Trade Union Congress was founded in 1920."
+      },
+      {
+       "id": "S23_09",
+       "title": "Colonial trade",
+       "briefTitle": "Trade",
+       "text": "India exported raw materials and imported manufactured goods, while its export surpluses helped Britain balance its own trade. The opium trade to China was a major source of Company revenue."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W5",
+   "title": "Freedom and the Republic",
+   "subtitle": "The national movement to modern India",
+   "color": "B05A12",
+   "intro": "Welcome to Freedom and the Republic: the rise of nationalism, Gandhi and the revolutionaries, partition and independence, the Constitution, and India since 1947.",
+   "sections": [
+    {
+     "num": 24,
+     "id": "S24",
+     "title": "Rise of Nationalism",
+     "period": "1850s – 1910s",
+     "intro": "Shared grievances, new ideas and new organisations turned scattered protest into a national movement for self-government.",
+     "centrepiece": "flag_pole",
+     "exhibits": [
+      {
+       "id": "S24_01",
+       "title": "Early nationalism",
+       "briefTitle": "Early nationalism",
+       "text": "Western education, newspapers, railways and shared grievances fostered a national consciousness. Associations such as the British Indian Association, the Poona Sarvajanik Sabha and the Indian Association of 1876 prepared the ground."
+      },
+      {
+       "id": "S24_02",
+       "title": "Indian National Congress",
+       "briefTitle": "Indian National Congress",
+       "text": "The Indian National Congress was founded in December 1885 in Bombay, with the help of A. O. Hume, and W. C. Bonnerjee as its first president. It became the main platform of the national movement."
+      },
+      {
+       "id": "S24_03",
+       "title": "Moderates",
+       "briefTitle": "Moderates",
+       "text": "Leaders such as Dadabhai Naoroji, Pherozeshah Mehta and Gopal Krishna Gokhale used petitions and constitutional methods, demanding reforms, more Indians in the services, and economic justice."
+      },
+      {
+       "id": "S24_04",
+       "title": "Extremists",
+       "briefTitle": "Extremists",
+       "text": "Bal Gangadhar Tilak, Lala Lajpat Rai and Bipin Chandra Pal, known as Lal, Bal and Pal, demanded swaraj through mass action. Tilak declared that swaraj is my birthright and I shall have it. The Congress split at Surat in 1907."
+      },
+      {
+       "id": "S24_05",
+       "title": "Partition of Bengal",
+       "briefTitle": "Partition of Bengal",
+       "text": "Lord Curzon partitioned Bengal in 1905, officially for administrative reasons, but it was widely seen as a move to divide Hindus and Muslims and weaken nationalism. Mass protests forced its reversal in 1911."
+      },
+      {
+       "id": "S24_06",
+       "title": "Swadeshi Movement",
+       "briefTitle": "Swadeshi Movement",
+       "text": "The Swadeshi movement, from 1905 to 1908, called for the boycott of British goods and the promotion of Indian products, national education and self-help. Rabindranath Tagore's songs and the cry of Bande Mataram rallied the people."
+      },
+      {
+       "id": "S24_07",
+       "title": "Early revolutionaries",
+       "briefTitle": "Revolutionary movements",
+       "text": "Some nationalists turned to armed resistance: the Chapekar brothers in 1897, Khudiram Bose and Prafulla Chaki in 1908, the Anushilan Samiti and Jugantar in Bengal, and Abhinav Bharat in Maharashtra."
+      }
+     ]
+    },
+    {
+     "num": 25,
+     "id": "S25",
+     "title": "Gandhian Era",
+     "period": "1917 – 1947",
+     "intro": "Mahatma Gandhi's satyagraha, non-violent resistance, turned the freedom struggle into a mass movement of peasants, workers, women and students.",
+     "centrepiece": "charkha",
+     "exhibits": [
+      {
+       "id": "S25_01",
+       "title": "Champaran Satyagraha, 1917",
+       "briefTitle": "Champaran",
+       "text": "In 1917 Gandhi took up the cause of indigo farmers in Champaran, Bihar, who were forced to grow indigo under the tinkathia system. His first satyagraha in India led to an inquiry and relief for the peasants."
+      },
+      {
+       "id": "S25_02",
+       "title": "Kheda Satyagraha, 1918",
+       "briefTitle": "Kheda",
+       "text": "In 1918, after crops failed in Kheda, Gujarat, Gandhi and Vallabhbhai Patel led a satyagraha refusing to pay land tax. The government eased collection for the poorest farmers."
+      },
+      {
+       "id": "S25_03",
+       "title": "Ahmedabad mill strike, 1918",
+       "briefTitle": "Ahmedabad",
+       "text": "In 1918 Gandhi supported Ahmedabad mill workers' demand for higher wages and undertook his first fast in India. The dispute ended with a thirty-five per cent wage increase."
+      },
+      {
+       "id": "S25_04",
+       "title": "Non-Cooperation Movement",
+       "briefTitle": "Non-Cooperation Movement",
+       "text": "Launched in 1920 after the Jallianwala Bagh massacre and alongside the Khilafat movement, it urged Indians to boycott foreign goods, courts, schools and titles. Gandhi called it off in 1922 after the violence at Chauri Chaura."
+      },
+      {
+       "id": "S25_05",
+       "title": "Civil Disobedience Movement",
+       "briefTitle": "Civil Disobedience Movement",
+       "text": "After the Lahore Congress demanded Purna Swaraj, complete independence, in 1929, Gandhi began the Civil Disobedience Movement in 1930, urging people to break unjust laws. It paused with the Gandhi–Irwin Pact of 1931 and resumed in 1932."
+      },
+      {
+       "id": "S25_06",
+       "title": "The Salt March",
+       "briefTitle": "Salt March",
+       "text": "From 12 March to 6 April 1930, Gandhi walked 385 kilometres from Sabarmati Ashram to Dandi and made salt from the sea, defying the salt tax. Thousands followed, and the march drew worldwide attention."
+      },
+      {
+       "id": "S25_07",
+       "title": "Round Table Conferences",
+       "briefTitle": "Round Table Conferences",
+       "text": "Three Round Table Conferences in London, from 1930 to 1932, discussed constitutional reform. The Congress attended only the second, represented by Gandhi. Disagreement over minority representation led to the Communal Award and the Poona Pact of 1932."
+      },
+      {
+       "id": "S25_08",
+       "title": "Quit India Movement",
+       "briefTitle": "Quit India Movement",
+       "text": "On 8 August 1942 the Congress launched the Quit India Movement, with Gandhi's call to do or die. Leaders were arrested at once, but people struck, protested and set up parallel governments in places such as Satara and Ballia."
+      }
+     ]
+    },
+    {
+     "num": 26,
+     "id": "S26",
+     "title": "Revolutionary Nationalism",
+     "period": "1900s – 1945",
+     "intro": "Alongside non-violent mass movements, revolutionaries in India and abroad took up arms against British rule.",
+     "centrepiece": "torch",
+     "exhibits": [
+      {
+       "id": "S26_01",
+       "title": "Anushilan Samiti",
+       "briefTitle": "Anushilan Samiti",
+       "text": "The Anushilan Samiti began in Bengal in 1902 as a physical-training society and became a revolutionary organisation. With Jugantar, it carried out attacks on officials; the Alipore Bomb Case of 1908 involved Aurobindo Ghosh."
+      },
+      {
+       "id": "S26_02",
+       "title": "Hindustan Socialist Republican Association",
+       "briefTitle": "Hindustan Socialist Republican Association",
+       "text": "Founded in 1924 as the Hindustan Republican Association, it carried out the Kakori train action in 1925. Renamed the Hindustan Socialist Republican Association in 1928, under Chandrashekhar Azad and Bhagat Singh, it adopted socialist aims."
+      },
+      {
+       "id": "S26_03",
+       "title": "Bhagat Singh",
+       "briefTitle": "Bhagat Singh",
+       "text": "Bhagat Singh, who lived from 1907 to 1931, took part in the killing of police officer Saunders in 1928 to avenge Lala Lajpat Rai, and threw harmless bombs in the Central Legislative Assembly in 1929 to make the deaf hear. He was hanged with Rajguru and Sukhdev on 23 March 1931."
+      },
+      {
+       "id": "S26_04",
+       "title": "Chandrashekhar Azad",
+       "briefTitle": "Chandrashekhar Azad",
+       "text": "Chandrashekhar Azad led the HSRA and took part in the Kakori action. Vowing never to be captured alive, he died fighting police in Alfred Park, Allahabad, in 1931; the park now bears his name."
+      },
+      {
+       "id": "S26_05",
+       "title": "Surya Sen",
+       "briefTitle": "Surya Sen",
+       "text": "Surya Sen, known as Masterda, led the Chittagong Armoury Raid in April 1930 with the Indian Republican Army, which included young women such as Pritilata Waddedar and Kalpana Dutt. He was hanged in 1934."
+      },
+      {
+       "id": "S26_06",
+       "title": "Ghadar Movement",
+       "briefTitle": "Ghadar Movement",
+       "text": "The Ghadar Party was founded in 1913 in San Francisco by Indian migrants, including Lala Har Dayal and Sohan Singh Bhakna. During the First World War it attempted an uprising in India in 1915, which was crushed."
+      },
+      {
+       "id": "S26_07",
+       "title": "Indian National Army",
+       "briefTitle": "INA",
+       "text": "The Indian National Army was formed in South-East Asia in 1942 with Japanese support and revived by Subhas Chandra Bose in 1943, with the slogan Delhi Chalo. The INA trials at the Red Fort in 1945 and 1946 stirred nationwide support."
+      },
+      {
+       "id": "S26_08",
+       "title": "Subhas Chandra Bose",
+       "briefTitle": "Subhas Chandra Bose",
+       "text": "Subhas Chandra Bose, twice president of the Congress, formed the Forward Bloc, escaped from house arrest in 1941, and led the Indian National Army and the Provisional Government of Free India. He is reported to have died after a plane crash in Taiwan in August 1945."
+      }
+     ]
+    },
+    {
+     "num": 27,
+     "id": "S27",
+     "title": "Constitutional Development",
+     "period": "1773 – 1949",
+     "intro": "Acts of the British Parliament slowly added Indian voices to government, and finally an Indian Constituent Assembly wrote the country's own constitution.",
+     "centrepiece": "scroll",
+     "exhibits": [
+      {
+       "id": "S27_01",
+       "title": "Regulating Act, 1773",
+       "briefTitle": "Regulating Act",
+       "text": "The Regulating Act of 1773 was Parliament's first step to control the Company. It made the Governor of Bengal the Governor-General, the first being Warren Hastings, with a council, and set up a Supreme Court at Calcutta."
+      },
+      {
+       "id": "S27_02",
+       "title": "Pitt's India Act, 1784",
+       "briefTitle": "Pitt’s India Act",
+       "text": "Pitt's India Act of 1784 created a Board of Control in London to supervise the Company's political affairs, establishing dual control by the Company and the British government."
+      },
+      {
+       "id": "S27_03",
+       "title": "Charter Acts",
+       "briefTitle": "Charter Acts",
+       "text": "Charter Acts renewed the Company's charter. The Act of 1813 ended its trade monopoly except in tea and with China and set aside money for education; 1833 created the Governor-General of India and ended its trade; 1853 opened the civil services to competition."
+      },
+      {
+       "id": "S27_04",
+       "title": "Indian Councils Acts, 1861 and 1892",
+       "briefTitle": "Indian Councils Acts",
+       "text": "The Indian Councils Acts of 1861 and 1892 added nominated, and later indirectly elected, Indian members to legislative councils, giving a limited voice but no real power."
+      },
+      {
+       "id": "S27_05",
+       "title": "Morley–Minto Reforms, 1909",
+       "briefTitle": "Morley-Minto Reforms",
+       "text": "The Indian Councils Act of 1909 enlarged the councils and introduced separate electorates for Muslims, a step criticised for deepening communal divisions."
+      },
+      {
+       "id": "S27_06",
+       "title": "Montagu–Chelmsford Reforms, 1919",
+       "briefTitle": "Montagu-Chelmsford Reforms",
+       "text": "The Government of India Act of 1919 introduced dyarchy in the provinces, with some subjects handed to elected ministers, a two-house central legislature and a limited franchise."
+      },
+      {
+       "id": "S27_07",
+       "title": "Government of India Act 1935",
+       "briefTitle": "Government of India Act 1935",
+       "text": "The Government of India Act of 1935 gave the provinces autonomy, proposed an all-India federation, set up a Federal Court and widened the franchise. Many of its features passed into the Constitution of India."
+      },
+      {
+       "id": "S27_08",
+       "title": "Cabinet Mission, 1946",
+       "briefTitle": "Cabinet Mission",
+       "text": "In 1946 a British Cabinet Mission proposed a united India with a limited centre, groupings of provinces and a Constituent Assembly. Disputes over its meaning led to the Muslim League's Direct Action Day."
+      },
+      {
+       "id": "S27_09",
+       "title": "Constituent Assembly",
+       "briefTitle": "Constituent Assembly",
+       "text": "Elected indirectly by the provincial assemblies in 1946, the Constituent Assembly first met on 9 December 1946, with Dr Rajendra Prasad as its president. Over nearly three years it debated and adopted the Constitution."
+      }
+     ]
+    },
+    {
+     "num": 28,
+     "id": "S28",
+     "title": "Partition and Independence",
+     "period": "1940 – 1947",
+     "intro": "Independence came in August 1947 together with the partition of the subcontinent, one of the largest and most painful migrations in history.",
+     "centrepiece": "map",
+     "exhibits": [
+      {
+       "id": "S28_01",
+       "title": "Two-Nation Theory",
+       "briefTitle": "Two-Nation Theory",
+       "text": "The two-nation theory held that Hindus and Muslims formed separate nations. It was advanced by Muhammad Ali Jinnah and the Muslim League in the 1940s. The Congress and many Indians rejected it."
+      },
+      {
+       "id": "S28_02",
+       "title": "Muslim League",
+       "briefTitle": "Muslim League",
+       "text": "The All-India Muslim League was founded in Dhaka in 1906. At first seeking safeguards for Muslims, under Jinnah it demanded a separate state, Pakistan, and won most Muslim seats in the 1946 elections."
+      },
+      {
+       "id": "S28_03",
+       "title": "Lahore Resolution",
+       "briefTitle": "Lahore Resolution",
+       "text": "On 23 March 1940, at Lahore, the Muslim League demanded independent states for Muslim-majority areas in the north-west and east of India. It is often called the Pakistan Resolution."
+      },
+      {
+       "id": "S28_04",
+       "title": "Mountbatten Plan",
+       "briefTitle": "Mountbatten Plan",
+       "text": "The plan of 3 June 1947 by the Viceroy, Lord Mountbatten, provided for partition, with Punjab and Bengal divided, and an early transfer of power. The Indian Independence Act of July 1947 put it into effect."
+      },
+      {
+       "id": "S28_05",
+       "title": "Partition",
+       "briefTitle": "Partition",
+       "text": "Sir Cyril Radcliffe drew the new boundaries in about five weeks, and the Radcliffe Line was announced on 17 August 1947. Punjab and Bengal were divided, creating West and East Pakistan."
+      },
+      {
+       "id": "S28_06",
+       "title": "Refugee crisis",
+       "briefTitle": "Refugee crisis",
+       "text": "Partition caused one of history's largest migrations: about fifteen million people crossed the new borders, and communal violence killed hundreds of thousands, perhaps up to a million or more. Refugee relief and resettlement became urgent tasks."
+      },
+      {
+       "id": "S28_07",
+       "title": "Independence",
+       "briefTitle": "Independence",
+       "text": "At midnight on 14 to 15 August 1947 India became independent. Jawaharlal Nehru, the first Prime Minister, spoke of India's tryst with destiny. Lord Mountbatten stayed on as Governor-General, followed by C. Rajagopalachari."
+      }
+     ]
+    },
+    {
+     "num": 29,
+     "id": "S29",
+     "title": "Integration of Princely States",
+     "period": "1947 – 1949",
+     "intro": "More than five hundred princely states had to be brought into the new nation. Most joined peacefully; a few did not.",
+     "centrepiece": "map",
+     "exhibits": [
+      {
+       "id": "S29_01",
+       "title": "Sardar Patel",
+       "briefTitle": "Sardar Patel",
+       "text": "Sardar Vallabhbhai Patel, Deputy Prime Minister and Home Minister, led the integration of over five hundred princely states into India through persuasion and, where needed, firmness. He is called the Iron Man of India."
+      },
+      {
+       "id": "S29_02",
+       "title": "V. P. Menon",
+       "briefTitle": "V. P. Menon",
+       "text": "V. P. Menon, secretary of the States Ministry, drafted the Instrument of Accession and negotiated with rulers alongside Patel. He wrote The Story of the Integration of the Indian States."
+      },
+      {
+       "id": "S29_03",
+       "title": "Hyderabad, 1948",
+       "briefTitle": "Hyderabad",
+       "text": "The Nizam of Hyderabad sought to stay independent. Amid violence by the Razakars, India launched Operation Polo in September 1948, and Hyderabad was integrated within days."
+      },
+      {
+       "id": "S29_04",
+       "title": "Junagadh",
+       "briefTitle": "Junagadh",
+       "text": "The Nawab of Junagadh acceded to Pakistan, though most of his people were Hindu and the state was surrounded by India. After popular protest and Indian action, a plebiscite in February 1948 favoured India."
+      },
+      {
+       "id": "S29_05",
+       "title": "Kashmir",
+       "briefTitle": "Kashmir",
+       "text": "Maharaja Hari Singh signed the Instrument of Accession to India in October 1947, after tribal raiders from Pakistan invaded. War followed, and a UN-brokered ceasefire in January 1949 left the region divided."
+      }
+     ]
+    },
+    {
+     "num": 30,
+     "id": "S30",
+     "title": "Constitution of India",
+     "period": "1946 – present",
+     "intro": "The Constitution of India, adopted in 1949, created a sovereign democratic republic and set out the rights of citizens and the duties of the state.",
+     "centrepiece": "book",
+     "exhibits": [
+      {
+       "id": "S30_01",
+       "title": "Drafting Committee",
+       "briefTitle": "Drafting Committee",
+       "text": "Chaired by Dr B. R. Ambedkar, the Drafting Committee prepared the draft Constitution. Adopted on 26 November 1949, it came into force on 26 January 1950, now celebrated as Republic Day."
+      },
+      {
+       "id": "S30_02",
+       "title": "Fundamental Rights",
+       "briefTitle": "Fundamental Rights",
+       "text": "Part Three guarantees fundamental rights: equality, freedoms such as speech and expression, protection of life and liberty, rights against exploitation, freedom of religion, cultural and educational rights, and constitutional remedies under Article 32, which Ambedkar called the heart and soul of the Constitution."
+      },
+      {
+       "id": "S30_03",
+       "title": "Directive Principles of State Policy",
+       "briefTitle": "Directive Principles",
+       "text": "Part Four sets out Directive Principles of State Policy: goals of social and economic justice, such as adequate livelihood, equal pay for equal work, education and village panchayats. They cannot be enforced in court but are fundamental to governance."
+      },
+      {
+       "id": "S30_04",
+       "title": "Fundamental Duties",
+       "briefTitle": "Fundamental Duties",
+       "text": "Fundamental Duties were added by the 42nd Amendment in 1976, on the recommendation of the Swaran Singh Committee. Article 51A now lists eleven duties, such as respecting the Constitution and protecting the environment."
+      },
+      {
+       "id": "S30_05",
+       "title": "Indian federalism",
+       "briefTitle": "Federalism",
+       "text": "India is a Union of States with a strong centre. Powers are divided into Union, State and Concurrent lists, with an independent judiciary. Scholars describe it as quasi-federal or as cooperative federalism."
+      },
+      {
+       "id": "S30_06",
+       "title": "Amendment process",
+       "briefTitle": "Amendment process",
+       "text": "Article 368 allows Parliament to amend the Constitution, some changes also needing ratification by the states. In the Kesavananda Bharati case of 1973, the Supreme Court held that the basic structure of the Constitution cannot be destroyed."
+      }
+     ]
+    },
+    {
+     "num": 31,
+     "id": "S31",
+     "title": "Independent India",
+     "period": "1947 – present",
+     "intro": "Since 1947 India has built a democracy, planned its development, fed itself, opened its economy and changed in countless ways.",
+     "centrepiece": "tractor",
+     "exhibits": [
+      {
+       "id": "S31_01",
+       "title": "Nehru Era",
+       "briefTitle": "Nehru Era",
+       "text": "Jawaharlal Nehru, Prime Minister from 1947 to 1964, built democratic institutions, a mixed economy, scientific and technical institutions such as the IITs, and a foreign policy of non-alignment. The first general elections were held in 1951 and 1952."
+      },
+      {
+       "id": "S31_02",
+       "title": "Five-Year Plans",
+       "briefTitle": "Five-Year Plans",
+       "text": "Planning began with the First Five-Year Plan in 1951, focused on agriculture; the Second, from 1956, based on the Mahalanobis model, stressed heavy industry. The Planning Commission was replaced by NITI Aayog in 2015."
+      },
+      {
+       "id": "S31_03",
+       "title": "Green Revolution",
+       "briefTitle": "Green Revolution",
+       "text": "From the mid-1960s, high-yielding wheat and rice, irrigation and fertilisers raised harvests, especially in Punjab, Haryana and western Uttar Pradesh. The scientist M. S. Swaminathan is closely associated with it, and India became self-sufficient in food grains."
+      },
+      {
+       "id": "S31_04",
+       "title": "White Revolution",
+       "briefTitle": "White Revolution",
+       "text": "Operation Flood, launched in 1970 under Verghese Kurien, built a national network of milk cooperatives on the model of Amul at Anand. India became the world's largest producer of milk."
+      },
+      {
+       "id": "S31_05",
+       "title": "Bank nationalisation",
+       "briefTitle": "Bank nationalisation",
+       "text": "In July 1969 Indira Gandhi's government nationalised fourteen major banks to extend credit to agriculture and small businesses; six more followed in 1980."
+      },
+      {
+       "id": "S31_06",
+       "title": "The Emergency, 1975–77",
+       "briefTitle": "Emergency (1975–77)",
+       "text": "On 25 June 1975 a national Emergency was declared, citing internal disturbance. Civil liberties were suspended, opposition leaders jailed and the press censored. It ended in 1977, and the Janata Party won the elections that followed."
+      },
+      {
+       "id": "S31_07",
+       "title": "Liberalisation, 1991",
+       "briefTitle": "Liberalisation (1991)",
+       "text": "Facing a balance-of-payments crisis in 1991, the government of P. V. Narasimha Rao, with Finance Minister Manmohan Singh, devalued the rupee, dismantled industrial licensing, opened the economy to foreign investment and cut tariffs."
+      },
+      {
+       "id": "S31_08",
+       "title": "Coalition politics",
+       "briefTitle": "Coalition politics",
+       "text": "From 1989, no single party won a Lok Sabha majority for twenty-five years. Coalitions such as the National Front, United Front, NDA and UPA governed, giving regional parties greater influence. A single-party majority returned in 2014."
+      },
+      {
+       "id": "S31_09",
+       "title": "Continuing economic reform",
+       "briefTitle": "Economic reforms",
+       "text": "Reforms continued with privatisation, growth in telecom and information technology, the Insolvency and Bankruptcy Code of 2016, the Goods and Services Tax of 2017 and the spread of digital payments, making India one of the fastest-growing large economies."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "W6",
+   "title": "Themes of Indian History",
+   "subtitle": "Ideas that run through the ages",
+   "color": "1F5C78",
+   "intro": "Welcome to the Themes gallery: foreign policy, science, art and culture, religion, economy, society, and how historians have written India's story.",
+   "sections": [
+    {
+     "num": 32,
+     "id": "S32",
+     "title": "Foreign Policy",
+     "period": "1947 – present",
+     "intro": "Independent India sought its own path in world affairs, from non-alignment and the wars on its borders to its growing global role today.",
+     "centrepiece": "globe",
+     "exhibits": [
+      {
+       "id": "S32_01",
+       "title": "Non-Aligned Movement",
+       "briefTitle": "Non-Aligned Movement",
+       "text": "India helped found the Non-Aligned Movement with Yugoslavia, Egypt, Indonesia and Ghana; its first summit was held in Belgrade in 1961. It sought independence from both Cold War blocs."
+      },
+      {
+       "id": "S32_02",
+       "title": "Panchsheel",
+       "briefTitle": "Panchsheel",
+       "text": "The five principles of peaceful coexistence were set out in the 1954 agreement between India and China: mutual respect for territory and sovereignty, non-aggression, non-interference, equality and mutual benefit, and peaceful coexistence."
+      },
+      {
+       "id": "S32_03",
+       "title": "Indo-China War, 1962",
+       "briefTitle": "Indo-China War (1962)",
+       "text": "Border disputes over Aksai Chin and the McMahon Line led to war in October and November 1962. China advanced and then declared a ceasefire. The defeat led India to strengthen its defences."
+      },
+      {
+       "id": "S32_04",
+       "title": "India–Pakistan wars",
+       "briefTitle": "Indo-Pak Wars",
+       "text": "India and Pakistan fought wars in 1947 to 1948 and in 1965 over Kashmir, in 1971 over Bangladesh, and at Kargil in 1999. The Tashkent Agreement of 1966 and the Shimla Agreement of 1972 followed the earlier wars."
+      },
+      {
+       "id": "S32_05",
+       "title": "Bangladesh Liberation War",
+       "briefTitle": "Bangladesh Liberation War",
+       "text": "In 1971, after Pakistan's crackdown in East Pakistan and the flight of about ten million refugees to India, India supported the Mukti Bahini and went to war. Pakistan's forces surrendered at Dhaka on 16 December 1971, and Bangladesh was born."
+      },
+      {
+       "id": "S32_06",
+       "title": "India's nuclear programme",
+       "briefTitle": "Nuclear programme",
+       "text": "Homi Bhabha founded India's atomic energy programme. India conducted a nuclear test at Pokhran in 1974 and further tests in 1998, declaring itself a nuclear weapons state with a policy of no first use."
+      },
+      {
+       "id": "S32_07",
+       "title": "Look East and Act East",
+       "briefTitle": "Look East/Act East",
+       "text": "The Look East Policy of 1991 built economic links with South-East Asia. In 2014 it became Act East, adding strategic and connectivity goals with ASEAN and the wider Indo-Pacific."
+      },
+      {
+       "id": "S32_08",
+       "title": "Contemporary diplomacy",
+       "briefTitle": "Contemporary diplomacy",
+       "text": "Today India engages through groups such as the G20, which it hosted in 2023, BRICS, the Quad and the Shanghai Cooperation Organisation, contributes to UN peacekeeping, and seeks a permanent seat on the UN Security Council."
+      }
+     ]
+    },
+    {
+     "num": 33,
+     "id": "S33",
+     "title": "Science and Technology",
+     "period": "1940s – present",
+     "intro": "From atomic energy to Moon landings and digital payments, India has built world-class science and technology institutions.",
+     "centrepiece": "rocket",
+     "exhibits": [
+      {
+       "id": "S33_01",
+       "title": "Indian Space Research Organisation",
+       "briefTitle": "ISRO",
+       "text": "The Indian Space Research Organisation, founded in 1969 from Vikram Sarabhai's vision, builds launch vehicles such as the PSLV and GSLV and satellites for communication, weather, earth observation and navigation."
+      },
+      {
+       "id": "S33_02",
+       "title": "Defence Research and Development Organisation",
+       "briefTitle": "DRDO",
+       "text": "The Defence Research and Development Organisation, formed in 1958, develops defence technology, including the Agni and Prithvi missiles of the programme led by A. P. J. Abdul Kalam, and the Tejas light combat aircraft."
+      },
+      {
+       "id": "S33_03",
+       "title": "Nuclear energy",
+       "briefTitle": "Nuclear energy",
+       "text": "India follows a three-stage nuclear power programme planned by Homi Bhabha to make use of its large thorium reserves. Its first research reactor, Apsara, started in 1956, and the Tarapur power station in 1969."
+      },
+      {
+       "id": "S33_04",
+       "title": "India's space missions",
+       "briefTitle": "Space missions",
+       "text": "Highlights include the satellite Aryabhata in 1975; Chandrayaan-1 in 2008, which found evidence of water on the Moon; Mangalyaan in 2013, the first Asian mission to reach Mars orbit; Chandrayaan-3's landing near the lunar south pole in 2023; and Aditya-L1, studying the Sun."
+      },
+      {
+       "id": "S33_05",
+       "title": "Digital India",
+       "briefTitle": "Digital India",
+       "text": "Launched in 2015, Digital India expands internet access and online public services. The Aadhaar digital identity and the Unified Payments Interface, or UPI, have made India a world leader in digital payments."
+      }
+     ]
+    },
+    {
+     "num": 34,
+     "id": "S34",
+     "title": "Art and Culture",
+     "period": "Across the ages",
+     "intro": "India's art and culture span thousands of years and hundreds of traditions, from cave paintings and temples to classical dance, music and film.",
+     "centrepiece": "dancer",
+     "exhibits": [
+      {
+       "id": "S34_01",
+       "title": "Indian architecture",
+       "briefTitle": "Architecture",
+       "text": "From Harappan cities and Buddhist stupas to Hindu temples, Indo-Islamic tombs, Mughal gardens, colonial buildings and modern Chandigarh, India's architecture is rich and varied, with more than forty UNESCO World Heritage Sites."
+      },
+      {
+       "id": "S34_02",
+       "title": "Indian sculpture",
+       "briefTitle": "Sculpture",
+       "text": "Traditions range from the Harappan bronze dancer and polished Mauryan stone to the Buddhas of Gandhara and Mathura, Gupta images, the rock-cut panels of Elephanta and Ellora, and Chola bronzes."
+      },
+      {
+       "id": "S34_03",
+       "title": "Indian painting",
+       "briefTitle": "Painting",
+       "text": "Indian painting includes the Ajanta murals, Pala manuscripts, Mughal, Rajput and Pahari miniatures, the Tanjore and Kalighat schools, folk forms such as Madhubani, Warli and Pattachitra, and modern artists such as Raja Ravi Varma and Amrita Sher-Gil."
+      },
+      {
+       "id": "S34_04",
+       "title": "Indian dance",
+       "briefTitle": "Dance",
+       "text": "Classical dance forms include Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam and Sattriya, alongside many folk dances. Bharata's Natyashastra is the ancient treatise on performance."
+      },
+      {
+       "id": "S34_05",
+       "title": "Indian music",
+       "briefTitle": "Music",
+       "text": "Indian classical music has two great traditions: Hindustani in the north and Carnatic in the south, both built on raga, melody, and tala, rhythm. Tansen, Tyagaraja, Ravi Shankar and M. S. Subbulakshmi are among its celebrated musicians."
+      },
+      {
+       "id": "S34_06",
+       "title": "Indian theatre",
+       "briefTitle": "Theatre",
+       "text": "Sanskrit drama flourished with Bhasa, Kalidasa and Bhavabhuti. Folk theatre includes Yakshagana, Jatra, Nautanki and Tamasha, and modern theatre grew with groups such as IPTA and institutions like the National School of Drama."
+      },
+      {
+       "id": "S34_07",
+       "title": "Indian literature",
+       "briefTitle": "Literature",
+       "text": "Indian literature spans the Vedas and the epics, Sangam poetry, Sanskrit kavya, bhakti verse, Persian and Urdu poetry, and modern writing in many languages. Rabindranath Tagore won the Nobel Prize in Literature in 1913."
+      },
+      {
+       "id": "S34_08",
+       "title": "Languages of India",
+       "briefTitle": "Languages",
+       "text": "India's languages belong mainly to the Indo-Aryan, Dravidian, Austroasiatic and Tibeto-Burman families. The Eighth Schedule of the Constitution lists twenty-two languages; Hindi in the Devanagari script is the official language of the Union, with English also used."
+      },
+      {
+       "id": "S34_09",
+       "title": "Festivals of India",
+       "briefTitle": "Festivals",
+       "text": "Festivals such as Diwali, Holi, Eid, Christmas, Durga Puja, Pongal, Onam, Baisakhi, Navratri and Buddha Purnima reflect India's diversity. The Kumbh Mela and Durga Puja in Kolkata are recognised by UNESCO as intangible cultural heritage."
+      }
+     ]
+    },
+    {
+     "num": 35,
+     "id": "S35",
+     "title": "Religion in India",
+     "period": "Across the ages",
+     "intro": "India is the birthplace of four world religions and home to many others that arrived over the centuries, living side by side.",
+     "centrepiece": "lamps",
+     "exhibits": [
+      {
+       "id": "S35_01",
+       "title": "Hinduism",
+       "briefTitle": "Hinduism",
+       "text": "Hinduism, followed by about four in five Indians, is a family of traditions rooted in the Vedas, the epics and the Puranas, including Vaishnava, Shaiva and Shakta paths and many schools of philosophy. Central ideas include dharma, karma and moksha."
+      },
+      {
+       "id": "S35_02",
+       "title": "Buddhism in India today",
+       "briefTitle": "Buddhism",
+       "text": "Born in India, Buddhism declined here after about the 12th century but flourished across Asia. In 1956 Dr B. R. Ambedkar and hundreds of thousands of his followers embraced Buddhism at Nagpur, reviving it in India."
+      },
+      {
+       "id": "S35_03",
+       "title": "Jainism in India today",
+       "briefTitle": "Jainism",
+       "text": "Jains are a small but influential community, known for ahimsa, vegetarianism, philanthropy and business. Temples at Palitana, Ranakpur and Dilwara, and the statue of Gommateshwara at Shravanabelagola are famous."
+      },
+      {
+       "id": "S35_04",
+       "title": "Sikhism",
+       "briefTitle": "Sikhism",
+       "text": "Founded by Guru Nanak and shaped by ten Gurus, Sikhism teaches devotion to one God, equality and selfless service. The Guru Granth Sahib is its eternal Guru, and the Harmandir Sahib, the Golden Temple at Amritsar, is its holiest shrine."
+      },
+      {
+       "id": "S35_05",
+       "title": "Islam in India",
+       "briefTitle": "Islam",
+       "text": "Islam reached India through Arab traders on the Kerala coast in the 7th century, and later through conquest and Sufi saints. India has one of the largest Muslim populations in the world, about one in seven Indians."
+      },
+      {
+       "id": "S35_06",
+       "title": "Christianity in India",
+       "briefTitle": "Christianity",
+       "text": "Tradition holds that Saint Thomas the Apostle came to Kerala in 52 CE, and Syrian Christians trace their faith to him. Later missionaries spread Christianity further, and Christian institutions contributed to education and healthcare."
+      },
+      {
+       "id": "S35_07",
+       "title": "Zoroastrianism",
+       "briefTitle": "Zoroastrianism",
+       "text": "Zoroastrians from Persia settled in Gujarat around the 8th to 10th centuries, becoming the Parsis. Though few in number, Parsis have shaped modern India; they include Dadabhai Naoroji and the Tata family."
+      },
+      {
+       "id": "S35_08",
+       "title": "Judaism in India",
+       "briefTitle": "Judaism",
+       "text": "Jewish communities in India include the Cochin Jews of Kerala, the Bene Israel of Maharashtra and the Baghdadi Jews. The Paradesi Synagogue in Kochi dates from 1568. Indian Jews lived for centuries without persecution."
+      }
+     ]
+    },
+    {
+     "num": 36,
+     "id": "S36",
+     "title": "Indian Economy Through History",
+     "period": "Across the ages",
+     "intro": "From Harappan seals to UPI, trade, coins, guilds and banks tell the story of India's economic life over five thousand years.",
+     "centrepiece": "coins",
+     "exhibits": [
+      {
+       "id": "S36_01",
+       "title": "Ancient trade",
+       "briefTitle": "Ancient trade",
+       "text": "Harappans traded with Mesopotamia; later India traded with Persia, Greece, Rome, China and South-East Asia, exporting spices, textiles, gems and ivory. The Roman writer Pliny complained of Roman gold flowing to India."
+      },
+      {
+       "id": "S36_02",
+       "title": "Medieval trade",
+       "briefTitle": "Medieval trade",
+       "text": "Medieval India exported cotton textiles, indigo, sugar and spices, and imported horses, silver and luxury goods. Cities such as Delhi, Agra, Cambay, Surat and Masulipatnam were busy centres of commerce."
+      },
+      {
+       "id": "S36_03",
+       "title": "Maritime trade",
+       "briefTitle": "Maritime trade",
+       "text": "Indian Ocean trade linked India with Arabia, East Africa, South-East Asia and China, with the monsoon winds setting the sailing seasons. Gujarati, Tamil and Arab merchants were especially active on these routes."
+      },
+      {
+       "id": "S36_04",
+       "title": "Guilds",
+       "briefTitle": "Guilds",
+       "text": "Guilds of merchants and craftspeople, called shrenis, regulated work, quality and prices, acted as banks and gave donations to temples and monasteries. South Indian merchant guilds such as the Ainnurruvar and Manigramam traded across the seas."
+      },
+      {
+       "id": "S36_05",
+       "title": "Indian coinage",
+       "briefTitle": "Coinage",
+       "text": "India's first coins were punch-marked silver coins, from about the 6th century BCE. Indo-Greek and Kushana coins introduced royal portraits, the Guptas issued gold dinaras, and Sher Shah Suri introduced the rupiya, ancestor of today's rupee."
+      },
+      {
+       "id": "S36_06",
+       "title": "Taxation through history",
+       "briefTitle": "Taxation",
+       "text": "Ancient texts mention bhaga, a share of the produce, as tax; the Mauryas and later states took around a sixth to a quarter. Akbar's zabt and colonial land revenue followed, and the Goods and Services Tax of 2017 unified indirect taxes."
+      },
+      {
+       "id": "S36_07",
+       "title": "Banking through history",
+       "briefTitle": "Banking",
+       "text": "Moneylenders and indigenous bankers used hundis, bills of exchange, for centuries. Modern banks include the Bank of Hindustan of 1770, the Presidency banks and the Reserve Bank of India, founded in 1935 and nationalised in 1949."
+      },
+      {
+       "id": "S36_08",
+       "title": "Industrialisation since independence",
+       "briefTitle": "Industrialisation",
+       "text": "After independence India built steel plants, dams and public-sector industries. Since 1991 private industry, services and information technology have driven growth, and India is now among the world's largest economies."
+      }
+     ]
+    },
+    {
+     "num": 37,
+     "id": "S37",
+     "title": "Society",
+     "period": "Across the ages",
+     "intro": "Family, caste, gender, education and the move from village to city have shaped how Indians live together, and continue to change.",
+     "centrepiece": "village",
+     "exhibits": [
+      {
+       "id": "S37_01",
+       "title": "Caste system",
+       "briefTitle": "Caste system",
+       "text": "Caste combines the four varnas with thousands of jatis, often linked to occupation and marriage within the group. Reformers and Dr B. R. Ambedkar fought caste discrimination; the Constitution abolished untouchability in Article 17 and provided reservations."
+      },
+      {
+       "id": "S37_02",
+       "title": "The Indian family",
+       "briefTitle": "Family",
+       "text": "The joint family, with several generations living together, was traditionally common, especially in villages and among landowning groups. Urbanisation has increased nuclear families, though family ties remain strong."
+      },
+      {
+       "id": "S37_03",
+       "title": "Marriage in India",
+       "briefTitle": "Marriage",
+       "text": "Marriages are often arranged by families and usually within the community, with diverse rituals across regions and faiths. Laws such as the Special Marriage Act of 1954 and the Hindu Marriage Act of 1955 govern marriage, and child marriage is prohibited."
+      },
+      {
+       "id": "S37_04",
+       "title": "Women in Indian history",
+       "briefTitle": "Women",
+       "text": "Women's status has varied over time, from scholars such as Gargi in Vedic texts to restrictions in later periods, and leaders such as Rani Lakshmibai, Sarojini Naidu and Indira Gandhi. The law now guarantees equal rights, and a third of seats in local bodies are reserved for women."
+      },
+      {
+       "id": "S37_05",
+       "title": "Education through history",
+       "briefTitle": "Education",
+       "text": "From gurukuls and ancient universities such as Takshashila and Nalanda to madrasas, missionary schools and modern universities, education has steadily expanded. The Right to Education Act of 2009 made schooling free and compulsory for children aged six to fourteen."
+      },
+      {
+       "id": "S37_06",
+       "title": "Tribal communities",
+       "briefTitle": "Tribal communities",
+       "text": "India has more than seven hundred Scheduled Tribes, or Adivasi communities, about one in twelve Indians, including the Gonds, Bhils, Santhals and Nagas. Leaders such as Birsa Munda resisted colonial exploitation, and the Constitution protects tribal areas."
+      },
+      {
+       "id": "S37_07",
+       "title": "Urbanisation",
+       "briefTitle": "Urbanisation",
+       "text": "From Harappan cities to medieval capitals and colonial port cities like Bombay, Calcutta and Madras, cities have shaped India. Today about a third of Indians live in urban areas, and cities drive much of the economy."
+      },
+      {
+       "id": "S37_08",
+       "title": "Rural society",
+       "briefTitle": "Rural society",
+       "text": "Most Indians have historically lived in villages organised around agriculture, caste and kinship. Panchayati Raj, given constitutional status in 1992, brought elected local government to every village."
+      }
+     ]
+    },
+    {
+     "num": 38,
+     "id": "S38",
+     "title": "Historiography",
+     "period": "How we know the past",
+     "intro": "How do we know about India's past, and who tells its story? This section looks at sources and at how historians' interpretations have changed.",
+     "centrepiece": "magnifier",
+     "exhibits": [
+      {
+       "id": "S38_01",
+       "title": "Ancient sources",
+       "briefTitle": "Ancient sources",
+       "text": "Knowledge of ancient India comes from literary sources, such as the Vedas, the epics, the Puranas, Buddhist and Jain texts, Sangam poetry and works like the Arthashastra, and from archaeology, inscriptions and coins."
+      },
+      {
+       "id": "S38_02",
+       "title": "Archaeology",
+       "briefTitle": "Archaeology",
+       "text": "Archaeology recovers the past from material remains. The Archaeological Survey of India was founded in 1861, with Alexander Cunningham as its first director, and excavations at Harappa, Taxila and many other sites transformed our understanding of history."
+      },
+      {
+       "id": "S38_03",
+       "title": "Epigraphy",
+       "briefTitle": "Epigraphy",
+       "text": "Inscriptions on rock, pillars, copper plates and temple walls are vital records. James Prinsep deciphered the Brahmi script in 1837, unlocking Ashoka's edicts, and copper-plate land grants record rulers, villages and taxes."
+      },
+      {
+       "id": "S38_04",
+       "title": "Numismatics",
+       "briefTitle": "Numismatics",
+       "text": "The study of coins reveals rulers' names and dates, religion, trade and economic conditions. Indo-Greek and Kushana coins helped historians reconstruct dynasties that are otherwise little known."
+      },
+      {
+       "id": "S38_05",
+       "title": "Foreign travellers",
+       "briefTitle": "Foreign travellers",
+       "text": "Visitors left valuable accounts: Megasthenes at the Mauryan court, the Buddhist pilgrims Faxian and Xuanzang, Al-Biruni's Kitab-ul-Hind, Ibn Battuta in the Tughlaq period, and Europeans such as Bernier and Tavernier under the Mughals."
+      },
+      {
+       "id": "S38_06",
+       "title": "Colonial historians",
+       "briefTitle": "Colonial historians",
+       "text": "British writers such as James Mill, in his History of British India of 1817, divided Indian history into Hindu, Muslim and British periods and portrayed India as unchanging. Orientalists such as William Jones, by contrast, admired Indian learning."
+      },
+      {
+       "id": "S38_07",
+       "title": "Nationalist historians",
+       "briefTitle": "Nationalist historians",
+       "text": "Nationalist historians such as R. C. Majumdar, K. P. Jayaswal and R. K. Mookerji highlighted India's achievements, ancient traditions of self-government and cultural unity, countering colonial narratives."
+      },
+      {
+       "id": "S38_08",
+       "title": "Marxist historians",
+       "briefTitle": "Marxist historians",
+       "text": "Marxist historians such as D. D. Kosambi, R. S. Sharma, Irfan Habib and Romila Thapar studied economic structures, class and social change, including the debate over Indian feudalism in the early medieval period."
+      },
+      {
+       "id": "S38_09",
+       "title": "Subaltern studies",
+       "briefTitle": "Subaltern studies",
+       "text": "Subaltern Studies, begun by Ranajit Guha in 1982, wrote history from below, focusing on peasants, workers, tribal communities and women rather than elites, and challenged both colonial and nationalist narratives."
+      },
+      {
+       "id": "S38_10",
+       "title": "Contemporary interpretations",
+       "briefTitle": "Contemporary interpretations",
+       "text": "Historians today use many methods, from ancient DNA and environmental history to gender, caste and regional studies and digital archives. Debates continue, and history remains a living conversation about evidence."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

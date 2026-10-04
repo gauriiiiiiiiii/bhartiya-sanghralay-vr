@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S11_07
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S11_07
+  era: "Section 11 \xB7 Post-Gupta Period \xB7 c. 550 \u2013 1000 CE"
+  title: Palas
+  text: The Palas ruled Bengal and Bihar from the 8th to the 12th centuries. Gopala, their founder, was reportedly chosen by local chiefs. Dharmapala founded the monastery of Vikramashila and supported Nalanda, and Pala art influenced Tibet and South-East Asia.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 231fd4ec3e0444d6e83d2049c01104d1, type: 3}
+  shownEnlarged: 0

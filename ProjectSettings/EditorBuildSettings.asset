@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Museum/Scenes/Museum.unity
-    guid: 1add369a5b085464db895d8981f89647
+    path: Assets/_Museum/Scenes/Lobby.unity
+    guid: 6e9ae2d92056d4913a833b34c688e61e
+  - enabled: 1
+    path: Assets/_Museum/Scenes/Wing1.unity
+    guid: ce87e9bf015ec427bb0cd5666292a8c3
+  - enabled: 1
+    path: Assets/_Museum/Scenes/Wing2.unity
+    guid: 92ad985cfe2804ce7add745fcbc8420c
+  - enabled: 1
+    path: Assets/_Museum/Scenes/Wing3.unity
+    guid: 84def4c90a62d45e3897f84eea303a28
+  - enabled: 1
+    path: Assets/_Museum/Scenes/Wing4.unity
+    guid: b885a4e7ed5d345748141c67bface664
+  - enabled: 1
+    path: Assets/_Museum/Scenes/Wing5.unity
+    guid: 2e715551c58824ce1bdcd87d28305f36
+  - enabled: 1
+    path: Assets/_Museum/Scenes/Wing6.unity
+    guid: 8b06b0e380dda41bbb3841dae9f51ef9
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 24a231ed32a774c4a9a38b46cb45a0da, type: 2}

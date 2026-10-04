@@ -1,4 +1,0 @@
-RESULT: OK
-Sprites: 27/16  Artifacts updated: 27/16
-Font asset: Assets/_Museum/Fonts/NotoSansDevanagari SDF.asset
-InfoPanel font assigned: True

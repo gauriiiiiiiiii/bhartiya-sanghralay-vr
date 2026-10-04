@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S29_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S29_03
+  era: "Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
+  title: Hyderabad, 1948
+  text: The Nizam of Hyderabad sought to stay independent. Amid violence by the Razakars, India launched Operation Polo in September 1948, and Hyderabad was integrated within days.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 391f1ff3cc4ee4913bb207ecdab7a79b, type: 3}
+  shownEnlarged: 0

@@ -1,42 +1,20 @@
 using UnityEngine;
 
-/// One asset per artifact (A01..A16). Create via Assets > Create > Museum > Artifact Data.
-[CreateAssetMenu(menuName = "Museum/Artifact Data", fileName = "A00_ArtifactData")]
+/// One asset per exhibit, section introduction, wing introduction and the lobby welcome.
+/// Generated from Assets/_Museum/Content/museum.json by Museum > Rebuild All Scenes (text is overwritten
+/// from the JSON on every rebuild; the narration clip is kept).
+[CreateAssetMenu(menuName = "Museum/Artifact Data", fileName = "S00_00")]
 public class ArtifactData : ScriptableObject
 {
-    [Header("Identity")]
-    public string id = "A00";
-    public string era = "c. 1630–1680";
-
-    [Header("English")]
-    public string titleEn;
-    [TextArea(3, 8)] public string panelEn;
-    public AudioClip narrationEn;
-
-    [Header("Marathi")]
-    public string titleMr;
-    [TextArea(3, 8)] public string panelMr;
-    public AudioClip narrationMr;
-    [Tooltip("Optional: Marathi title + panel text pre-rendered as an image. " +
-             "Use this if TextMeshPro does not shape Devanagari conjuncts correctly.")]
-    public Sprite panelMrRendered;
-
-    [Header("Display")]
+    [Tooltip("S01_03 = section 1, exhibit 3; S01_00 = section 1 introduction; W1_00 = wing 1 introduction; L00 = lobby welcome")]
+    public string id = "S00_00";
+    [Tooltip("Shown under the title, e.g. 'Section 1 · Prehistoric India · c. 1.5 million years ago – 700 BCE'")]
+    public string era;
+    public string title;
+    [TextArea(3, 10)] public string text;
+    [Tooltip("Assigned automatically from Assets/_Museum/Audio/<id>.mp3|ogg|wav (Museum > Assign Narration Audio)")]
+    public AudioClip narration;
     public Sprite image;
     [Tooltip("Tick for coins, seals and other small items scaled up for VR.")]
     public bool shownEnlarged;
-}
-
-public enum Lang { En, Mr }
-
-public static class MuseumSettings
-{
-    public static Lang Language = Lang.En;
-    public static event System.Action LanguageChanged;
-
-    public static void ToggleLanguage()
-    {
-        Language = Language == Lang.En ? Lang.Mr : Lang.En;
-        LanguageChanged?.Invoke();
-    }
 }

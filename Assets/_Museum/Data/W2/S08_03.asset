@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S08_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S08_03
+  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  title: Parthians
+  text: The Indo-Parthians, or Pahlavas, ruled the north-west in the 1st century CE. Gondophares is the best known of them; Christian tradition links the apostle Saint Thomas to his court.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
+  shownEnlarged: 0

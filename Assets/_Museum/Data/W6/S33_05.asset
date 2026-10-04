@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S33_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S33_05
+  era: "Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
+  title: Digital India
+  text: Launched in 2015, Digital India expands internet access and online public services. The Aadhaar digital identity and the Unified Payments Interface, or UPI, have made India a world leader in digital payments.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: d1879ddb8aebf47cf96a0a0d1bf77472, type: 3}
+  shownEnlarged: 0

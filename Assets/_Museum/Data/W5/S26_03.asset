@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S26_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S26_03
+  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  title: Bhagat Singh
+  text: Bhagat Singh, who lived from 1907 to 1931, took part in the killing of police officer Saunders in 1928 to avenge Lala Lajpat Rai, and threw harmless bombs in the Central Legislative Assembly in 1929 to make the deaf hear. He was hanged with Rajguru and Sukhdev on 23 March 1931.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
+  shownEnlarged: 0

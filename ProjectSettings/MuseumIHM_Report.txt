@@ -1,0 +1,12 @@
+RESULT: BUILT 7 scenes, 399 items with text + narration slots (36s)
+Scenes (build order): Lobby, Wing1, Wing2, Wing3, Wing4, Wing5, Wing6
+Art import settings fixed: 1
+Font: Lora SDF
+Narration assigned: 0/399
+No audio yet for 399 items, e.g. L00, S01_00, S01_01, S01_02, S01_03
+Wing1: Ancient India — 6 sections, 93 items
+Wing2: Classical India — 5 sections, 52 items
+Wing3: Medieval India — 6 sections, 65 items
+Wing4: Colonial India — 6 sections, 56 items
+Wing5: Freedom and the Republic — 8 sections, 68 items
+Wing6: Themes of Indian History — 7 sections, 64 items

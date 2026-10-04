@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S13_01
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S13_01
+  era: "Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
+  title: Imperial Cholas
+  text: Founded by Vijayalaya in the 9th century, the Chola empire peaked under Rajaraja the First and Rajendra the First. They built the Brihadishvara temple at Thanjavur, sent naval expeditions to Sri Lanka and South-East Asia, and are famed for village assemblies and bronze sculpture.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
+  shownEnlarged: 0

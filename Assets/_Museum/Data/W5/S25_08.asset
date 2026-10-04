@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S25_08
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S25_08
+  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  title: Quit India Movement
+  text: On 8 August 1942 the Congress launched the Quit India Movement, with Gandhi's call to do or die. Leaders were arrested at once, but people struck, protested and set up parallel governments in places such as Satara and Ballia.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
+  shownEnlarged: 0

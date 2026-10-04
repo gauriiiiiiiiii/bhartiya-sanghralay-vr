@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S12_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S12_05
+  era: "Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
+  title: Early medieval trade
+  text: Some historians see a decline in coinage and long-distance trade in the early medieval north, while others stress its continuity. Arab merchants were active on the west coast, and South Indian guilds such as the Ainnurruvar traded overseas.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
+  shownEnlarged: 0

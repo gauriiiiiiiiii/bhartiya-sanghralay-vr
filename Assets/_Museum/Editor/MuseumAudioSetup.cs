@@ -3,29 +3,34 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-/// Assigns narration clips to every ArtifactData: Assets/_Museum/Audio/<id>_en.(ogg|mp3|wav) and <id>_mr.(ogg|mp3|wav).
-/// If several formats exist for one clip, the most recently modified file wins (so new TTS files replace the placeholders).
-/// Add or replace files, then run Museum > Assign Narration Audio.
-[InitializeOnLoad]
+/// Assigns narration clips to every ArtifactData from Assets/_Museum/Audio:
+///   <id>.mp3 | .ogg | .wav   (also accepted: <id>_en.*), e.g. S01_03.mp3, S01_00.mp3, W1_00.mp3, L00.mp3
+/// If several files exist for one id, the most recently modified wins.
+/// Add or replace files, then run Museum > Assign Narration Audio (the scene builder also runs it).
 public static class MuseumAudioSetup
 {
-    const string StateFile = "ProjectSettings/MuseumAudioState.txt";
     const string Dir = "Assets/_Museum/Audio";
     static readonly string[] Exts = { ".ogg", ".mp3", ".wav" };
 
-    static AudioClip Newest(string baseName)
+    static AudioClip Newest(string id)
     {
-        var best = Exts.Select(e => $"{Dir}/{baseName}{e}").Where(File.Exists)
-                       .OrderByDescending(File.GetLastWriteTimeUtc).FirstOrDefault();
+        var best = new[] { id, id + "_en" }
+            .SelectMany(b => Exts.Select(e => $"{Dir}/{b}{e}"))
+            .Where(File.Exists)
+            .OrderByDescending(File.GetLastWriteTimeUtc).FirstOrDefault();
         return best == null ? null : AssetDatabase.LoadAssetAtPath<AudioClip>(best);
     }
 
-    static MuseumAudioSetup() => EditorApplication.delayCall += () => { if (!File.Exists(StateFile)) Run(); };
-
     [MenuItem("Museum/Assign Narration Audio")]
-    static void Run()
+    static void Menu()
     {
-        if (EditorApplication.isCompiling || EditorApplication.isPlayingOrWillChangePlaymode || !Directory.Exists(Dir)) return;
+        var msg = Assign();
+        EditorUtility.DisplayDialog("Museum of Indian History — narration", msg, "OK");
+    }
+
+    public static string Assign()
+    {
+        Directory.CreateDirectory(Dir);
         foreach (var file in Directory.GetFiles(Dir).Where(f => Exts.Contains(Path.GetExtension(f).ToLowerInvariant())))
         {
             var ai = AssetImporter.GetAtPath(file.Replace('\\', '/')) as AudioImporter;
@@ -39,22 +44,22 @@ public static class MuseumAudioSetup
             ai.forceToMono = true;
             ai.SaveAndReimport();
         }
-        int en = 0, mr = 0, total = 0;
+        int found = 0, total = 0;
+        var missing = new System.Collections.Generic.List<string>();
         foreach (var guid in AssetDatabase.FindAssets("t:ArtifactData", new[] { "Assets/_Museum/Data" }))
         {
             var data = AssetDatabase.LoadAssetAtPath<ArtifactData>(AssetDatabase.GUIDToAssetPath(guid));
             if (data == null) continue;
             total++;
-            var e = Newest($"{data.id}_en");
-            var m = Newest($"{data.id}_mr");
-            if (e) { data.narrationEn = e; en++; }
-            if (m) { data.narrationMr = m; mr++; }
-            EditorUtility.SetDirty(data);
+            var clip = Newest(data.id);
+            if (data.narration != clip) { data.narration = clip; EditorUtility.SetDirty(data); }
+            if (clip) found++; else missing.Add(data.id);
         }
         AssetDatabase.SaveAssets();
-        File.WriteAllText(StateFile, "done");
-        var msg = $"Narration assigned.\nEnglish: {en}/{total}  Marathi: {mr}/{total}";
+        var msg = $"Narration assigned: {found}/{total}";
+        if (missing.Count > 0) msg += $"\nNo audio yet for {missing.Count} items, e.g. {string.Join(", ", missing.OrderBy(x => x).Take(5))}";
+        File.WriteAllText("ProjectSettings/MuseumAudioReport.txt", msg);
         Debug.Log("[Museum] " + msg);
-        EditorUtility.DisplayDialog("Shivaji Museum VR — narration", msg, "OK");
+        return msg;
     }
 }

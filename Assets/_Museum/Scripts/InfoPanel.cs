@@ -2,8 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-/// World-space canvas (about 0.9 m x 0.6 m) showing the selected artifact's info and playing its narration.
-/// Wire the Play/Pause, Close, Next and Language GazeButtons to the public methods below.
+/// World-space canvas (about 0.9 m x 0.6 m) showing the selected exhibit and playing its narration.
+/// The Play/Pause, Close and Next GazeButtons call the public methods below.
 public class InfoPanel : MonoBehaviour
 {
     public static InfoPanel Instance { get; private set; }
@@ -14,34 +14,26 @@ public class InfoPanel : MonoBehaviour
     public TMP_Text eraText;
     public TMP_Text bodyText;
     public Image picture;
-    public Image marathiRenderedImage;   // shows ArtifactData.panelMrRendered when present
     public TMP_Text playLabel;
-    public TMP_Text languageLabel;
-
-    [Header("Fonts")]
-    public TMP_FontAsset latinFont;       // e.g. Noto Sans
-    public TMP_FontAsset devanagariFont;  // e.g. Noto Sans Devanagari
 
     [Header("Audio")]
     public AudioSource narration;         // 2D AudioSource (spatialBlend 0)
-    public AudioSource ambience;          // looping background
+    public AudioSource ambience;          // optional looping background
     public float ambienceNormal = 0.15f;
     public float ambienceDucked = 0.04f;
 
-    [Header("Guided tour order (A01..A16)")]
+    [Header("Guided tour order for this scene")]
     public Artifact[] tour;
 
     Artifact current;
     Vector3 baseScale;
+    float bodyLeftWithPicture = -1f;
 
     void Awake()
     {
         Instance = this;
         root.SetActive(false);
-        MuseumSettings.LanguageChanged += OnLanguageChanged;
     }
-
-    void OnDestroy() => MuseumSettings.LanguageChanged -= OnLanguageChanged;
 
     public void Show(Artifact a)
     {
@@ -73,43 +65,23 @@ public class InfoPanel : MonoBehaviour
     {
         if (!current) return;
         var d = current.data;
-        bool mr = MuseumSettings.Language == Lang.Mr;
-        bool useRendered = mr && d.panelMrRendered;
-
-        var font = mr && devanagariFont ? devanagariFont : latinFont;
-        if (font) titleText.font = bodyText.font = font;
-        titleText.text = mr ? d.titleMr : d.titleEn;
+        titleText.text = d.title;
         eraText.text = d.era;
+        bodyText.text = d.shownEnlarged ? d.text + "\n\n(Shown enlarged)" : d.text;
 
-        string body = mr ? d.panelMr : d.panelEn;
-        if (d.shownEnlarged) body += mr ? "\n\n(मोठ्या आकारात दाखवले आहे)" : "\n\n(Shown enlarged)";
-        bodyText.text = body;
-
-        titleText.gameObject.SetActive(!useRendered);
-        eraText.gameObject.SetActive(!useRendered);   // the rendered image includes the era line
-        bodyText.gameObject.SetActive(!useRendered);
-        if (marathiRenderedImage)
-        {
-            marathiRenderedImage.gameObject.SetActive(useRendered);
-            marathiRenderedImage.sprite = d.panelMrRendered;
-        }
-
+        bool hasPicture = d.image;
         picture.sprite = d.image;
-        picture.enabled = d.image;
-        if (languageLabel) languageLabel.text = mr ? "English" : (devanagariFont ? "मराठी" : "Marathi");
-    }
-
-    AudioClip CurrentClip()
-    {
-        var d = current.data;
-        return MuseumSettings.Language == Lang.Mr && d.narrationMr ? d.narrationMr : d.narrationEn;
+        picture.enabled = hasPicture;
+        var rt = bodyText.rectTransform;          // use the full width when there is no picture
+        if (bodyLeftWithPicture < 0f) bodyLeftWithPicture = rt.offsetMin.x;
+        rt.offsetMin = new Vector2(hasPicture ? bodyLeftWithPicture : 30f, rt.offsetMin.y);
     }
 
     public void Play()
     {
         if (!current) return;
         narration.Stop();
-        narration.clip = CurrentClip();
+        narration.clip = current.data.narration;
         if (!narration.clip) { SetPlayLabel(false); return; }
         narration.Play();
         SetPlayLabel(true);
@@ -137,15 +109,6 @@ public class InfoPanel : MonoBehaviour
         var next = tour[(i + 1) % tour.Length];
         if (next.standPoint) next.standPoint.Go();
         Show(next);
-    }
-
-    public void ToggleLanguage() => MuseumSettings.ToggleLanguage();
-
-    void OnLanguageChanged()
-    {
-        bool wasPlaying = narration.isPlaying;
-        Refresh();
-        if (wasPlaying) Play(); else { narration.Stop(); SetPlayLabel(false); }
     }
 
     void SetPlayLabel(bool playing)

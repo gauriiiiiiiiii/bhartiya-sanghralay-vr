@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S16_14
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S16_14
+  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  title: Mughal economy
+  text: The Mughal empire was among the largest economies in the world, exporting textiles, indigo and spices. The silver rupee, bankers called sarrafs with bills of exchange called hundis, and cities such as Agra, Lahore and Surat flourished.
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
+  shownEnlarged: 0

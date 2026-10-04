@@ -1,4 +1,0 @@
-RESULT: BUILT Assets/_Museum/Scenes/Museum.unity (v2 themed halls)
-Exhibits: 27  Teleport points: 16  Tour stops: 27
-Halls: Foyer · Forts & Navy · Hall 1 Swarajya Begins · Mavlas' Armoury · Hall 2 Forts & Campaigns · Hall 3 Rajyabhishek & the Raj
-Not built (per brief): Storage, Restroom x2, Hall, Utility, AC

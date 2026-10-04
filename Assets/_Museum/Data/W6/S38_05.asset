@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S38_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S38_05
+  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  title: Foreign travellers
+  text: 'Visitors left valuable accounts: Megasthenes at the Mauryan court, the Buddhist pilgrims Faxian and Xuanzang, Al-Biruni''s Kitab-ul-Hind, Ibn Battuta in the Tughlaq period, and Europeans such as Bernier and Tavernier under the Mughals.'
+  narration: {fileID: 0}
+  image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
+  shownEnlarged: 0
