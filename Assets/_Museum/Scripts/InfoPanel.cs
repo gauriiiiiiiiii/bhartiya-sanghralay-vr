@@ -71,6 +71,7 @@ public class InfoPanel : MonoBehaviour
         bodyText.text = body;
 
         titleText.gameObject.SetActive(!useRendered);
+        eraText.gameObject.SetActive(!useRendered);   // the rendered image includes the era line
         bodyText.gameObject.SetActive(!useRendered);
         if (marathiRenderedImage)
         {

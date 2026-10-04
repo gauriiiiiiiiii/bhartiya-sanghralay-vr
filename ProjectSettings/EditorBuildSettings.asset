@@ -9,4 +9,5 @@ EditorBuildSettings:
     path: Assets/_Museum/Scenes/Museum.unity
     guid: 1add369a5b085464db895d8981f89647
   m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 24a231ed32a774c4a9a38b46cb45a0da, type: 2}

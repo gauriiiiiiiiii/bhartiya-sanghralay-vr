@@ -522,6 +522,7 @@ public static class MuseumSceneBuilder
         ip.titleText = title; ip.eraText = era; ip.bodyText = body;
         ip.picture = picture; ip.marathiRenderedImage = mrImage;
         ip.latinFont = TMP_Settings.defaultFontAsset;
+        ip.devanagariFont = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>("Assets/_Museum/Fonts/NotoSansDevanagari SDF.asset");
         ip.narration = narration;
 
         float x = 30;
