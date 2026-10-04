@@ -27,6 +27,9 @@ public class GazeInteractor : MonoBehaviour
     public float activeSize = 0.04f;
     public float defaultDistance = 3f;
 
+    /// True when the latest selection came from gazing (dwell) rather than the viewer button.
+    public static bool SelectedByDwell;
+
     IGazeTarget current;
     float gazeTimer;
     bool fired;
@@ -63,9 +66,11 @@ public class GazeInteractor : MonoBehaviour
         if (!fired) gazeTimer += Time.deltaTime;
         if (dwellFill) dwellFill.fillAmount = fired ? 0f : Mathf.Clamp01(gazeTimer / dwellTime);
 
-        if (TriggerPressed() || (!fired && gazeTimer >= dwellTime))
+        bool trigger = TriggerPressed();
+        if (trigger || (!fired && gazeTimer >= dwellTime))
         {
             fired = true;          // no repeat until the visitor looks away
+            SelectedByDwell = !trigger;
             current.OnSelect();
         }
     }

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 /// World-space canvas (about 0.9 m x 0.6 m) showing the selected exhibit and playing its narration.
@@ -24,9 +25,15 @@ public class InfoPanel : MonoBehaviour
 
     [Header("Guided tour order for this scene")]
     public Artifact[] tour;
+    [Tooltip("Where Next goes when this scene has no further tour stops (Lobby: into the Grand Hall)")]
+    public TeleportPoint nextFallback;
+
+    [Tooltip("The panel closes when the visitor looks this far (degrees) away from it")]
+    public float lookAwayAngle = 70f;
 
     Artifact current;
     Vector3 baseScale;
+    float lookAwayTimer;
     float bodyLeftWithPicture = -1f;
 
     void Awake()
@@ -82,7 +89,7 @@ public class InfoPanel : MonoBehaviour
         if (!current) return;
         narration.Stop();
         narration.clip = current.data.narration;
-        if (!narration.clip) { SetPlayLabel(false); return; }
+        if (!narration.clip) { if (playLabel) playLabel.text = "No audio"; return; }
         narration.Play();
         SetPlayLabel(true);
     }
@@ -98,13 +105,19 @@ public class InfoPanel : MonoBehaviour
     {
         narration.Stop();
         root.SetActive(false);
-        if (current) current.SetSelected(false);
+        if (current) { current.SetSelected(false); Artifact.Suppressed = current; }
         current = null;
     }
 
     public void Next()
     {
-        if (!current || tour == null || tour.Length == 0) return;
+        if (!current) return;
+        if (tour == null || tour.Length <= 1)
+        {
+            Close();
+            if (nextFallback) nextFallback.Go();
+            return;
+        }
         int i = System.Array.IndexOf(tour, current);
         var next = tour[(i + 1) % tour.Length];
         if (next.standPoint) next.standPoint.Go();
@@ -118,6 +131,22 @@ public class InfoPanel : MonoBehaviour
 
     void Update()
     {
+        if (current && root.activeSelf)
+        {
+            // Escape hatch: looking well away from the panel (or Esc in the Editor) closes it
+            var cam = Camera.main;
+            if (cam)
+            {
+                var to = transform.position - cam.transform.position;
+                bool away = Vector3.Angle(cam.transform.forward, to) > lookAwayAngle;
+                lookAwayTimer = away ? lookAwayTimer + Time.deltaTime : 0f;
+                if (lookAwayTimer > 0.6f) { lookAwayTimer = 0f; Close(); }
+            }
+#if UNITY_EDITOR
+            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) Close();
+#endif
+        }
+
         if (ambience)
         {
             float target = narration.isPlaying ? ambienceDucked : ambienceNormal;

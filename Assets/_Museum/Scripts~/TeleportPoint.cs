@@ -7,6 +7,8 @@ public class TeleportPoint : MonoBehaviour, IGazeTarget
     public Color idleColor = new Color(1f, 0.55f, 0.1f, 0.45f);   // saffron
     public Color hoverColor = new Color(1f, 0.8f, 0.2f, 1f);
     public bool faceForwardOnArrival = true;
+    [Tooltip("Optional: teleport here instead of to this point (e.g. Exit -> Entrance).")]
+    public Transform destination;
 
     void Start() => SetColor(idleColor);
 
@@ -17,8 +19,9 @@ public class TeleportPoint : MonoBehaviour, IGazeTarget
 
     public void Go()
     {
-        float? yaw = faceForwardOnArrival ? transform.eulerAngles.y : (float?)null;
-        PlayerTeleporter.Instance.TeleportTo(transform.position, yaw);
+        var t = destination ? destination : transform;
+        float? yaw = faceForwardOnArrival ? t.eulerAngles.y : (float?)null;
+        PlayerTeleporter.Instance.TeleportTo(t.position, yaw);
     }
 
     void SetColor(Color c)

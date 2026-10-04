@@ -1071,7 +1071,12 @@ public static class MuseumBuilder
             Marker("Arrive_" + w.id, front, normal.z < 0 ? 180f : 0f, pts);
         }
         // hall walkway points
-        foreach (var x in new[] { 3.3f, 9.45f, 15.6f }) MakePoint("Hall_" + x, new Vector3(x, 0, 4.725f), 270f, pts);
+        TeleportPoint hallCentre = null;
+        foreach (var x in new[] { 3.3f, 9.45f, 15.6f })
+        {
+            var tp = MakePoint("Hall_" + x, new Vector3(x, 0, 4.725f), 270f, pts);
+            if (x > 15f) hallCentre = tp;
+        }
         MakePoint("Timeline", new Vector3(2.2f, 0, 4.725f), 270f, pts);
 
         // timeline (west wall), directory (east room), visitor guide (south-east room)
@@ -1092,9 +1097,10 @@ public static class MuseumBuilder
         Spot(lights, "Spot_Title", new Vector3(21f, 3.8f, 8.6f), new Vector3(21f, 2f, 6.85f), 70f, 3f);
         Spot(lights, "Spot_Timeline", new Vector3(3f, 3.8f, 4.7f), new Vector3(0.1f, 1.9f, 4.7f), 90f, 2.5f);
 
-        BuildPlayer(spawn.transform.position, 180f);
+        BuildPlayer(new Vector3(20.3f, 0f, 8.1f), 270f);     // facing into the Grand Hall; the title wall is to the left
         var panel = BuildInfoPanel(root);
         panel.tour = new[] { welcomeArt };
+        panel.nextFallback = hallCentre;      // Next on the welcome panel walks into the Grand Hall
 
         var path = $"{SceneDir}/Lobby.unity";
         EditorSceneManager.MarkSceneDirty(scene);

@@ -24,6 +24,8 @@ public class InfoPanel : MonoBehaviour
 
     [Header("Guided tour order for this scene")]
     public Artifact[] tour;
+    [Tooltip("Where Next goes when this scene has no further tour stops (Lobby: into the Grand Hall)")]
+    public TeleportPoint nextFallback;
 
     Artifact current;
     Vector3 baseScale;
@@ -82,7 +84,7 @@ public class InfoPanel : MonoBehaviour
         if (!current) return;
         narration.Stop();
         narration.clip = current.data.narration;
-        if (!narration.clip) { SetPlayLabel(false); return; }
+        if (!narration.clip) { if (playLabel) playLabel.text = "No audio"; return; }
         narration.Play();
         SetPlayLabel(true);
     }
@@ -98,13 +100,19 @@ public class InfoPanel : MonoBehaviour
     {
         narration.Stop();
         root.SetActive(false);
-        if (current) current.SetSelected(false);
+        if (current) { current.SetSelected(false); Artifact.Suppressed = current; }
         current = null;
     }
 
     public void Next()
     {
-        if (!current || tour == null || tour.Length == 0) return;
+        if (!current) return;
+        if (tour == null || tour.Length <= 1)
+        {
+            Close();
+            if (nextFallback) nextFallback.Go();
+            return;
+        }
         int i = System.Array.IndexOf(tour, current);
         var next = tour[(i + 1) % tour.Length];
         if (next.standPoint) next.standPoint.Go();

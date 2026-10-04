@@ -13,6 +13,10 @@ public class Artifact : MonoBehaviour, IGazeTarget
     [Tooltip("Selecting the exhibit from further away than this first moves the visitor to its stand point")]
     public float walkUpDistance = 3f;
 
+    /// The exhibit whose panel was just closed: gazing at it does not reopen it until the visitor looks away
+    /// (the viewer button still works).
+    public static Artifact Suppressed;
+
     bool selected;
     Vector3 baseScale;
     Quaternion baseRotation;
@@ -25,10 +29,16 @@ public class Artifact : MonoBehaviour, IGazeTarget
     }
 
     public void OnGazeEnter() => model.localScale = baseScale * hoverScale;
-    public void OnGazeExit() => model.localScale = baseScale;
+    public void OnGazeExit()
+    {
+        model.localScale = baseScale;
+        if (Suppressed == this) Suppressed = null;
+    }
 
     public void OnSelect()
     {
+        if (Suppressed == this && GazeInteractor.SelectedByDwell) return;
+        Suppressed = null;
         var cam = Camera.main;
         if (standPoint && cam)
         {
