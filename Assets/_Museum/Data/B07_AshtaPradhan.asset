@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: B07_AshtaPradhan
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: B07
+  era: Council of Eight
+  titleEn: The Ashta Pradhan
+  panelEn: Shivaji Maharaj governed with a council of eight ministers, including the Peshwa (prime minister), Amatya (finance), Senapati (army) and Nyayadhish (justice). Officials were paid salaries instead of land grants, strengthening the state.
+  narrationEn: {fileID: 0}
+  titleMr: "\u0905\u0937\u094D\u091F\u092A\u094D\u0930\u0927\u093E\u0928 \u092E\u0902\u0921\u0933"
+  panelMr: "\u0936\u093F\u0935\u093E\u091C\u0940 \u092E\u0939\u093E\u0930\u093E\u091C \u0905\u0937\u094D\u091F\u092A\u094D\u0930\u0927\u093E\u0928 \u092E\u0902\u0921\u0933\u093E\u091A\u094D\u092F\u093E \u0938\u093E\u0939\u093E\u092F\u094D\u092F\u093E\u0928\u0947 \u0930\u093E\u091C\u094D\u092F\u0915\u093E\u0930\u092D\u093E\u0930 \u0915\u0930\u0924. \u0924\u094D\u092F\u093E\u0924 \u092A\u0947\u0936\u0935\u093E (\u092E\u0941\u0916\u094D\u092F \u092A\u094D\u0930\u0927\u093E\u0928), \u0905\u092E\u093E\u0924\u094D\u092F (\u0905\u0930\u094D\u0925), \u0938\u0947\u0928\u093E\u092A\u0924\u0940 (\u0938\u0948\u0928\u094D\u092F) \u0906\u0923\u093F \u0928\u094D\u092F\u093E\u092F\u093E\u0927\u0940\u0936 (\u0928\u094D\u092F\u093E\u092F) \u092F\u093E\u0902\u091A\u093E \u0938\u092E\u093E\u0935\u0947\u0936 \u0939\u094B\u0924\u093E. \u0905\u0927\u093F\u0915\u093E\u0931\u094D\u092F\u093E\u0902\u0928\u093E \u091C\u0939\u093E\u0917\u093F\u0930\u0940\u0910\u0935\u091C\u0940 \u0935\u0947\u0924\u0928 \u0926\u093F\u0932\u0947 \u091C\u093E\u0908, \u0924\u094D\u092F\u093E\u092E\u0941\u0933\u0947 \u0930\u093E\u091C\u094D\u092F \u092C\u0933\u0915\u091F \u091D\u093E\u0932\u0947."
+  narrationMr: {fileID: 0}
+  panelMrRendered: {fileID: 7932664876841024881, guid: 2cd40737bbfb9446fadb139ab248da40, type: 3}
+  image: {fileID: -4097845739843617908, guid: 41c80adc6ae6240539e96e5a0846ce4f, type: 3}
+  shownEnlarged: 0

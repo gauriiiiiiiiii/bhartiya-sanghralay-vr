@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: B04_Pratapgad
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: B04
+  era: November 1659
+  titleEn: Pratapgad
+  panelEn: The Bijapur general Afzal Khan met Shivaji Maharaj below Pratapgad fort. The meeting turned to combat; Afzal Khan was killed and his army routed in the forests that followed. The victory made Shivaji's name known across India.
+  narrationEn: {fileID: 0}
+  titleMr: "\u092A\u094D\u0930\u0924\u093E\u092A\u0917\u0921, \u0967\u096C\u096B\u096F"
+  panelMr: "\u0928\u094B\u0935\u094D\u0939\u0947\u0902\u092C\u0930 \u0967\u096C\u096B\u096F \u092E\u0927\u094D\u092F\u0947 \u0935\u093F\u091C\u093E\u092A\u0942\u0930\u091A\u093E \u0938\u0947\u0928\u093E\u092A\u0924\u0940 \u0905\u092B\u091D\u0932\u0916\u093E\u0928 \u092A\u094D\u0930\u0924\u093E\u092A\u0917\u0921\u093E\u091A\u094D\u092F\u093E \u092A\u093E\u092F\u0925\u094D\u092F\u093E\u0936\u0940 \u0936\u093F\u0935\u093E\u091C\u0940 \u092E\u0939\u093E\u0930\u093E\u091C\u093E\u0902\u0928\u093E \u092D\u0947\u091F\u0932\u093E. \u092F\u093E \u092D\u0947\u091F\u0940\u091A\u0947 \u0930\u0942\u092A\u093E\u0902\u0924\u0930 \u091D\u091F\u093E\u092A\u091F\u0940\u0924 \u091D\u093E\u0932\u0947; \u0905\u092B\u091D\u0932\u0916\u093E\u0928 \u092E\u093E\u0930\u0932\u093E \u0917\u0947\u0932\u093E \u0906\u0923\u093F \u0924\u094D\u092F\u093E\u0928\u0902\u0924\u0930 \u091C\u0902\u0917\u0932\u093E\u0924 \u091D\u093E\u0932\u0947\u0932\u094D\u092F\u093E \u0932\u0922\u093E\u0908\u0924 \u0924\u094D\u092F\u093E\u091A\u094D\u092F\u093E \u0938\u0948\u0928\u094D\u092F\u093E\u091A\u093E \u092A\u0930\u093E\u092D\u0935 \u091D\u093E\u0932\u093E. \u092F\u093E \u0935\u093F\u091C\u092F\u093E\u0928\u0947 \u0936\u093F\u0935\u093E\u091C\u0940 \u092E\u0939\u093E\u0930\u093E\u091C\u093E\u0902\u091A\u0947 \u0928\u093E\u0935 \u0926\u0947\u0936\u092D\u0930 \u092A\u094B\u0939\u094B\u091A\u0932\u0947."
+  narrationMr: {fileID: 0}
+  panelMrRendered: {fileID: -9128774093129877626, guid: 3ae54e228dec7402dad6c899575e9abf, type: 3}
+  image: {fileID: -2259397843107684158, guid: ec8f9f54b189b48c3995f80a0fc48c8b, type: 3}
+  shownEnlarged: 0

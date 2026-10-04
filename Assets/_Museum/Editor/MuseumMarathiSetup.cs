@@ -86,11 +86,8 @@ public static class MuseumMarathiSetup
         {
             var data = AssetDatabase.LoadAssetAtPath<ArtifactData>(AssetDatabase.GUIDToAssetPath(guid));
             if (data == null || !rows.TryGetValue(data.id, out var row)) continue;
-            if (string.IsNullOrEmpty(data.panelMr) || data.panelMr == Placeholder)
-            {
-                data.titleMr = row[1];
-                data.panelMr = row[2];
-            }
+            data.titleMr = row[1];      // marathi.tsv is the source of truth for Marathi text
+            data.panelMr = row[2];
             data.panelMrRendered = AssetDatabase.LoadAssetAtPath<Sprite>($"{Dir}/{data.id}_mr.png");
             if (data.panelMrRendered == null) log.AppendLine("Missing image for " + data.id);
             EditorUtility.SetDirty(data);

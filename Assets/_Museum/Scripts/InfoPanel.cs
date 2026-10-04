@@ -32,6 +32,7 @@ public class InfoPanel : MonoBehaviour
     public Artifact[] tour;
 
     Artifact current;
+    Vector3 baseScale;
 
     void Awake()
     {
@@ -50,8 +51,22 @@ public class InfoPanel : MonoBehaviour
 
         if (a.panelAnchor) transform.SetPositionAndRotation(a.panelAnchor.position, a.panelAnchor.rotation);
         root.SetActive(true);
+        StopCoroutine(nameof(Pop));
+        StartCoroutine(nameof(Pop));
         Refresh();
         Play();
+    }
+
+    System.Collections.IEnumerator Pop()      // small scale-in when the panel opens
+    {
+        var t = root.transform;
+        if (baseScale == Vector3.zero) baseScale = t.localScale;   // the canvas is authored at 0.001 scale
+        for (float k = 0f; k < 1f; k += Time.deltaTime / 0.18f)
+        {
+            t.localScale = baseScale * Mathf.Lerp(0.85f, 1f, 1f - (1f - k) * (1f - k));
+            yield return null;
+        }
+        t.localScale = baseScale;
     }
 
     void Refresh()
@@ -146,7 +161,7 @@ public class InfoPanel : MonoBehaviour
             ambience.volume = Mathf.MoveTowards(ambience.volume, target, Time.deltaTime * 0.5f);
         }
         // Narration finished on its own
-        if (current && !narration.isPlaying && narration.time == 0f && playLabel && playLabel.text == "Pause")
+        if (current && narration.clip && !narration.isPlaying && narration.time == 0f && playLabel && playLabel.text == "Pause")
             SetPlayLabel(false);
     }
 }
