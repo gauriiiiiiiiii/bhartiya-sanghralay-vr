@@ -459,7 +459,7 @@ public static partial class MuseumBuilder
         if (mesh.uv2 == null || mesh.uv2.Length == 0)
         {   // lightmap UVs (everything static is baked)
             mesh.uv2 = new[] { new Vector2(0, 0), new Vector2(1, 0), new Vector2(0, 1), new Vector2(1, 1) };
-            EditorUtility.SetDirty(mesh);
+            EditorUtility.SetDirty(mesh); AssetDatabase.SaveAssetIfDirty(mesh);
         }
         return Meshes[key] = mesh;
     }
@@ -1373,10 +1373,56 @@ public static partial class MuseumBuilder
     }
 
     // ------------------------------------------------------------------ mobile: save + occlusion, HUD, menu, settings
+    /// Poly Haven materials tile per metre. Built-in cubes and unit quads have 0..1 UVs per face, which stretches a stone
+    /// texture across a whole 20 m wall; swap them for copies whose UVs are in metres (lightmap UVs are kept).
+    static void WorldScaleUVs(UnityEngine.SceneManagement.Scene scene)
+    {
+        int swapped = 0;
+        foreach (var root in scene.GetRootGameObjects())
+            foreach (var mf in root.GetComponentsInChildren<MeshFilter>(true))
+            {
+                var r = mf.GetComponent<MeshRenderer>(); var mesh = mf.sharedMesh;
+                if (r == null || mesh == null || r.sharedMaterial == null) continue;
+                var tex = r.sharedMaterial.HasProperty("_BaseMap") ? r.sharedMaterial.GetTexture("_BaseMap") : null;
+                if (tex == null || !AssetDatabase.GetAssetPath(tex).Contains("/PolyHaven/")) continue;
+                var sc = mf.transform.lossyScale; sc = new Vector3(Mathf.Abs(sc.x), Mathf.Abs(sc.y), Mathf.Abs(sc.z));
+                Mesh repl = null;
+                if (mesh.name == "Cube") repl = MetricCube(mesh, sc);
+                else if (mesh.name.StartsWith("Quad_") || mesh.name == "Quad") repl = QuadMesh(Mathf.Max(0.25f, Mathf.Round(sc.x * 4) / 4), Mathf.Max(0.25f, Mathf.Round(sc.y * 4) / 4));
+                if (repl != null && repl != mesh) { mf.sharedMesh = repl; swapped++; }
+            }
+        if (swapped > 0) Debug.Log($"[Museum] {scene.name}: {swapped} surfaces given metre-scale texture UVs");
+    }
+
+    static Mesh MetricCube(Mesh cube, Vector3 s)
+    {
+        string key = $"Cube_m_{s.x:0.##}x{s.y:0.##}x{s.z:0.##}";
+        if (Meshes.TryGetValue(key, out var cached)) return cached;
+        var path = $"{MeshDir}/{key}.asset";
+        var m = AssetDatabase.LoadAssetAtPath<Mesh>(path);
+        if (m == null)
+        {
+            m = UnityEngine.Object.Instantiate(cube); m.name = key;
+            var n = cube.normals; var uv = cube.uv;
+            for (int i = 0; i < uv.Length; i++)
+            {
+                var a = n[i];
+                Vector2 f = Mathf.Abs(a.x) > 0.5f ? new Vector2(s.z, s.y) : Mathf.Abs(a.y) > 0.5f ? new Vector2(s.x, s.z) : new Vector2(s.x, s.y);
+                uv[i] = Vector2.Scale(uv[i], f);
+            }
+            m.uv = uv;
+            if (!m.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.TexCoord1)) { var settings = new UnwrapParam(); UnwrapParam.SetDefaults(out settings); Unwrapping.GenerateSecondaryUVSet(m, settings); }
+            m.RecalculateTangents();
+            AssetDatabase.CreateAsset(m, path);
+        }
+        return Meshes[key] = m;
+    }
+
     static string SaveWithOcclusion(UnityEngine.SceneManagement.Scene scene, string path)
     {
         EditorSceneManager.MarkSceneDirty(scene);
         if (!EditorSceneManager.SaveScene(scene, path)) throw new Exception("Could not save " + path);
+        WorldScaleUVs(scene);
         // Sanitise static flags before baking. The bakers copy every channel they need (lightmap UVs, normals) from each static mesh,
         // and assert when a mesh lacks one: dynamic text meshes, chandeliers without lightmap UVs, or empty pieces.
         int fixedFlags = 0;

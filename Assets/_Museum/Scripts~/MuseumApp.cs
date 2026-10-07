@@ -37,6 +37,15 @@ public class MuseumApp : MonoBehaviour
         Application.targetFrameRate = 60;              // phones default to 30 fps
         QualitySettings.vSyncCount = 0;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += (_, __) => FixLightmapMode();
+    }
+
+    /// The bakes are non-directional; if a scene says "directional" without direction maps, lit surfaces render black/white.
+    static void FixLightmapMode()
+    {
+        var maps = LightmapSettings.lightmaps;
+        if (maps.Length > 0 && LightmapSettings.lightmapsMode != LightmapsMode.NonDirectional && System.Array.TrueForAll(maps, m => m.lightmapDir == null))
+            LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
     }
 
     static MuseumApp Runner

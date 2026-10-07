@@ -83,6 +83,19 @@ public static class MuseumLighting
                 var scene = EditorSceneManager.OpenScene(scenes[i], OpenSceneMode.Single);
                 Configure(scene);
                 bool ok = Lightmapping.Bake();
+                // Unity can leave the scene flagged "directional" after a non-directional bake: the shader then reads a missing
+                // direction map and lit surfaces turn pure black/white. Match the flag to what was actually baked.
+                var maps = LightmapSettings.lightmaps;
+                if (maps.All(m => m.lightmapDir == null)) LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
+                // keep Unity's default lightmap compression (undo any manual override on the baked EXRs)
+                foreach (var m in maps)
+                {
+                    var ti = m.lightmapColor ? AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(m.lightmapColor)) as TextureImporter : null;
+                    if (ti == null) continue;
+                    var ps = ti.GetPlatformTextureSettings("iPhone");
+                    if (ps.overridden) { ps.overridden = false; ti.SetPlatformTextureSettings(ps); ti.SaveAndReimport(); }
+                }
+                log.Append($"[{LightmapSettings.lightmapsMode}, {maps.Length} maps] ");
                 EditorSceneManager.MarkSceneDirty(scene);
                 EditorSceneManager.SaveScene(scene);
                 log.AppendLine($"{Path.GetFileNameWithoutExtension(scenes[i])}: {(ok ? "baked" : "FAILED")} in {(System.DateTime.Now - t0).TotalSeconds:0}s");
