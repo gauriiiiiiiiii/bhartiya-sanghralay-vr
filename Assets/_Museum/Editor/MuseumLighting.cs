@@ -40,9 +40,7 @@ public static class MuseumLighting
     /// Lightmapping settings for a museum scene (call while the scene is open, before saving).
     public static void Configure(UnityEngine.SceneManagement.Scene scene)
     {
-        var dir = Path.GetDirectoryName(scene.path);
-        if (string.IsNullOrEmpty(dir)) dir = "Assets/_Museum/Scenes";
-        var path = $"Assets/_Museum/Settings/Lighting_Museum.lighting";
+        const string path = "Assets/_Museum/Settings/Lighting_Museum.lighting";
         var ls = AssetDatabase.LoadAssetAtPath<LightingSettings>(path);
         if (ls == null)
         {

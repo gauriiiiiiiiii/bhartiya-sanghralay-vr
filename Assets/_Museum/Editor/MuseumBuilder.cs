@@ -123,7 +123,7 @@ public static partial class MuseumBuilder
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Preparing assets", 0f);
             foreach (var d in new[] { MatDir, MatDir + "/Boards", MatDir + "/Photos", TexDir, MeshDir, DataDir, SceneDir }) Directory.CreateDirectory(d);
             AssetDatabase.Refresh();
-            M.Clear(); Meshes.Clear(); MeshKit.ClearCache(); credits = null;
+            M.Clear(); Meshes.Clear(); MeshKit.ClearCache(); outlineMats.Clear(); credits = null;
 
             var museum = JsonUtility.FromJson<MuseumJ>(File.ReadAllText(JsonPath));
             int fixedImports = FixArtImports();
@@ -855,6 +855,29 @@ public static partial class MuseumBuilder
     }
 
     /// Gateway with pillars, a glowing membrane and a label; selecting it loads 'scene'.
+
+    /// Outlined text without per-object material instances (setting outlineWidth in edit mode leaks a material per label).
+    static readonly Dictionary<string, Material> outlineMats = new Dictionary<string, Material>();
+    static void Outline(TMP_Text t, float width, Color32 color)
+    {
+        if (t.font == null) return;
+        string key = $"{t.font.name}_{width:0.00}_{color.r}_{color.g}_{color.b}";
+        if (!outlineMats.TryGetValue(key, out var m) || m == null)
+        {
+            var path = $"Assets/_Museum/Materials/FontOutline_{key}.mat";
+            m = AssetDatabase.LoadAssetAtPath<Material>(path);
+            if (m == null)
+            {
+                m = new Material(t.font.material);
+                AssetDatabase.CreateAsset(m, path);
+            }
+            m.SetFloat("_OutlineWidth", width); m.SetColor("_OutlineColor", color);
+            m.EnableKeyword("OUTLINE_ON"); EditorUtility.SetDirty(m);
+            outlineMats[key] = m;
+        }
+        t.fontSharedMaterial = m;
+    }
+
     static void Portal(Transform p, string name, Vector3 floorCenter, Vector3 normal, string scene, string arrival, string label, string glowMat, Color glowColor)
     {
         var g = Group(p, "Portal_" + name);
@@ -867,7 +890,7 @@ public static partial class MuseumBuilder
 
         var glow = Panel("Glow", floorCenter + normal * 0.06f + Vector3.up * (h / 2), normal, w, h, M[glowMat], g, isStatic: false);
         var t = Text3D("Label", label, floorCenter + normal * 0.1f + Vector3.up * (h * 0.55f), normal, new Vector2(w - 0.2f, 1.1f), Color.white, glow.transform.parent, true, 6f);
-        t.outlineWidth = 0.15f; t.outlineColor = new Color32(60, 20, 10, 255);
+        Outline(t, 0.15f, new Color32(60, 20, 10, 255));
 
         glow.layer = interactiveLayer;
         var col = glow.AddComponent<BoxCollider>();

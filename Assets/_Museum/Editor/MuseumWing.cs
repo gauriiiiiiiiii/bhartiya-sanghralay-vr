@@ -237,7 +237,7 @@ public static partial class MuseumBuilder
         {
             float ty = spring + rise + (s.flatCeiling ? 0.55f : 0.75f);
             var t = Text3D("Title", titleWest, new Vector3(x - thick / 2 - 0.03f, ty, 0), Vector3.left, new Vector2(7.5f, 0.7f), new Color(0.98f, 0.82f, 0.45f), g, true, 8f);
-            t.outlineWidth = 0.12f; t.outlineColor = new Color32(50, 25, 10, 255);
+            Outline(t, 0.12f, new Color32(50, 25, 10, 255));
             if (!string.IsNullOrEmpty(subtitleWest))
                 Text3D("Subtitle", subtitleWest, new Vector3(x - thick / 2 - 0.03f, ty - 0.55f, 0), Vector3.left, new Vector2(7f, 0.38f), new Color(1f, 0.92f, 0.78f), g, false, 4f);
         }
