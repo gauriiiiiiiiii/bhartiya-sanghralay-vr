@@ -17,12 +17,23 @@ public static class MuseumLighting
 
     static MuseumLighting() => EditorApplication.delayCall += () =>
     {
+        EditorSceneManager.sceneOpened += (_, __) => FixLightmapMode();
+        FixLightmapMode();
         if (!Pending) return;
         waitStart = EditorApplication.timeSinceStartup;
         EditorApplication.update += Wait;
     };
 
     static bool Pending => File.Exists(StateFile) && File.ReadAllText(StateFile).Trim() == "pending";
+
+    /// The baked lighting data can come back flagged "directional" although only non-directional maps were baked; shaders
+    /// then read a missing direction map and lit surfaces turn pure black/white. (MuseumApp applies the same fix at runtime.)
+    public static void FixLightmapMode()
+    {
+        var maps = LightmapSettings.lightmaps;
+        if (maps.Length > 0 && LightmapSettings.lightmapsMode != LightmapsMode.NonDirectional && maps.All(m => m.lightmapDir == null))
+            LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
+    }
 
     public static void Request() => File.WriteAllText(StateFile, "pending");
 
@@ -86,7 +97,7 @@ public static class MuseumLighting
                 // Unity can leave the scene flagged "directional" after a non-directional bake: the shader then reads a missing
                 // direction map and lit surfaces turn pure black/white. Match the flag to what was actually baked.
                 var maps = LightmapSettings.lightmaps;
-                if (maps.All(m => m.lightmapDir == null)) LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
+                FixLightmapMode();
                 // keep Unity's default lightmap compression (undo any manual override on the baked EXRs)
                 foreach (var m in maps)
                 {
