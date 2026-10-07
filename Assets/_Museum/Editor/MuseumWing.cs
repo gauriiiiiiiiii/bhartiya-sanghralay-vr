@@ -21,31 +21,31 @@ public static partial class MuseumBuilder
     const float TPZ = 3.0f;        // visitor stand line for wall exhibits (z = ±3)
     const float STANDZ = 4.6f;     // display stands in front of the boards
 
-    class Style
+    class EraStyle
     {
         public string id, wall, wallAlt, floor, vault, trim, rib, column, chandelier, jali, glow;
         public Arch arch; public Arch vaultArch; public float vaultRise; public bool flatCeiling;
         public Color wallTint = Color.white, trimTint = Color.white;
     }
 
-    static readonly Dictionary<string, Style> Styles = new Dictionary<string, Style>
+    static readonly Dictionary<string, EraStyle> Styles = new Dictionary<string, EraStyle>
     {   // Ancient: buff sandstone, chaitya (horseshoe) arches, a barrel vault with teak ribs like the Karla cave hall
-        ["W1"] = new Style { id = "W1", wall = "Era_W1_Wall", wallAlt = "Era_Brick", floor = "Era_W1_Floor", vault = "Era_W1_Vault", trim = "Era_W1_Trim", rib = "Teak",
+        ["W1"] = new EraStyle { id = "W1", wall = "Era_W1_Wall", wallAlt = "Era_Brick", floor = "Era_W1_Floor", vault = "Era_W1_Vault", trim = "Era_W1_Trim", rib = "Teak",
                              column = "ashokan", chandelier = "brass", jali = "Jali_Diamond", glow = "Glow_Warm", arch = Arch.Horseshoe, vaultArch = Arch.Round, vaultRise = 3.4f },
         // Classical: Gupta sandstone, round arches, stone ribs, pot-and-foliage pillars
-        ["W2"] = new Style { id = "W2", wall = "Era_W2_Wall", wallAlt = "Era_W2_Wall", floor = "Era_W2_Floor", vault = "Era_W2_Vault", trim = "Era_W2_Trim", rib = "Era_W2_Trim",
+        ["W2"] = new EraStyle { id = "W2", wall = "Era_W2_Wall", wallAlt = "Era_W2_Wall", floor = "Era_W2_Floor", vault = "Era_W2_Vault", trim = "Era_W2_Trim", rib = "Era_W2_Trim",
                              column = "gupta", chandelier = "brass", jali = "Jali_Diamond", glow = "Glow_Warm", arch = Arch.Round, vaultArch = Arch.Round, vaultRise = 3.0f },
         // Medieval: red sandstone with white marble, Mughal cusped arches, star jalis, lanterns
-        ["W3"] = new Style { id = "W3", wall = "Era_W3_Wall", wallAlt = "Era_Marble", floor = "Era_W3_Floor", vault = "Era_W3_Vault", trim = "Era_Marble", rib = "Era_Marble",
+        ["W3"] = new EraStyle { id = "W3", wall = "Era_W3_Wall", wallAlt = "Era_Marble", floor = "Era_W3_Floor", vault = "Era_W3_Vault", trim = "Era_Marble", rib = "Era_Marble",
                              column = "mughal", chandelier = "lantern", jali = "Jali_Star", glow = "Glow_Warm", arch = Arch.Cusped, vaultArch = Arch.Pointed, vaultRise = 4.0f },
         // Colonial: Indo-Saracenic / Gothic stone, pointed ribbed vaults, leaded lattice windows, iron chandeliers with track spots
-        ["W4"] = new Style { id = "W4", wall = "Era_W4_Wall", wallAlt = "Era_W4_Wall", floor = "Era_W4_Floor", vault = "Era_W4_Vault", trim = "Era_W4_Trim", rib = "Era_W4_Trim",
+        ["W4"] = new EraStyle { id = "W4", wall = "Era_W4_Wall", wallAlt = "Era_W4_Wall", floor = "Era_W4_Floor", vault = "Era_W4_Vault", trim = "Era_W4_Trim", rib = "Era_W4_Trim",
                              column = "gothic", chandelier = "iron", jali = "Jali_Lead", glow = "Glow_Sky", arch = Arch.Pointed, vaultArch = Arch.Pointed, vaultRise = 4.2f },
         // Freedom & Republic: Lutyens' Delhi buff and red sandstone, round arches, hexagonal jalis
-        ["W5"] = new Style { id = "W5", wall = "Era_W5_Wall", wallAlt = "Era_W3_Wall", floor = "Era_W5_Floor", vault = "Era_W5_Vault", trim = "Era_W5_Trim", rib = "Era_W3_Wall",
+        ["W5"] = new EraStyle { id = "W5", wall = "Era_W5_Wall", wallAlt = "Era_W3_Wall", floor = "Era_W5_Floor", vault = "Era_W5_Vault", trim = "Era_W5_Trim", rib = "Era_W3_Wall",
                              column = "delhi", chandelier = "iron", jali = "Jali_Hex", glow = "Glow_Warm", arch = Arch.Round, vaultArch = Arch.Round, vaultRise = 3.0f },
         // Themes: modern gallery, plaster and polished stone, flat ceiling with skylights
-        ["W6"] = new Style { id = "W6", wall = "Era_W6_Wall", wallAlt = "Era_W6_Wall", floor = "Era_W6_Floor", vault = "Era_W6_Vault", trim = "Era_W6_Trim", rib = "Era_W6_Trim",
+        ["W6"] = new EraStyle { id = "W6", wall = "Era_W6_Wall", wallAlt = "Era_W6_Wall", floor = "Era_W6_Floor", vault = "Era_W6_Vault", trim = "Era_W6_Trim", rib = "Era_W6_Trim",
                              column = "modern", chandelier = "pendant", jali = "Jali_Grid", glow = "Glow_Sky", arch = Arch.Flat, vaultArch = Arch.Round, vaultRise = 0f, flatCeiling = true },
     };
 
@@ -198,7 +198,7 @@ public static partial class MuseumBuilder
     }
 
     // ------------------------------------------------------------------ architecture pieces
-    static float ArchRise(Style s, float span) => s.arch switch
+    static float ArchRise(EraStyle s, float span) => s.arch switch
     {
         Arch.Pointed => span * 0.62f,
         Arch.Cusped => span * 0.6f,
@@ -208,7 +208,7 @@ public static partial class MuseumBuilder
     };
 
     /// Cross wall at x with a moulded doorway (and two jali windows) between two halls.
-    static void Partition2(Transform parent, Style s, float x, string titleWest, string subtitleWest, bool windowsWest = true)
+    static void Partition2(Transform parent, EraStyle s, float x, string titleWest, string subtitleWest, bool windowsWest = true)
     {
         var g = Group(parent, $"Partition_{x:0.#}");
         float crown = s.flatCeiling ? 6.4f : WALLH + s.vaultRise;
@@ -244,7 +244,7 @@ public static partial class MuseumBuilder
     }
 
     /// Arched window with a glowing pane behind a jali / lattice screen and a moulded frame. 'face' = direction it faces.
-    static void JaliWindow(Transform p, Style s, Vector3 basePos, Vector3 face, float span, float y0, float y1, bool withSill)
+    static void JaliWindow(Transform p, EraStyle s, Vector3 basePos, Vector3 face, float span, float y0, float y1, bool withSill)
     {
         var g = Group(p, "JaliWindow");
         float rise = s.arch == Arch.Flat ? 0.2f : Mathf.Min(ArchRise(s, span), (y1 - y0) * 0.45f);
@@ -267,7 +267,7 @@ public static partial class MuseumBuilder
     }
 
     /// Blind arcade: an arched moulded frame on a side wall enclosing two exhibit boards, with a jali tympanum.
-    static void BlindArch(Transform p, Style s, float xc, float zWall, Vector3 normal)
+    static void BlindArch(Transform p, EraStyle s, float xc, float zWall, Vector3 normal)
     {
         var g = Group(p, "BlindArch");
         float span = BAY - 0.7f, spring = 3.0f;
@@ -289,7 +289,7 @@ public static partial class MuseumBuilder
     }
 
     /// One hall segment (x0..x1): floor, walls with cornice and skirting, vault or flat ceiling, pilasters and ribs at bays.
-    static void HallShell(Transform arch, Style s, float x0, float x1, bool ribs = true)
+    static void HallShell(Transform arch, EraStyle s, float x0, float x1, bool ribs = true)
     {
         float len = x1 - x0;
         FloorQuad("Floor", x0, x1, -HW2, HW2, 0f, M[s.floor], arch);
@@ -345,7 +345,7 @@ public static partial class MuseumBuilder
     }
 
     // ------------------------------------------------------------------ furniture
-    static GameObject Chandelier(Transform p, Style s, Vector3 hangPoint, float crownY)
+    static GameObject Chandelier(Transform p, EraStyle s, Vector3 hangPoint, float crownY)
     {
         var g = Group(p, "Chandelier");
         g.position = hangPoint;
@@ -500,7 +500,7 @@ public static partial class MuseumBuilder
     }
 
     /// Stand + object for an exhibit, in front of its board. Returns the object group (made selectable by the caller).
-    static GameObject ExhibitStand(Transform p, Style s, string id, string stand, Vector3 pos, Vector3 facing, Sprite fallback)
+    static GameObject ExhibitStand(Transform p, EraStyle s, string id, string stand, Vector3 pos, Vector3 facing, Sprite fallback)
     {
         var g = new GameObject($"{id}_Stand_{stand}"); g.transform.SetParent(p, false); g.transform.position = pos;
         float yaw = Quaternion.LookRotation(facing).eulerAngles.y;
@@ -559,7 +559,7 @@ public static partial class MuseumBuilder
     }
 
     // ------------------------------------------------------------------ centrepiece showcase
-    static GameObject Showcase(Transform p, Style s, SectionJ sec, Vector3 pos)
+    static GameObject Showcase(Transform p, EraStyle s, SectionJ sec, Vector3 pos)
     {
         var g = Group(p, $"{sec.id}_Showcase");
         // stepped base: granite step, marble plinth with brass trim
@@ -603,7 +603,7 @@ public static partial class MuseumBuilder
     }
 
     // ------------------------------------------------------------------ kiosk
-    static KioskScreen Kiosk(Transform p, Style s, SectionJ sec, WingJ w, int wi, Vector3 pos, List<Artifact> exhibits, List<ExhibitJ> exs)
+    static KioskScreen Kiosk(Transform p, EraStyle s, SectionJ sec, WingJ w, int wi, Vector3 pos, List<Artifact> exhibits, List<ExhibitJ> exs)
     {
         var g = Group(p, $"{sec.id}_Kiosk");
         g.SetPositionAndRotation(pos, Quaternion.Euler(0, 90, 0));          // screen faces -X (towards arriving visitors)
@@ -725,10 +725,10 @@ public static partial class MuseumBuilder
         var tl = string.Join("\n", w.sections.Select(sec => $"<color=#F5C66A><b>{sec.num}.</b></color> {sec.title}  <color=#D8C8B0><size=80%>{sec.period}</size></color>"));
         var board = Box("TimelineBoard", new Vector3(-BAY, 2.4f, -HW2 + 0.04f), new Vector3(5.2f, 3.0f, 0.06f), M["Teak_Dark"], decor); StaticAll(board);
         Text3D("WingTimeline", $"<b>{w.title}</b>  <size=70%>{w.subtitle}</size>\n<size=55%>{tl}</size>", new Vector3(-BAY, 2.4f, -HW2 + 0.08f), Vector3.forward, new Vector2(4.8f, 2.7f), new Color(1f, 0.94f, 0.82f), decor, false, 3f);
-        for (float x = ex0 + BAY / 2; x < 0; x += BAY)
+        for (float hx = ex0 + BAY / 2; hx < 0; hx += BAY)
         {
-            Chandelier(decor, s, new Vector3(x, crown - 2.2f, 0), crown - 0.1f);
-            BakedLight("Chandelier", LightType.Point, new Vector3(x, crown - 2.4f, 0), lights, 10f, 2.4f, warm);
+            Chandelier(decor, s, new Vector3(hx, crown - 2.2f, 0), crown - 0.1f);
+            BakedLight("Chandelier", LightType.Point, new Vector3(hx, crown - 2.4f, 0), lights, 10f, 2.4f, warm);
         }
         Bench(decor, new Vector3(-BAY * 1.5f, 0, -2.2f), 0);
         ProbesAndReflection(lights, ex0, 0, crown);

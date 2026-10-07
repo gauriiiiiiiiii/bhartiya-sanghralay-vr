@@ -224,11 +224,11 @@ public class KioskScreen : MonoBehaviour
 
     void TimelinePage(int page)
     {
-        int pages = Mathf.CeilToInt(sorted.Count / (float)PerPage);
-        tPage = Mathf.Clamp(page, 0, pages - 1);
+        int pageCount = Mathf.CeilToInt(sorted.Count / (float)PerPage);
+        tPage = Mathf.Clamp(page, 0, pageCount - 1);
         foreach (var g in tItems) Destroy(g);
         tItems.Clear();
-        var p = pages_[1];
+        var p = pages[1].transform;
         for (int i = 0; i < PerPage; i++)
         {
             int idx = tPage * PerPage + i;
@@ -243,10 +243,9 @@ public class KioskScreen : MonoBehaviour
             label.text = $"<b><color=#F5C66A><size=120%>{e.label}</size></color></b>\n{e.title}";
             tItems.Add(b.gameObject);
         }
-        tPageLabel.text = $"{tPage + 1} / {pages}   ·   {sorted.First().label}  to  {sorted.Last().label}";
+        tPageLabel.text = $"{tPage + 1} / {pageCount}   ·   {sorted.First().label}  to  {sorted.Last().label}";
     }
 
-    GameObject[] pages_ => pages;
 
     void GoTo(Entry e)
     {

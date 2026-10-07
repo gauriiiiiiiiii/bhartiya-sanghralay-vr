@@ -246,9 +246,9 @@ public static class MeshKit
         angs[0] = Ang(open[0]);
         for (int i = 1; i < open.Count; i++)
         {
-            float a = Ang(open[i]);
-            while (a > angs[i - 1] + 1e-4f) a -= Mathf.PI * 2f;
-            angs[i] = a;
+            float ang = Ang(open[i]);
+            while (ang > angs[i - 1] + 1e-4f) ang -= Mathf.PI * 2f;
+            angs[i] = ang;
         }
         for (int i = 0; i < open.Count; i++)
         {
