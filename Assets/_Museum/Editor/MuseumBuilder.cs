@@ -1377,6 +1377,25 @@ public static partial class MuseumBuilder
     {
         EditorSceneManager.MarkSceneDirty(scene);
         if (!EditorSceneManager.SaveScene(scene, path)) throw new Exception("Could not save " + path);
+        // Sanitise static flags before baking. The bakers copy every channel they need (lightmap UVs, normals) from each static mesh,
+        // and assert when a mesh lacks one: dynamic text meshes, chandeliers without lightmap UVs, or empty pieces.
+        int fixedFlags = 0;
+        foreach (var root in scene.GetRootGameObjects())
+        {
+            foreach (var tmp in root.GetComponentsInChildren<TMP_Text>(true))
+                if (GameObjectUtility.GetStaticEditorFlags(tmp.gameObject) != 0) { GameObjectUtility.SetStaticEditorFlags(tmp.gameObject, 0); fixedFlags++; }
+            foreach (var mf in root.GetComponentsInChildren<MeshFilter>(true))
+            {
+                var go = mf.gameObject; var flags = GameObjectUtility.GetStaticEditorFlags(go);
+                if (flags == 0 || go.GetComponent<TMP_Text>()) continue;
+                var mesh = mf.sharedMesh;
+                if (mesh == null || mesh.vertexCount == 0 || !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.Normal) || !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.TexCoord0))
+                { GameObjectUtility.SetStaticEditorFlags(go, 0); var r = go.GetComponent<MeshRenderer>(); if (r && (mesh == null || mesh.vertexCount == 0)) r.enabled = false; fixedFlags++; }
+                else if ((flags & StaticEditorFlags.ContributeGI) != 0 && !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.TexCoord1))
+                { GameObjectUtility.SetStaticEditorFlags(go, flags & ~StaticEditorFlags.ContributeGI); fixedFlags++; }   // lit by light probes instead
+            }
+        }
+        if (fixedFlags > 0) Debug.Log($"[Museum] {scene.name}: adjusted static flags on {fixedFlags} objects (text, meshes without lightmap UVs)");
         // Bake occlusion culling: rooms hidden behind walls and arches are not drawn (big win in the long wings)
         StaticOcclusionCulling.smallestOccluder = 1.5f;
         StaticOcclusionCulling.smallestHole = 0.25f;
