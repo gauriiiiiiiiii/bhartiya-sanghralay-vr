@@ -130,7 +130,7 @@ public static partial class MuseumBuilder
         Lit("Screen_Bezel", new Color(0.08f, 0.08f, 0.09f), 0.6f, 0.7f);
         Glass("Glass", new Color(0.85f, 0.95f, 1f, 0.12f));
         GlowMat("Glow_Warm", new Color(1f, 0.86f, 0.62f), 2.2f);
-        GlowMat("Glow_Sky", new Color(0.86f, 0.92f, 1f), 2.4f);
+        GlowMat("Glow_Sky", new Color(0.86f, 0.92f, 1f), 3.4f);
         GlowMat("Bulb", new Color(1f, 0.8f, 0.5f), 4f);
         JaliMat("Jali_Diamond", "UI/jali_diamond.png", 0.7f, new Color(0.95f, 0.85f, 0.7f));
         JaliMat("Jali_Star", "UI/jali_star.png", 0.9f, Color.white);
@@ -168,7 +168,8 @@ public static partial class MuseumBuilder
     {
         var mb = new MeshKit.MB();
         var dir = (b - a).normalized;
-        mb.Quad(new Vector3(a.x, y0, a.z), new Vector3(a.x, y1, a.z), new Vector3(b.x, y1, b.z), new Vector3(b.x, y0, b.z),
+        // winding: front face (Unity: cross(p1 - p0, p2 - p0)) must point into the hall, i.e. to the right of a -> b seen from above
+        mb.Quad(new Vector3(a.x, y0, a.z), new Vector3(b.x, y0, b.z), new Vector3(b.x, y1, b.z), new Vector3(a.x, y1, a.z),
                 new Vector3(dir.x, 0, dir.z), Vector3.up);
         var key = $"Wall_{(b - a).magnitude:0.##}x{y1 - y0:0.##}_{Mathf.Atan2(dir.z, dir.x) * Mathf.Rad2Deg:0}";
         // vertices are absolute; bake them relative to 'a' so the mesh can be shared
@@ -667,6 +668,9 @@ public static partial class MuseumBuilder
     }
 
     // ------------------------------------------------------------------ lighting helpers
+    /// Chandelier strength: baked point lights fade with distance squared and hang 4-6 m above the floor.
+    static float ChandelierLux(EraStyle s) => s.flatCeiling ? 6.5f : 5.5f;
+
     static Light BakedLight(string name, LightType type, Vector3 pos, Transform p, float range, float intensity, Color c)
     {
         var l = NewLight(name, type, pos, p, range, intensity);
@@ -697,9 +701,10 @@ public static partial class MuseumBuilder
         var s = Styles[w.id];
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
         SetupLighting();
-        RenderSettings.ambientSkyColor = new Color(0.32f, 0.29f, 0.26f);
-        RenderSettings.ambientEquatorColor = new Color(0.24f, 0.21f, 0.18f);
-        RenderSettings.ambientGroundColor = new Color(0.12f, 0.1f, 0.09f);
+        float amb = s.flatCeiling ? 1.35f : 1.15f;
+        RenderSettings.ambientSkyColor = new Color(0.32f, 0.29f, 0.26f) * amb;
+        RenderSettings.ambientEquatorColor = new Color(0.24f, 0.21f, 0.18f) * amb;
+        RenderSettings.ambientGroundColor = new Color(0.12f, 0.1f, 0.09f) * amb;
         var root = new GameObject($"Wing{wi + 1}_{w.title.Replace(' ', '_')}").transform;
         var arch = Group(root, "Architecture"); var decor = Group(root, "Decor"); var lights = Group(root, "Lighting");
         var pts = Group(root, "TeleportPoints"); var exhibitsRoot = Group(root, "Exhibits"); var timeline = Group(root, "FloorTimeline");
@@ -728,7 +733,14 @@ public static partial class MuseumBuilder
         for (float hx = ex0 + BAY / 2; hx < 0; hx += BAY)
         {
             Chandelier(decor, s, new Vector3(hx, crown - 2.2f, 0), crown - 0.1f);
-            BakedLight("Chandelier", LightType.Point, new Vector3(hx, crown - 2.4f, 0), lights, 10f, 2.4f, warm);
+            BakedLight("Chandelier", LightType.Point, new Vector3(hx, crown - 2.4f, 0), lights, 14f, ChandelierLux(s), warm);
+        }
+        foreach (var side in new[] { 1, -1 })
+        {
+            var sp = BakedLight("TitleSpot", LightType.Spot, new Vector3(-BAY, WALLH - 0.2f, side * 1.2f), lights, 12f, 10f, new Color(1f, 0.92f, 0.8f));
+            sp.transform.LookAt(new Vector3(-BAY, 2.4f, side * HW2)); sp.spotAngle = 80f;
+            foreach (var fx in new[] { ex0 + BAY * 0.5f, ex0 + BAY * 1.5f })
+                BakedLight("WallWash", LightType.Point, new Vector3(fx, 3.4f, side * (HW2 - 1.6f)), lights, 8f, 2.6f, warm);
         }
         Bench(decor, new Vector3(-BAY * 1.5f, 0, -2.2f), 0);
         ProbesAndReflection(lights, ex0, 0, crown);
@@ -757,10 +769,13 @@ public static partial class MuseumBuilder
                 BlindArch(arch, s, xc, HW2, Vector3.back);
                 BlindArch(arch, s, xc, -HW2, Vector3.forward);
                 Chandelier(decor, s, new Vector3(xc, crown - 2.2f, 0), crown - 0.1f);
-                BakedLight("Chandelier", LightType.Point, new Vector3(xc, crown - 2.4f, 0), lights, 10f, 2.2f, warm);
+                BakedLight("Chandelier", LightType.Point, new Vector3(xc, crown - 2.4f, 0), lights, 14f, ChandelierLux(s), warm);
+                if (s.flatCeiling)       // modern gallery: a row of pendants down each side as well
+                    foreach (var z in new[] { -3.2f, 3.2f })
+                        BakedLight("Pendant", LightType.Point, new Vector3(xc, crown - 1.6f, z), lights, 10f, 3.2f, new Color(1f, 0.95f, 0.88f));
                 foreach (var side in new[] { 1, -1 })
                 {
-                    var sp = BakedLight("BoardSpot", LightType.Spot, new Vector3(xc, WALLH - 0.3f, side * 2.2f), lights, 9f, 5f, new Color(1f, 0.9f, 0.76f));
+                    var sp = BakedLight("BoardSpot", LightType.Spot, new Vector3(xc, WALLH - 0.3f, side * 2.2f), lights, 10f, 7f, new Color(1f, 0.9f, 0.76f));
                     sp.transform.LookAt(new Vector3(xc, 1.6f, side * HW2)); sp.spotAngle = 75f;
                 }
             }
@@ -853,7 +868,7 @@ public static partial class MuseumBuilder
         for (float cxx = xe + BAY / 2; cxx < xEnd; cxx += BAY)
         {
             Chandelier(decor, s, new Vector3(cxx, crown - 2.2f, 0), crown - 0.1f);
-            BakedLight("Chandelier", LightType.Point, new Vector3(cxx, crown - 2.4f, 0), lights, 10f, 2.4f, warm);
+            BakedLight("Chandelier", LightType.Point, new Vector3(cxx, crown - 2.4f, 0), lights, 14f, ChandelierLux(s), warm);
         }
         ProbesAndReflection(lights, xe, xEnd, crown);
 
