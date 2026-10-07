@@ -54,6 +54,7 @@ public static class MuseumAudioSetup
             if (data == null) continue;
             total++;
             var clip = Newest(data.id);
+            if (!clip && data.id.EndsWith("C")) clip = Newest(data.id.Substring(0, data.id.Length - 1));   // centrepiece: section narration
             if (data.narration != clip) { data.narration = clip; EditorUtility.SetDirty(data); }
             if (clip) found++; else missing.Add(data.id);
         }

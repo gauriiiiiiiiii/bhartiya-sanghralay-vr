@@ -25,7 +25,7 @@ using UnityEngine.UI;
 /// Runs once automatically (state file), or via Museum > Rebuild All Scenes.
 /// Everything visual is generated: art in Assets/_Museum/Art, models are primitives.
 [InitializeOnLoad]
-public static class MuseumBuilder
+public static partial class MuseumBuilder
 {
     const string StateFile = "ProjectSettings/MuseumIHM_State.txt";
     const string ReportFile = "ProjectSettings/MuseumIHM_Report.txt";
@@ -48,13 +48,26 @@ public static class MuseumBuilder
     static readonly Dictionary<string, Mesh> Meshes = new Dictionary<string, Mesh>();
     static TMP_FontAsset font;
     static Sprite ring, disc;
-    static double waitStart;
+    static double waitStart, lastPolyCheck;
+    static bool loggedWaiting;
+
+    static bool PolyHavenReady()
+    {
+        const string manifest = "Assets/_Museum/PolyHaven/manifest.json";
+        return File.Exists(manifest) && File.ReadAllText(manifest).Contains("\"complete\": true");
+    }
 
     // ------------------------------------------------------------------ JSON model
     [Serializable] class MuseumJ { public string title; public string welcome; public List<WingJ> wings; }
     [Serializable] class WingJ { public string id, title, subtitle, color, intro; public List<SectionJ> sections; }
-    [Serializable] class SectionJ { public int num; public string id, title, period, intro, centrepiece; public List<ExhibitJ> exhibits; }
-    [Serializable] class ExhibitJ { public string id, title, briefTitle, text; }
+    [Serializable] class SectionJ
+    {
+        public int num, yearStart, yearEnd; public string id, title, period, intro, centrepiece;
+        public List<ExhibitJ> exhibits; public List<QuizJ> quiz; public ExhibitJ centre;
+    }
+    [Serializable] class ExhibitJ { public string id, title, briefTitle, text, yearLabel, stand, show; public int year; public List<PlaceJ> places = new List<PlaceJ>(); }
+    [Serializable] class PlaceJ { public string name; public float lat, lon, u, v; }
+    [Serializable] class QuizJ { public string q, why; public List<string> options; public int answer; }
 
     // ------------------------------------------------------------------ entry points
     static MuseumBuilder() => EditorApplication.delayCall += () =>
@@ -70,7 +83,15 @@ public static class MuseumBuilder
         if (EditorApplication.isPlaying || EditorApplication.isPlayingOrWillChangePlaymode) { waitStart = EditorApplication.timeSinceStartup; return; }
         if (EditorApplication.isCompiling || EditorApplication.isUpdating) return;
         if (EditorApplication.timeSinceStartup - waitStart < 3) return;
+        if (!PolyHavenReady())
+        {   // wait for Tools/fetch_polyhaven.py to finish (checked every few seconds), so the first build uses real materials
+            if (EditorApplication.timeSinceStartup - lastPolyCheck < 5) return;
+            lastPolyCheck = EditorApplication.timeSinceStartup;
+            if (!loggedWaiting) { Debug.Log("[Museum] Waiting for the Poly Haven download (python3 Tools/fetch_polyhaven.py) before building. Use Museum > Rebuild All Scenes to build now."); loggedWaiting = true; }
+            return;
+        }
         EditorApplication.update -= WaitForEditor;
+        AssetDatabase.Refresh();
         if (!File.Exists(StateFile)) Build();
     }
 
@@ -100,15 +121,17 @@ public static class MuseumBuilder
         try
         {
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Preparing assets", 0f);
-            foreach (var d in new[] { MatDir, MatDir + "/Boards", TexDir, MeshDir, DataDir, SceneDir }) Directory.CreateDirectory(d);
+            foreach (var d in new[] { MatDir, MatDir + "/Boards", MatDir + "/Photos", TexDir, MeshDir, DataDir, SceneDir }) Directory.CreateDirectory(d);
             AssetDatabase.Refresh();
-            M.Clear(); Meshes.Clear();
+            M.Clear(); Meshes.Clear(); MeshKit.ClearCache(); credits = null;
 
             var museum = JsonUtility.FromJson<MuseumJ>(File.ReadAllText(JsonPath));
             int fixedImports = FixArtImports();
             font = CreateFont(museum);
             CleanTmpFallbacks();
             CreateMaterials(museum);
+            CreateEraMaterials();
+            UpgradeLobbyMaterials();
             ring = MakeCircleSprite("Reticle", 0.62f);
             disc = MakeCircleSprite("TeleportDisc", 0f);
 
@@ -123,7 +146,7 @@ public static class MuseumBuilder
             {
                 EditorUtility.DisplayProgressBar("Museum of Indian History", $"Wing {i + 1}: {museum.wings[i].title}", 0.1f + 0.85f * i / museum.wings.Count);
                 int n = 0;
-                scenes.Add(BuildWing(museum, i, ref n));
+                scenes.Add(BuildWing3(museum, i, ref n));
                 items += n;
                 report.AppendLine($"Wing{i + 1}: {museum.wings[i].title} — {museum.wings[i].sections.Count} sections, {n} items");
             }
@@ -138,7 +161,8 @@ public static class MuseumBuilder
                              $"Scenes (build order): {string.Join(", ", scenes.Select(Path.GetFileNameWithoutExtension))}\n" +
                              $"Art import settings fixed: {fixedImports}\nFont: {(font ? font.name : "TMP default")}\n{audio}\n");
             EditorSceneManager.OpenScene(scenes[0]);
-            EditorApplication.delayCall += MuseumIOSBuild.ContinueIfPending;
+            MuseumLighting.Request();                                   // bake light next, then (if requested) the iOS build
+            EditorApplication.delayCall += MuseumLighting.ContinueIfPending;
         }
         catch (Exception e)
         {
@@ -159,6 +183,16 @@ public static class MuseumBuilder
         {
             var ti = AssetImporter.GetAtPath(path) as TextureImporter;
             if (ti != null && MuseumArtImport.Apply(ti, path)) { ti.SaveAndReimport(); n++; }
+        }
+        foreach (var (dir, poly) in new[] { ("Assets/_Museum/Photos", false), ("Assets/_Museum/PolyHaven/Textures", true) })
+        {
+            if (!Directory.Exists(dir)) continue;
+            foreach (var path in Directory.GetFiles(dir, "*.jpg").Select(p => p.Replace('\\', '/')))
+            {
+                var ti = AssetImporter.GetAtPath(path) as TextureImporter;
+                if (ti == null) continue;
+                if (poly ? MuseumArtImport.ApplyPoly(ti, path) : MuseumArtImport.ApplyPhoto(ti)) { ti.SaveAndReimport(); n++; }
+            }
         }
         return n;
     }
@@ -391,7 +425,8 @@ public static class MuseumBuilder
     }
 
     static void MakeStatic(GameObject go) =>
-        GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.BatchingStatic | StaticEditorFlags.OccluderStatic | StaticEditorFlags.OccludeeStatic);
+        GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.ContributeGI | StaticEditorFlags.BatchingStatic | StaticEditorFlags.OccluderStatic |
+                                                   StaticEditorFlags.OccludeeStatic | StaticEditorFlags.ReflectionProbeStatic);
 
     static Transform P(PrimitiveType type, Transform parent, Vector3 pos, Vector3 scale, string mat, Vector3 euler = default)
     {
@@ -420,6 +455,11 @@ public static class MuseumBuilder
             mesh.normals = Enumerable.Repeat(Vector3.back, 4).ToArray();
             mesh.RecalculateBounds(); mesh.RecalculateTangents();
             AssetDatabase.CreateAsset(mesh, path);
+        }
+        if (mesh.uv2 == null || mesh.uv2.Length == 0)
+        {   // lightmap UVs (everything static is baked)
+            mesh.uv2 = new[] { new Vector2(0, 0), new Vector2(1, 0), new Vector2(0, 1), new Vector2(1, 1) };
+            EditorUtility.SetDirty(mesh);
         }
         return Meshes[key] = mesh;
     }
@@ -503,6 +543,13 @@ public static class MuseumBuilder
 
     static Light NewLight(string name, LightType type, Vector3 pos, Transform parent, float range = 9f, float intensity = 1.25f)
     {
+        var lt = NewLightRaw(name, type, pos, parent, range, intensity);
+        lt.lightmapBakeType = LightmapBakeType.Baked;          // everything is baked: no runtime lighting cost on phones
+        return lt;
+    }
+
+    static Light NewLightRaw(string name, LightType type, Vector3 pos, Transform parent, float range, float intensity)
+    {
         var go = new GameObject(name);
         go.transform.SetParent(parent, false);
         go.transform.position = pos;
@@ -569,7 +616,7 @@ public static class MuseumBuilder
         camGo.tag = "MainCamera";
         camGo.transform.SetParent(look.transform, false);
         var cam = camGo.AddComponent<Camera>();
-        cam.nearClipPlane = 0.05f; cam.farClipPlane = 40f;
+        cam.nearClipPlane = 0.05f; cam.farClipPlane = 70f;
         cam.useOcclusionCulling = true;
         cam.clearFlags = CameraClearFlags.SolidColor;
         cam.backgroundColor = new Color(0.08f, 0.07f, 0.06f);
@@ -1112,6 +1159,8 @@ public static class MuseumBuilder
         panel.tour = new[] { welcomeArt };
         panel.nextFallback = hallCentre;      // Next on the welcome panel walks into the Grand Hall
 
+        LobbyChandeliers(decor, lights);
+        MuseumLighting.Configure(scene);
         BuildPhoneHUD();
         return SaveWithOcclusion(scene, $"{SceneDir}/Lobby.unity");
     }
@@ -1514,5 +1563,34 @@ public static class MuseumBuilder
             so.ApplyModifiedPropertiesWithoutUndo();
         }
         report.AppendLine($"Mobile: bundle {bundle}, iOS 15+, landscape, XR starts from the menu, URP shadows off, occlusion culling baked");
+    }
+
+    // ------------------------------------------------------------------ lobby upgrade (Indo-Saracenic stone, real materials, chandeliers)
+    static void UpgradeLobbyMaterials()
+    {
+        // the lobby keeps its floor plan; its finishes switch to the Poly Haven materials (fall back to colours)
+        M["Hall_Lobby"] = Pbr("Lobby_Wall", "stone_castle", 2.6f, Color.white, 0.15f, new Color(0.48f, 0.11f, 0.13f));
+        M["Hall_Foyer"] = Pbr("Lobby_Foyer", "stone_buff", 2.4f, Color.white, 0.15f, new Color(0.84f, 0.66f, 0.40f));
+        M["Hall_Guide"] = Pbr("Lobby_Guide", "stone_red", 2.2f, Color.white, 0.15f, new Color(0.13f, 0.37f, 0.41f));
+        M["Hall_Directory"] = Pbr("Lobby_Directory", "stone_red", 2.2f, Color.white, 0.15f, new Color(0.19f, 0.33f, 0.24f));
+        M["Floor_Kota"] = Pbr("Lobby_Floor", "floor_marble", 2.0f, Color.white, 0.6f, new Color(0.5f, 0.5f, 0.47f));
+        M["Ceiling_Plaster"] = Pbr("Lobby_Ceiling", "plaster", 3f, new Color(1f, 0.96f, 0.9f), 0.1f, new Color(0.86f, 0.8f, 0.68f));
+        M["Wall_Basalt"] = Pbr("Lobby_Basalt", "stone_castle", 2.6f, new Color(0.9f, 0.88f, 0.85f), 0.15f, new Color(0.36f, 0.32f, 0.29f));
+        M["Dado"] = Pbr("Lobby_Dado", "stone_red", 1.6f, Color.white, 0.2f, new Color(0.5f, 0.3f, 0.25f));
+        M["Plaster_Cream"] = Pbr("Lobby_Upper", "plaster", 3f, new Color(1f, 0.96f, 0.9f), 0.1f, new Color(0.9f, 0.84f, 0.7f));
+    }
+
+    static void LobbyChandeliers(Transform decor, Transform lights)
+    {
+        var s = Styles["W4"];
+        var ph = "Assets/_Museum/PolyHaven/Models/Chandelier_01/Chandelier_01.fbx";
+        foreach (var x in new[] { 3.3f, 9.45f, 15.6f })
+        {
+            var at = new Vector3(x, 2.7f, 4.725f);
+            if (File.Exists(ph)) PlaceModel(ph, decor, at, new Vector3(1.6f, 1.2f, 1.6f), 0);
+            else Chandelier(decor, s, at + Vector3.up * 0.3f, H - 0.05f);
+            NewLight("Chandelier", LightType.Point, at + Vector3.up * 0.2f, lights, 9f, 2.0f);
+        }
+        Chandelier(decor, s, new Vector3(21f, 2.9f, 8.1f), H - 0.05f);
     }
 }

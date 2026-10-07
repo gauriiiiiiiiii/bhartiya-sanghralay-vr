@@ -42,6 +42,7 @@ public static class MuseumIOSBuild
     {
         if (!Pending || EditorApplication.isPlaying) return;
         if (!File.Exists("ProjectSettings/MuseumIHM_State.txt")) return;     // scenes are built first; the builder calls back
+        if (File.Exists("ProjectSettings/MuseumBake_State.txt") && File.ReadAllText("ProjectSettings/MuseumBake_State.txt").Trim() == "pending") return;   // light first
         if (!BuildPipeline.IsBuildTargetSupported(BuildTargetGroup.iOS, BuildTarget.iOS))
         {
             Finish("RESULT: NEEDS iOS MODULE\nInstall 'iOS Build Support' for Unity 6000.6.3f1 in Unity Hub (Installs > ⋯ > Add modules), " +
