@@ -10,10 +10,13 @@ using UnityEngine;
 public static class MuseumAudioSetup
 {
     const string Dir = "Assets/_Museum/Audio";
+    const string CuratedDir = "Assets/_Museum/Curated/Audio";      // v5 audio guide (preferred when both exist)
     static readonly string[] Exts = { ".ogg", ".mp3", ".wav" };
 
     static AudioClip Newest(string id)
     {
+        var cur = Exts.Select(e => $"{CuratedDir}/{id}{e}").FirstOrDefault(File.Exists);
+        if (cur != null) return AssetDatabase.LoadAssetAtPath<AudioClip>(cur);
         var best = new[] { id, id + "_en" }
             .SelectMany(b => Exts.Select(e => $"{Dir}/{b}{e}"))
             .Where(File.Exists)
@@ -31,7 +34,7 @@ public static class MuseumAudioSetup
     public static string Assign()
     {
         Directory.CreateDirectory(Dir);
-        foreach (var file in Directory.GetFiles(Dir).Where(f => Exts.Contains(Path.GetExtension(f).ToLowerInvariant())))
+        foreach (var file in Directory.GetFiles(Dir).Concat(Directory.Exists(CuratedDir) ? Directory.GetFiles(CuratedDir) : new string[0]).Where(f => Exts.Contains(Path.GetExtension(f).ToLowerInvariant())))
         {
             var ai = AssetImporter.GetAtPath(file.Replace('\\', '/')) as AudioImporter;
             if (ai == null) continue;

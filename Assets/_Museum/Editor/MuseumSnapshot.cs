@@ -19,12 +19,18 @@ public static class MuseumSnapshot
             if (cam == null) continue;
             string name = Path.GetFileNameWithoutExtension(path);
             MuseumLighting.FixLightmapMode();
+            foreach (var g in Object.FindObjectsByType<GazeInteractor>(FindObjectsSortMode.None)) if (g.reticle) g.reticle.gameObject.SetActive(false);
             var t = cam.transform; var p0 = t.position; var r0 = t.rotation;
             Shot(cam, $"{dir}/{name}_a.png");
-            bool wing = name.StartsWith("Wing");
-            var fwd = wing ? Vector3.right : Vector3.ProjectOnPlane(t.forward, Vector3.up).normalized;
-            t.SetPositionAndRotation(new Vector3(p0.x, 1.6f, wing ? 0 : p0.z) + fwd * 8f, Quaternion.LookRotation(fwd)); Shot(cam, $"{dir}/{name}_b.png");
-            t.SetPositionAndRotation(new Vector3(p0.x, 1.6f, wing ? 0 : p0.z) + fwd * 20f, Quaternion.LookRotation(Quaternion.Euler(0, 50, 0) * fwd)); Shot(cam, $"{dir}/{name}_c.png");
+            var fwd = Vector3.ProjectOnPlane(t.forward, Vector3.up).normalized;
+            t.SetPositionAndRotation(new Vector3(p0.x, 1.6f, p0.z) + fwd * 9f, Quaternion.LookRotation(Quaternion.Euler(0, 35, 0) * fwd)); Shot(cam, $"{dir}/{name}_b.png");
+            t.SetPositionAndRotation(new Vector3(p0.x, 1.6f, p0.z) + fwd * 9f, Quaternion.LookRotation(Quaternion.Euler(-28, -40, 0) * fwd)); Shot(cam, $"{dir}/{name}_c.png");
+            int k = 0;
+            foreach (var tp in Object.FindObjectsByType<TeleportPoint>(FindObjectsSortMode.None).Where(p => p.name.StartsWith("TP_View_")).OrderBy(p => p.name).Take(3))
+            {
+                t.SetPositionAndRotation(tp.transform.position + Vector3.up * 1.6f - tp.transform.forward * 0.6f, Quaternion.Euler(4, tp.transform.eulerAngles.y, 0));
+                Shot(cam, $"{dir}/{name}_v{k++}.png");
+            }
             t.SetPositionAndRotation(p0, r0);
         }
         Debug.Log("[Museum] Snapshots written to " + dir);

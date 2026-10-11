@@ -61,20 +61,24 @@ public static class MuseumLighting
         }
         ls.bakedGI = true; ls.realtimeGI = false;
         ls.lightmapper = LightingSettings.Lightmapper.ProgressiveGPU;
-        ls.lightmapResolution = 7f;            // texels per metre: halls are large, light is soft
-        ls.lightmapMaxSize = 1024;
+        bool daylight = RenderSettings.skybox != null;       // v5 scenes: sky, sun and area lights
+        ls.lightmapResolution = daylight ? 9f : 7f;           // texels per metre
+        ls.lightmapMaxSize = daylight ? 2048 : 1024;
         ls.lightmapPadding = 2;
-        ls.directionalityMode = LightmapsMode.NonDirectional;
-        ls.ao = true; ls.aoMaxDistance = 0.8f; ls.aoExponentIndirect = 1f; ls.aoExponentDirect = 0f;
-        ls.lightmapCompression = LightmapCompression.NormalQuality;
-        ls.maxBounces = 2;
-        ls.directSampleCount = 32; ls.indirectSampleCount = 256; ls.environmentSampleCount = 64;
+        ls.directionalityMode = daylight ? LightmapsMode.CombinedDirectional : LightmapsMode.NonDirectional;
+        ls.ao = true; ls.aoMaxDistance = daylight ? 1.2f : 0.8f; ls.aoExponentIndirect = 1f; ls.aoExponentDirect = 0f;
+        ls.lightmapCompression = daylight ? LightmapCompression.HighQuality : LightmapCompression.NormalQuality;
+        ls.maxBounces = daylight ? 3 : 2;
+        ls.directSampleCount = daylight ? 64 : 32; ls.indirectSampleCount = daylight ? 512 : 256; ls.environmentSampleCount = daylight ? 256 : 64;
         ls.filteringMode = LightingSettings.FilterMode.Auto;
         ls.mixedBakeMode = MixedLightingMode.IndirectOnly;
         EditorUtility.SetDirty(ls);
         Lightmapping.lightingSettings = ls;
-        RenderSettings.ambientMode = AmbientMode.Trilight;
-        RenderSettings.reflectionIntensity = 0.8f;
+        if (!daylight)
+        {
+            RenderSettings.ambientMode = AmbientMode.Trilight;
+            RenderSettings.reflectionIntensity = 0.8f;
+        }
     }
 
     public static void ContinueIfPending()

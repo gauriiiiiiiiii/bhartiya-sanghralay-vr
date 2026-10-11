@@ -140,6 +140,27 @@ public static partial class MuseumBuilder
             int items = 0;
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Menu", 0.02f);
             scenes.Add(BuildMenu(museum));
+            if (V5Available)
+            {
+                // v5: the Great Court and six real-museum galleries from Content/curated.json
+                var cur = JsonUtility.FromJson<CurJ>(File.ReadAllText(CurPath));
+                ApplyRealism(report);
+                CreateV5Materials();
+                curCredits = null;
+                if (font) { font.TryAddCharacters(File.ReadAllText(CurPath) + "×₹–—‘’“”", out _); EditorUtility.SetDirty(font); }
+                EditorUtility.DisplayProgressBar("Museum of Indian History", "The Great Court", 0.05f);
+                scenes.Add(BuildCourtV5(cur));
+                for (int i = 0; i < cur.wings.Count; i++)
+                {
+                    EditorUtility.DisplayProgressBar("Museum of Indian History", $"Gallery {i + 1}: {cur.wings[i].title}", 0.1f + 0.85f * i / cur.wings.Count);
+                    scenes.Add(BuildGalleryV5(cur, i));
+                    int n = cur.wings[i].items.Count + 1; items += n;
+                    int photos = cur.wings[i].items.Count(it => CurSprite(it.id) != null);
+                    report.AppendLine($"Wing{i + 1}: {cur.wings[i].title} ({cur.wings[i].gallery} gallery) — {n} objects, {photos}/{cur.wings[i].items.Count} photos");
+                }
+            }
+            else
+            {
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Lobby", 0.05f);
             scenes.Add(BuildLobby(museum, ref items));
             for (int i = 0; i < museum.wings.Count; i++)
@@ -149,6 +170,7 @@ public static partial class MuseumBuilder
                 scenes.Add(BuildWing3(museum, i, ref n));
                 items += n;
                 report.AppendLine($"Wing{i + 1}: {museum.wings[i].title} — {museum.wings[i].sections.Count} sections, {n} items");
+            }
             }
 
             EditorBuildSettings.scenes = scenes.Select(s => new EditorBuildSettingsScene(s, true)).ToArray();
@@ -184,14 +206,14 @@ public static partial class MuseumBuilder
             var ti = AssetImporter.GetAtPath(path) as TextureImporter;
             if (ti != null && MuseumArtImport.Apply(ti, path)) { ti.SaveAndReimport(); n++; }
         }
-        foreach (var (dir, poly) in new[] { ("Assets/_Museum/Photos", false), ("Assets/_Museum/PolyHaven/Textures", true) })
+        foreach (var (dir, kind) in new[] { ("Assets/_Museum/Photos", 0), ("Assets/_Museum/PolyHaven/Textures", 1), ("Assets/_Museum/Curated/Photos", 2) })
         {
             if (!Directory.Exists(dir)) continue;
             foreach (var path in Directory.GetFiles(dir, "*.jpg").Select(p => p.Replace('\\', '/')))
             {
                 var ti = AssetImporter.GetAtPath(path) as TextureImporter;
                 if (ti == null) continue;
-                if (poly ? MuseumArtImport.ApplyPoly(ti, path) : MuseumArtImport.ApplyPhoto(ti)) { ti.SaveAndReimport(); n++; }
+                if (kind == 1 ? MuseumArtImport.ApplyPoly(ti, path) : MuseumArtImport.ApplyPhoto(ti, kind == 2 ? 2048 : 1024)) { ti.SaveAndReimport(); n++; }
             }
         }
         return n;
@@ -1437,7 +1459,8 @@ public static partial class MuseumBuilder
                 var mesh = mf.sharedMesh;
                 if (mesh == null || mesh.vertexCount == 0 || !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.Normal) || !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.TexCoord0))
                 { GameObjectUtility.SetStaticEditorFlags(go, 0); var r = go.GetComponent<MeshRenderer>(); if (r && (mesh == null || mesh.vertexCount == 0)) r.enabled = false; fixedFlags++; }
-                else if ((flags & StaticEditorFlags.ContributeGI) != 0 && !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.TexCoord1))
+                else if ((flags & StaticEditorFlags.ContributeGI) != 0 && !mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.TexCoord1)
+                         && go.GetComponent<MeshRenderer>() && go.GetComponent<MeshRenderer>().receiveGI != ReceiveGI.LightProbes)
                 { GameObjectUtility.SetStaticEditorFlags(go, flags & ~StaticEditorFlags.ContributeGI); fixedFlags++; }   // lit by light probes instead
             }
         }
@@ -1509,7 +1532,7 @@ public static partial class MuseumBuilder
         var hint = Rect("Hint", safe, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(-640, 36), new Vector2(640, 116));
         hint.gameObject.AddComponent<Image>().color = new Color(0.1f, 0.05f, 0.03f, 0.7f);
         hint.GetComponent<Image>().raycastTarget = false;
-        Label(hint, "Text", "Drag to look around  ·  Tap a glowing circle to walk  ·  Tap a board or archway to open it", 30, Color.white, FontStyles.Normal,
+        Label(hint, "Text", "Drag to look around  ·  Tap a circle on the floor to walk  ·  Tap an object to hear its audio guide", 30, Color.white, FontStyles.Normal,
               TextAlignmentOptions.Center, Vector2.zero, Vector2.one, new Vector2(20, 0), new Vector2(-20, 0));
         hud.root = canvas.gameObject; hud.hint = hint.gameObject;
     }

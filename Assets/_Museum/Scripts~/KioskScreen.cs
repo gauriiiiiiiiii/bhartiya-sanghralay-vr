@@ -33,7 +33,7 @@ public class KioskScreen : MonoBehaviour
     public static readonly Dictionary<string, int> BestScores = new Dictionary<string, int>();
 
     const float W = 1240, H = 840;
-    static readonly Color Bg = new Color(0.07f, 0.05f, 0.04f, 0.97f), Panel = new Color(0.16f, 0.1f, 0.07f, 1f), Text = new Color(0.97f, 0.93f, 0.85f);
+    static readonly Color Bg = new Color(0.06f, 0.06f, 0.065f, 0.98f), Panel = new Color(0.15f, 0.15f, 0.16f, 1f), Text = new Color(0.96f, 0.95f, 0.92f);
     static readonly Color Good = new Color(0.2f, 0.55f, 0.25f, 1f), Bad = new Color(0.6f, 0.16f, 0.12f, 1f);
 
     RectTransform root;

@@ -12,23 +12,25 @@ public class MuseumArtImport : AssetPostprocessor
     {
         if (assetPath.StartsWith(Root)) Apply((TextureImporter)assetImporter, assetPath);
         else if (assetPath.StartsWith(PhotoRoot)) ApplyPhoto((TextureImporter)assetImporter);
+        else if (assetPath.StartsWith(CuratedRoot)) ApplyPhoto((TextureImporter)assetImporter, 2048);
         else if (assetPath.StartsWith(PolyRoot)) ApplyPoly((TextureImporter)assetImporter, assetPath);
     }
 
     public const string PhotoRoot = "Assets/_Museum/Photos/";
+    public const string CuratedRoot = "Assets/_Museum/Curated/Photos/";
     public const string PolyRoot = "Assets/_Museum/PolyHaven/Textures/";
 
     /// Exhibit photos: sprites (info panel, kiosk) that are also used on 3D boards, so keep mipmaps.
-    public static bool ApplyPhoto(TextureImporter ti)
+    public static bool ApplyPhoto(TextureImporter ti, int size = 1024)
     {
-        bool changed = ti.textureType != TextureImporterType.Sprite || !ti.mipmapEnabled || ti.maxTextureSize != 1024;
+        bool changed = ti.textureType != TextureImporterType.Sprite || !ti.mipmapEnabled || ti.maxTextureSize != size;
         if (!changed) return false;
         ti.textureType = TextureImporterType.Sprite; ti.spriteImportMode = SpriteImportMode.Single;
-        ti.mipmapEnabled = true; ti.maxTextureSize = 1024; ti.npotScale = TextureImporterNPOTScale.None; ti.wrapMode = UnityEngine.TextureWrapMode.Clamp;
+        ti.mipmapEnabled = true; ti.maxTextureSize = size; ti.anisoLevel = 4; ti.npotScale = TextureImporterNPOTScale.None; ti.wrapMode = UnityEngine.TextureWrapMode.Clamp;
         foreach (var platform in new[] { "iPhone", "Android" })
         {
             var ps = ti.GetPlatformTextureSettings(platform);
-            ps.overridden = true; ps.format = TextureImporterFormat.ASTC_6x6; ps.maxTextureSize = 1024; ti.SetPlatformTextureSettings(ps);
+            ps.overridden = true; ps.format = size > 1024 ? TextureImporterFormat.ASTC_5x5 : TextureImporterFormat.ASTC_6x6; ps.maxTextureSize = size; ti.SetPlatformTextureSettings(ps);
         }
         return true;
     }

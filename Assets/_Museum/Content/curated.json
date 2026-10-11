@@ -1,0 +1,1435 @@
+{
+ "title": "Museum of Indian History",
+ "lobby": {
+  "title": "Museum of Indian History",
+  "welcome": "Welcome to the Museum of Indian History. Six galleries around this court tell the story of India, from the first stone tools to the Republic. Choose a gallery from the doorways around you, or start with Ancient India on your left. At any object, tap or gaze to hear its audio guide."
+ },
+ "wings": [
+  {
+   "id": "W1",
+   "title": "Ancient India",
+   "subtitle": "From the first toolmakers to the early kingdoms",
+   "years": "c. 1.5 million years ago – 321 BCE",
+   "gallery": "arches",
+   "color": "C8A06A",
+   "intro": "Some of the oldest stone tools in South Asia, about 1.5 million years old, come from Attirampakkam near Chennai. Over hundreds of thousands of years people here became farmers and then city-builders: by 2600 BCE the Indus Civilisation had planned cities with drains, standard weights and a script that is still undeciphered. After its decline came the age of the Vedas and, by the sixth century BCE, kingdoms, coins and new religions.",
+   "items": [
+    {
+     "id": "W1_01",
+     "title": "Rock paintings of Bhimbetka",
+     "date": "Mesolithic period onwards (from c. 10,000 BCE)",
+     "year": -10000,
+     "place": {
+      "name": "Bhimbetka",
+      "lat": 22.94,
+      "lon": 77.61,
+      "u": 0.3781,
+      "v": 0.5051
+     },
+     "medium": "Natural mineral pigments on sandstone",
+     "where": "In situ, Bhimbetka rock shelters, Madhya Pradesh (UNESCO World Heritage Site)",
+     "label": "More than 750 rock shelters in the Vindhya hills hold paintings of hunters, dancers, horses, elephants and wild cattle, made with red and white mineral pigments. The oldest layers are thought to date from the Mesolithic period, making them among the earliest known art in India.",
+     "narration": "Rock paintings of Bhimbetka. More than 750 rock shelters in the Vindhya hills hold paintings of hunters, dancers, horses, elephants and wild cattle, made with red and white mineral pigments. The oldest layers are thought to date from the Mesolithic period, making them among the earliest known art in India. The shelters were recognised by the archaeologist V. S. Wakankar in 1957, who noticed the rock formations from a train. Some shelters were used for many thousands of years, so later paintings often cover earlier ones.",
+     "wiki": "Bhimbetka rock shelters",
+     "query": "Bhimbetka rock painting",
+     "kind": "photo"
+    },
+    {
+     "id": "W1_02",
+     "title": "The 'Priest-King'",
+     "date": "c. 2000–1900 BCE",
+     "year": -2000,
+     "place": {
+      "name": "Mohenjo-daro",
+      "lat": 27.33,
+      "lon": 68.14,
+      "u": 0.115,
+      "v": 0.6371
+     },
+     "medium": "Fired steatite, 17.5 cm high",
+     "where": "National Museum of Pakistan, Karachi",
+     "label": "Found at Mohenjo-daro in the mid-1920s, this bearded man wears a band around his head and a robe decorated with trefoil patterns that were once filled with red paste. Archaeologists nicknamed him the 'Priest-King', but nobody knows who he really was – the Indus script has never been deciphered.",
+     "narration": "The 'Priest-King'. Found at Mohenjo-daro in the mid-1920s, this bearded man wears a band around his head and a robe decorated with trefoil patterns that were once filled with red paste. Archaeologists nicknamed him the 'Priest-King', but nobody knows who he really was – the Indus script has never been deciphered. Mohenjo-daro was one of the largest cities of the Bronze Age world, with tens of thousands of people living in streets laid out on a grid, with covered drains and brick houses. Yet it has no grand palaces or royal tombs, which is one reason its rulers remain a mystery.",
+     "wiki": "Priest-King (sculpture)",
+     "query": "Priest King Mohenjo-daro",
+     "kind": "photo"
+    },
+    {
+     "id": "W1_03",
+     "title": "The 'Dancing Girl'",
+     "date": "c. 2300–1750 BCE",
+     "year": -2100,
+     "place": {
+      "name": "Mohenjo-daro",
+      "lat": 27.33,
+      "lon": 68.14,
+      "u": 0.115,
+      "v": 0.6371
+     },
+     "medium": "Bronze, lost-wax casting, 10.5 cm high",
+     "where": "National Museum, New Delhi",
+     "label": "Only 10.5 centimetres tall, this young woman stands with one hand on her hip and her left arm covered in bangles. She was found at Mohenjo-daro in 1926 and is one of the finest metal sculptures of the Indus Civilisation, cast about four thousand years ago.",
+     "narration": "The 'Dancing Girl'. Only 10.5 centimetres tall, this young woman stands with one hand on her hip and her left arm covered in bangles. She was found at Mohenjo-daro in 1926 and is one of the finest metal sculptures of the Indus Civilisation, cast about four thousand years ago. Lost-wax casting means the figure was first modelled in wax, covered in clay and heated so that the wax ran out, leaving a mould for molten metal. Bangles like hers are still worn across South Asia today.",
+     "wiki": "Dancing Girl (prehistoric sculpture)",
+     "query": "Dancing Girl Mohenjo-daro bronze",
+     "kind": "photo"
+    },
+    {
+     "id": "W1_04",
+     "title": "The 'Pashupati' seal",
+     "date": "c. 2350–2000 BCE",
+     "year": -2200,
+     "place": {
+      "name": "Mohenjo-daro",
+      "lat": 27.33,
+      "lon": 68.14,
+      "u": 0.115,
+      "v": 0.6371
+     },
+     "medium": "Steatite, about 3.5 cm square",
+     "where": "National Museum, New Delhi",
+     "label": "Indus seals were pressed into clay to mark goods. This one shows a horned figure seated cross-legged, surrounded by an elephant, a tiger, a rhinoceros and a buffalo. Early scholars linked the figure to the god Shiva as 'lord of animals', but its meaning is still debated.",
+     "narration": "The 'Pashupati' seal. Indus seals were pressed into clay to mark goods. This one shows a horned figure seated cross-legged, surrounded by an elephant, a tiger, a rhinoceros and a buffalo. Early scholars linked the figure to the god Shiva as 'lord of animals', but its meaning is still debated. Hundreds of Indus seals have been found, many carrying a short inscription above an animal. Some reached Mesopotamia, showing that Indus merchants traded across the Arabian Sea more than four thousand years ago.",
+     "wiki": "Pashupati seal",
+     "query": "Pashupati seal Mohenjo-daro",
+     "kind": "photo"
+    },
+    {
+     "id": "W1_05",
+     "title": "The Great Bath, Mohenjo-daro",
+     "date": "c. 2500 BCE",
+     "year": -2500,
+     "place": {
+      "name": "Mohenjo-daro",
+      "lat": 27.33,
+      "lon": 68.14,
+      "u": 0.115,
+      "v": 0.6371
+     },
+     "medium": "Fired brick, gypsum mortar and bitumen; about 12 × 7 m, 2.4 m deep",
+     "where": "In situ, Mohenjo-daro, Sindh (UNESCO World Heritage Site)",
+     "label": "On Mohenjo-daro's raised citadel lies a watertight brick tank with steps at both ends. Its bricks were set in gypsum mortar and sealed with a layer of bitumen. It may have been used for ritual bathing – an early sign of the importance of water and purity in South Asian religion.",
+     "narration": "The Great Bath, Mohenjo-daro. On Mohenjo-daro's raised citadel lies a watertight brick tank with steps at both ends. Its bricks were set in gypsum mortar and sealed with a layer of bitumen. It may have been used for ritual bathing – an early sign of the importance of water and purity in South Asian religion. The bath was surrounded by a colonnade and small rooms, and a large drain carried its water away. Careful planning like this, repeated across hundreds of Indus towns, is what makes the civilisation so remarkable.",
+     "wiki": "Great Bath, Mohenjo-daro",
+     "query": "Great Bath Mohenjo-daro",
+     "kind": "photo"
+    },
+    {
+     "id": "W1_06",
+     "title": "A manuscript of the Rigveda",
+     "date": "Hymns composed c. 1500–1200 BCE; manuscript 19th century",
+     "year": -1500,
+     "place": {
+      "name": "Punjab (Sapta Sindhu)",
+      "lat": 31.0,
+      "lon": 75.0,
+      "u": 0.3056,
+      "v": 0.7514
+     },
+     "medium": "Ink on paper, Devanagari script",
+     "where": "Later manuscript copy",
+     "label": "The Rigveda is a collection of 1,028 hymns in Vedic Sanskrit, composed in north-western India and passed down by word of mouth with remarkable precision for many centuries before being written down. Manuscripts like this are much later copies.",
+     "narration": "A manuscript of the Rigveda. The Rigveda is a collection of 1,028 hymns in Vedic Sanskrit, composed in north-western India and passed down by word of mouth with remarkable precision for many centuries before being written down. Manuscripts like this are much later copies. Priests memorised the hymns with elaborate recitation methods, chanting the words in different orders so that not a syllable would change. In 2007 a collection of Rigveda manuscripts kept in Pune was added to UNESCO's Memory of the World Register.",
+     "wiki": "Rigveda",
+     "query": "Rigveda manuscript Devanagari",
+     "kind": "photo"
+    },
+    {
+     "id": "W1_07",
+     "title": "Punch-marked coins",
+     "date": "c. 6th–2nd century BCE",
+     "year": -500,
+     "place": {
+      "name": "Magadha",
+      "lat": 25.6,
+      "lon": 85.1,
+      "u": 0.5861,
+      "v": 0.5845
+     },
+     "medium": "Silver",
+     "where": "Various museum collections",
+     "label": "India's earliest coins were small pieces of silver stamped with symbols such as the sun, animals, trees and hills, one punch at a time. They circulated in the Mahajanapadas – 'great realms' such as Magadha, Kosala and Avanti – as trade and cities grew in the Ganga plain.",
+     "narration": "Punch-marked coins. India's earliest coins were small pieces of silver stamped with symbols such as the sun, animals, trees and hills, one punch at a time. They circulated in the Mahajanapadas – 'great realms' such as Magadha, Kosala and Avanti – as trade and cities grew in the Ganga plain. Magadha, with its capital at Pataliputra, gradually defeated its rivals and became the heart of India's first great empire, the Mauryan Empire.",
+     "wiki": "Punch-marked coins",
+     "query": "punch-marked coins silver India",
+     "kind": "photo"
+    }
+   ],
+   "centre": {
+    "id": "W1_C",
+    "title": "Painted storage jar (replica)",
+    "date": "c. 2600–1900 BCE",
+    "year": -2300,
+    "place": {
+     "name": "Harappa",
+     "lat": 30.63,
+     "lon": 72.86,
+     "u": 0.2461,
+     "v": 0.7397
+    },
+    "medium": "Replica of wheel-thrown red ware painted in black",
+    "where": "Replica made for this museum",
+    "label": "Harappan potters threw large jars on the wheel, coated them with a red slip and painted them in black with bands, intersecting circles and leaf patterns. Jars like this stored grain, oil and water in Indus houses. This replica is based on vessels excavated at Harappa and Mohenjo-daro.",
+    "narration": "Painted storage jar (replica). Harappan potters threw large jars on the wheel, coated them with a red slip and painted them in black with bands, intersecting circles and leaf patterns. Jars like this stored grain, oil and water in Indus houses. This replica is based on vessels excavated at Harappa and Mohenjo-daro. Pottery is the most common find at Indus sites. Because styles changed over time, archaeologists use broken pieces of pots, called sherds, to date the layers in which they are found.",
+    "wiki": "",
+    "query": "",
+    "kind": "replica",
+    "replica": "jar"
+   },
+   "quiz": [
+    {
+     "q": "Which UNESCO World Heritage Site in Madhya Pradesh is famous for its prehistoric rock paintings?",
+     "options": [
+      "Bhimbetka",
+      "Burzahom",
+      "Inamgaon",
+      "Bagor"
+     ],
+     "answer": 0,
+     "why": "Bhimbetka's rock shelters hold thousands of paintings, the earliest probably Mesolithic."
+    },
+    {
+     "q": "Which Harappan site, in the Rann of Kutch, had rock-cut reservoirs and a large signboard of Indus signs?",
+     "options": [
+      "Lothal",
+      "Kalibangan",
+      "Rakhigarhi",
+      "Dholavira"
+     ],
+     "answer": 3,
+     "why": "Dholavira on Khadir island had remarkable reservoirs and a ten-sign signboard near a gateway."
+    },
+    {
+     "q": "How many hymns does the Rigveda contain?",
+     "options": [
+      "108",
+      "400",
+      "1,028",
+      "10,000"
+     ],
+     "answer": 2,
+     "why": "The Rigveda has 1,028 hymns arranged in ten mandalas."
+    },
+    {
+     "q": "Where did the Buddha give his first sermon?",
+     "options": [
+      "Bodh Gaya",
+      "Kushinagar",
+      "Sarnath",
+      "Lumbini"
+     ],
+     "answer": 2,
+     "why": "He attained enlightenment at Bodh Gaya and gave his first sermon at Sarnath."
+    },
+    {
+     "q": "How many great states, or mahajanapadas, do Buddhist and Jain texts list?",
+     "options": [
+      "Seven",
+      "Twelve",
+      "Sixteen",
+      "Twenty-four"
+     ],
+     "answer": 2,
+     "why": "The texts list sixteen mahajanapadas around the 6th century BCE."
+    },
+    {
+     "q": "Which Persian king conquered Gandhara and the Indus region in the late 6th century BCE?",
+     "options": [
+      "Cyrus the Great",
+      "Xerxes",
+      "Darius the First",
+      "Artaxerxes"
+     ],
+     "answer": 2,
+     "why": "Darius I made the region a tribute-paying province of the Achaemenid empire."
+    }
+   ]
+  },
+  {
+   "id": "W2",
+   "title": "Classical India",
+   "subtitle": "The age of empires",
+   "years": "321 BCE – 750 CE",
+   "gallery": "skylit",
+   "color": "D9B37A",
+   "intro": "In 321 BCE Chandragupta Maurya founded an empire that, under his grandson Ashoka, covered most of the subcontinent. Later dynasties – the Shungas, Satavahanas, Kushans and Guptas – presided over flourishing trade, Buddhist and Hindu art, and advances in mathematics, astronomy and literature. In the far south, the Sangam poems of the Tamil country describe the kingdoms of the Cheras, Cholas and Pandyas.",
+   "items": [
+    {
+     "id": "W2_01",
+     "title": "Lion Capital of Ashoka",
+     "date": "c. 250 BCE",
+     "year": -250,
+     "place": {
+      "name": "Sarnath",
+      "lat": 25.38,
+      "lon": 83.02,
+      "u": 0.5283,
+      "v": 0.5779
+     },
+     "medium": "Polished Chunar sandstone, 2.15 m high",
+     "where": "Sarnath Museum, Uttar Pradesh",
+     "label": "Four lions stand back to back on a drum carved with a horse, a bull, an elephant and a lion separated by wheels, above an inverted lotus. The capital crowned a pillar Ashoka set up where the Buddha gave his first sermon. Adopted as India's national emblem in 1950, its wheel also appears on the national flag.",
+     "narration": "Lion Capital of Ashoka. Four lions stand back to back on a drum carved with a horse, a bull, an elephant and a lion separated by wheels, above an inverted lotus. The capital crowned a pillar Ashoka set up where the Buddha gave his first sermon. Adopted as India's national emblem in 1950, its wheel also appears on the national flag. Ashoka turned to Buddhism after his bloody conquest of Kalinga, and spread messages of dhamma – moral conduct and tolerance – through edicts carved on rocks and pillars across his empire.",
+     "wiki": "Lion Capital of Ashoka",
+     "query": "Lion Capital of Ashoka Sarnath museum",
+     "kind": "photo"
+    },
+    {
+     "id": "W2_02",
+     "title": "Didarganj Yakshi",
+     "date": "c. 3rd century BCE (date debated)",
+     "year": -200,
+     "place": {
+      "name": "Didarganj, Patna",
+      "lat": 25.58,
+      "lon": 85.25,
+      "u": 0.5903,
+      "v": 0.5839
+     },
+     "medium": "Polished Chunar sandstone, about 1.6 m high",
+     "where": "Bihar Museum, Patna",
+     "label": "This life-size female attendant holding a fly-whisk was found on the bank of the Ganga at Didarganj, Patna, in 1917. Its mirror-like polish is typical of Mauryan stone carving, though some scholars date it later. Yakshis were nature spirits associated with fertility and abundance.",
+     "narration": "Didarganj Yakshi. This life-size female attendant holding a fly-whisk was found on the bank of the Ganga at Didarganj, Patna, in 1917. Its mirror-like polish is typical of Mauryan stone carving, though some scholars date it later. Yakshis were nature spirits associated with fertility and abundance. Patna stands on the site of Pataliputra, the Mauryan capital, which the Greek ambassador Megasthenes described as a vast city protected by a timber wall.",
+     "wiki": "Didarganj Yakshi",
+     "query": "Didarganj Yakshi",
+     "kind": "photo"
+    },
+    {
+     "id": "W2_03",
+     "title": "The Great Stupa at Sanchi",
+     "date": "3rd century BCE – 1st century CE",
+     "year": -250,
+     "place": {
+      "name": "Sanchi",
+      "lat": 23.48,
+      "lon": 77.74,
+      "u": 0.3817,
+      "v": 0.5211
+     },
+     "medium": "Brick core cased in stone; carved sandstone gateways",
+     "where": "In situ, Sanchi, Madhya Pradesh (UNESCO World Heritage Site)",
+     "label": "Ashoka built the first brick stupa here to enshrine relics of the Buddha. It was later enlarged and cased in stone, and four magnificent gateways (toranas) were added, carved with stories from the Buddha's past and present lives.",
+     "narration": "The Great Stupa at Sanchi. Ashoka built the first brick stupa here to enshrine relics of the Buddha. It was later enlarged and cased in stone, and four magnificent gateways (toranas) were added, carved with stories from the Buddha's past and present lives. A stupa is a solid dome that pilgrims walk around clockwise in devotion. Many of the carvings at Sanchi were paid for by ordinary donors – ivory carvers, merchants, monks and nuns – whose names are inscribed in the stone.",
+     "wiki": "Sanchi",
+     "query": "Great Stupa Sanchi",
+     "kind": "photo"
+    },
+    {
+     "id": "W2_04",
+     "title": "Standing Buddha from Gandhara",
+     "date": "1st–2nd century CE",
+     "year": 100,
+     "place": {
+      "name": "Gandhara",
+      "lat": 34.0,
+      "lon": 72.0,
+      "u": 0.2222,
+      "v": 0.8482
+     },
+     "medium": "Grey schist",
+     "where": "Various museum collections",
+     "label": "Under the Kushan emperors, sculptors in Gandhara – today's north-western Pakistan and eastern Afghanistan – created some of the earliest images of the Buddha in human form. Wavy hair, deeply folded robes and calm faces show the influence of Greek and Roman art blended with Indian ideas.",
+     "narration": "Standing Buddha from Gandhara. Under the Kushan emperors, sculptors in Gandhara – today's north-western Pakistan and eastern Afghanistan – created some of the earliest images of the Buddha in human form. Wavy hair, deeply folded robes and calm faces show the influence of Greek and Roman art blended with Indian ideas. At the same time, sculptors at Mathura in northern India were making Buddha images in red sandstone in a purely Indian style. The Kushan king Kanishka ruled over both regions and was a great patron of Buddhism.",
+     "wiki": "Greco-Buddhist art",
+     "query": "Gandhara standing Buddha schist",
+     "kind": "photo"
+    },
+    {
+     "id": "W2_05",
+     "title": "Gold coin of Samudragupta",
+     "date": "c. 335–375 CE",
+     "year": 350,
+     "place": {
+      "name": "Pataliputra",
+      "lat": 25.61,
+      "lon": 85.14,
+      "u": 0.5872,
+      "v": 0.5848
+     },
+     "medium": "Gold (dinara)",
+     "where": "Various museum collections",
+     "label": "The Gupta kings issued fine gold coins called dinaras. On this type Samudragupta is shown seated, playing a veena – a reminder that he was praised as a poet and musician as well as a conqueror. The Gupta period is often called a classical age of Indian art and learning.",
+     "narration": "Gold coin of Samudragupta. The Gupta kings issued fine gold coins called dinaras. On this type Samudragupta is shown seated, playing a veena – a reminder that he was praised as a poet and musician as well as a conqueror. The Gupta period is often called a classical age of Indian art and learning. His achievements are recorded in a long Sanskrit poem carved on the Allahabad pillar, the same pillar that already carried an inscription of Ashoka six hundred years earlier.",
+     "wiki": "Samudragupta",
+     "query": "Samudragupta lyrist coin gold",
+     "kind": "photo"
+    },
+    {
+     "id": "W2_06",
+     "title": "Padmapani, Ajanta Cave 1",
+     "date": "Late 5th century CE",
+     "year": 480,
+     "place": {
+      "name": "Ajanta",
+      "lat": 20.55,
+      "lon": 75.7,
+      "u": 0.325,
+      "v": 0.4351
+     },
+     "medium": "Mineral pigments on plaster",
+     "where": "In situ, Ajanta Caves, Maharashtra (UNESCO World Heritage Site)",
+     "label": "About thirty Buddhist caves were cut into a horseshoe-shaped cliff at Ajanta between the 2nd century BCE and the late 5th century CE. This bodhisattva of compassion, holding a lotus, is one of the most celebrated wall paintings of Cave 1.",
+     "narration": "Padmapani, Ajanta Cave 1. About thirty Buddhist caves were cut into a horseshoe-shaped cliff at Ajanta between the 2nd century BCE and the late 5th century CE. This bodhisattva of compassion, holding a lotus, is one of the most celebrated wall paintings of Cave 1. The caves were abandoned and forgotten for centuries until a British officer, John Smith, stumbled on them while hunting a tiger in 1819.",
+     "wiki": "Padmapani",
+     "query": "Padmapani Ajanta Cave 1",
+     "kind": "photo"
+    },
+    {
+     "id": "W2_07",
+     "title": "The Shore Temple, Mamallapuram",
+     "date": "c. 700–728 CE",
+     "year": 710,
+     "place": {
+      "name": "Mamallapuram",
+      "lat": 12.62,
+      "lon": 80.2,
+      "u": 0.45,
+      "v": 0.2099
+     },
+     "medium": "Granite",
+     "where": "In situ, Mamallapuram, Tamil Nadu (UNESCO World Heritage Site)",
+     "label": "Built under the Pallava king Narasimhavarman II, the Shore Temple is one of the earliest structural stone temples in South India. Its stepped towers anticipate the great temples of the Cholas. It stands beside the Bay of Bengal.",
+     "narration": "The Shore Temple, Mamallapuram. Built under the Pallava king Narasimhavarman II, the Shore Temple is one of the earliest structural stone temples in South India. Its stepped towers anticipate the great temples of the Cholas. It stands beside the Bay of Bengal. Mamallapuram was a busy Pallava port. Nearby, artists carved a huge rock face with the scene known as Arjuna's Penance or the Descent of the Ganges, one of the largest open-air reliefs in the world.",
+     "wiki": "Shore Temple",
+     "query": "Shore Temple Mamallapuram",
+     "kind": "photo"
+    }
+   ],
+   "centre": {
+    "id": "W2_C",
+    "title": "The Iron Pillar of Delhi (replica)",
+    "date": "c. 400 CE",
+    "year": 400,
+    "place": {
+     "name": "Mehrauli, Delhi",
+     "lat": 28.52,
+     "lon": 77.18,
+     "u": 0.3661,
+     "v": 0.6737
+    },
+    "medium": "Replica of a wrought-iron column, 7.2 m high",
+    "where": "Replica made for this museum",
+    "label": "This towering column was forged from wrought iron about 1,600 years ago and weighs some six tonnes. A Sanskrit inscription honours a king named Chandra, usually identified as the Gupta emperor Chandragupta II. Now in the Qutb complex in Delhi, the pillar has barely rusted, thanks to a thin protective film rich in phosphorus.",
+    "narration": "The Iron Pillar of Delhi (replica). This towering column was forged from wrought iron about 1,600 years ago and weighs some six tonnes. A Sanskrit inscription honours a king named Chandra, usually identified as the Gupta emperor Chandragupta II. Now in the Qutb complex in Delhi, the pillar has barely rusted, thanks to a thin protective film rich in phosphorus. Forging a single iron object this large was an extraordinary achievement for its time. Metallurgists still study the pillar to understand how its rust-resistant surface formed.",
+    "wiki": "",
+    "query": "",
+    "kind": "replica",
+    "replica": "pillar"
+   },
+   "quiz": [
+    {
+     "q": "Whom did Chandragupta Maurya overthrow to found the Maurya empire?",
+     "options": [
+      "The Nanda king",
+      "Seleucus Nicator",
+      "Pushyamitra Shunga",
+      "Bimbisara"
+     ],
+     "answer": 0,
+     "why": "He overthrew the Nanda king around 321 BCE."
+    },
+    {
+     "q": "Which treatise on statecraft is attributed to Chanakya?",
+     "options": [
+      "Indica",
+      "Arthashastra",
+      "Milindapanha",
+      "Harshacharita"
+     ],
+     "answer": 1,
+     "why": "The Arthashastra, on statecraft, economy and law, is attributed to Chanakya (Kautilya)."
+    },
+    {
+     "q": "Which Kushana ruler convened the Fourth Buddhist Council in Kashmir?",
+     "options": [
+      "Gondophares",
+      "Kanishka",
+      "Rudradaman",
+      "Gautamiputra Satakarni"
+     ],
+     "answer": 1,
+     "why": "Kanishka patronised Buddhism and convened the Fourth Buddhist Council."
+    },
+    {
+     "q": "In Sangam poetry, poems of love are called what?",
+     "options": [
+      "Puram",
+      "Akam",
+      "Tinai",
+      "Nadukal"
+     ],
+     "answer": 1,
+     "why": "Akam poems deal with love; puram with war and public life."
+    },
+    {
+     "q": "At which site near Puducherry have Roman pottery and wine jars been excavated?",
+     "options": [
+      "Arikamedu",
+      "Korkai",
+      "Keeladi",
+      "Kodumanal"
+     ],
+     "answer": 0,
+     "why": "Excavations at Arikamedu revealed Roman pottery and amphorae."
+    },
+    {
+     "q": "Which Chinese pilgrim visited India in the reign of Chandragupta II?",
+     "options": [
+      "Xuanzang",
+      "Yijing",
+      "Faxian",
+      "Song Yun"
+     ],
+     "answer": 2,
+     "why": "Faxian visited India during Chandragupta II's reign."
+    }
+   ]
+  },
+  {
+   "id": "W3",
+   "title": "Medieval India",
+   "subtitle": "Kingdoms, temples and empires",
+   "years": "750 – 1707",
+   "gallery": "octagon",
+   "color": "B5654A",
+   "intro": "Between the 8th and 18th centuries India was shaped by powerful regional kingdoms such as the Rashtrakutas, Cholas and Rajputs, by the Delhi Sultanate from 1206, by the Vijayanagara empire in the south and by the Mughals from 1526. Temples, mosques, tombs and forts of this age – and the devotional poetry of Bhakti and Sufi saints – remain among India's greatest cultural treasures.",
+   "items": [
+    {
+     "id": "W3_01",
+     "title": "Brihadisvara Temple, Thanjavur",
+     "date": "Completed 1010 CE",
+     "year": 1010,
+     "place": {
+      "name": "Thanjavur",
+      "lat": 10.78,
+      "lon": 79.13,
+      "u": 0.4203,
+      "v": 0.1588
+     },
+     "medium": "Granite; tower about 66 m high",
+     "where": "In situ, Thanjavur, Tamil Nadu (UNESCO World Heritage Site)",
+     "label": "Raja Raja I, the great Chola emperor, built this temple to Shiva at his capital Thanjavur. Its tower rises about 66 metres and is crowned by a huge granite capstone. Inscriptions on its walls list the gifts, dancers, musicians and staff that served the temple.",
+     "narration": "Brihadisvara Temple, Thanjavur. Raja Raja I, the great Chola emperor, built this temple to Shiva at his capital Thanjavur. Its tower rises about 66 metres and is crowned by a huge granite capstone. Inscriptions on its walls list the gifts, dancers, musicians and staff that served the temple. The Cholas were also a sea power: Raja Raja's son Rajendra sent a naval expedition to South-East Asia, and Chola merchants traded as far as China.",
+     "wiki": "Brihadisvara Temple, Thanjavur",
+     "query": "Brihadeeswarar Temple Thanjavur",
+     "kind": "photo"
+    },
+    {
+     "id": "W3_02",
+     "title": "Shiva Nataraja, Lord of the Dance",
+     "date": "c. 11th century",
+     "year": 1050,
+     "place": {
+      "name": "Chola country (Tamil Nadu)",
+      "lat": 10.9,
+      "lon": 79.4,
+      "u": 0.4278,
+      "v": 0.1621
+     },
+     "medium": "Copper alloy, lost-wax casting",
+     "where": "Various museum collections",
+     "label": "Shiva performs the cosmic dance that destroys and recreates the universe, framed by a ring of fire and trampling the dwarf of ignorance. Chola bronzes like this were carried in temple processions, dressed in silk and jewels. They are among the masterpieces of world metal sculpture.",
+     "narration": "Shiva Nataraja, Lord of the Dance. Shiva performs the cosmic dance that destroys and recreates the universe, framed by a ring of fire and trampling the dwarf of ignorance. Chola bronzes like this were carried in temple processions, dressed in silk and jewels. They are among the masterpieces of world metal sculpture. Each bronze was cast in a single piece using the lost-wax method, so no two are exactly alike. Bronze-casters in Swamimalai in Tamil Nadu still work the same way today.",
+     "wiki": "Nataraja",
+     "query": "Chola bronze Nataraja",
+     "kind": "photo"
+    },
+    {
+     "id": "W3_03",
+     "title": "Qutb Minar, Delhi",
+     "date": "Begun c. 1199; completed 14th century",
+     "year": 1199,
+     "place": {
+      "name": "Delhi",
+      "lat": 28.52,
+      "lon": 77.19,
+      "u": 0.3664,
+      "v": 0.6737
+     },
+     "medium": "Red and buff sandstone and marble; about 72.5 m high",
+     "where": "In situ, Delhi (UNESCO World Heritage Site)",
+     "label": "Qutb-ud-din Aibak, founder of the Delhi Sultanate, began this victory tower beside the first mosque of Delhi; his successor Iltutmish added storeys, and Firuz Shah Tughlaq rebuilt the top in the 14th century. About 72.5 metres tall, it is carved with bands of Arabic inscriptions.",
+     "narration": "Qutb Minar, Delhi. Qutb-ud-din Aibak, founder of the Delhi Sultanate, began this victory tower beside the first mosque of Delhi; his successor Iltutmish added storeys, and Firuz Shah Tughlaq rebuilt the top in the 14th century. About 72.5 metres tall, it is carved with bands of Arabic inscriptions. The Iron Pillar, which you can see as a replica in the Classical India gallery, stands in the same courtyard – an older monument reused by the builders of the mosque.",
+     "wiki": "Qutb Minar",
+     "query": "Qutb Minar Delhi",
+     "kind": "photo"
+    },
+    {
+     "id": "W3_04",
+     "title": "The stone chariot, Hampi",
+     "date": "Early 16th century",
+     "year": 1520,
+     "place": {
+      "name": "Hampi",
+      "lat": 15.34,
+      "lon": 76.47,
+      "u": 0.3464,
+      "v": 0.2861
+     },
+     "medium": "Granite",
+     "where": "In situ, Vittala Temple, Hampi, Karnataka (UNESCO World Heritage Site)",
+     "label": "In the courtyard of the Vittala Temple stands a shrine for Garuda carved in the shape of a temple chariot. Hampi was Vijayanagara, capital of one of the largest empires in Indian history, which foreign visitors described as one of the richest cities in the world.",
+     "narration": "The stone chariot, Hampi. In the courtyard of the Vittala Temple stands a shrine for Garuda carved in the shape of a temple chariot. Hampi was Vijayanagara, capital of one of the largest empires in Indian history, which foreign visitors described as one of the richest cities in the world. Vijayanagara reached its height under Krishnadevaraya. In 1565 the city was defeated and sacked after the Battle of Talikota, and its ruins now spread across a landscape of giant boulders.",
+     "wiki": "Vittala Temple",
+     "query": "stone chariot Hampi Vittala",
+     "kind": "photo"
+    },
+    {
+     "id": "W3_05",
+     "title": "A page from the Akbarnama",
+     "date": "c. 1590–1595",
+     "year": 1592,
+     "place": {
+      "name": "Agra",
+      "lat": 27.18,
+      "lon": 78.01,
+      "u": 0.3892,
+      "v": 0.6325
+     },
+     "medium": "Opaque watercolour and gold on paper",
+     "where": "Various museum collections",
+     "label": "The Akbarnama, 'Book of Akbar', is the official history of the third Mughal emperor, written by his minister Abul Fazl. Teams of court artists illustrated it with vivid scenes of battles, hunts and court life, blending Persian, Indian and European ideas into a new Mughal style.",
+     "narration": "A page from the Akbarnama. The Akbarnama, 'Book of Akbar', is the official history of the third Mughal emperor, written by his minister Abul Fazl. Teams of court artists illustrated it with vivid scenes of battles, hunts and court life, blending Persian, Indian and European ideas into a new Mughal style. Akbar could not read, but he loved books. He held debates between scholars of many faiths and promoted a policy of sulh-i kul, 'peace with all'.",
+     "wiki": "Akbarnama",
+     "query": "Akbarnama painting",
+     "kind": "photo"
+    },
+    {
+     "id": "W3_06",
+     "title": "The Taj Mahal, Agra",
+     "date": "1632 – c. 1653",
+     "year": 1632,
+     "place": {
+      "name": "Agra",
+      "lat": 27.17,
+      "lon": 78.04,
+      "u": 0.39,
+      "v": 0.6322
+     },
+     "medium": "White Makrana marble inlaid with semi-precious stones",
+     "where": "In situ, Agra (UNESCO World Heritage Site)",
+     "label": "The Mughal emperor Shah Jahan built this tomb for his wife Mumtaz Mahal, who died in 1631. Thousands of craftsmen worked for over twenty years on the marble mausoleum, its gardens, mosque and guest house. Its inlaid stonework and perfect symmetry made it a symbol of India across the world.",
+     "narration": "The Taj Mahal, Agra. The Mughal emperor Shah Jahan built this tomb for his wife Mumtaz Mahal, who died in 1631. Thousands of craftsmen worked for over twenty years on the marble mausoleum, its gardens, mosque and guest house. Its inlaid stonework and perfect symmetry made it a symbol of India across the world. The flowers on its walls are not painted: they are made of carnelian, jasper, lapis and other stones cut and set into the marble, a technique called pietra dura.",
+     "wiki": "Taj Mahal",
+     "query": "Taj Mahal Agra",
+     "kind": "photo"
+    },
+    {
+     "id": "W3_07",
+     "title": "Wine cup of Shah Jahan",
+     "date": "1657",
+     "year": 1657,
+     "place": {
+      "name": "Delhi",
+      "lat": 28.65,
+      "lon": 77.24,
+      "u": 0.3678,
+      "v": 0.6777
+     },
+     "medium": "White nephrite jade",
+     "where": "Victoria and Albert Museum, London",
+     "label": "Carved from a single piece of white jade, this cup is shaped like half a gourd, with a handle in the form of a wild goat's head and a lotus base. An inscription records that it was made for Shah Jahan in 1657. It shows the Mughal love of carving hard stones.",
+     "narration": "Wine cup of Shah Jahan. Carved from a single piece of white jade, this cup is shaped like half a gourd, with a handle in the form of a wild goat's head and a lotus base. An inscription records that it was made for Shah Jahan in 1657. It shows the Mughal love of carving hard stones. Jade was believed to change colour or crack if it touched poison, which made it a favourite material for royal cups.",
+     "wiki": "Wine cup of Shah Jahan",
+     "query": "Shah Jahan wine cup jade",
+     "kind": "photo"
+    }
+   ],
+   "centre": {
+    "id": "W3_C",
+    "title": "A wheel of the Sun Temple, Konark (replica)",
+    "date": "c. 1250 CE",
+    "year": 1250,
+    "place": {
+     "name": "Konark",
+     "lat": 19.89,
+     "lon": 86.09,
+     "u": 0.6136,
+     "v": 0.416
+    },
+    "medium": "Replica of carved stone, about 3 m across",
+    "where": "Replica made for this museum",
+    "label": "King Narasimhadeva I of the Eastern Ganga dynasty built the Sun Temple at Konark as a giant stone chariot for the sun god Surya, drawn by seven horses on 24 carved wheels. Each wheel is about three metres across, and the shadows of its spokes can be read like a sundial.",
+    "narration": "A wheel of the Sun Temple, Konark (replica). King Narasimhadeva I of the Eastern Ganga dynasty built the Sun Temple at Konark as a giant stone chariot for the sun god Surya, drawn by seven horses on 24 carved wheels. Each wheel is about three metres across, and the shadows of its spokes can be read like a sundial. The Konark wheel has become one of the best-known symbols of Indian craftsmanship, and the Sun Temple appears on the back of India's ten-rupee note.",
+    "wiki": "",
+    "query": "",
+    "kind": "replica",
+    "replica": "wheel"
+   },
+   "quiz": [
+    {
+     "q": "Where did Prithviraj Chauhan defeat Muhammad of Ghor in 1191?",
+     "options": [
+      "Panipat",
+      "Tarain",
+      "Khanwa",
+      "Talikota"
+     ],
+     "answer": 1,
+     "why": "Prithviraj won the first battle of Tarain in 1191 but lost there in 1192."
+    },
+    {
+     "q": "Which dynasty built the Brihadishvara temple at Thanjavur?",
+     "options": [
+      "Hoysalas",
+      "Pandyas",
+      "Kakatiyas",
+      "Cholas"
+     ],
+     "answer": 3,
+     "why": "The Imperial Cholas built the Brihadishvara temple and sent naval expeditions overseas."
+    },
+    {
+     "q": "Who founded the Mamluk, or Slave, dynasty in 1206?",
+     "options": [
+      "Iltutmish",
+      "Balban",
+      "Qutbuddin Aibak",
+      "Alauddin Khalji"
+     ],
+     "answer": 2,
+     "why": "Qutbuddin Aibak founded the dynasty; Iltutmish later consolidated it."
+    },
+    {
+     "q": "Who is the only woman among the twelve Alvars?",
+     "options": [
+      "Andal",
+      "Mirabai",
+      "Karaikkal Ammaiyar",
+      "Rudramadevi"
+     ],
+     "answer": 0,
+     "why": "Andal is the only woman among the Alvars; Karaikkal Ammaiyar was a Nayanar."
+    },
+    {
+     "q": "Whom did Babur defeat at the First Battle of Panipat in 1526?",
+     "options": [
+      "Rana Sanga",
+      "Sher Shah Suri",
+      "Ibrahim Lodi",
+      "Hemu"
+     ],
+     "answer": 2,
+     "why": "Babur defeated Ibrahim Lodi at Panipat, founding the Mughal empire."
+    },
+    {
+     "q": "Where was Shivaji crowned Chhatrapati in 1674?",
+     "options": [
+      "Pune",
+      "Raigad",
+      "Bijapur",
+      "Srirangapatna"
+     ],
+     "answer": 1,
+     "why": "Shivaji was crowned Chhatrapati at Raigad in 1674."
+    }
+   ]
+  },
+  {
+   "id": "W4",
+   "title": "Colonial India",
+   "subtitle": "From traders to rulers",
+   "years": "1498 – 1885",
+   "gallery": "pictures",
+   "color": "8C5A3C",
+   "intro": "In 1498 the Portuguese navigator Vasco da Gama reached Calicut. Within two centuries Portuguese, Dutch, French and British trading companies had set up posts along India's coasts. The British East India Company turned trade into conquest after the Battle of Plassey in 1757, and after the great uprising of 1857 the British Crown took direct control. The age also brought railways, reform movements and the first stirrings of Indian nationalism.",
+   "items": [
+    {
+     "id": "W4_01",
+     "title": "Vasco da Gama",
+     "date": "Reached Calicut in May 1498",
+     "year": 1498,
+     "place": {
+      "name": "Calicut (Kozhikode)",
+      "lat": 11.25,
+      "lon": 75.78,
+      "u": 0.3272,
+      "v": 0.1718
+     },
+     "medium": "Portrait, oil on panel, c. 1525",
+     "where": "Museu Nacional de Arte Antiga, Lisbon",
+     "label": "The Portuguese navigator reached Calicut on the Malabar coast in May 1498, opening a sea route from Europe to India around Africa. Portugal soon set up forts and trading posts, and from 1510 ruled Goa, which remained Portuguese until 1961.",
+     "narration": "Vasco da Gama. The Portuguese navigator reached Calicut on the Malabar coast in May 1498, opening a sea route from Europe to India around Africa. Portugal soon set up forts and trading posts, and from 1510 ruled Goa, which remained Portuguese until 1961. Europeans came for spices – pepper, cinnamon, cloves – and for Indian cotton textiles, which were prized all over the world.",
+     "wiki": "Vasco da Gama",
+     "query": "Vasco da Gama portrait",
+     "kind": "photo"
+    },
+    {
+     "id": "W4_02",
+     "title": "Clive meeting Mir Jafar after the Battle of Plassey",
+     "date": "Battle fought 23 June 1757; painted c. 1760",
+     "year": 1757,
+     "place": {
+      "name": "Plassey (Palashi)",
+      "lat": 23.8,
+      "lon": 88.25,
+      "u": 0.6736,
+      "v": 0.5306
+     },
+     "medium": "Oil on canvas, by Francis Hayman",
+     "where": "National Portrait Gallery, London",
+     "label": "At Plassey in Bengal, Robert Clive's East India Company army defeated the Nawab Siraj-ud-Daulah, largely because the Nawab's commander Mir Jafar had been bribed to hold back his troops. Mir Jafar became Nawab, and the Company became the real power in Bengal.",
+     "narration": "Clive meeting Mir Jafar after the Battle of Plassey. At Plassey in Bengal, Robert Clive's East India Company army defeated the Nawab Siraj-ud-Daulah, largely because the Nawab's commander Mir Jafar had been bribed to hold back his troops. Mir Jafar became Nawab, and the Company became the real power in Bengal. In 1765, after the Battle of Buxar, the Mughal emperor granted the Company the right to collect the revenue of Bengal, Bihar and Orissa – the foundation of British rule in India.",
+     "wiki": "Battle of Plassey",
+     "query": "Clive Mir Jafar Plassey Hayman",
+     "kind": "photo"
+    },
+    {
+     "id": "W4_03",
+     "title": "Tipu's Tiger",
+     "date": "c. 1795",
+     "year": 1795,
+     "place": {
+      "name": "Srirangapatna",
+      "lat": 12.42,
+      "lon": 76.69,
+      "u": 0.3525,
+      "v": 0.2043
+     },
+     "medium": "Painted wood with a mechanical organ",
+     "where": "Victoria and Albert Museum, London",
+     "label": "Made for Tipu Sultan, ruler of Mysore, this life-size wooden tiger mauls a European soldier. Turning a handle works an organ inside that makes the tiger growl and the man wail. Tipu fought four wars against the East India Company; after he died defending Srirangapatna in 1799, the tiger was taken to London.",
+     "narration": "Tipu's Tiger. Made for Tipu Sultan, ruler of Mysore, this life-size wooden tiger mauls a European soldier. Turning a handle works an organ inside that makes the tiger growl and the man wail. Tipu fought four wars against the East India Company; after he died defending Srirangapatna in 1799, the tiger was taken to London. Tipu called himself the Tiger of Mysore. Tiger stripes decorated his throne, his weapons and the uniforms of his soldiers.",
+     "wiki": "Tipu's Tiger",
+     "query": "Tipu's Tiger Victoria and Albert",
+     "kind": "photo"
+    },
+    {
+     "id": "W4_04",
+     "title": "Rani Lakshmibai of Jhansi",
+     "date": "1857–1858",
+     "year": 1857,
+     "place": {
+      "name": "Jhansi",
+      "lat": 25.45,
+      "lon": 78.57,
+      "u": 0.4047,
+      "v": 0.58
+     },
+     "medium": "Portrait",
+     "where": "Various collections",
+     "label": "In 1857 Indian soldiers of the Company army rose in revolt at Meerut, and the uprising spread across northern India. The Rani of Jhansi became one of its most famous leaders; she died fighting near Gwalior in June 1858. After the revolt, the British Crown took over the government of India.",
+     "narration": "Rani Lakshmibai of Jhansi. In 1857 Indian soldiers of the Company army rose in revolt at Meerut, and the uprising spread across northern India. The Rani of Jhansi became one of its most famous leaders; she died fighting near Gwalior in June 1858. After the revolt, the British Crown took over the government of India. Other leaders of 1857 included the last Mughal emperor Bahadur Shah Zafar, Nana Sahib, Tantia Tope, Kunwar Singh and Begum Hazrat Mahal of Awadh.",
+     "wiki": "Rani of Jhansi",
+     "query": "Rani Lakshmibai portrait",
+     "kind": "photo"
+    },
+    {
+     "id": "W4_05",
+     "title": "Sikandar Bagh, Lucknow, photographed by Felice Beato",
+     "date": "1858",
+     "year": 1858,
+     "place": {
+      "name": "Lucknow",
+      "lat": 26.86,
+      "lon": 80.95,
+      "u": 0.4708,
+      "v": 0.6227
+     },
+     "medium": "Albumen silver print",
+     "where": "Various collections",
+     "label": "The photographer Felice Beato took this picture of the Sikandar Bagh in Lucknow a few months after British troops stormed it in November 1857, during the relief of the besieged Residency. It is one of the earliest photographs of the aftermath of war – a reminder of the violence of the uprising.",
+     "narration": "Sikandar Bagh, Lucknow, photographed by Felice Beato. The photographer Felice Beato took this picture of the Sikandar Bagh in Lucknow a few months after British troops stormed it in November 1857, during the relief of the besieged Residency. It is one of the earliest photographs of the aftermath of war – a reminder of the violence of the uprising. Photography was only about twenty years old at the time. Long exposures meant that early photographers recorded ruins and landscapes rather than action.",
+     "wiki": "",
+     "query": "Felice Beato Secundra Bagh",
+     "kind": "photo"
+    },
+    {
+     "id": "W4_06",
+     "title": "Raja Ram Mohan Roy",
+     "date": "1772–1833",
+     "year": 1828,
+     "place": {
+      "name": "Kolkata",
+      "lat": 22.57,
+      "lon": 88.36,
+      "u": 0.6767,
+      "v": 0.4942
+     },
+     "medium": "Portrait, oil on canvas",
+     "where": "Bristol Museum and Art Gallery",
+     "label": "Ram Mohan Roy, often called the father of the Indian Renaissance, founded the Brahmo Sabha in 1828 to promote a reformed faith. He campaigned against sati, the burning of widows, which was banned in Bengal in 1829, and argued for modern education and a free press. He died in Bristol in 1833.",
+     "narration": "Raja Ram Mohan Roy. Ram Mohan Roy, often called the father of the Indian Renaissance, founded the Brahmo Sabha in 1828 to promote a reformed faith. He campaigned against sati, the burning of widows, which was banned in Bengal in 1829, and argued for modern education and a free press. He died in Bristol in 1833. Later reformers such as Ishwar Chandra Vidyasagar, Jyotirao and Savitribai Phule, Swami Dayanand Saraswati and Syed Ahmad Khan carried this spirit of questioning and reform across India.",
+     "wiki": "Ram Mohan Roy",
+     "query": "Raja Ram Mohan Roy portrait",
+     "kind": "photo"
+    },
+    {
+     "id": "W4_07",
+     "title": "Victoria Terminus, Bombay",
+     "date": "1878–1888",
+     "year": 1887,
+     "place": {
+      "name": "Mumbai",
+      "lat": 18.94,
+      "lon": 72.84,
+      "u": 0.2456,
+      "v": 0.3886
+     },
+     "medium": "Sandstone and limestone",
+     "where": "In situ, Mumbai (now Chhatrapati Shivaji Maharaj Terminus, UNESCO World Heritage Site)",
+     "label": "India's first passenger train ran from Bombay to Thane on 16 April 1853. By the 1880s railways linked ports with the interior, carrying cotton, grain and people. Bombay's Victoria Terminus, designed by F. W. Stevens, blends Victorian Gothic with Indian motifs.",
+     "narration": "Victoria Terminus, Bombay. India's first passenger train ran from Bombay to Thane on 16 April 1853. By the 1880s railways linked ports with the interior, carrying cotton, grain and people. Bombay's Victoria Terminus, designed by F. W. Stevens, blends Victorian Gothic with Indian motifs. Railways helped British trade, but they also brought Indians from distant regions together, and later carried leaders and ideas of the national movement across the country.",
+     "wiki": "Chhatrapati Shivaji Terminus",
+     "query": "Victoria Terminus Bombay",
+     "kind": "photo"
+    }
+   ],
+   "centre": {
+    "id": "W4_C",
+    "title": "Bronze cannon of Mysore (replica)",
+    "date": "Late 18th century",
+    "year": 1790,
+    "place": {
+     "name": "Srirangapatna",
+     "lat": 12.42,
+     "lon": 76.69,
+     "u": 0.3525,
+     "v": 0.2043
+    },
+    "medium": "Replica of a cast-bronze cannon on a wooden field carriage",
+    "where": "Replica made for this museum",
+    "label": "Haidar Ali and his son Tipu Sultan built a modern army with European-style artillery cast in their own foundries. Mysore's forces also used iron-cased war rockets that impressed their British opponents. Many of Tipu's bronze cannons, decorated with tiger-stripe patterns, were captured in 1799 and are displayed today in Britain and India.",
+    "narration": "Bronze cannon of Mysore (replica). Haidar Ali and his son Tipu Sultan built a modern army with European-style artillery cast in their own foundries. Mysore's forces also used iron-cased war rockets that impressed their British opponents. Many of Tipu's bronze cannons, decorated with tiger-stripe patterns, were captured in 1799 and are displayed today in Britain and India. Captured Mysore rockets were studied in Britain and inspired the Congreve rockets later used in the Napoleonic Wars.",
+    "wiki": "",
+    "query": "",
+    "kind": "replica",
+    "replica": "cannon"
+   },
+   "quiz": [
+    {
+     "q": "Which port did Vasco da Gama reach in 1498?",
+     "options": [
+      "Goa",
+      "Calicut",
+      "Surat",
+      "Cochin"
+     ],
+     "answer": 1,
+     "why": "Vasco da Gama sailed round Africa and reached Calicut in 1498."
+    },
+    {
+     "q": "Who defeated Siraj-ud-Daula at the Battle of Plassey in 1757?",
+     "options": [
+      "Robert Clive",
+      "Lord Wellesley",
+      "Lord Dalhousie",
+      "Warren Hastings"
+     ],
+     "answer": 0,
+     "why": "Robert Clive won at Plassey, helped by Mir Jafar's betrayal."
+    },
+    {
+     "q": "Who introduced the Permanent Settlement in Bengal in 1793?",
+     "options": [
+      "Thomas Munro",
+      "Cornwallis",
+      "Holt Mackenzie",
+      "Macaulay"
+     ],
+     "answer": 1,
+     "why": "Cornwallis introduced the Permanent Settlement in 1793."
+    },
+    {
+     "q": "Where did the Revolt of 1857 begin on 10 May 1857?",
+     "options": [
+      "Delhi",
+      "Kanpur",
+      "Meerut",
+      "Lucknow"
+     ],
+     "answer": 2,
+     "why": "The revolt began at Meerut on 10 May 1857."
+    },
+    {
+     "q": "Who founded the Brahmo Samaj in 1828?",
+     "options": [
+      "Swami Dayananda Saraswati",
+      "Raja Rammohan Roy",
+      "Keshab Chandra Sen",
+      "M. G. Ranade"
+     ],
+     "answer": 1,
+     "why": "Raja Rammohan Roy founded the Brahmo Samaj in 1828."
+    },
+    {
+     "q": "Between which two places did India's first passenger train run in 1853?",
+     "options": [
+      "Calcutta and Hooghly",
+      "Madras and Arcot",
+      "Bombay and Thane",
+      "Delhi and Agra"
+     ],
+     "answer": 2,
+     "why": "The first passenger train ran from Bombay to Thane on 16 April 1853."
+    }
+   ]
+  },
+  {
+   "id": "W5",
+   "title": "Freedom and the Republic",
+   "subtitle": "The road to independence",
+   "years": "1885 – 1950",
+   "gallery": "rotunda",
+   "color": "E0A040",
+   "intro": "In 1885 the Indian National Congress met for the first time in Bombay. Over the next six decades the struggle for freedom grew from petitions into mass movements led by Mahatma Gandhi, alongside revolutionaries, reformers and leaders from every region and community. Independence came on 15 August 1947, together with the painful partition of the subcontinent. On 26 January 1950 India became a sovereign democratic republic under its own Constitution.",
+   "items": [
+    {
+     "id": "W5_01",
+     "title": "The first Indian National Congress",
+     "date": "28–31 December 1885",
+     "year": 1885,
+     "place": {
+      "name": "Bombay",
+      "lat": 18.94,
+      "lon": 72.83,
+      "u": 0.2453,
+      "v": 0.3886
+     },
+     "medium": "Photograph",
+     "where": "Various collections",
+     "label": "Seventy-two delegates from across India met at Gokuldas Tejpal Sanskrit College in Bombay for the first session of the Indian National Congress, presided over by W. C. Bonnerjee. Early leaders such as Dadabhai Naoroji argued that British rule was draining India's wealth, and asked for a greater Indian voice in government.",
+     "narration": "The first Indian National Congress. Seventy-two delegates from across India met at Gokuldas Tejpal Sanskrit College in Bombay for the first session of the Indian National Congress, presided over by W. C. Bonnerjee. Early leaders such as Dadabhai Naoroji argued that British rule was draining India's wealth, and asked for a greater Indian voice in government. Later leaders such as Bal Gangadhar Tilak demanded more: 'Swaraj is my birthright, and I shall have it.'",
+     "wiki": "",
+     "query": "First session Indian National Congress 1885",
+     "kind": "photo"
+    },
+    {
+     "id": "W5_02",
+     "title": "Mahatma Gandhi",
+     "date": "1869–1948",
+     "year": 1915,
+     "place": {
+      "name": "Sabarmati Ashram, Ahmedabad",
+      "lat": 23.06,
+      "lon": 72.58,
+      "u": 0.2383,
+      "v": 0.5087
+     },
+     "medium": "Photograph",
+     "where": "Various collections",
+     "label": "Mohandas Karamchand Gandhi returned from South Africa in 1915 and transformed the freedom movement with satyagraha – non-violent resistance. He led the Non-Cooperation Movement of 1920–22, the Salt March of 1930 and the Quit India Movement of 1942, and campaigned for Hindu–Muslim unity and against untouchability.",
+     "narration": "Mahatma Gandhi. Mohandas Karamchand Gandhi returned from South Africa in 1915 and transformed the freedom movement with satyagraha – non-violent resistance. He led the Non-Cooperation Movement of 1920–22, the Salt March of 1930 and the Quit India Movement of 1942, and campaigned for Hindu–Muslim unity and against untouchability. Gandhi was assassinated in Delhi on 30 January 1948, less than six months after independence. His ideas inspired civil rights movements around the world.",
+     "wiki": "Mahatma Gandhi",
+     "query": "Mahatma Gandhi portrait",
+     "kind": "photo"
+    },
+    {
+     "id": "W5_03",
+     "title": "The Salt March",
+     "date": "12 March – 6 April 1930",
+     "year": 1930,
+     "place": {
+      "name": "Dandi",
+      "lat": 20.89,
+      "lon": 72.8,
+      "u": 0.2444,
+      "v": 0.445
+     },
+     "medium": "Photograph",
+     "where": "Various collections",
+     "label": "Gandhi and 78 followers walked about 385 kilometres from Sabarmati Ashram to the sea at Dandi to make salt in defiance of the British salt tax. The march drew worldwide attention, civil disobedience spread across India, and tens of thousands of people were arrested.",
+     "narration": "The Salt March. Gandhi and 78 followers walked about 385 kilometres from Sabarmati Ashram to the sea at Dandi to make salt in defiance of the British salt tax. The march drew worldwide attention, civil disobedience spread across India, and tens of thousands of people were arrested. Salt was a brilliant choice: everyone needed it, rich or poor, and making it from seawater was simple – so anyone could join the protest.",
+     "wiki": "Salt March",
+     "query": "Salt March Dandi 1930 Gandhi",
+     "kind": "photo"
+    },
+    {
+     "id": "W5_04",
+     "title": "Bhagat Singh",
+     "date": "1907–1931",
+     "year": 1929,
+     "place": {
+      "name": "Lahore",
+      "lat": 31.55,
+      "lon": 74.34,
+      "u": 0.2872,
+      "v": 0.7689
+     },
+     "medium": "Photograph",
+     "where": "Various collections",
+     "label": "Bhagat Singh was a young revolutionary of the Hindustan Socialist Republican Association. In April 1929 he and Batukeshwar Dutt threw harmless bombs into the Central Legislative Assembly in Delhi and courted arrest, using their trial to spread their ideas. He was hanged in Lahore in March 1931, aged 23.",
+     "narration": "Bhagat Singh. Bhagat Singh was a young revolutionary of the Hindustan Socialist Republican Association. In April 1929 he and Batukeshwar Dutt threw harmless bombs into the Central Legislative Assembly in Delhi and courted arrest, using their trial to spread their ideas. He was hanged in Lahore in March 1931, aged 23. His slogan 'Inquilab Zindabad' – 'Long live the revolution' – became one of the most famous cries of the freedom struggle.",
+     "wiki": "Bhagat Singh",
+     "query": "Bhagat Singh photograph",
+     "kind": "photo"
+    },
+    {
+     "id": "W5_05",
+     "title": "Subhas Chandra Bose",
+     "date": "1897–1945",
+     "year": 1943,
+     "place": {
+      "name": "Moirang, Manipur",
+      "lat": 24.5,
+      "lon": 93.77,
+      "u": 0.8269,
+      "v": 0.5515
+     },
+     "medium": "Photograph",
+     "where": "Various collections",
+     "label": "Twice elected president of the Congress, Subhas Chandra Bose broke with Gandhi over methods and escaped from British house arrest in 1941. In South-East Asia he led the Indian National Army, which fought alongside Japan in north-east India in 1944.",
+     "narration": "Subhas Chandra Bose. Twice elected president of the Congress, Subhas Chandra Bose broke with Gandhi over methods and escaped from British house arrest in 1941. In South-East Asia he led the Indian National Army, which fought alongside Japan in north-east India in 1944. The trials of INA officers at Delhi's Red Fort in 1945 and 1946 caused a wave of protest across India, and convinced many British officials that their rule could not last.",
+     "wiki": "Subhas Chandra Bose",
+     "query": "Subhas Chandra Bose photograph",
+     "kind": "photo"
+    },
+    {
+     "id": "W5_06",
+     "title": "Partition, August 1947",
+     "date": "1947",
+     "year": 1947,
+     "place": {
+      "name": "Amritsar",
+      "lat": 31.63,
+      "lon": 74.87,
+      "u": 0.3019,
+      "v": 0.7714
+     },
+     "medium": "Photograph",
+     "where": "Various collections",
+     "label": "Independence came with the partition of British India into India and Pakistan. Around fifteen million people crossed the new borders in Punjab and Bengal, and the violence claimed hundreds of thousands of lives – some estimates say up to two million. It was one of the largest migrations in human history.",
+     "narration": "Partition, August 1947. Independence came with the partition of British India into India and Pakistan. Around fifteen million people crossed the new borders in Punjab and Bengal, and the violence claimed hundreds of thousands of lives – some estimates say up to two million. It was one of the largest migrations in human history. Many families who lived through Partition have recorded their memories, so that the human cost of these events is not forgotten.",
+     "wiki": "Partition of India",
+     "query": "Partition of India refugees 1947",
+     "kind": "photo"
+    },
+    {
+     "id": "W5_07",
+     "title": "The Constitution of India",
+     "date": "Adopted 26 November 1949; in force 26 January 1950",
+     "year": 1950,
+     "place": {
+      "name": "New Delhi",
+      "lat": 28.62,
+      "lon": 77.21,
+      "u": 0.3669,
+      "v": 0.6768
+     },
+     "medium": "Hand-calligraphed and illuminated original",
+     "where": "Parliament of India, New Delhi",
+     "label": "The Constituent Assembly, chaired by Rajendra Prasad, with B. R. Ambedkar leading the drafting committee, debated the Constitution for nearly three years. The original copies were hand-written by Prem Behari Narain Raizada and illuminated by artists of Santiniketan under Nandalal Bose. Its Preamble promises justice, liberty, equality and fraternity.",
+     "narration": "The Constitution of India. The Constituent Assembly, chaired by Rajendra Prasad, with B. R. Ambedkar leading the drafting committee, debated the Constitution for nearly three years. The original copies were hand-written by Prem Behari Narain Raizada and illuminated by artists of Santiniketan under Nandalal Bose. Its Preamble promises justice, liberty, equality and fraternity. It is one of the longest written national constitutions in the world. Universal adult suffrage gave every citizen over twenty-one the vote, regardless of caste, religion, gender or wealth.",
+     "wiki": "Preamble to the Constitution of India",
+     "query": "Constitution of India Preamble original",
+     "kind": "photo"
+    }
+   ],
+   "centre": {
+    "id": "W5_C",
+    "title": "A spinning wheel, or charkha (replica)",
+    "date": "1920s–1940s",
+    "year": 1921,
+    "place": {
+     "name": "Sabarmati Ashram, Ahmedabad",
+     "lat": 23.06,
+     "lon": 72.58,
+     "u": 0.2383,
+     "v": 0.5087
+    },
+    "medium": "Replica in wood and cotton thread",
+    "where": "Replica made for this museum",
+    "label": "Gandhi urged every Indian to spin cotton every day. Spinning khadi – hand-spun, hand-woven cloth – was a way to boycott British mill cloth, give work to villagers and show self-reliance. In 1921 a spinning wheel was placed at the centre of a proposed national flag, the forerunner of the Ashoka Chakra on today's tricolour.",
+    "narration": "A spinning wheel, or charkha (replica). Gandhi urged every Indian to spin cotton every day. Spinning khadi – hand-spun, hand-woven cloth – was a way to boycott British mill cloth, give work to villagers and show self-reliance. In 1921 a spinning wheel was placed at the centre of a proposed national flag, the forerunner of the Ashoka Chakra on today's tricolour. Bonfires of foreign cloth were lit across India during the Non-Cooperation Movement, and wearing khadi became a badge of the freedom struggle.",
+    "wiki": "",
+    "query": "",
+    "kind": "replica",
+    "replica": "charkha"
+   },
+   "quiz": [
+    {
+     "q": "Where was the Indian National Congress founded in December 1885?",
+     "options": [
+      "Calcutta",
+      "Bombay",
+      "Madras",
+      "Poona"
+     ],
+     "answer": 1,
+     "why": "The first Congress session met in Bombay in December 1885."
+    },
+    {
+     "q": "Why did Gandhi call off the Non-Cooperation Movement in 1922?",
+     "options": [
+      "The Gandhi–Irwin Pact",
+      "The violence at Chauri Chaura",
+      "The Lahore Congress",
+      "The Poona Pact"
+     ],
+     "answer": 1,
+     "why": "He suspended it after the violence at Chauri Chaura."
+    },
+    {
+     "q": "What was the slogan of the Indian National Army under Subhas Chandra Bose?",
+     "options": [
+      "Do or die",
+      "Delhi Chalo",
+      "Inquilab Zindabad",
+      "Vande Mataram"
+     ],
+     "answer": 1,
+     "why": "Bose rallied the INA with the call Delhi Chalo."
+    },
+    {
+     "q": "Where was the All-India Muslim League founded in 1906?",
+     "options": [
+      "Lahore",
+      "Aligarh",
+      "Dhaka",
+      "Karachi"
+     ],
+     "answer": 2,
+     "why": "The League was founded in Dhaka in 1906."
+    },
+    {
+     "q": "What was the 1948 military action that integrated Hyderabad called?",
+     "options": [
+      "Operation Vijay",
+      "Operation Polo",
+      "Operation Flood",
+      "Operation Blue Star"
+     ],
+     "answer": 1,
+     "why": "India launched Operation Polo in September 1948."
+    },
+    {
+     "q": "Which 1973 case established that the basic structure of the Constitution cannot be destroyed?",
+     "options": [
+      "Golaknath case",
+      "Kesavananda Bharati case",
+      "Minerva Mills case",
+      "Maneka Gandhi case"
+     ],
+     "answer": 1,
+     "why": "The Supreme Court laid down the basic structure doctrine in Kesavananda Bharati."
+    }
+   ]
+  },
+  {
+   "id": "W6",
+   "title": "Themes of Indian History",
+   "subtitle": "Threads through time",
+   "years": "From antiquity to today",
+   "gallery": "modern",
+   "color": "5A8AA0",
+   "intro": "History is more than kings and battles. This gallery follows long threads that run through India's past: centres of learning and science, art traditions, the meeting of many faiths, money and trade, and the work of historians who pieced the story together from inscriptions, coins, texts and archaeology.",
+   "items": [
+    {
+     "id": "W6_01",
+     "title": "Nalanda Mahavihara",
+     "date": "5th – 12th century CE",
+     "year": 450,
+     "place": {
+      "name": "Nalanda",
+      "lat": 25.14,
+      "lon": 85.44,
+      "u": 0.5956,
+      "v": 0.5706
+     },
+     "medium": "Brick monastery and temple ruins",
+     "where": "In situ, Nalanda, Bihar (UNESCO World Heritage Site)",
+     "label": "Founded under the Guptas in the 5th century, Nalanda grew into a great Buddhist monastic university with thousands of monks and teachers, drawing scholars such as Xuanzang from China. It flourished for some seven hundred years before its decline and destruction around 1200.",
+     "narration": "Nalanda Mahavihara. Founded under the Guptas in the 5th century, Nalanda grew into a great Buddhist monastic university with thousands of monks and teachers, drawing scholars such as Xuanzang from China. It flourished for some seven hundred years before its decline and destruction around 1200. Students studied Buddhist philosophy, grammar, logic, medicine and astronomy. Its libraries were said to be so large that they burned for months when the monastery was destroyed.",
+     "wiki": "Nalanda mahavihara",
+     "query": "Nalanda ruins",
+     "kind": "photo"
+    },
+    {
+     "id": "W6_02",
+     "title": "Jantar Mantar, Jaipur",
+     "date": "1724–1735",
+     "year": 1728,
+     "place": {
+      "name": "Jaipur",
+      "lat": 26.92,
+      "lon": 75.82,
+      "u": 0.3283,
+      "v": 0.6245
+     },
+     "medium": "Masonry, stone and brass",
+     "where": "In situ, Jaipur (UNESCO World Heritage Site)",
+     "label": "Maharaja Sawai Jai Singh II built five astronomical observatories in north India. The one at Jaipur has 19 instruments, including the Samrat Yantra, a giant sundial that tells local time to an accuracy of about two seconds. It continued a long Indian tradition of astronomy going back to Aryabhata.",
+     "narration": "Jantar Mantar, Jaipur. Maharaja Sawai Jai Singh II built five astronomical observatories in north India. The one at Jaipur has 19 instruments, including the Samrat Yantra, a giant sundial that tells local time to an accuracy of about two seconds. It continued a long Indian tradition of astronomy going back to Aryabhata. Aryabhata, writing in 499 CE, explained that the Earth rotates on its axis, and calculated the value of pi to four decimal places.",
+     "wiki": "Jantar Mantar, Jaipur",
+     "query": "Jantar Mantar Jaipur Samrat Yantra",
+     "kind": "photo"
+    },
+    {
+     "id": "W6_03",
+     "title": "Madhubani painting",
+     "date": "A living tradition",
+     "year": 1966,
+     "place": {
+      "name": "Mithila (Madhubani), Bihar",
+      "lat": 26.35,
+      "lon": 86.07,
+      "u": 0.6131,
+      "v": 0.6072
+     },
+     "medium": "Natural pigments on paper",
+     "where": "Various collections",
+     "label": "For generations women in the Mithila region of Bihar painted the walls of their homes with gods, nature and wedding scenes in bold lines and bright colours. After a drought in the 1960s the art moved onto paper and became an important source of income.",
+     "narration": "Madhubani painting. For generations women in the Mithila region of Bihar painted the walls of their homes with gods, nature and wedding scenes in bold lines and bright colours. After a drought in the 1960s the art moved onto paper and became an important source of income. India has hundreds of such living traditions – Warli in Maharashtra, Pattachitra in Odisha, Gond in Madhya Pradesh – each passed from one generation to the next.",
+     "wiki": "Madhubani art",
+     "query": "Madhubani painting",
+     "kind": "photo"
+    },
+    {
+     "id": "W6_04",
+     "title": "Harmandir Sahib (the Golden Temple), Amritsar",
+     "date": "Founded 1581–1604; gilded early 19th century",
+     "year": 1604,
+     "place": {
+      "name": "Amritsar",
+      "lat": 31.62,
+      "lon": 74.88,
+      "u": 0.3022,
+      "v": 0.7711
+     },
+     "medium": "Marble and gilded copper",
+     "where": "In situ, Amritsar",
+     "label": "The holiest gurdwara of Sikhism was built by Guru Arjan, who installed the Adi Granth here in 1604. Doors on all four sides welcome everyone, and its community kitchen feeds tens of thousands of people free every day. Maharaja Ranjit Singh covered its upper storeys in gilded copper.",
+     "narration": "Harmandir Sahib (the Golden Temple), Amritsar. The holiest gurdwara of Sikhism was built by Guru Arjan, who installed the Adi Granth here in 1604. Doors on all four sides welcome everyone, and its community kitchen feeds tens of thousands of people free every day. Maharaja Ranjit Singh covered its upper storeys in gilded copper. India is the birthplace of Hinduism, Buddhism, Jainism and Sikhism, and home for many centuries to Islam, Christianity, Judaism and Zoroastrianism.",
+     "wiki": "Golden Temple",
+     "query": "Golden Temple Amritsar",
+     "kind": "photo"
+    },
+    {
+     "id": "W6_05",
+     "title": "The rupiya of Sher Shah Suri",
+     "date": "1540–1545",
+     "year": 1540,
+     "place": {
+      "name": "Sasaram",
+      "lat": 24.95,
+      "lon": 84.03,
+      "u": 0.5564,
+      "v": 0.5649
+     },
+     "medium": "Silver, about 11.5 g",
+     "where": "Various museum collections",
+     "label": "Sher Shah Suri, who briefly drove the Mughal emperor Humayun out of India, introduced a standard silver coin called the rupiya. The Mughals and later the British kept it, and its name lives on in the rupee used in India and several neighbouring countries.",
+     "narration": "The rupiya of Sher Shah Suri. Sher Shah Suri, who briefly drove the Mughal emperor Humayun out of India, introduced a standard silver coin called the rupiya. The Mughals and later the British kept it, and its name lives on in the rupee used in India and several neighbouring countries. Sher Shah also rebuilt the great road from Bengal to the north-west, later called the Grand Trunk Road, with rest houses and wells along the way.",
+     "wiki": "Rupiya",
+     "query": "Sher Shah Suri rupiya silver coin",
+     "kind": "photo"
+    },
+    {
+     "id": "W6_06",
+     "title": "Ashoka's inscriptions and the decipherment of Brahmi",
+     "date": "Edicts c. 260 BCE; script deciphered 1837",
+     "year": 1837,
+     "place": {
+      "name": "Girnar, Gujarat",
+      "lat": 21.52,
+      "lon": 70.47,
+      "u": 0.1797,
+      "v": 0.4634
+     },
+     "medium": "Inscription carved in stone",
+     "where": "In situ, Girnar, Junagadh",
+     "label": "For centuries no one could read the inscriptions on Ashoka's pillars and rocks. In 1837 James Prinsep, building on the work of many scholars, deciphered the Brahmi script, the ancestor of most South and South-East Asian scripts. A forgotten emperor spoke again.",
+     "narration": "Ashoka's inscriptions and the decipherment of Brahmi. For centuries no one could read the inscriptions on Ashoka's pillars and rocks. In 1837 James Prinsep, building on the work of many scholars, deciphered the Brahmi script, the ancestor of most South and South-East Asian scripts. A forgotten emperor spoke again. Historians use many kinds of sources: inscriptions, coins, texts, travellers' accounts, art and the remains found by archaeologists. Each tells part of the story, and new finds can change it.",
+     "wiki": "Brahmi script",
+     "query": "Ashoka edict Girnar Brahmi",
+     "kind": "photo"
+    }
+   ],
+   "centre": {
+    "id": "W6_C",
+    "title": "Aryabhata, India's first satellite (replica)",
+    "date": "Launched 19 April 1975",
+    "year": 1975,
+    "place": {
+     "name": "Bengaluru",
+     "lat": 12.97,
+     "lon": 77.59,
+     "u": 0.3775,
+     "v": 0.2196
+    },
+    "medium": "Replica; the original was a 26-sided polyhedron about 1.4 m across, weighing 360 kg",
+    "where": "Replica made for this museum",
+    "label": "Named after the 5th-century mathematician and astronomer, India's first satellite was designed and built by ISRO in Bengaluru and launched by a Soviet rocket on 19 April 1975. Its faces were covered with solar cells. It carried experiments in X-ray astronomy and solar physics.",
+    "narration": "Aryabhata, India's first satellite (replica). Named after the 5th-century mathematician and astronomer, India's first satellite was designed and built by ISRO in Bengaluru and launched by a Soviet rocket on 19 April 1975. Its faces were covered with solar cells. It carried experiments in X-ray astronomy and solar physics. Aryabhata began a journey that led to India's own launch rockets, the Chandrayaan missions to the Moon and the Mangalyaan mission to Mars.",
+    "wiki": "",
+    "query": "",
+    "kind": "replica",
+    "replica": "satellite"
+   },
+   "quiz": [
+    {
+     "q": "Where was the first summit of the Non-Aligned Movement held in 1961?",
+     "options": [
+      "Bandung",
+      "Belgrade",
+      "Cairo",
+      "New Delhi"
+     ],
+     "answer": 1,
+     "why": "The first Non-Aligned summit took place in Belgrade in 1961."
+    },
+    {
+     "q": "In which year was the Indian Space Research Organisation founded?",
+     "options": [
+      "1958",
+      "1962",
+      "1969",
+      "1975"
+     ],
+     "answer": 2,
+     "why": "ISRO was founded in 1969 from Vikram Sarabhai's vision."
+    },
+    {
+     "q": "Which ancient treatise on performance is attributed to Bharata?",
+     "options": [
+      "Arthashastra",
+      "Natyashastra",
+      "Kamasutra",
+      "Abhijnanashakuntalam"
+     ],
+     "answer": 1,
+     "why": "Bharata's Natyashastra is the ancient treatise on performance."
+    },
+    {
+     "q": "Where did Dr B. R. Ambedkar and his followers embrace Buddhism in 1956?",
+     "options": [
+      "Sarnath",
+      "Bodh Gaya",
+      "Nagpur",
+      "Mumbai"
+     ],
+     "answer": 2,
+     "why": "The 1956 conversion ceremony took place at Nagpur."
+    },
+    {
+     "q": "Who introduced the rupiya, ancestor of today's rupee?",
+     "options": [
+      "Akbar",
+      "Samudragupta",
+      "Sher Shah Suri",
+      "Ashoka"
+     ],
+     "answer": 2,
+     "why": "Sher Shah Suri introduced the silver rupiya."
+    },
+    {
+     "q": "Which article of the Constitution abolished untouchability?",
+     "options": [
+      "Article 14",
+      "Article 17",
+      "Article 21",
+      "Article 370"
+     ],
+     "answer": 1,
+     "why": "Article 17 abolished untouchability."
+    }
+   ]
+  }
+ ],
+ "map": {
+  "lon0": 64.0,
+  "lon1": 100.0,
+  "lat0": 5.0,
+  "lat1": 38.5
+ }
+}

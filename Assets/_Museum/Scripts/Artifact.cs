@@ -1,44 +1,39 @@
 using UnityEngine;
 
-/// Put on each exhibit (layer: Interactive) with a collider around the model.
+/// A museum object (layer: Interactive) with a collider around it. Selecting it plays its audio-guide narration
+/// with subtitles (AudioGuide); its own small spotlight brightens while it plays.
 public class Artifact : MonoBehaviour, IGazeTarget
 {
     public ArtifactData data;
-    public Transform model;              // the mesh to highlight / spin
-    public Transform panelAnchor;        // empty placed where the info panel should appear, facing the visitor
-    public TeleportPoint standPoint;     // floor point in front of this exhibit (used by "Next" and far selections)
-    [Tooltip("0 for boards and paintings")]
-    public float spinSpeed = 20f;
-    public float hoverScale = 1.06f;
-    [Tooltip("Selecting the exhibit from further away than this first moves the visitor to its stand point")]
-    public float walkUpDistance = 3f;
+    public Transform model;              // the object itself
+    public Transform panelAnchor;        // legacy (info card); unused by the audio guide
+    public TeleportPoint standPoint;     // floor point in front of this object (used for far selections)
+    [Tooltip("Realtime spotlight that softly brightens while the narration plays (optional)")]
+    public Light highlight;
+    public float highlightIntensity = 1.2f;
+    [Tooltip("0 = never rotates")]
+    public float spinSpeed = 0f;
+    public float hoverScale = 1f;
+    [Tooltip("Selecting the object from further away than this first moves the visitor to its stand point")]
+    public float walkUpDistance = 4f;
 
-    /// The exhibit whose panel was just closed: gazing at it does not reopen it until the visitor looks away
-    /// (the viewer button still works).
+    /// Kept for compatibility with older scenes.
     public static Artifact Suppressed;
 
-    bool selected;
-    Vector3 baseScale;
-    Quaternion baseRotation;
+    bool lit;
+    float level;
 
     void Awake()
     {
         if (!model) model = transform;
-        baseScale = model.localScale;
-        baseRotation = model.localRotation;
+        if (highlight) { highlight.intensity = 0f; highlight.enabled = false; }
     }
 
-    public void OnGazeEnter() => model.localScale = baseScale * hoverScale;
-    public void OnGazeExit()
-    {
-        model.localScale = baseScale;
-        if (Suppressed == this) Suppressed = null;
-    }
+    public void OnGazeEnter() { if (AudioGuide.Instance) AudioGuide.Instance.Hover(this); }
+    public void OnGazeExit() { if (AudioGuide.Instance) AudioGuide.Instance.Unhover(this); }
 
     public void OnSelect()
     {
-        if (Suppressed == this && GazeInteractor.SelectedByDwell) return;
-        Suppressed = null;
         var cam = Camera.main;
         if (standPoint && cam)
         {
@@ -46,18 +41,21 @@ public class Artifact : MonoBehaviour, IGazeTarget
             d.y = 0f;
             if (d.magnitude > walkUpDistance) standPoint.Go();
         }
-        InfoPanel.Instance.Show(this);
+        if (AudioGuide.Instance) AudioGuide.Instance.Toggle(this);
+        else if (InfoPanel.Instance) InfoPanel.Instance.Show(this);
     }
 
-    public void SetSelected(bool value)
-    {
-        selected = value;
-        if (!value) model.localRotation = baseRotation;
-    }
+    public void SetHighlighted(bool on) => lit = on;
+    public void SetSelected(bool value) => lit = value;     // legacy InfoPanel hook
 
     void Update()
     {
-        if (selected && spinSpeed > 0f)
-            model.Rotate(0f, spinSpeed * Time.deltaTime, 0f, Space.World);
+        if (highlight)
+        {
+            level = Mathf.MoveTowards(level, lit ? 1f : 0f, Time.deltaTime * 1.5f);
+            highlight.enabled = level > 0.001f;
+            highlight.intensity = highlightIntensity * Mathf.SmoothStep(0f, 1f, level);
+        }
+        if (lit && spinSpeed > 0f) model.Rotate(0f, spinSpeed * Time.deltaTime, 0f, Space.World);
     }
 }

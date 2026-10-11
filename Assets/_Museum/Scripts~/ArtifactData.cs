@@ -17,4 +17,6 @@ public class ArtifactData : ScriptableObject
     public Sprite image;
     [Tooltip("Tick for coins, seals and other small items scaled up for VR.")]
     public bool shownEnlarged;
+    [Tooltip("Audio-guide stop number shown on the object's label (0 = none)")]
+    public int stop;
 }
