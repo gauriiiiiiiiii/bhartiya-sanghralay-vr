@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_12
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_12
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "3rd c. BCE onwards \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Spread of Buddhism
   text: Royal patronage, especially from Ashoka, together with monasteries, trade routes and missionaries, carried Buddhism to Sri Lanka, Central Asia, China and South-East Asia. Great monasteries such as Nalanda became centres of learning.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: 229d60524b35e4f9f91ea97f93f5682d, type: 3}
+  image: {fileID: 21300000, guid: 58e9b09f9e1ab47e5b81e218514c95d2, type: 3}
   shownEnlarged: 0

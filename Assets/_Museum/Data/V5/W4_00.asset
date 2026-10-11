@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W4_00
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W4_00
+  era: "1498 \u2013 1885"
+  title: Colonial India
+  text: Colonial India. From traders to rulers. In 1498 the Portuguese navigator Vasco da Gama reached Calicut. Within two centuries Portuguese, Dutch, French and British trading companies had set up posts along India's coasts. The British East India Company turned trade into conquest after the Battle of Plassey in 1757, and after the great uprising of 1857 the British Crown took direct control. The age also brought railways, reform movements and the first stirrings of Indian nationalism.
+  narration: {fileID: 8300000, guid: f7496ac6e91cf41818368aa76270b3ce, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 400

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S12_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S12_03
-  era: "Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
+  era: "6th\u20139th c. CE \xB7 Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
   title: Early bhakti
   text: Bhakti, loving devotion to a personal god, began among the Tamil Alvars and Nayanars between the 6th and 9th centuries. They sang in Tamil rather than Sanskrit and welcomed devotees of every caste.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 73819c04b9cae4c01934b902e7610cb1, type: 3}
   image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
   shownEnlarged: 0

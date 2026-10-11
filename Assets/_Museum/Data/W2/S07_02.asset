@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_02
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 321 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Chanakya
   text: Chanakya, also called Kautilya or Vishnugupta, was Chandragupta's teacher and minister. The Arthashastra, a treatise on statecraft, economy and law, is attributed to him, though parts of it may have been written later.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 0269c35866bd0465dba7d1f179ac7273, type: 3}
+  image: {fileID: 21300000, guid: 14c16567b022048bf8a6de8f7c7bc087, type: 3}
   shownEnlarged: 0

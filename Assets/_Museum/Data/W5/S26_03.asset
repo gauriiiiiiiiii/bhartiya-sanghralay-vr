@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_03
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1928\u20131931 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Bhagat Singh
   text: Bhagat Singh, who lived from 1907 to 1931, took part in the killing of police officer Saunders in 1928 to avenge Lala Lajpat Rai, and threw harmless bombs in the Central Legislative Assembly in 1929 to make the deaf hear. He was hanged with Rajguru and Sukhdev on 23 March 1931.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 36aaf9ce63161410fbe30f3d38e5abda, type: 3}
   image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
   shownEnlarged: 0

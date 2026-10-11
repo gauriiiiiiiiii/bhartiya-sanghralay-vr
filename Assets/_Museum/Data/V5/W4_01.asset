@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W4_01
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W4_01
+  era: Reached Calicut in May 1498
+  title: Vasco da Gama
+  text: "Vasco da Gama. The Portuguese navigator reached Calicut on the Malabar coast in May 1498, opening a sea route from Europe to India around Africa. Portugal soon set up forts and trading posts, and from 1510 ruled Goa, which remained Portuguese until 1961. Europeans came for spices \u2013 pepper, cinnamon, cloves \u2013 and for Indian cotton textiles, which were prized all over the world."
+  narration: {fileID: 8300000, guid: cd958df151e324ee2b5e8be13f49db04, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 401

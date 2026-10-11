@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S18_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S18_08
-  era: "Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
+  era: "1746\u20131763 \xB7 Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
   title: European rivalry
   text: European companies fought one another and joined Indian politics. The Anglo-French Carnatic Wars, from 1746 to 1763, showed that small European-trained armies could decide Indian successions, a lesson the British used to expand their power.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: dc0aca711b7f643e9a6eec84a0626553, type: 3}
+  narration: {fileID: 8300000, guid: 10bdbb161c1bc44e292118052bcc8679, type: 3}
+  image: {fileID: 21300000, guid: 1be808d8354d14d2d91c7779cf7f3412, type: 3}
   shownEnlarged: 0

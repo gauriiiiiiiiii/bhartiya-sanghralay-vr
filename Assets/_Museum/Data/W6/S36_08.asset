@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S36_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S36_08
-  era: "Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
+  era: "1947 \u2013 present \xB7 Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
   title: Industrialisation since independence
   text: After independence India built steel plants, dams and public-sector industries. Since 1991 private industry, services and information technology have driven growth, and India is now among the world's largest economies.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b964e0ac4bf294f3bbbe60c9a2a39c43, type: 3}
   image: {fileID: 21300000, guid: a610a4068f28c49f6a9ff27864951d6f, type: 3}
   shownEnlarged: 0

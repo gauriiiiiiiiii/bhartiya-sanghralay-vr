@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S36_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S36_02
-  era: "Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
+  era: "c. 1200\u20131700 CE \xB7 Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
   title: Medieval trade
   text: Medieval India exported cotton textiles, indigo, sugar and spices, and imported horses, silver and luxury goods. Cities such as Delhi, Agra, Cambay, Surat and Masulipatnam were busy centres of commerce.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: e21a723a3f3fa416e8f02ae5a4334b94, type: 3}
   image: {fileID: 21300000, guid: a610a4068f28c49f6a9ff27864951d6f, type: 3}
   shownEnlarged: 0

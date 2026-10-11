@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S01_00C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S01_00C
+  era: "Special artifact \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  title: Acheulean quartzite hand axe from Attirampakkam, Tamil Nadu (c. 1.5 million years old)
+  text: "Long before writing, people in India made stone tools, painted rock shelters, tamed animals and began to farm. This section follows the Stone Ages and the Copper\u2013Stone Age."
+  narration: {fileID: 8300000, guid: 4497f2fd01bd8434094fffb138f32f13, type: 3}
+  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  shownEnlarged: 0

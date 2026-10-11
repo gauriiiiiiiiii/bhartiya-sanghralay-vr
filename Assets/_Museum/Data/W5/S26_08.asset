@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_08
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1938\u20131945 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Subhas Chandra Bose
   text: Subhas Chandra Bose, twice president of the Congress, formed the Forward Bloc, escaped from house arrest in 1941, and led the Indian National Army and the Provisional Government of Free India. He is reported to have died after a plane crash in Taiwan in August 1945.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
+  narration: {fileID: 8300000, guid: 33003b62189bd45acacba61b591cff28, type: 3}
+  image: {fileID: 21300000, guid: 5e4ae79cf6123491f94678c803782995, type: 3}
   shownEnlarged: 0

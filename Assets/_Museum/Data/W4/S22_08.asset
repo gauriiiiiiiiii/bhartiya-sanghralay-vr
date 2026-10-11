@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_08
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1848 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Women reformers
   text: Savitribai Phule opened schools for girls with Jyotirao Phule from 1848. Pandita Ramabai founded Sharada Sadan for widows, Tarabai Shinde wrote against gender inequality, and Begum Rokeya promoted education for Muslim girls.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: f071e067d35914a9d83f412696a4d244, type: 3}
   image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
   shownEnlarged: 0

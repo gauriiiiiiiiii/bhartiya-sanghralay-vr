@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_06
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "5th c. BCE \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Buddhism
   text: Buddhism, founded by Gautama Buddha around the 5th century BCE, teaches a path to end suffering through wisdom, ethics and meditation. It rejected sacrificial ritual and privilege by birth, and spread across Asia.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: 02f5373b7256b4e5999f65b24d646980, type: 3}
+  image: {fileID: 21300000, guid: 5de4acc314ded49c682cec6883d1a24b, type: 3}
   shownEnlarged: 0

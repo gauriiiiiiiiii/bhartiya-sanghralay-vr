@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1206 \u2013 1526"
   title: 'Section 14: Delhi Sultanate'
   text: Five dynasties ruled from Delhi for over three centuries, introducing new forms of government, architecture and culture.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 40f0026ee509b49a4aaf3ade03190757, type: 3}
   image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
   shownEnlarged: 0

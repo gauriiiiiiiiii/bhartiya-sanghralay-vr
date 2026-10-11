@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 850 \u2013 1650 CE"
   title: 'Section 13: South Indian Kingdoms'
   text: Chola admirals, Hoysala sculptors, Kakatiya builders and the rulers of Vijayanagara made the south a centre of power, trade and art.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: afbc8f67e779045eeba4b0abf6d32a3e, type: 3}
   image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_04
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "1947\u20131999 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: "India\u2013Pakistan wars"
   text: India and Pakistan fought wars in 1947 to 1948 and in 1965 over Kashmir, in 1971 over Bangladesh, and at Kargil in 1999. The Tashkent Agreement of 1966 and the Shimla Agreement of 1972 followed the earlier wars.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4ad5de7107d354e3982c8858bb95166f, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

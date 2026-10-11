@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_01
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 1.5m yrs\u201310,000 BCE \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Palaeolithic Age (Old Stone Age)
   text: The Palaeolithic, or Old Stone Age, is the longest phase of the human past. In India it begins with stone tools at least 1.5 million years old, such as those from Attirampakkam in Tamil Nadu, and lasts until about 10,000 BCE, when the last Ice Age ended.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 27d8f6ecdd5754ef88924df37d6aea7c, type: 3}
+  image: {fileID: 21300000, guid: 473d3001cdf0b40a7af0e70140c7b271, type: 3}
   shownEnlarged: 0

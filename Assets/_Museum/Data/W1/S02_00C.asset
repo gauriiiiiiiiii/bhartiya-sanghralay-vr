@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S02_00C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S02_00C
+  era: "Special artifact \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  title: Unicorn seal from Mohenjo-daro (steatite stamp seal with Indus script)
+  text: One of the world's first urban civilisations grew along the Indus and the Ghaggar-Hakra rivers, with planned cities, drains, standard weights and an undeciphered script.
+  narration: {fileID: 8300000, guid: 8881c0c62583949c18febac5af15bef1, type: 3}
+  image: {fileID: 21300000, guid: ac905d27c8f43401f99e417506e1b162, type: 3}
+  shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_04
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1792\u20131820 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Ryotwari system
   text: Introduced by Thomas Munro and Alexander Read in Madras and later in Bombay, the Ryotwari system collected revenue directly from cultivators, or ryots, with periodic reassessment, often at high rates.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
+  narration: {fileID: 8300000, guid: 67cd5a4b0e2b14dae9d47ef659734b50, type: 3}
+  image: {fileID: 21300000, guid: 463494eff658c44dda18cb95d8e5bf9d, type: 3}
   shownEnlarged: 0

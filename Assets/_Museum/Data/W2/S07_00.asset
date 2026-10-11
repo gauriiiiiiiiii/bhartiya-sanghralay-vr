@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 321 \u2013 185 BCE"
   title: 'Section 7: Mauryan Empire'
   text: From Pataliputra the Mauryas ruled India's first great empire. Under Ashoka it turned from conquest to Dhamma, leaving edicts carved in stone across the land.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: f508ba39d1c6d4933bfcb9c65f686e58, type: 3}
   image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
   shownEnlarged: 0

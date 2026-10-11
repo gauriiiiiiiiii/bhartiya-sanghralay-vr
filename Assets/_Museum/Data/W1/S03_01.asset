@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_01
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u20131000 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Early Vedic Period
   text: The Early, or Rigvedic, period, about 1500 to 1000 BCE, is known mainly from the Rigveda. Its people lived in the land of seven rivers, the Sapta Sindhu, in present-day Punjab, north-west India and Afghanistan.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 2888c0ffea4524c07a887a5bc7396dd6, type: 3}
+  image: {fileID: 21300000, guid: 54ed23870bbc54fba8bcef6fa4ec5211, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_11
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_11
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "4th\u20136th c. CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: A golden age?
   text: The Gupta period was once called India's golden age for its art, science and literature. Historians now point out that this view overlooks growing caste rigidity, the spread of untouchability, the declining status of women and the growth of land grants.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2d56e60b5715243fdb6464ad0079b275, type: 3}
   image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
   shownEnlarged: 0

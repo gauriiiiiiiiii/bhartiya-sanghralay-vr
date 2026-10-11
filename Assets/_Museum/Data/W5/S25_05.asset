@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_05
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "1930\u20131934 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: Civil Disobedience Movement
   text: "After the Lahore Congress demanded Purna Swaraj, complete independence, in 1929, Gandhi began the Civil Disobedience Movement in 1930, urging people to break unjust laws. It paused with the Gandhi\u2013Irwin Pact of 1931 and resumed in 1932."
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3014ab03709d240468c22a4b8d2e3601, type: 3}
   image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
   shownEnlarged: 0

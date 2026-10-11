@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_07
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "early 20th c. CE \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Nationalist historians
   text: Nationalist historians such as R. C. Majumdar, K. P. Jayaswal and R. K. Mookerji highlighted India's achievements, ancient traditions of self-government and cultural unity, countering colonial narratives.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2678ae968ccd946179061de17060de3a, type: 3}
   image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
   shownEnlarged: 0

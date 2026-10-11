@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S21_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S21_06
-  era: "Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
+  era: "1909 \xB7 Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
   title: How 1857 has been understood
   text: British writers called it the Sepoy Mutiny. V. D. Savarkar, in 1909, called it the First War of Independence. Historians such as S. N. Sen and R. C. Majumdar debated its nature, and recent studies highlight the part played by peasants and ordinary people.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 18dbb710cb6144696853ca666db887ba, type: 3}
   image: {fileID: 21300000, guid: 4b4faa6c5947b4f2eb591ae8dfd9d1ef, type: 3}
   shownEnlarged: 0

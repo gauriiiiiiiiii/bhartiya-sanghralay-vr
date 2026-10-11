@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_06
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1628\u20131658 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Shah Jahan
   text: 'Shah Jahan, who ruled from 1628 to 1658, presided over the empire''s grandest building: the Taj Mahal, the Red Fort and the Jama Masjid of Delhi, and the Peacock Throne. He was deposed by his son Aurangzeb and died a captive in Agra.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
+  narration: {fileID: 8300000, guid: ba3b86b06a52a4eddb0521591f132007, type: 3}
+  image: {fileID: 21300000, guid: 791741958fea84adfb2989b6aa06bea5, type: 3}
   shownEnlarged: 0

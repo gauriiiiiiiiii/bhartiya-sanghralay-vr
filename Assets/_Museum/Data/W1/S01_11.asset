@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_11
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_11
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Late Mesolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Early domestication
   text: Late in the Mesolithic, some groups began keeping animals. Bones from Adamgarh in Madhya Pradesh and Bagor in Rajasthan suggest early domestication of sheep, goats and cattle, a step towards herding and settled life.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 25acd874591f440e0b0070092b8e9f1e, type: 3}
+  image: {fileID: 21300000, guid: 8e14483a8a087478caf108495afa118b, type: 3}
   shownEnlarged: 0

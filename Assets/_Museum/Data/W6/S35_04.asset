@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S35_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S35_04
-  era: "Section 35 \xB7 Religion in India \xB7 Across the ages"
+  era: "1469 \xB7 Section 35 \xB7 Religion in India \xB7 Across the ages"
   title: Sikhism
   text: Founded by Guru Nanak and shaped by ten Gurus, Sikhism teaches devotion to one God, equality and selfless service. The Guru Granth Sahib is its eternal Guru, and the Harmandir Sahib, the Golden Temple at Amritsar, is its holiest shrine.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: ba66b635ce0fd4f6c94a22bc83f4476e, type: 3}
   image: {fileID: 21300000, guid: 576da863a02b24fb3b49953e59a81799, type: 3}
   shownEnlarged: 0

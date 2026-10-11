@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_21
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_21
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2800 BCE \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Kalibangan
   text: On the Ghaggar river in Rajasthan, Kalibangan has the earliest ploughed field known, from the Early Harappan phase, as well as fire altars and a citadel. Its name means black bangles.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: 054a207d7abad46598be87585cb06d74, type: 3}
+  image: {fileID: 21300000, guid: 25e7166ab240846b1bafb581f01711ca, type: 3}
   shownEnlarged: 0

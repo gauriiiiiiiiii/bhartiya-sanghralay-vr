@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W5_04
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W5_04
+  era: "1907\u20131931"
+  title: Bhagat Singh
+  text: "Bhagat Singh. Bhagat Singh was a young revolutionary of the Hindustan Socialist Republican Association. In April 1929 he and Batukeshwar Dutt threw harmless bombs into the Central Legislative Assembly in Delhi and courted arrest, using their trial to spread their ideas. He was hanged in Lahore in March 1931, aged 23. His slogan 'Inquilab Zindabad' \u2013 'Long live the revolution' \u2013 became one of the most famous cries of the freedom struggle."
+  narration: {fileID: 8300000, guid: 96cafffe0d9a5456cbce1d33dd05b313, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 504

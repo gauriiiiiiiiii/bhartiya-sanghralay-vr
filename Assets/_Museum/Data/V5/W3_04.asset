@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W3_04
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W3_04
+  era: Early 16th century
+  title: The stone chariot, Hampi
+  text: The stone chariot, Hampi. In the courtyard of the Vittala Temple stands a shrine for Garuda carved in the shape of a temple chariot. Hampi was Vijayanagara, capital of one of the largest empires in Indian history, which foreign visitors described as one of the richest cities in the world. Vijayanagara reached its height under Krishnadevaraya. In 1565 the city was defeated and sacked after the Battle of Talikota, and its ruins now spread across a landscape of giant boulders.
+  narration: {fileID: 8300000, guid: a7c23a2fb0dec412482643a8a35d5a4e, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 304

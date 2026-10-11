@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_09
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "1724\u20131948 \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Hyderabad under the Nizams
   text: Nizam-ul-Mulk Asaf Jah founded the state of Hyderabad in 1724 as Mughal governor of the Deccan. The Nizams became allies of the British and ruled until 1948, when Hyderabad joined India.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3959d978fd7594813985f760abab0dd8, type: 3}
   image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
   shownEnlarged: 0

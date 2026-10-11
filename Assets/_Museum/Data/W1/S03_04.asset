@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_04
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u20131000 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Tribal organisation
   text: Society was organised in kin-based tribes, or jana, led by a chief called the rajan, whose main duty was to protect cattle and people. Assemblies such as the sabha and samiti advised him, and women could attend some assemblies.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 63148d1f4f6a944a7b0d1c81fbe38b57, type: 3}
+  image: {fileID: 21300000, guid: 213c2cf8e638b41e6ac3ae2fad2ae861, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S36_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S36_07
-  era: "Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
+  era: "1770 \u2013 1949 \xB7 Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
   title: Banking through history
   text: Moneylenders and indigenous bankers used hundis, bills of exchange, for centuries. Modern banks include the Bank of Hindustan of 1770, the Presidency banks and the Reserve Bank of India, founded in 1935 and nationalised in 1949.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 40ae50da986b541f1b569322e6c3ecf5, type: 3}
   image: {fileID: 21300000, guid: a610a4068f28c49f6a9ff27864951d6f, type: 3}
   shownEnlarged: 0

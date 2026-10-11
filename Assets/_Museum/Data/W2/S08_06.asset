@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_06
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "1st c. BCE\u20133rd c. CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Satavahanas
   text: The Satavahanas ruled the Deccan from about the 1st century BCE to the 3rd century CE. Gautamiputra Satakarni defeated the Shakas. They issued lead and potin coins, granted land to Brahmins and Buddhists, and patronised caves at Karla, Nashik and the stupa at Amaravati.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
+  narration: {fileID: 8300000, guid: 32fb6d97d912c41ddb45ee0d26e7b41f, type: 3}
+  image: {fileID: 21300000, guid: 1eadc7a0efa0a4a6c831c836f2580717, type: 3}
   shownEnlarged: 0

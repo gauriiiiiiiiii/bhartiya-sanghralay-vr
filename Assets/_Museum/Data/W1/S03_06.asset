@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_06
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u20131000 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Early Vedic religion
   text: 'Rigvedic people worshipped the forces of nature: Indra, god of thunder and war; Agni, fire; Varuna, guardian of cosmic order; and Soma. Worship centred on hymns and offerings into fire. There were no temples or images.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 528af72f9958c489e88575bd8e811753, type: 3}
+  image: {fileID: 21300000, guid: cb204f822684c4ce887da235d72f1719, type: 3}
   shownEnlarged: 0

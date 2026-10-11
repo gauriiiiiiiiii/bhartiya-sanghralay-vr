@@ -16,6 +16,7 @@ MonoBehaviour:
   era: Welcome
   title: Museum of Indian History
   text: Welcome to the Museum of Indian History. Six wings take you from the first stone tools, more than a million years ago, to India today. Select a glowing archway in the Grand Hall to enter a wing. Inside, select any board to read it and hear its story, and use Next to follow the guided tour. The directory and the visitor guide are in the two rooms beside this entrance.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4f3d130ed5baf4a0fa1bcb940c237b69, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

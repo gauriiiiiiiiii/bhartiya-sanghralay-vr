@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_13
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_13
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "c. 1574\u20131657 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Mughal literature
   text: 'Persian literature thrived: Abul Fazl''s Akbarnama and Ain-i-Akbari, Persian translations of the Mahabharata and Ramayana, and Dara Shikoh''s work on the Upanishads. Tulsidas wrote the Ramcharitmanas during Akbar''s reign.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b9b26391bfacf4aab9334794b803c3ea, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

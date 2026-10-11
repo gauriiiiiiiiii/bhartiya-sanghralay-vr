@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S33_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S33_01
-  era: "Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
+  era: "1969 \xB7 Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
   title: Indian Space Research Organisation
   text: The Indian Space Research Organisation, founded in 1969 from Vikram Sarabhai's vision, builds launch vehicles such as the PSLV and GSLV and satellites for communication, weather, earth observation and navigation.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 7da0826d9b3a34b46a67ded0ed1ae106, type: 3}
   image: {fileID: 21300000, guid: d1879ddb8aebf47cf96a0a0d1bf77472, type: 3}
   shownEnlarged: 0

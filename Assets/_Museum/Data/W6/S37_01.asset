@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_01
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "1950 \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Caste system
   text: Caste combines the four varnas with thousands of jatis, often linked to occupation and marriage within the group. Reformers and Dr B. R. Ambedkar fought caste discrimination; the Constitution abolished untouchability in Article 17 and provided reservations.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 051aecf20cb6d43049b8118416e14a66, type: 3}
   image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
   shownEnlarged: 0

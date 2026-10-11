@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S24_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S24_02
-  era: "Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
+  era: "1885 \xB7 Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
   title: Indian National Congress
   text: The Indian National Congress was founded in December 1885 in Bombay, with the help of A. O. Hume, and W. C. Bonnerjee as its first president. It became the main platform of the national movement.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 71cc57c99f3cf459ba356567093ec185, type: 3}
+  narration: {fileID: 8300000, guid: 38d6996b8e58441b1a97d1350aeed4d6, type: 3}
+  image: {fileID: 21300000, guid: cb5552fc7f94946478595de5307e0246, type: 3}
   shownEnlarged: 0

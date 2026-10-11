@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S05_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S05_03
-  era: "Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
+  era: "6th c. BCE \xB7 Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
   title: Monarchies
   text: Most mahajanapadas, such as Magadha, Kosala, Vatsa and Avanti, were monarchies. Kings collected taxes, kept armies and officials, and built fortified capitals such as Rajagriha, Shravasti, Kaushambi and Ujjain.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0ad8c0d14d75b4ca794a7c1a933c1317, type: 3}
+  narration: {fileID: 8300000, guid: 3ffceb640c49e4b64bd0c4a351314c8f, type: 3}
+  image: {fileID: 21300000, guid: f31279518a5814b769e916100dcbc984, type: 3}
   shownEnlarged: 0

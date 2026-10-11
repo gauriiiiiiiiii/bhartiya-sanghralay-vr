@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S06_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S06_02
-  era: "Section 6 \xB7 Persian and Greek Invasions \xB7 c. 520 \u2013 300 BCE"
+  era: "326 BCE \xB7 Section 6 \xB7 Persian and Greek Invasions \xB7 c. 520 \u2013 300 BCE"
   title: Alexander's invasion
   text: In 326 BCE Alexander of Macedon crossed the Indus and defeated King Porus at the Battle of the Hydaspes, on the Jhelum. But his weary army refused to go beyond the Beas. He withdrew, and died in Babylon in 323 BCE.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 6d07066dcacc240ac871a5d5ec50ac00, type: 3}
+  narration: {fileID: 8300000, guid: b024abd6d04444d05911fd04f60288e4, type: 3}
+  image: {fileID: 21300000, guid: ebe553dce6df249448fc864dfe98bccb, type: 3}
   shownEnlarged: 0

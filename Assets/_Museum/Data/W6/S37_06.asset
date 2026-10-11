@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_06
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "1899\u20131900 \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Tribal communities
   text: India has more than seven hundred Scheduled Tribes, or Adivasi communities, about one in twelve Indians, including the Gonds, Bhils, Santhals and Nagas. Leaders such as Birsa Munda resisted colonial exploitation, and the Constitution protects tribal areas.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 71e1e78d2917542aa9dba41ec96e2115, type: 3}
   image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
   shownEnlarged: 0

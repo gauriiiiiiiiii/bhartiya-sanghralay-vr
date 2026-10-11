@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S28_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S28_05
-  era: "Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
+  era: "1947 \xB7 Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
   title: Partition
   text: Sir Cyril Radcliffe drew the new boundaries in about five weeks, and the Radcliffe Line was announced on 17 August 1947. Punjab and Bengal were divided, creating West and East Pakistan.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 07df75b66d9aa496cbd333448b65b466, type: 3}
   image: {fileID: 21300000, guid: f2ddffb4098d44203bd36260bc71a857, type: 3}
   shownEnlarged: 0

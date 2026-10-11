@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_08
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "3rd c. BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Mauryan economy
   text: The state controlled mines, forests and many industries, collected land revenue of about a quarter of the produce, and regulated trade, weights and prices. Punch-marked silver coins circulated widely, and roads linked the empire.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 589fa86c5672e4e88a49142312fe0aa3, type: 3}
+  image: {fileID: 21300000, guid: f914c7b0f134d4449a7216b527a8923c, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_04
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1556\u20131605 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Akbar
   text: Akbar, who ruled from 1556 to 1605, expanded the empire across north India and into the Deccan, built alliances with Rajput rulers, abolished the jizya tax and encouraged debate among faiths at Fatehpur Sikri. His policy of sulh-i-kul, peace with all, shaped Mughal rule.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 09f2c233ec4914ea59fe80f0134f6f77, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

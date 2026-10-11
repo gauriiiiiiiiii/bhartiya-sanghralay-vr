@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_02
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "1630\u20131680 \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Shivaji
   text: Shivaji, who lived from 1630 to 1680, carved out an independent kingdom from Bijapur and Mughal territory, built forts and a navy, and was crowned Chhatrapati at Raigad in 1674. He ruled with a council of eight ministers, the Ashta Pradhan.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2482e55db54cc401095cb92b9471939f, type: 3}
   image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
   shownEnlarged: 0

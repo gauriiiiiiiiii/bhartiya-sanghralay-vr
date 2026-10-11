@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_15
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_15
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Neolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Animal domestication
   text: Neolithic communities herded cattle, sheep and goats. The humped zebu cattle of India was domesticated in the north-west, probably around Mehrgarh. In the south, Neolithic ash mounds formed where cattle pens were periodically burned.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: dc1115d092f75469585516fbd5226abb, type: 3}
   image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
   shownEnlarged: 0

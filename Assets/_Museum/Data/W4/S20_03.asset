@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_03
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1793 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Permanent Settlement
   text: Introduced by Cornwallis in 1793 in Bengal, Bihar and Orissa, the Permanent Settlement made zamindars owners of the land, with revenue fixed forever. It ensured a steady income but left peasants at the mercy of zamindars.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
+  narration: {fileID: 8300000, guid: ba1e5ad794ae042bd802ccc9a85b28c6, type: 3}
+  image: {fileID: 21300000, guid: 58a75100c526846d38497cac193c4517, type: 3}
   shownEnlarged: 0

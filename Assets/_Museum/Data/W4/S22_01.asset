@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_01
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1828 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Brahmo Samaj
   text: Founded by Raja Rammohan Roy in 1828, the Brahmo Samaj worshipped one formless God and opposed idol worship, sati and caste. Roy's campaign helped bring about the ban on sati in 1829. Debendranath Tagore and Keshab Chandra Sen carried the movement forward.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: a533dbd26f3504ac28af8fad87530ccb, type: 3}
   image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
   shownEnlarged: 0

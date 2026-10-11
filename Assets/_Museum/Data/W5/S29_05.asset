@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S29_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S29_05
-  era: "Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
+  era: "1947\u20131949 \xB7 Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
   title: Kashmir
   text: Maharaja Hari Singh signed the Instrument of Accession to India in October 1947, after tribal raiders from Pakistan invaded. War followed, and a UN-brokered ceasefire in January 1949 left the region divided.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d05da205484924fc8946dbcde63010ef, type: 3}
   image: {fileID: 21300000, guid: 391f1ff3cc4ee4913bb207ecdab7a79b, type: 3}
   shownEnlarged: 0

@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1947 \u2013 present"
   title: 'Section 32: Foreign Policy'
   text: Independent India sought its own path in world affairs, from non-alignment and the wars on its borders to its growing global role today.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 88bff9d11543e41388680b05da55fd3b, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

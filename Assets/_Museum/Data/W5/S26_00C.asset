@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S26_00C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S26_00C
+  era: "Special artifact \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  title: Cellular Jail, Port Blair (Kala Pani), central tower with radiating wings, where revolutionaries were imprisoned
+  text: Alongside non-violent mass movements, revolutionaries in India and abroad took up arms against British rule.
+  narration: {fileID: 8300000, guid: 45466d4ccea7143d2b885b9233c44d75, type: 3}
+  image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
+  shownEnlarged: 0

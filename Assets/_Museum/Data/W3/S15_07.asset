@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_07
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "1486\u20131534 \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Chaitanya
   text: Chaitanya Mahaprabhu of Bengal, who lived from 1486 to 1534, led ecstatic devotion to Krishna through kirtan, group singing and dancing. His followers founded Gaudiya Vaishnavism, which later inspired the ISKCON movement.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1e0a37f5da20d4838bfd3580978f4bce, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

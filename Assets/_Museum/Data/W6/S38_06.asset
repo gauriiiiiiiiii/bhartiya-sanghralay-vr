@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_06
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "1817 \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Colonial historians
   text: British writers such as James Mill, in his History of British India of 1817, divided Indian history into Hindu, Muslim and British periods and portrayed India as unchanging. Orientalists such as William Jones, by contrast, admired Indian learning.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b377684d3946548328c70921758c20f3, type: 3}
   image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
   shownEnlarged: 0

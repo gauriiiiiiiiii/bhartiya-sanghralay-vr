@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_10
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_10
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1580 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Mughal revenue system
   text: Under Raja Todar Mal, Akbar's revenue system, called zabt or dahsala, assessed land tax from measured land and average yields and prices over ten years. Revenue was usually about a third of the produce, collected in cash.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: a79c0f360752d43bf81245ac84a21a1d, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

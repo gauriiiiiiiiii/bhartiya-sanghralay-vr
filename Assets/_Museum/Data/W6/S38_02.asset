@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_02
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "1861 \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Archaeology
   text: Archaeology recovers the past from material remains. The Archaeological Survey of India was founded in 1861, with Alexander Cunningham as its first director, and excavations at Harappa, Taxila and many other sites transformed our understanding of history.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3020d3295b5d84655ab7438ae34bd0d4, type: 3}
   image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
   shownEnlarged: 0

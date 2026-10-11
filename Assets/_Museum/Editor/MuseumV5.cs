@@ -43,7 +43,7 @@ public static partial class MuseumBuilder
     {
         PbrDesat("V5_PortlandStone", "stone_buff2", 2.6f, 0.3f, 1.2f, new Color(1f, 0.98f, 0.94f), 0.18f, new Color(0.86f, 0.84f, 0.8f));
         PbrDesat("V5_PaleFloor", "floor_slabs", 2.2f, 0.35f, 1.1f, new Color(0.98f, 0.96f, 0.92f), 0.45f, new Color(0.8f, 0.78f, 0.74f));
-        Pbr("V5_DarkFloor", "floor_granite", 1.6f, new Color(0.36f, 0.35f, 0.33f), 0.84f, new Color(0.08f, 0.08f, 0.08f));
+        Pbr("V5_DarkFloor", "floor_granite", 1.6f, new Color(0.5f, 0.48f, 0.46f), 0.82f, new Color(0.08f, 0.08f, 0.08f));
         PbrDesat("V5_Plaster", "plaster", 3f, 0.05f, 1.35f, new Color(0.97f, 0.97f, 0.95f), 0.12f, new Color(0.9f, 0.89f, 0.87f));
         PbrDesat("V5_PlasterSage", "plaster", 3f, 0f, 1.2f, new Color(0.62f, 0.66f, 0.58f), 0.12f, new Color(0.6f, 0.62f, 0.56f));
         Pbr("V5_PlasterWarm", "plaster", 3f, new Color(0.9f, 0.85f, 0.76f), 0.12f, new Color(0.86f, 0.8f, 0.7f));
@@ -60,7 +60,7 @@ public static partial class MuseumBuilder
         Pbr("V5_Granite", "granite", 1.5f, new Color(0.55f, 0.55f, 0.57f), 0.6f, new Color(0.35f, 0.35f, 0.37f));
         Pbr("V5_Khondalite", "stone_buff2", 1.6f, new Color(0.66f, 0.58f, 0.5f), 0.2f, new Color(0.55f, 0.48f, 0.4f));
         Lit("V5_PaintWhite", new Color(0.9f, 0.9f, 0.88f), 0f, 0.3f);
-        Lit("V5_Charcoal", new Color(0.055f, 0.055f, 0.06f), 0f, 0.45f);
+        Lit("V5_Charcoal", new Color(0.11f, 0.11f, 0.115f), 0f, 0.5f);
         Lit("V5_MountBoard", new Color(0.93f, 0.92f, 0.89f), 0f, 0.05f);
         Lit("V5_LabelBoard", new Color(0.96f, 0.95f, 0.93f), 0f, 0.2f);
         Lit("V5_Gilt", new Color(0.83f, 0.66f, 0.33f), 1f, 0.62f);

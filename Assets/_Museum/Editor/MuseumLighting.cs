@@ -71,6 +71,7 @@ public static class MuseumLighting
         ls.maxBounces = daylight ? 3 : 2;
         ls.directSampleCount = daylight ? 64 : 32; ls.indirectSampleCount = daylight ? 512 : 256; ls.environmentSampleCount = daylight ? 256 : 64;
         ls.filteringMode = LightingSettings.FilterMode.Auto;
+        ls.indirectScale = daylight ? 1.5f : 1f;          // brighter bounce light: galleries are lit mostly indirectly
         ls.mixedBakeMode = MixedLightingMode.IndirectOnly;
         EditorUtility.SetDirty(ls);
         Lightmapping.lightingSettings = ls;

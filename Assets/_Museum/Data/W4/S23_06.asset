@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_06
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1859\u20131860 \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Commercialisation of agriculture
   text: Farmers increasingly grew cash crops such as cotton, jute, indigo, opium and groundnut for export, often under pressure. The Indigo Revolt in Bengal, in 1859 and 1860, exposed the coercion used by planters.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1a6e3727399b442e997189fe3ba8acc4, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

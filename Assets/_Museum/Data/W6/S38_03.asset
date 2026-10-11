@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_03
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "1837 \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Epigraphy
   text: Inscriptions on rock, pillars, copper plates and temple walls are vital records. James Prinsep deciphered the Brahmi script in 1837, unlocking Ashoka's edicts, and copper-plate land grants record rulers, villages and taxes.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: e158cd02a324e4b9496f763c14a89ab7, type: 3}
   image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
   shownEnlarged: 0

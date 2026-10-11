@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W3_C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W3_C
+  era: c. 1250 CE
+  title: A wheel of the Sun Temple, Konark (replica)
+  text: A wheel of the Sun Temple, Konark (replica). King Narasimhadeva I of the Eastern Ganga dynasty built the Sun Temple at Konark as a giant stone chariot for the sun god Surya, drawn by seven horses on 24 carved wheels. Each wheel is about three metres across, and the shadows of its spokes can be read like a sundial. The Konark wheel has become one of the best-known symbols of Indian craftsmanship, and the Sun Temple appears on the back of India's ten-rupee note.
+  narration: {fileID: 8300000, guid: 59258894a81934b5d836b454ad18c8a9, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 310

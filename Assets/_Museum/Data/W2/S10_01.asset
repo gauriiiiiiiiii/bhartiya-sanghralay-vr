@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_01
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "c. 319\u2013335 CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: Chandragupta I
   text: Chandragupta the First, who ruled from about 319 to 335 CE, raised the Gupta dynasty to power, helped by his marriage to the Lichchhavi princess Kumaradevi. The Gupta era is counted from 319 to 320 CE.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4b0f2ea2350cd4c5aa50b7c46df3747a, type: 3}
   image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
   shownEnlarged: 0

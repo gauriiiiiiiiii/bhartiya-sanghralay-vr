@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S11_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S11_02
-  era: "Section 11 \xB7 Post-Gupta Period \xB7 c. 550 \u2013 1000 CE"
+  era: "6th\u20137th c. CE \xB7 Section 11 \xB7 Post-Gupta Period \xB7 c. 550 \u2013 1000 CE"
   title: Pushyabhutis
   text: The Pushyabhuti, or Vardhana, dynasty began at Thanesar in Haryana. Prabhakaravardhana resisted the Hunas, and his sons Rajyavardhana and Harshavardhana followed him. Harsha moved the capital to Kannauj, which became the great prize of north Indian politics.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: bf9923d9d6c88483cafe68af34638379, type: 3}
   image: {fileID: 21300000, guid: 231fd4ec3e0444d6e83d2049c01104d1, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S29_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S29_04
-  era: "Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
+  era: "1947\u20131948 \xB7 Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
   title: Junagadh
   text: The Nawab of Junagadh acceded to Pakistan, though most of his people were Hindu and the state was surrounded by India. After popular protest and Indian action, a plebiscite in February 1948 favoured India.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: e2504e23055cd4588a923f283774cdff, type: 3}
   image: {fileID: 21300000, guid: 391f1ff3cc4ee4913bb207ecdab7a79b, type: 3}
   shownEnlarged: 0

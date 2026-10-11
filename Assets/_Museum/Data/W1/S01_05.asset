@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_05
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Stone Age \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Stone Age tools and technology
   text: Stone Age people chose fine-grained stones such as quartzite and chert. Over time they moved from heavy core tools to flakes and then to blades, getting more cutting edge from every stone. Wooden spears, bone points and the control of fire completed their tool kit.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 9d7fd11a5b6284d8e8f51df5de22031c, type: 3}
+  image: {fileID: 21300000, guid: 0a5682a7d68f240ab9b337e2cd587654, type: 3}
   shownEnlarged: 0

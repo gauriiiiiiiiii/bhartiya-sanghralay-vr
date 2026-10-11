@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_09
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "15th\u201317th c. CE \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Impact of Bhakti and Sufism
   text: Bhakti and Sufi movements enriched regional languages and music, including qawwali and kirtan, challenged caste barriers, and encouraged dialogue between Hindu and Muslim traditions. Their shrines and songs remain living traditions.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 8a3f8eddcde1441a19887d8c2533b097, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

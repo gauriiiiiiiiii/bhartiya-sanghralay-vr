@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S29_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S29_02
-  era: "Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
+  era: "1947\u20131949 \xB7 Section 29 \xB7 Integration of Princely States \xB7 1947 \u2013 1949"
   title: V. P. Menon
   text: V. P. Menon, secretary of the States Ministry, drafted the Instrument of Accession and negotiated with rulers alongside Patel. He wrote The Story of the Integration of the Indian States.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 6a3b63784ca1940c283611a722cbe64c, type: 3}
   image: {fileID: 21300000, guid: 391f1ff3cc4ee4913bb207ecdab7a79b, type: 3}
   shownEnlarged: 0

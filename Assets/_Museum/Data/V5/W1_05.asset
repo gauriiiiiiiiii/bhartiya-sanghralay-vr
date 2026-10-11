@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W1_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W1_05
+  era: c. 2500 BCE
+  title: The Great Bath, Mohenjo-daro
+  text: "The Great Bath, Mohenjo-daro. On Mohenjo-daro's raised citadel lies a watertight brick tank with steps at both ends. Its bricks were set in gypsum mortar and sealed with a layer of bitumen. It may have been used for ritual bathing \u2013 an early sign of the importance of water and purity in South Asian religion. The bath was surrounded by a colonnade and small rooms, and a large drain carried its water away. Careful planning like this, repeated across hundreds of Indus towns, is what makes the civilisation so remarkable."
+  narration: {fileID: 8300000, guid: ac789d2825fee46e2ac551288e54e792, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 105

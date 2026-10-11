@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S35_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S35_03
-  era: "Section 35 \xB7 Religion in India \xB7 Across the ages"
+  era: "c. 983 CE \xB7 Section 35 \xB7 Religion in India \xB7 Across the ages"
   title: Jainism in India today
   text: Jains are a small but influential community, known for ahimsa, vegetarianism, philanthropy and business. Temples at Palitana, Ranakpur and Dilwara, and the statue of Gommateshwara at Shravanabelagola are famous.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: e88f97d9e456148968bb4e4ffe2022c4, type: 3}
   image: {fileID: 21300000, guid: 576da863a02b24fb3b49953e59a81799, type: 3}
   shownEnlarged: 0

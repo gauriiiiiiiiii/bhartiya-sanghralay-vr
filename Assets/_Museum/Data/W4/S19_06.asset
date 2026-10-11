@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S19_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S19_06
-  era: "Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
+  era: "1775\u20131818 \xB7 Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
   title: Anglo-Maratha Wars
   text: Three wars between 1775 and 1818 broke Maratha power. The Treaty of Bassein in 1802 made the Peshwa a subsidiary ally, and the third war ended with the Peshwa pensioned off and Maratha territories annexed.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: cd87713a7568e4885ad026c6242ff00c, type: 3}
   image: {fileID: 21300000, guid: 240f76881b5164cbead896a85792be68, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_05
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "c. 300 BCE onwards \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Spread of Jainism
   text: Jainism found support among merchants and rulers, including, by tradition, Chandragupta Maurya, and later Kharavela of Kalinga. It spread to Karnataka, Gujarat and Rajasthan, with great centres such as Shravanabelagola and Mount Abu.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: 2480de1e596354d6a8b1887978488ca0, type: 3}
+  image: {fileID: 21300000, guid: 56b5fd64c735147af84778ceff340917, type: 3}
   shownEnlarged: 0

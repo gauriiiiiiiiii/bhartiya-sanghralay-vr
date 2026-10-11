@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_07
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_07
+  era: "c. 700\u2013728 CE"
+  title: The Shore Temple, Mamallapuram
+  text: The Shore Temple, Mamallapuram. Built under the Pallava king Narasimhavarman II, the Shore Temple is one of the earliest structural stone temples in South India. Its stepped towers anticipate the great temples of the Cholas. It stands beside the Bay of Bengal. Mamallapuram was a busy Pallava port. Nearby, artists carved a huge rock face with the scene known as Arjuna's Penance or the Descent of the Ganges, one of the largest open-air reliefs in the world.
+  narration: {fileID: 8300000, guid: 3f6566f8bb91242b4b337337e508a86a, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 207

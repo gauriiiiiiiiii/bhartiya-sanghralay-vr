@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S34_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S34_06
-  era: "Section 34 \xB7 Art and Culture \xB7 Across the ages"
+  era: "c. 1st\u20135th c. CE \xB7 Section 34 \xB7 Art and Culture \xB7 Across the ages"
   title: Indian theatre
   text: Sanskrit drama flourished with Bhasa, Kalidasa and Bhavabhuti. Folk theatre includes Yakshagana, Jatra, Nautanki and Tamasha, and modern theatre grew with groups such as IPTA and institutions like the National School of Drama.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 8a982af1b324c454c8269f8ca5f77814, type: 3}
   image: {fileID: 21300000, guid: f8eb314e72fba4fe7bf5f2a8ed3dcfcc, type: 3}
   shownEnlarged: 0

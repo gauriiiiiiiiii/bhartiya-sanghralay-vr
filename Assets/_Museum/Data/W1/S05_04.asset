@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S05_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S05_04
-  era: "Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
+  era: "c. 544\u2013321 BCE \xB7 Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
   title: Rise of Magadha
   text: 'Magadha, in Bihar, became the most powerful state thanks to fertile land, iron ore, rivers for transport, elephants and able rulers: Bimbisara and Ajatashatru of the Haryanka dynasty, then the Shishunagas and the Nandas. Pataliputra became its capital.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0ad8c0d14d75b4ca794a7c1a933c1317, type: 3}
+  narration: {fileID: 8300000, guid: 504351be102d24f5cb91b6dc0ea203fa, type: 3}
+  image: {fileID: 21300000, guid: 432ebab814b744fe78248dd4760604da, type: 3}
   shownEnlarged: 0

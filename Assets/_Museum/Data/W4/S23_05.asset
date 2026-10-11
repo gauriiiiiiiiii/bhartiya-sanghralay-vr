@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_05
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1880s\u20131940s \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Colonial agriculture
   text: Agriculture stagnated under heavy revenue demands, debt to moneylenders, fragmentation of land and little investment, although canals in Punjab expanded cultivation.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4226f31e7165d44108f42e2cbb52dd02, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

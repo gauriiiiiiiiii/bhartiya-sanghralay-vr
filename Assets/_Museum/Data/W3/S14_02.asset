@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S14_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S14_02
-  era: "Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
+  era: "1290\u20131320 \xB7 Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
   title: Khalji Dynasty
   text: The Khaljis, from 1290 to 1320, were led by Alauddin Khalji, who repelled Mongol invasions, sent his general Malik Kafur on raids deep into the south, and introduced market controls and land revenue based on measured land.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
+  narration: {fileID: 8300000, guid: b0c35f63f848d49e188b77d6f9502542, type: 3}
+  image: {fileID: 21300000, guid: 49c6ca66cbf734c2c9a861eafe9e236d, type: 3}
   shownEnlarged: 0

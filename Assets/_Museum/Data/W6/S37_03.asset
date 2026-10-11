@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_03
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "1954, 1955 \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Marriage in India
   text: Marriages are often arranged by families and usually within the community, with diverse rituals across regions and faiths. Laws such as the Special Marriage Act of 1954 and the Hindu Marriage Act of 1955 govern marriage, and child marriage is prohibited.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b50e32e2d396348b29d6cb8af05457cd, type: 3}
   image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
   shownEnlarged: 0

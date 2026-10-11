@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W1_07
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W1_07
+  era: "c. 6th\u20132nd century BCE"
+  title: Punch-marked coins
+  text: "Punch-marked coins. India's earliest coins were small pieces of silver stamped with symbols such as the sun, animals, trees and hills, one punch at a time. They circulated in the Mahajanapadas \u2013 'great realms' such as Magadha, Kosala and Avanti \u2013 as trade and cities grew in the Ganga plain. Magadha, with its capital at Pataliputra, gradually defeated its rivals and became the heart of India's first great empire, the Mauryan Empire."
+  narration: {fileID: 8300000, guid: 5606f0592aef14bafa35d96bd3eea2c0, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 107

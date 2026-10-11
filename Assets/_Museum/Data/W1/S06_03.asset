@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S06_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S06_03
-  era: "Section 6 \xB7 Persian and Greek Invasions \xB7 c. 520 \u2013 300 BCE"
+  era: "326 BCE onwards \xB7 Section 6 \xB7 Persian and Greek Invasions \xB7 c. 520 \u2013 300 BCE"
   title: Effects of Greek contact
   text: Alexander's campaign was brief, but it opened routes between India and the Greek world. Greek writers described India, Greek settlements remained in the north-west, and Greek influence later shaped Gandhara art and Indian coinage.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 6d07066dcacc240ac871a5d5ec50ac00, type: 3}
+  narration: {fileID: 8300000, guid: 3e2a679f8daaa4145b33560a4d97fb15, type: 3}
+  image: {fileID: 21300000, guid: 3c46c9fab7965481a9c5240c25cc627c, type: 3}
   shownEnlarged: 0

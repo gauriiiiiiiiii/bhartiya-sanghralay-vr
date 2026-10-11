@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S18_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S18_04
-  era: "Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
+  era: "1664 \xB7 Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
   title: French
   text: The French East India Company, founded in 1664, was based at Pondicherry. Governor Dupleix built alliances with Indian rulers, but the French lost the Carnatic Wars to Britain, notably at Wandiwash in 1760. Pondicherry joined India in 1954.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: a7155e089539744fdbe2351cc475fc73, type: 3}
   image: {fileID: 21300000, guid: dc0aca711b7f643e9a6eec84a0626553, type: 3}
   shownEnlarged: 0

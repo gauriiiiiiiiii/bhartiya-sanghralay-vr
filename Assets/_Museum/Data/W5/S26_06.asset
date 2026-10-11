@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_06
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1913\u20131915 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Ghadar Movement
   text: The Ghadar Party was founded in 1913 in San Francisco by Indian migrants, including Lala Har Dayal and Sohan Singh Bhakna. During the First World War it attempted an uprising in India in 1915, which was crushed.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3ee61df201e6c416db5518ed54522105, type: 3}
   image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
   shownEnlarged: 0

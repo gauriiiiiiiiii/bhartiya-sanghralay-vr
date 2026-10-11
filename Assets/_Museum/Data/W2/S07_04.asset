@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_04
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 268\u2013232 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Ashoka
   text: Ashoka ruled from about 268 to 232 BCE. After the Kalinga war he turned to Buddhism and a policy of Dhamma. His edicts, carved on rocks and pillars across the subcontinent, are the earliest deciphered Indian inscriptions, mostly in Prakrit in the Brahmi script.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 096706e07ca684a44846419471b21371, type: 3}
+  image: {fileID: 21300000, guid: 5ec2fa0e98c464221a1c930e30706944, type: 3}
   shownEnlarged: 0

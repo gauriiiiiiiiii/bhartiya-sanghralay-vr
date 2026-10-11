@@ -16,6 +16,7 @@ MonoBehaviour:
   era: Ideas that run through the ages
   title: 'Wing 6: Themes of Indian History'
   text: 'Welcome to the Themes gallery: foreign policy, science, art and culture, religion, economy, society, and how historians have written India''s story.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: af2b8ad2ae4ad4d63b861cecf5360400, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

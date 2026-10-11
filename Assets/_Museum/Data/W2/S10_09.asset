@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_09
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "5th c. CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: Gupta art
   text: 'Gupta art set classical standards: the serene Buddha images of Sarnath, the Dashavatara temple at Deogarh, early stone temples, and the paintings of the Ajanta caves, produced largely under the neighbouring Vakatakas.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
+  narration: {fileID: 8300000, guid: e526d347b3da743099d73a1adf8c1352, type: 3}
+  image: {fileID: 21300000, guid: 15c5e330a067f4adc97850eff7626702, type: 3}
   shownEnlarged: 0

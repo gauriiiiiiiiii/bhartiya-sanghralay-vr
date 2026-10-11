@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W5_C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W5_C
+  era: "1920s\u20131940s"
+  title: A spinning wheel, or charkha (replica)
+  text: "A spinning wheel, or charkha (replica). Gandhi urged every Indian to spin cotton every day. Spinning khadi \u2013 hand-spun, hand-woven cloth \u2013 was a way to boycott British mill cloth, give work to villagers and show self-reliance. In 1921 a spinning wheel was placed at the centre of a proposed national flag, the forerunner of the Ashoka Chakra on today's tricolour. Bonfires of foreign cloth were lit across India during the Non-Cooperation Movement, and wearing khadi became a badge of the freedom struggle."
+  narration: {fileID: 8300000, guid: 8a10b0bb132d349a590e16393ab587c0, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 510

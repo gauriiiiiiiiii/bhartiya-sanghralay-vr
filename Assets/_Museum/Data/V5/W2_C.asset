@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_C
+  era: c. 400 CE
+  title: The Iron Pillar of Delhi (replica)
+  text: The Iron Pillar of Delhi (replica). This towering column was forged from wrought iron about 1,600 years ago and weighs some six tonnes. A Sanskrit inscription honours a king named Chandra, usually identified as the Gupta emperor Chandragupta II. Now in the Qutb complex in Delhi, the pillar has barely rusted, thanks to a thin protective film rich in phosphorus. Forging a single iron object this large was an extraordinary achievement for its time. Metallurgists still study the pillar to understand how its rust-resistant surface formed.
+  narration: {fileID: 8300000, guid: 9fe21b805daee4324a016e3d9284580d, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 210

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_03
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "1st c. CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Parthians
   text: The Indo-Parthians, or Pahlavas, ruled the north-west in the 1st century CE. Gondophares is the best known of them; Christian tradition links the apostle Saint Thomas to his court.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
+  narration: {fileID: 8300000, guid: 203a707a0b0684ca68f8b65446926601, type: 3}
+  image: {fileID: 21300000, guid: da1b996c0a15c44959f0d13f70800e8f, type: 3}
   shownEnlarged: 0

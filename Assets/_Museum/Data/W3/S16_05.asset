@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_05
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1605\u20131627 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Jahangir
   text: Jahangir, who ruled from 1605 to 1627, loved art and nature, and painting flourished under him. His wife Nur Jahan held great influence. He received the English envoy Sir Thomas Roe, and is remembered for his chain of justice.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
+  narration: {fileID: 8300000, guid: 3fb66e9fc86874bb1bc5126583c0731c, type: 3}
+  image: {fileID: 21300000, guid: f8e1ee66434df4c0f8b6adf149b46b39, type: 3}
   shownEnlarged: 0

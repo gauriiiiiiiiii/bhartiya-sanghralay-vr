@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S09_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S09_07
-  era: "Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
+  era: "1st c. BCE\u20131st c. CE \xB7 Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
   title: Sangam ports
   text: Muziris, Korkai, Puhar and Arikamedu traded with Rome, South-East Asia and Sri Lanka. At Arikamedu, near Puducherry, Roman pottery and wine jars have been excavated.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 3d3a8b699aba946769c82cea04c3bdf4, type: 3}
+  narration: {fileID: 8300000, guid: 112ca993e34a34386b9da794ab4ad2a5, type: 3}
+  image: {fileID: 21300000, guid: 9ceef99aed9554398ace9afe66b5ec57, type: 3}
   shownEnlarged: 0

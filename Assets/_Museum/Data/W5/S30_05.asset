@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S30_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S30_05
-  era: "Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
+  era: "1950 \xB7 Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
   title: Indian federalism
   text: India is a Union of States with a strong centre. Powers are divided into Union, State and Concurrent lists, with an independent judiciary. Scholars describe it as quasi-federal or as cooperative federalism.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 01186f22c9d1c452db43cd278ae5e95b, type: 3}
+  narration: {fileID: 8300000, guid: e9b67531638764b349b2476da09487e0, type: 3}
+  image: {fileID: 21300000, guid: b662524c628de40d98c6dd7115729493, type: 3}
   shownEnlarged: 0

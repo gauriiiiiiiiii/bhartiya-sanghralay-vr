@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W5_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W5_03
+  era: "12 March \u2013 6 April 1930"
+  title: The Salt March
+  text: "The Salt March. Gandhi and 78 followers walked about 385 kilometres from Sabarmati Ashram to the sea at Dandi to make salt in defiance of the British salt tax. The march drew worldwide attention, civil disobedience spread across India, and tens of thousands of people were arrested. Salt was a brilliant choice: everyone needed it, rich or poor, and making it from seawater was simple \u2013 so anyone could join the protest."
+  narration: {fileID: 8300000, guid: 2107c0f05ac744c029e9c89d529eafee, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 503

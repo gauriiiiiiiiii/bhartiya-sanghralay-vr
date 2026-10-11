@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_09
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1813\u20131858 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Company economic policies
   text: Free entry for British manufactures, heavy land taxes and a shift to export crops served British industry. India became a supplier of raw materials and a market for British goods.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
+  narration: {fileID: 8300000, guid: 1e9769fc8663b4698aa2ce80664bf336, type: 3}
+  image: {fileID: 21300000, guid: 82d54c6e8f8aa440ca863577e0d0ebeb, type: 3}
   shownEnlarged: 0

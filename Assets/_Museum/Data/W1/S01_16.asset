@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_16
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_16
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Neolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Neolithic pottery
   text: Pottery appeared during the Neolithic, first made by hand and later turned on a slow wheel. It let people store grain, cook food and carry water. Different shapes, colours and decorations help archaeologists identify and date cultures.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 38efb5b2ec55041b7b5742e276fcf992, type: 3}
+  image: {fileID: 21300000, guid: 4de9721eacfc54a01a1ed4832dccf64e, type: 3}
   shownEnlarged: 0

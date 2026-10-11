@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 520 \u2013 300 BCE"
   title: 'Section 6: Persian and Greek Invasions'
   text: The north-west of the subcontinent came into contact with the Persian empire and with Alexander of Macedon, opening routes for trade, art and ideas.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2d2ff856a45ec494d8fe828cca3f8747, type: 3}
   image: {fileID: 21300000, guid: 6d07066dcacc240ac871a5d5ec50ac00, type: 3}
   shownEnlarged: 0

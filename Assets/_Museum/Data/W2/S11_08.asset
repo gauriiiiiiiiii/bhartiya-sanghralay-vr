@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S11_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S11_08
-  era: "Section 11 \xB7 Post-Gupta Period \xB7 c. 550 \u2013 1000 CE"
+  era: "8th\u201310th c. CE \xB7 Section 11 \xB7 Post-Gupta Period \xB7 c. 550 \u2013 1000 CE"
   title: Rise of regional kingdoms
   text: After the Guptas, power shifted to regional kingdoms. The long contest among the Palas, Pratiharas and Rashtrakutas for Kannauj is called the tripartite struggle. Regional languages, scripts and temple styles grew alongside these states.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 197d77887bc084e368b3a6207a433f05, type: 3}
   image: {fileID: 21300000, guid: 231fd4ec3e0444d6e83d2049c01104d1, type: 3}
   shownEnlarged: 0

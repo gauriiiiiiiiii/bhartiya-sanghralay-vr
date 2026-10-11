@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_01
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1902\u20131908 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Anushilan Samiti
   text: The Anushilan Samiti began in Bengal in 1902 as a physical-training society and became a revolutionary organisation. With Jugantar, it carried out attacks on officials; the Alipore Bomb Case of 1908 involved Aurobindo Ghosh.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 20a590dce4a694fcf994839ac7084738, type: 3}
   image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
   shownEnlarged: 0

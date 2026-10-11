@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_11
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_11
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2500 BCE \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Harappan religion
   text: Evidence suggests reverence for a mother goddess, sacred animals and trees such as the pipal, and possibly a horned figure on the so-called Pashupati seal. Fire altars at Kalibangan and Lothal hint at ritual, but without readable texts much remains uncertain.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: 3550974dfa3fe4029a1ced0f4676d1a3, type: 3}
+  image: {fileID: 21300000, guid: b201fc3bd0b2b469b8527de9b840ade7, type: 3}
   shownEnlarged: 0

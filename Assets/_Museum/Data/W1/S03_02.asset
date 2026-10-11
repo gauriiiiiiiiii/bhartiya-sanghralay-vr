@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_02
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Who were the Aryans?
   text: In the Rigveda, arya means noble, a cultural and linguistic term. Most scholars hold that Indo-Aryan-speaking groups migrated into north-west India around 1500 BCE and mixed with local peoples; others argue for an indigenous origin. The debate continues.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 7a453d61075fe452cad66fa5c4c5ace2, type: 3}
+  image: {fileID: 21300000, guid: 19df995023c204505a23b1f7f7f48d8e, type: 3}
   shownEnlarged: 0

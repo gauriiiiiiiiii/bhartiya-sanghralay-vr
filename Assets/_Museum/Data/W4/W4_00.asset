@@ -16,6 +16,7 @@ MonoBehaviour:
   era: Europeans, the Company and the Raj
   title: 'Wing 4: Colonial India'
   text: 'Welcome to Colonial India: how European traders became rulers, how the Company governed, the great revolt of 1857, the reformers who remade society, and the economy under British rule.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: f7496ac6e91cf41818368aa76270b3ce, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S14_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S14_04
-  era: "Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
+  era: "1414\u20131451 \xB7 Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
   title: Sayyid Dynasty
   text: The Sayyids, from 1414 to 1451, were founded by Khizr Khan, who had served as Timur's governor. Their power was limited to the area around Delhi.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
+  narration: {fileID: 8300000, guid: adb176547945a443793687526b0cfe03, type: 3}
+  image: {fileID: 21300000, guid: 66ca73e925d2a4c9a87849f1fa2a849c, type: 3}
   shownEnlarged: 0

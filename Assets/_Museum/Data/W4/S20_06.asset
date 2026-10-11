@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_06
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1774\u20131862 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Courts and law
   text: Warren Hastings set up civil and criminal courts in districts, and Cornwallis separated judicial and revenue work. The Supreme Court at Calcutta, in 1774, and later the High Courts, in 1862, applied codified laws such as the Indian Penal Code of 1860.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b5a187cb051854ec8bacb0110fb0f473, type: 3}
   image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
   shownEnlarged: 0

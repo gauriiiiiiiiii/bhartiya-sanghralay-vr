@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_03
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2600\u20131900 BCE \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Town planning
   text: Harappan cities were laid out on a grid, with main streets crossing at right angles. Many had a raised, walled citadel and a larger lower town. Houses opened onto side lanes, and standard bricks in the ratio one to two to four were used everywhere.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: 417256486a57d4fc6ab95659437bf320, type: 3}
+  image: {fileID: 21300000, guid: 39d4bb466b73146e696436da9482efbb, type: 3}
   shownEnlarged: 0

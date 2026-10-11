@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S13_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S13_06
-  era: "Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
+  era: "1347\u20131527 \xB7 Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
   title: Bahmani Sultanate
   text: The Bahmani Sultanate was founded in 1347 by Alauddin Hasan Bahman Shah in the Deccan, with capitals at Gulbarga and Bidar. The minister Mahmud Gawan reformed its administration. It later split into five Deccan sultanates, including Bijapur and Golconda.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 67c05eb4aac9c48e79ee85e0283ddf58, type: 3}
   image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
   shownEnlarged: 0

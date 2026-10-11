@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_03
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 297\u2013273 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Bindusara
   text: Bindusara, son of Chandragupta, ruled from about 297 to 273 BCE and extended the empire into the Deccan. Greek sources call him Amitrochates, slayer of foes. He kept diplomatic ties with the Seleucid kingdom of Syria.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 0567512ace54c46ceb0b34e28284c227, type: 3}
+  image: {fileID: 21300000, guid: 012b1e782c63445f9b829483064c3881, type: 3}
   shownEnlarged: 0

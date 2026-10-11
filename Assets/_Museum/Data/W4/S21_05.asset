@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S21_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S21_05
-  era: "Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
+  era: "1858 \xB7 Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
   title: Consequences of the revolt
   text: The Government of India Act of 1858 ended Company rule, and India came under the British Crown, with a Viceroy. The army was reorganised, annexations stopped, and Queen Victoria's Proclamation promised respect for princes and religions.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4b4faa6c5947b4f2eb591ae8dfd9d1ef, type: 3}
+  narration: {fileID: 8300000, guid: dd190e12d79b04e2383a6b3c5fd2477f, type: 3}
+  image: {fileID: 21300000, guid: ae13f4ae824e04fddaed3392332b0b35, type: 3}
   shownEnlarged: 0

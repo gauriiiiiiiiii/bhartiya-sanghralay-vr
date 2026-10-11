@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S24_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S24_03
-  era: "Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
+  era: "1885\u20131905 \xB7 Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
   title: Moderates
   text: Leaders such as Dadabhai Naoroji, Pherozeshah Mehta and Gopal Krishna Gokhale used petitions and constitutional methods, demanding reforms, more Indians in the services, and economic justice.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 71cc57c99f3cf459ba356567093ec185, type: 3}
+  narration: {fileID: 8300000, guid: f008c511e38c14f8ca0ab4915c1e5e3c, type: 3}
+  image: {fileID: 21300000, guid: 2a560aa4768e2441db87e110857cc52c, type: 3}
   shownEnlarged: 0

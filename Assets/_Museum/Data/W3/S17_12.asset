@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_12
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_12
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "c. 1720s\u20131774 \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Rohillas
   text: Afghan Rohillas settled in Rohilkhand, in western Uttar Pradesh, in the 18th century under leaders such as Ali Muhammad Khan and Hafiz Rahmat Khan. They were defeated by Awadh with British help in 1774.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1c691bc4fd77846e0831afabda137dd1, type: 3}
   image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
   shownEnlarged: 0

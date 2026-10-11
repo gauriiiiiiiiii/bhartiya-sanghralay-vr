@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S28_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S28_01
-  era: "Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
+  era: "1940s \xB7 Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
   title: Two-Nation Theory
   text: The two-nation theory held that Hindus and Muslims formed separate nations. It was advanced by Muhammad Ali Jinnah and the Muslim League in the 1940s. The Congress and many Indians rejected it.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: c264d4859b388453b9956a5066b374d4, type: 3}
   image: {fileID: 21300000, guid: f2ddffb4098d44203bd36260bc71a857, type: 3}
   shownEnlarged: 0

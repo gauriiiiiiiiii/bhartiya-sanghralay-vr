@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1526 \u2013 1857"
   title: 'Section 16: Mughal Empire'
   text: From Babur to Aurangzeb, the Mughals built one of the world's largest and richest empires, famous for its administration, gardens, paintings and monuments.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 6366a27739cfe48bfa84c450d5fb6bb9, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

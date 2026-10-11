@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_05
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1822 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Mahalwari system
   text: Introduced by Holt Mackenzie in 1822 in the North-Western Provinces and later Punjab, the Mahalwari system assessed revenue on a village or estate, called a mahal, as a whole, collected through village headmen.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 24d43b3348fc64ca5bbc94c6a82e29aa, type: 3}
   image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
   shownEnlarged: 0

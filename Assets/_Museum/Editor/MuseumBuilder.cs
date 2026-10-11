@@ -1406,7 +1406,7 @@ public static partial class MuseumBuilder
                 var r = mf.GetComponent<MeshRenderer>(); var mesh = mf.sharedMesh;
                 if (r == null || mesh == null || r.sharedMaterial == null) continue;
                 var tex = r.sharedMaterial.HasProperty("_BaseMap") ? r.sharedMaterial.GetTexture("_BaseMap") : null;
-                if (tex == null || !AssetDatabase.GetAssetPath(tex).Contains("/PolyHaven/")) continue;
+                if (tex == null || !(AssetDatabase.GetAssetPath(tex).Contains("/PolyHaven/") || r.sharedMaterial.name.StartsWith("V5_"))) continue;
                 var sc = mf.transform.lossyScale; sc = new Vector3(Mathf.Abs(sc.x), Mathf.Abs(sc.y), Mathf.Abs(sc.z));
                 Mesh repl = null;
                 if (mesh.name == "Cube") repl = MetricCube(mesh, sc);

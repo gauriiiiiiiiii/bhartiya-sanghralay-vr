@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W5_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W5_05
+  era: "1897\u20131945"
+  title: Subhas Chandra Bose
+  text: Subhas Chandra Bose. Twice elected president of the Congress, Subhas Chandra Bose broke with Gandhi over methods and escaped from British house arrest in 1941. In South-East Asia he led the Indian National Army, which fought alongside Japan in north-east India in 1944. The trials of INA officers at Delhi's Red Fort in 1945 and 1946 caused a wave of protest across India, and convinced many British officials that their rule could not last.
+  narration: {fileID: 8300000, guid: 00d2b9114dd5b420489caf756c41967d, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 505

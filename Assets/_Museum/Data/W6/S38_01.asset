@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_01
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "c. 1500 BCE onwards \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Ancient sources
   text: Knowledge of ancient India comes from literary sources, such as the Vedas, the epics, the Puranas, Buddhist and Jain texts, Sangam poetry and works like the Arthashastra, and from archaeology, inscriptions and coins.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: cd114f2030827449e9fad66ed162be8d, type: 3}
   image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
   shownEnlarged: 0

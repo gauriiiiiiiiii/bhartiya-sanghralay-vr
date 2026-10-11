@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W6_04
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W6_04
+  era: "Founded 1581\u20131604; gilded early 19th century"
+  title: Harmandir Sahib (the Golden Temple), Amritsar
+  text: Harmandir Sahib (the Golden Temple), Amritsar. The holiest gurdwara of Sikhism was built by Guru Arjan, who installed the Adi Granth here in 1604. Doors on all four sides welcome everyone, and its community kitchen feeds tens of thousands of people free every day. Maharaja Ranjit Singh covered its upper storeys in gilded copper. India is the birthplace of Hinduism, Buddhism, Jainism and Sikhism, and home for many centuries to Islam, Christianity, Judaism and Zoroastrianism.
+  narration: {fileID: 8300000, guid: 611325aebcd054281ab9c76d4ff1cd1b, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 604

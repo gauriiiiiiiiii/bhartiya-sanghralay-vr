@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_01
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1854\u20131907 \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Early modern industry
   text: 'Modern industry began in the 1850s: cotton mills in Bombay from 1854, jute mills in Bengal, coal mining, and later the Tata Iron and Steel Company at Jamshedpur in 1907. Growth was limited and largely in British or a few Indian hands.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
+  narration: {fileID: 8300000, guid: 5731b80ead31d48308e5156287141a80, type: 3}
+  image: {fileID: 21300000, guid: d0823404718c9423a8be86b9f4df6cd0, type: 3}
   shownEnlarged: 0

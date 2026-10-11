@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 700 \u2013 1200 CE"
   title: 'Section 12: Early Medieval India'
   text: Rajput kingdoms, great temples and the first waves of devotional poetry shaped the early medieval centuries, as regional states and identities took root.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 013f206b2672a49ce93ffadb75b9996c, type: 3}
   image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
   shownEnlarged: 0

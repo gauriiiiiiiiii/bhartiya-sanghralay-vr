@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_06
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "Mar\u2013Apr 1930 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: The Salt March
   text: From 12 March to 6 April 1930, Gandhi walked 385 kilometres from Sabarmati Ashram to Dandi and made salt from the sea, defying the salt tax. Thousands followed, and the march drew worldwide attention.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 6a0947a6cdb904a95b09db724375eb7e, type: 3}
   image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
   shownEnlarged: 0

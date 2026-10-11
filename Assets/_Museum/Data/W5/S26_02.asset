@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_02
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1924\u20131928 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Hindustan Socialist Republican Association
   text: Founded in 1924 as the Hindustan Republican Association, it carried out the Kakori train action in 1925. Renamed the Hindustan Socialist Republican Association in 1928, under Chandrashekhar Azad and Bhagat Singh, it adopted socialist aims.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1dffa214c0c80449ca1c678ecf05f870, type: 3}
   image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
   shownEnlarged: 0

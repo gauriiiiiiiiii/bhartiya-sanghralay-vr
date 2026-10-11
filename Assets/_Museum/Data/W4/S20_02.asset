@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_02
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1793\u20131822 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Land revenue systems
   text: 'To fund itself, the Company experimented with land revenue settlements that fixed who paid tax and how much. Three main systems emerged in different regions: the Permanent Settlement, Ryotwari and Mahalwari.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
+  narration: {fileID: 8300000, guid: a311d01e025e64f4397d2b3fef18efa8, type: 3}
+  image: {fileID: 21300000, guid: 0373df844dec54c3199617339e416a14, type: 3}
   shownEnlarged: 0

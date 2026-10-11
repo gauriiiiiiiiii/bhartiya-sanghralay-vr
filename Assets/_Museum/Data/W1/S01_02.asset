@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_02
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 1.5m\u2013385,000 yrs ago \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Lower Palaeolithic
   text: Acheulean hand-axes and cleavers, shaped by flaking large pebbles and cobbles, mark the Lower Palaeolithic. Their makers were early humans such as Homo erectus. Sites include Attirampakkam, Isampur and Hunsgi in Karnataka, and Hathnora on the Narmada, where a fossil hominin skull was found.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 83a8acce461fe4565b1a67043fd78847, type: 3}
   image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
   shownEnlarged: 0

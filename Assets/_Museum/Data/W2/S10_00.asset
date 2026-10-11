@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 319 \u2013 550 CE"
   title: 'Section 10: Gupta Empire'
   text: Under the Guptas, north India saw great achievements in mathematics, astronomy, literature and art, though historians now debate how golden this age really was.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 02d8a993be26741128938c7eba5b4732, type: 3}
   image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
   shownEnlarged: 0

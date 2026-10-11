@@ -19,12 +19,14 @@ public class AudioGuide : MonoBehaviour
     public ArtifactData intro;
 
     static readonly HashSet<string> introsPlayed = new HashSet<string>();
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetSession() => introsPlayed.Clear();   // also when domain reload is off in the Editor
 
     Artifact current;
     ArtifactData playing;
     readonly List<string> sentences = new List<string>();
     readonly List<float> sentenceEnd = new List<float>();     // cumulative fraction of the clip
-    float hideAt = -1f;
+    float hideAt = -1f, startedAt; bool everPlayed;
 
     class View { public GameObject root; public TMP_Text stop, title, caption, hint; public Image progress; public GameObject hintRoot; }
     View phone, vr;
@@ -69,7 +71,8 @@ public class AudioGuide : MonoBehaviour
         ShowHint(null);
         source.Stop();
         source.clip = d.narration;
-        if (source.clip) source.Play();
+        if (source.clip) { if (source.clip.loadState != AudioDataLoadState.Loaded) source.clip.LoadAudioData(); source.Play(); }
+        startedAt = Time.time; everPlayed = false;
         Split(string.IsNullOrEmpty(d.text) ? d.title : d.text);
         foreach (var v in new[] { phone, vr })
         {
@@ -104,7 +107,10 @@ public class AudioGuide : MonoBehaviour
         if (source.clip)
         {
             float f = source.clip.length > 0 ? source.time / source.clip.length : 1f;
-            if (!source.isPlaying && hideAt < 0f) { hideAt = Time.time + 1.5f; f = 1f; if (current) current.SetHighlighted(false); }
+            if (source.isPlaying) everPlayed = true;
+            bool finished = !source.isPlaying && (everPlayed || Time.time - startedAt > 6f);
+            if (!source.isPlaying && !everPlayed && source.clip.loadState == AudioDataLoadState.Loaded && Time.time - startedAt > 0.3f) source.Play();
+            if (finished && hideAt < 0f) { hideAt = Time.time + 1.5f; f = 1f; if (current) current.SetHighlighted(false); }
             int k = 0; while (k < sentenceEnd.Count - 1 && f > sentenceEnd[k]) k++;
             foreach (var v in new[] { phone, vr })
             {

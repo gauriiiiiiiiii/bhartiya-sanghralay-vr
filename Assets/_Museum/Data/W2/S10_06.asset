@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_06
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "499 CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: Gupta science
   text: Aryabhata proposed that the earth rotates on its axis and explained eclipses scientifically. Varahamihira wrote the Brihat Samhita on astronomy and natural science. Metalworkers produced the rust-resistant Iron Pillar that now stands in Delhi.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
+  narration: {fileID: 8300000, guid: 01ced38e75e9f4e94be25a7dcd0c730a, type: 3}
+  image: {fileID: 21300000, guid: 5bda2a42995cf49ad851f26f1ddc980b, type: 3}
   shownEnlarged: 0

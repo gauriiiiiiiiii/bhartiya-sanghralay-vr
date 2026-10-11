@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S36_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S36_06
-  era: "Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
+  era: "c. 300 BCE \u2013 2017 CE \xB7 Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
   title: Taxation through history
   text: Ancient texts mention bhaga, a share of the produce, as tax; the Mauryas and later states took around a sixth to a quarter. Akbar's zabt and colonial land revenue followed, and the Goods and Services Tax of 2017 unified indirect taxes.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 5f762b1f0d8a945e9b8669a37b043038, type: 3}
   image: {fileID: 21300000, guid: a610a4068f28c49f6a9ff27864951d6f, type: 3}
   shownEnlarged: 0

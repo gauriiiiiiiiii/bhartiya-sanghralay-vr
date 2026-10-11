@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S36_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S36_05
-  era: "Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
+  era: "c. 6th c. BCE \xB7 Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
   title: Indian coinage
   text: India's first coins were punch-marked silver coins, from about the 6th century BCE. Indo-Greek and Kushana coins introduced royal portraits, the Guptas issued gold dinaras, and Sher Shah Suri introduced the rupiya, ancestor of today's rupee.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 511ede4b33c85484ca21d719a57c3e57, type: 3}
   image: {fileID: 21300000, guid: a610a4068f28c49f6a9ff27864951d6f, type: 3}
   shownEnlarged: 0

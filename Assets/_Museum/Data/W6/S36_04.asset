@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S36_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S36_04
-  era: "Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
+  era: "c. 1st c. BCE \xB7 Section 36 \xB7 Indian Economy Through History \xB7 Across the ages"
   title: Guilds
   text: Guilds of merchants and craftspeople, called shrenis, regulated work, quality and prices, acted as banks and gave donations to temples and monasteries. South Indian merchant guilds such as the Ainnurruvar and Manigramam traded across the seas.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: a610a4068f28c49f6a9ff27864951d6f, type: 3}
+  narration: {fileID: 8300000, guid: 3285e44f22fe342239ccb97ced7a8328, type: 3}
+  image: {fileID: 21300000, guid: cd397ac78360f4dd4a23fd61923da9d2, type: 3}
   shownEnlarged: 0

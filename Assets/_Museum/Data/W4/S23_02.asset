@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_02
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "19th century \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Deindustrialisation
   text: Cheap machine-made British cloth and one-sided tariffs ruined many Indian handicraft industries in the 19th century. Weavers of Dhaka and other centres lost their livelihoods, pushing more people into agriculture.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
+  narration: {fileID: 8300000, guid: 3cbab173d42084122b33aeb8b3b2a222, type: 3}
+  image: {fileID: 21300000, guid: d584b513d8d134bbc878cbe72a085737, type: 3}
   shownEnlarged: 0

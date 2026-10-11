@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S09_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S09_03
-  era: "Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
+  era: "1st c. CE \xB7 Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
   title: Cheras
   text: The Cheras ruled the Malabar coast of Kerala, with their capital at Vanji and ports such as Muziris. Their trade with Rome is recorded in Greek and Roman texts. Senguttuvan is a celebrated Chera king.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 7821fcc06f0364dc58110aa81512f146, type: 3}
   image: {fileID: 21300000, guid: 3d3a8b699aba946769c82cea04c3bdf4, type: 3}
   shownEnlarged: 0

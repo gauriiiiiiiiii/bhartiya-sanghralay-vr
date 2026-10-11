@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_09
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "c. 1573 onward \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Mansabdari system
   text: Akbar's mansabdari system ranked every officer by zat, personal rank, and sawar, the number of cavalry to be maintained. Mansabdars were usually paid through jagirs, assignments of land revenue that were transferred to prevent local power bases.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3540ca60b8ac441ceb89941c1dc2bff2, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

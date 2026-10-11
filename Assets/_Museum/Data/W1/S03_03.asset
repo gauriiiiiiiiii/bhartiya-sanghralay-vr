@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_03
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u20131000 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Rigveda
   text: The Rigveda, the oldest Veda, has 1,028 hymns in ten books, or mandalas, addressed to gods such as Indra, Agni and Soma. Passed down orally with great precision for centuries, its manuscripts are on UNESCO's Memory of the World register.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 4e259711c97e149c0a54ce75690d4a09, type: 3}
+  image: {fileID: 21300000, guid: 25e3918c368b94ce283572c1cf0b4942, type: 3}
   shownEnlarged: 0

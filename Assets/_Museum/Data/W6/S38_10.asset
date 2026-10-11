@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_10
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_10
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "2019 \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Contemporary interpretations
   text: Historians today use many methods, from ancient DNA and environmental history to gender, caste and regional studies and digital archives. Debates continue, and history remains a living conversation about evidence.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
+  narration: {fileID: 8300000, guid: c4fa667d636dd49c983d0049d3fe7442, type: 3}
+  image: {fileID: 21300000, guid: 859cbe3b267264f57a3eefc415b761a1, type: 3}
   shownEnlarged: 0

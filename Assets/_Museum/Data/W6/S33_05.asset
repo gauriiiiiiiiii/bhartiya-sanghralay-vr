@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S33_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S33_05
-  era: "Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
+  era: "2015 \xB7 Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
   title: Digital India
   text: Launched in 2015, Digital India expands internet access and online public services. The Aadhaar digital identity and the Unified Payments Interface, or UPI, have made India a world leader in digital payments.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 43c2ed789a12745c4937d85f971f5f6e, type: 3}
   image: {fileID: 21300000, guid: d1879ddb8aebf47cf96a0a0d1bf77472, type: 3}
   shownEnlarged: 0

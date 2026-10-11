@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_01
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "2nd c. BCE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Indo-Greeks
   text: Greek rulers from Bactria entered north-west India in the 2nd century BCE. The most famous, Menander, or Milinda, discussed philosophy with the monk Nagasena in the Milindapanha. The Indo-Greeks issued fine coins bearing their kings' portraits and names.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2fd4ae9f40eba4249a0ec53e31d2579c, type: 3}
   image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_04
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "1920\u20131922 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: Non-Cooperation Movement
   text: Launched in 1920 after the Jallianwala Bagh massacre and alongside the Khilafat movement, it urged Indians to boycott foreign goods, courts, schools and titles. Gandhi called it off in 1922 after the violence at Chauri Chaura.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
+  narration: {fileID: 8300000, guid: 3c6d552a2f9ef4e8e9b175b6c5ae4c4f, type: 3}
+  image: {fileID: 21300000, guid: b2c83e5bc967a415ea764d1bb011bdce, type: 3}
   shownEnlarged: 0

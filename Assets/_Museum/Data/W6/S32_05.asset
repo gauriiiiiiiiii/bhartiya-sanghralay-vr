@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_05
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "1971 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: Bangladesh Liberation War
   text: In 1971, after Pakistan's crackdown in East Pakistan and the flight of about ten million refugees to India, India supported the Mukti Bahini and went to war. Pakistan's forces surrendered at Dhaka on 16 December 1971, and Bangladesh was born.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 14fca5943ab2348849e1ffe5461f1604, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

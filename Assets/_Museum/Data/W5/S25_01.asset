@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_01
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "1917 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: Champaran Satyagraha, 1917
   text: In 1917 Gandhi took up the cause of indigo farmers in Champaran, Bihar, who were forced to grow indigo under the tinkathia system. His first satyagraha in India led to an inquiry and relief for the peasants.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 40808b502ac9848e39a3e67b79e76f5a, type: 3}
   image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
   shownEnlarged: 0

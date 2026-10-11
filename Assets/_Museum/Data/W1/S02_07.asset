@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_07
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2800 BCE onwards \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Harappan agriculture
   text: Farmers grew wheat, barley, pulses, sesame and cotton; the Harappans were among the earliest to grow cotton. A ploughed field was found at Kalibangan, and a terracotta plough model at Banawali. Rice and millets appear at some sites.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: e4c36daee93fa4ddcae148396a9d2142, type: 3}
+  image: {fileID: 21300000, guid: f01bb0d0275054ac1a8dd8eae4ad8285, type: 3}
   shownEnlarged: 0

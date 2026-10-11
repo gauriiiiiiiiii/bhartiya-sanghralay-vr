@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 1500 \u2013 600 BCE"
   title: 'Section 3: Vedic Period'
   text: The Vedas, India's oldest texts, describe a world of cattle herders becoming farmers, tribes becoming kingdoms, and ideas about ritual, society and the self that shaped later Indian thought.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 97fd74519977045f095644b65680fe16, type: 3}
   image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
   shownEnlarged: 0

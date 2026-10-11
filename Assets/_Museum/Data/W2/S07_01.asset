@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_01
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 321 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Chandragupta Maurya
   text: Chandragupta Maurya overthrew the Nanda king around 321 BCE and founded the Maurya empire, the first to unite most of the subcontinent. He defeated Seleucus Nicator and gained lands in the north-west. By Jain tradition, he ended his life as a monk at Shravanabelagola.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 464a0b219a98f4413a595232abffb012, type: 3}
+  image: {fileID: 21300000, guid: d965a930b1d714981b4956b76a435731, type: 3}
   shownEnlarged: 0

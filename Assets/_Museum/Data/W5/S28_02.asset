@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S28_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S28_02
-  era: "Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
+  era: "1906 \xB7 Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
   title: Muslim League
   text: The All-India Muslim League was founded in Dhaka in 1906. At first seeking safeguards for Muslims, under Jinnah it demanded a separate state, Pakistan, and won most Muslim seats in the 1946 elections.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: f46acbb0c51304861aff338e73f07767, type: 3}
   image: {fileID: 21300000, guid: f2ddffb4098d44203bd36260bc71a857, type: 3}
   shownEnlarged: 0

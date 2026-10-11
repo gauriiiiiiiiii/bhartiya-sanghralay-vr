@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_07
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Palaeolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Palaeolithic sites
   text: Key Palaeolithic sites include Attirampakkam in Tamil Nadu, Hunsgi and Isampur in Karnataka, Bhimbetka in Madhya Pradesh, Didwana in Rajasthan, the Belan valley in Uttar Pradesh, Hathnora on the Narmada, and the Sohan valley, now in Pakistan.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 7e671e4da4872488d8997e050a233f81, type: 3}
   image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
   shownEnlarged: 0

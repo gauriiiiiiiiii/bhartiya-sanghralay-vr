@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S35_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S35_07
-  era: "Section 35 \xB7 Religion in India \xB7 Across the ages"
+  era: "c. 8th\u201310th c. CE \xB7 Section 35 \xB7 Religion in India \xB7 Across the ages"
   title: Zoroastrianism
   text: Zoroastrians from Persia settled in Gujarat around the 8th to 10th centuries, becoming the Parsis. Though few in number, Parsis have shaped modern India; they include Dadabhai Naoroji and the Tata family.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 6c558a0d249b54a4d87a6c77010fb444, type: 3}
   image: {fileID: 21300000, guid: 576da863a02b24fb3b49953e59a81799, type: 3}
   shownEnlarged: 0

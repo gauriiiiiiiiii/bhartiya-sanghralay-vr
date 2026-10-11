@@ -16,6 +16,7 @@ MonoBehaviour:
   era: Rajputs, Sultans, saints and Mughals
   title: 'Wing 3: Medieval India'
   text: 'Welcome to Medieval India: temple builders and Rajput kings, the sultans of Delhi, the poet-saints of bhakti and Sufism, the Mughal empire and the regional powers that followed.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: bafa6d37bd05e4092895eaa7ebe2df4e, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S05_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S05_01
-  era: "Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
+  era: "6th c. BCE \xB7 Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
   title: Sixteen Mahajanapadas
   text: Buddhist and Jain texts list sixteen great states, or mahajanapadas, around the 6th century BCE, among them Magadha, Kosala, Vatsa, Avanti, Kashi, Anga, Vajji, Malla, Kuru, Panchala, Gandhara, Kamboja, Chedi, Matsya, Surasena and Assaka.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0ad8c0d14d75b4ca794a7c1a933c1317, type: 3}
+  narration: {fileID: 8300000, guid: ead8b2da23dae40778c6bfd3905d9e62, type: 3}
+  image: {fileID: 21300000, guid: cd454f167950d480080a9d46bbac1d36, type: 3}
   shownEnlarged: 0

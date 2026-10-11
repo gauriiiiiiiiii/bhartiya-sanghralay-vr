@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S27_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S27_03
-  era: "Section 27 \xB7 Constitutional Development \xB7 1773 \u2013 1949"
+  era: "1813\u20131853 \xB7 Section 27 \xB7 Constitutional Development \xB7 1773 \u2013 1949"
   title: Charter Acts
   text: Charter Acts renewed the Company's charter. The Act of 1813 ended its trade monopoly except in tea and with China and set aside money for education; 1833 created the Governor-General of India and ended its trade; 1853 opened the civil services to competition.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 93fa02c2fd4aa44d7934fc26c0914089, type: 3}
   image: {fileID: 21300000, guid: b3b30b79bafcb4051aa8a5f8e087562c, type: 3}
   shownEnlarged: 0

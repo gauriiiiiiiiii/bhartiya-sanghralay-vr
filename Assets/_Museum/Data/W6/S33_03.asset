@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S33_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S33_03
-  era: "Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
+  era: "1956, 1969 \xB7 Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
   title: Nuclear energy
   text: India follows a three-stage nuclear power programme planned by Homi Bhabha to make use of its large thorium reserves. Its first research reactor, Apsara, started in 1956, and the Tarapur power station in 1969.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: d1879ddb8aebf47cf96a0a0d1bf77472, type: 3}
+  narration: {fileID: 8300000, guid: 0da5fcbef340e4b9b95e294bf3893b5c, type: 3}
+  image: {fileID: 21300000, guid: 6cdcc71c82104400a8df57697d18b4d2, type: 3}
   shownEnlarged: 0

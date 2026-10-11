@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S13_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S13_05
-  era: "Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
+  era: "1336\u20131565 \xB7 Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
   title: Vijayanagara Empire
   text: Founded in 1336 by Harihara and Bukka, the Vijayanagara empire dominated the south for over two centuries. Krishnadevaraya was its greatest ruler. After the battle of Talikota in 1565 its capital, Hampi, was sacked; its ruins are a UNESCO World Heritage Site.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4dd7f4c721ae84d88a5f6c91ca0ed786, type: 3}
   image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
   shownEnlarged: 0

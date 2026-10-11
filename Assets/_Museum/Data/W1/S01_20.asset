@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_20
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_20
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "2nd millennium BCE \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Copper tools
   text: "Copper was smelted and hammered into axes, chisels, fish-hooks and bangles. Because copper was scarce and soft, stone blades stayed in use. The Copper Hoards of the Ganga\u2013Yamuna doab include harpoons and human-shaped figures."
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: dd90b243bc2a84a4ab4ccb05464686e4, type: 3}
+  image: {fileID: 21300000, guid: f145d0ceb6afb4fccbcf0bb315f7d2dc, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S12_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S12_05
-  era: "Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
+  era: "8th\u201312th c. CE \xB7 Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
   title: Early medieval trade
   text: Some historians see a decline in coinage and long-distance trade in the early medieval north, while others stress its continuity. Arab merchants were active on the west coast, and South Indian guilds such as the Ainnurruvar traded overseas.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2917a4c9f9183486e895b7ca1caae20d, type: 3}
   image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
   shownEnlarged: 0

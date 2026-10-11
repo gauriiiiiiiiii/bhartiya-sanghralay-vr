@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S14_10
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S14_10
-  era: "Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
+  era: "c. 1253\u20131325 \xB7 Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
   title: Sultanate society
   text: Society included Turkish, Afghan and Indian nobles, religious scholars, merchants, artisans and peasants. Persian culture met Indian traditions, giving rise to new music, poetry and the Hindavi language, as in the work of Amir Khusrau.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d1fe3b77835f949a1a55bf1a513cbb84, type: 3}
   image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
   shownEnlarged: 0

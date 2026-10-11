@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_07
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "1782\u20131799 \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Tipu Sultan
   text: Tipu Sultan, Haidar's son, ruled from 1782 to 1799. He used iron-cased rockets in war, introduced new coins, a new calendar and trade policies, and sought French help. He died defending Srirangapatna in the Fourth Anglo-Mysore War.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
+  narration: {fileID: 8300000, guid: d175c3233bfd946b79cdbae3491b8aca, type: 3}
+  image: {fileID: 21300000, guid: 9d49545d1cd554d6e9c3de35b3c0109b, type: 3}
   shownEnlarged: 0

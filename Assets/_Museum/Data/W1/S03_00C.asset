@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S03_00C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S03_00C
+  era: "Special artifact \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  title: Brick Vedic fire altar (vedi with sacred fire), as recorded at the 1975 Agnicayana in Panjal, Kerala
+  text: The Vedas, India's oldest texts, describe a world of cattle herders becoming farmers, tribes becoming kingdoms, and ideas about ritual, society and the self that shaped later Indian thought.
+  narration: {fileID: 8300000, guid: 97fd74519977045f095644b65680fe16, type: 3}
+  image: {fileID: 21300000, guid: 68eae5b18beda4d34a65487f1b3b8940, type: 3}
+  shownEnlarged: 0

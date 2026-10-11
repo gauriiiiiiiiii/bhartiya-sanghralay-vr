@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S13_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S13_04
-  era: "Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
+  era: "c. 1216\u20131311 \xB7 Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
   title: The later Pandyas
   text: The Pandyas revived in the 13th century and briefly dominated the south; Marco Polo visited their coast. Malik Kafur's raid in 1311 and civil wars weakened them, and the short-lived Madurai Sultanate followed.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 8edb2dda0eba149e3b6f13683a54b03d, type: 3}
   image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
   shownEnlarged: 0

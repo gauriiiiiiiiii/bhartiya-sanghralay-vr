@@ -16,6 +16,6 @@ MonoBehaviour:
   era: Across the ages
   title: 'Section 34: Art and Culture'
   text: India's art and culture span thousands of years and hundreds of traditions, from cave paintings and temples to classical dance, music and film.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4a7115dabc32745429cbbf614f1d80a0, type: 3}
   image: {fileID: 21300000, guid: f8eb314e72fba4fe7bf5f2a8ed3dcfcc, type: 3}
   shownEnlarged: 0

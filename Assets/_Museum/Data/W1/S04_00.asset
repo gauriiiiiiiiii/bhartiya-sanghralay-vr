@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "6th \u2013 5th century BCE onwards"
   title: 'Section 4: Religious Movements'
   text: In the cities of the Ganga plain, new teachers questioned ritual and caste and offered paths to liberation through ethics and insight. Jainism and Buddhism grew into world religions.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1593f87a66c164e5f8824ebe50e56080, type: 3}
   image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
   shownEnlarged: 0

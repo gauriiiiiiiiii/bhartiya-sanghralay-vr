@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_06
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Palaeolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Hunter-gatherer lifestyle
   text: Palaeolithic people lived in small, mobile bands. They hunted deer, wild cattle and pigs, and gathered fruit, roots and honey. They camped near rivers and in rock shelters, moving with the seasons. There was no farming, pottery or permanent village yet.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: c1cdf5a9fb93c45caa4b6dafd9a4b2ad, type: 3}
+  image: {fileID: 21300000, guid: dd31f26b1c4b74225a0d9695a9e3da54, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_08
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "5th c. BCE \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Four Noble Truths
   text: 'The Buddha''s first teaching: life involves suffering, or dukkha; suffering arises from craving; suffering can end, in nirvana; and the way to end it is the Noble Eightfold Path.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: d5bb917fa652642d59380895dcca4aeb, type: 3}
+  image: {fileID: 21300000, guid: d50b0107b0d59448788e760b21666e7e, type: 3}
   shownEnlarged: 0

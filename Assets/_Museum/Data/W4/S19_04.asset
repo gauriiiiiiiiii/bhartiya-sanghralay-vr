@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S19_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S19_04
-  era: "Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
+  era: "1848\u20131856 \xB7 Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
   title: Doctrine of Lapse
   text: Under Lord Dalhousie, from 1848 to 1856, a dependent state whose ruler died without a natural heir would lapse to the British; adopted sons were not recognised. Satara, Jhansi and Nagpur were annexed this way.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 56067372f73994647a22e1eddadbb0e1, type: 3}
   image: {fileID: 21300000, guid: 240f76881b5164cbead896a85792be68, type: 3}
   shownEnlarged: 0

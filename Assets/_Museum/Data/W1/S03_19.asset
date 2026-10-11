@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_19
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_19
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "Later Vedic onwards \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Ashrama system
   text: 'Later texts describe four stages of life for men of the upper varnas: brahmacharya, the student; grihastha, the householder; vanaprastha, retreat to the forest; and sannyasa, renunciation. It was an ideal rather than a universal practice.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: ee5f2b305abc244f7a1baf4ca25436f1, type: 3}
+  image: {fileID: 21300000, guid: ceb95f6dcf86f408c961aa3c2b01fffa, type: 3}
   shownEnlarged: 0

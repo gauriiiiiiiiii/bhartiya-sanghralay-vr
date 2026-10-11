@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S31_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S31_08
-  era: "Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
+  era: "1989\u20132014 \xB7 Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
   title: Coalition politics
   text: From 1989, no single party won a Lok Sabha majority for twenty-five years. Coalitions such as the National Front, United Front, NDA and UPA governed, giving regional parties greater influence. A single-party majority returned in 2014.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: fbee91136fac64a18ac01b0daca9568d, type: 3}
   image: {fileID: 21300000, guid: 0974aeca171da4644b35ada7a8c6c62d, type: 3}
   shownEnlarged: 0

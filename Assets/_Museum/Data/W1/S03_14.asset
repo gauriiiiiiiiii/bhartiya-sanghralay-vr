@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_14
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_14
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: The four Vedas
   text: The four Vedas are the Rigveda of hymns, the Samaveda of melodies for chanting, the Yajurveda of sacrificial formulas, and the Atharvaveda of spells, charms and everyday concerns. The tradition of Vedic chanting is recognised by UNESCO as intangible heritage.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 31b04cddf1a8a4cc7b8821bc4d2c6a79, type: 3}
+  image: {fileID: 21300000, guid: 360f00649579f47eaa7e55bdbd0796b4, type: 3}
   shownEnlarged: 0

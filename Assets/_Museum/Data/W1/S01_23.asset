@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_23
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_23
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 3000\u2013700 BCE \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Chalcolithic regional cultures
   text: "Major Chalcolithic cultures include Ahar\u2013Banas in Rajasthan, Kayatha and Malwa in Madhya Pradesh, Jorwe in Maharashtra, with sites such as Inamgaon and Daimabad, and the Ochre Coloured Pottery culture of the Ganga plain."
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: ab72bf8baa05343c0bd86281028cfe99, type: 3}
+  image: {fileID: 21300000, guid: 336d8976dca8c45fa9bba7afac48a3c4, type: 3}
   shownEnlarged: 0

@@ -1,0 +1,8 @@
+RESULT: DONE in 1.3 min
+[Single, Dual, 2 maps] Lobby: baked in 26s
+[Single, Dual, 2 maps] Wing1: baked in 6s
+[Single, Dual, 3 maps] Wing2: baked in 7s
+[Single, Dual, 1 maps] Wing3: baked in 11s
+[Single, Dual, 2 maps] Wing4: baked in 6s
+[Single, Dual, 1 maps] Wing5: baked in 10s
+[Single, Dual, 1 maps] Wing6: baked in 9s

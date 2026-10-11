@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_06
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 260 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Ashoka's Dhamma
   text: 'Ashoka''s Dhamma was a moral code: respect for elders, kindness to servants and animals, tolerance of all sects and restraint in speech. He appointed dhamma-mahamattas to spread it and sent missions abroad, including his son Mahinda to Sri Lanka.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: f66a9eedb22e54f64b686f091729fe3f, type: 3}
+  image: {fileID: 21300000, guid: 208162d3a8cb942089277e93ec4b76ee, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_04
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "c. 300 BCE \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Jain sects
   text: Jainism divided into the Digambaras, the sky-clad, whose monks renounce clothing, and the Shvetambaras, the white-clad. Tradition links the split to a famine in Magadha and the migration of the monk Bhadrabahu's followers to the south.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: f6d2f431ed7424f47b3ca00b6e8f3382, type: 3}
+  image: {fileID: 21300000, guid: 9075ccfc3f00045e59e56cb450b73833, type: 3}
   shownEnlarged: 0

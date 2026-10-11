@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_03
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "1962 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: Indo-China War, 1962
   text: Border disputes over Aksai Chin and the McMahon Line led to war in October and November 1962. China advanced and then declared a ceasefire. The defeat led India to strengthen its defences.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 369df8dabfd5c414087d333d40f5bed8, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

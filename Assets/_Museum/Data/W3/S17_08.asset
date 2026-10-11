@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_08
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "1722\u20131856 \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Awadh
   text: Saadat Khan Burhan-ul-Mulk founded the autonomous state of Awadh in 1722. Its nawabs, ruling from Faizabad and later Lucknow, patronised music, poetry and cuisine. The British annexed Awadh in 1856.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
+  narration: {fileID: 8300000, guid: 9862ca7dc2ee24b5fb5ced2ddaef9ade, type: 3}
+  image: {fileID: 21300000, guid: 273f117cc36e6415e918ed5b7a39904d, type: 3}
   shownEnlarged: 0

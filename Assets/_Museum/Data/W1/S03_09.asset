@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_09
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1000 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Iron technology
   text: Iron, called krishna ayas, the black metal, came into wider use from about 1000 BCE. Iron tools helped clear forests and till the land, and iron weapons strengthened rulers.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 553d4ca9ff929476682febe51b36b1ee, type: 3}
+  image: {fileID: 21300000, guid: c06bbb72ea74149b6b0a3779e15fde92, type: 3}
   shownEnlarged: 0

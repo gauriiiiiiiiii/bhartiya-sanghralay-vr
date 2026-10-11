@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S14_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S14_06
-  era: "Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
+  era: "13th\u201316th c. CE \xB7 Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
   title: Sultanate administration
   text: The sultan was the supreme ruler, helped by ministers such as the wazir. Land was assigned as iqtas to officers, who collected revenue and maintained troops. Persian was the language of administration.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 18b4e065ea4f24f8d815ccaa5405213c, type: 3}
   image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
   shownEnlarged: 0

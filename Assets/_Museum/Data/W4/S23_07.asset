@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_07
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1839 onward \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Plantation economy
   text: British planters set up tea plantations in Assam and Bengal, coffee in South India and rubber in Kerala. Indentured workers faced harsh conditions, and Indian labourers were also sent to plantations in Mauritius, Fiji, the Caribbean and Africa.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: c761028d485bf4f02b99407e1b4a54d3, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S14_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S14_03
-  era: "Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
+  era: "1320\u20131414 \xB7 Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
   title: Tughlaq Dynasty
   text: The Tughlaqs, from 1320 to 1414, included Muhammad bin Tughlaq, known for bold but failed experiments such as shifting the capital to Daulatabad and a token currency, and Firoz Shah Tughlaq, who built canals and towns. Timur sacked Delhi in 1398.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
+  narration: {fileID: 8300000, guid: 1e7b8a8a530d24bfb93b565fb2416ec2, type: 3}
+  image: {fileID: 21300000, guid: 1645c2664ba7e45e3af2acfd698f5545, type: 3}
   shownEnlarged: 0

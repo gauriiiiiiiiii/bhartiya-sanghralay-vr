@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_07
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 300 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Mauryan administration
   text: The empire was ruled from Pataliputra and divided into provinces under princes. A large bureaucracy collected taxes and ran a standing army and a network of spies. Megasthenes, the Greek envoy, described the city councils of Pataliputra in his Indica.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 1bb95d5d71ec645ee9f3900853bf2ec3, type: 3}
+  image: {fileID: 21300000, guid: 797195d90e3e0470d8b1adfcd9f4e4ed, type: 3}
   shownEnlarged: 0

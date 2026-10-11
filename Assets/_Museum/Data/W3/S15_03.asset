@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_03
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "6th\u20139th c. CE \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Nayanars
   text: The sixty-three Nayanars were Tamil saints devoted to Shiva. Their hymns form the Tevaram. Saints such as Appar, Sambandar and Sundarar came from different castes, and Karaikkal Ammaiyar was a woman saint.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
+  narration: {fileID: 8300000, guid: e430d15fb332a43388f650fbd9624a6f, type: 3}
+  image: {fileID: 21300000, guid: a1ed5f739bf2f440fa37e0a193d681d1, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_08
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1881\u20131920 \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Workers and labour
   text: Mill and plantation workers faced long hours and low pay. Factory Acts from 1881 brought limited protection, trade unions grew, and the All India Trade Union Congress was founded in 1920.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 649eb3b1c122e4ae0a0937a6410224e9, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

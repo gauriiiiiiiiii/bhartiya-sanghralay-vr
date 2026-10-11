@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_08
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "2023 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: Contemporary diplomacy
   text: Today India engages through groups such as the G20, which it hosted in 2023, BRICS, the Quad and the Shanghai Cooperation Organisation, contributes to UN peacekeeping, and seeks a permanent seat on the UN Security Council.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 619a8be47b39b451bae2c1f0cbc3d2d6, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

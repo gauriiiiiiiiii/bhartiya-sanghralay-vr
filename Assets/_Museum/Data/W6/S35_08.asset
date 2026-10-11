@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S35_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S35_08
-  era: "Section 35 \xB7 Religion in India \xB7 Across the ages"
+  era: "1568 \xB7 Section 35 \xB7 Religion in India \xB7 Across the ages"
   title: Judaism in India
   text: Jewish communities in India include the Cochin Jews of Kerala, the Bene Israel of Maharashtra and the Baghdadi Jews. The Paradesi Synagogue in Kochi dates from 1568. Indian Jews lived for centuries without persecution.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b0177da56ee784349aad6f574953c34d, type: 3}
   image: {fileID: 21300000, guid: 576da863a02b24fb3b49953e59a81799, type: 3}
   shownEnlarged: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W3_06
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W3_06
+  era: "1632 \u2013 c. 1653"
+  title: The Taj Mahal, Agra
+  text: 'The Taj Mahal, Agra. The Mughal emperor Shah Jahan built this tomb for his wife Mumtaz Mahal, who died in 1631. Thousands of craftsmen worked for over twenty years on the marble mausoleum, its gardens, mosque and guest house. Its inlaid stonework and perfect symmetry made it a symbol of India across the world. The flowers on its walls are not painted: they are made of carnelian, jasper, lapis and other stones cut and set into the marble, a technique called pietra dura.'
+  narration: {fileID: 8300000, guid: bfa95e9f745524142ac2707758947d2e, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 306

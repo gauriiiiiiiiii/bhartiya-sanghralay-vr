@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_10
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_10
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Mesolithic onwards \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Rock art
   text: The rock shelters of Bhimbetka in Madhya Pradesh, a UNESCO World Heritage Site, hold thousands of paintings, the earliest probably from the Mesolithic. Painted mostly in red and white, they show hunting, dancing, animals and scenes of daily life.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 8843597c4b62f4b26ad7d2146db7e055, type: 3}
+  image: {fileID: 21300000, guid: 83e4342974ebf46f1ad0cc2dd7fd007c, type: 3}
   shownEnlarged: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W1_06
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W1_06
+  era: "Hymns composed c. 1500\u20131200 BCE; manuscript 19th century"
+  title: A manuscript of the Rigveda
+  text: A manuscript of the Rigveda. The Rigveda is a collection of 1,028 hymns in Vedic Sanskrit, composed in north-western India and passed down by word of mouth with remarkable precision for many centuries before being written down. Manuscripts like this are much later copies. Priests memorised the hymns with elaborate recitation methods, chanting the words in different orders so that not a syllable would change. In 2007 a collection of Rigveda manuscripts kept in Pune was added to UNESCO's Memory of the World Register.
+  narration: {fileID: 8300000, guid: c3e26aed16f34411eac3f0b6d318d95e, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 106

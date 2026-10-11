@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S21_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S21_02
-  era: "Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
+  era: "10 May 1857 \xB7 Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
   title: Centres of the revolt
   text: The revolt began at Meerut on 10 May 1857 and spread to Delhi, Kanpur, Lucknow, Jhansi, Bareilly, Arrah and parts of central India. Punjab, eastern Bengal and most of the south remained largely quiet.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 89ae8ed3b8eeb40828f7030c9115871f, type: 3}
   image: {fileID: 21300000, guid: 4b4faa6c5947b4f2eb591ae8dfd9d1ef, type: 3}
   shownEnlarged: 0

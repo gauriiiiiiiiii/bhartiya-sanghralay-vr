@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_02
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1530\u20131556 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Humayun
   text: Humayun lost his kingdom to Sher Shah Suri in 1540 and spent fifteen years in exile, partly in Persia. He regained Delhi in 1555 but died the following year. His garden tomb in Delhi is a UNESCO World Heritage Site.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
+  narration: {fileID: 8300000, guid: 7d36303da61d34eac864c237de60e67f, type: 3}
+  image: {fileID: 21300000, guid: c19cd6795eb2541abb86f8db5ac542d4, type: 3}
   shownEnlarged: 0

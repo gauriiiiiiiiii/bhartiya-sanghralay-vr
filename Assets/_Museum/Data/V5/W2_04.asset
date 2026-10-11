@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_04
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_04
+  era: "1st\u20132nd century CE"
+  title: Standing Buddha from Gandhara
+  text: "Standing Buddha from Gandhara. Under the Kushan emperors, sculptors in Gandhara \u2013 today's north-western Pakistan and eastern Afghanistan \u2013 created some of the earliest images of the Buddha in human form. Wavy hair, deeply folded robes and calm faces show the influence of Greek and Roman art blended with Indian ideas. At the same time, sculptors at Mathura in northern India were making Buddha images in red sandstone in a purely Indian style. The Kushan king Kanishka ruled over both regions and was a great patron of Buddhism."
+  narration: {fileID: 8300000, guid: d4ce6dffbc4f64f1597c725856312891, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 204

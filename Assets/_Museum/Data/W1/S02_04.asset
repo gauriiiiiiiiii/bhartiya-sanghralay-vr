@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_04
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2500 BCE \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Harappan architecture
   text: Builders used baked and mud bricks. Notable structures include the Great Bath of Mohenjo-daro, waterproofed with bitumen, large halls once called granaries, houses with courtyards and private wells, and massive city walls.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: f493079171e1b4dceb232f07e94e2ba9, type: 3}
+  image: {fileID: 21300000, guid: 189f2deedc11f4b0b94bd3161f5c9f4d, type: 3}
   shownEnlarged: 0

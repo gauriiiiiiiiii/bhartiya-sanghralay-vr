@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_08
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "c. 1580 onward \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Mughal administration
   text: The emperor ruled through ministers such as the wakil, diwan, mir bakhshi and sadr. The empire was divided into provinces called subas, then sarkars and parganas, with Persian as the language of government.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b625d962cf78a49cbb07fcb00a949e7a, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

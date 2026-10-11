@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S09_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S09_04
-  era: "Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
+  era: "c. 300 BCE \xB7 Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
   title: The early Pandyas
   text: The Pandyas ruled the southern tip of India from Madurai, the seat of the Sangam assemblies. They were known to Megasthenes and controlled the pearl fisheries of the Gulf of Mannar. Nedunjeliyan is a famous Pandya king of the Sangam age.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2590407be0786427d93974c0cf98210e, type: 3}
   image: {fileID: 21300000, guid: 3d3a8b699aba946769c82cea04c3bdf4, type: 3}
   shownEnlarged: 0

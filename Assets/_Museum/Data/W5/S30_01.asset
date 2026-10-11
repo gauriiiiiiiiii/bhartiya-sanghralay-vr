@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S30_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S30_01
-  era: "Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
+  era: "1947\u20131950 \xB7 Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
   title: Drafting Committee
   text: Chaired by Dr B. R. Ambedkar, the Drafting Committee prepared the draft Constitution. Adopted on 26 November 1949, it came into force on 26 January 1950, now celebrated as Republic Day.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4ad308fffd1ac4beaab29f881c559869, type: 3}
   image: {fileID: 21300000, guid: 01186f22c9d1c452db43cd278ae5e95b, type: 3}
   shownEnlarged: 0

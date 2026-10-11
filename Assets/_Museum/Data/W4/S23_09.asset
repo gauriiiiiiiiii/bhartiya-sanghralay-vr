@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_09
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1773\u20131913 \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Colonial trade
   text: India exported raw materials and imported manufactured goods, while its export surpluses helped Britain balance its own trade. The opium trade to China was a major source of Company revenue.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 90c8b51b4d69348eabbf7e591654910c, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

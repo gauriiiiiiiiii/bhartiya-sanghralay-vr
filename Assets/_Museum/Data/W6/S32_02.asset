@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_02
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "1954 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: Panchsheel
   text: 'The five principles of peaceful coexistence were set out in the 1954 agreement between India and China: mutual respect for territory and sovereignty, non-aggression, non-interference, equality and mutual benefit, and peaceful coexistence.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 6ad457975fbd64b938b4bbb60026044a, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

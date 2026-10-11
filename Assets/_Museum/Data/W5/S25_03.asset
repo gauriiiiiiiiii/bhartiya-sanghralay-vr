@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_03
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "1918 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: Ahmedabad mill strike, 1918
   text: In 1918 Gandhi supported Ahmedabad mill workers' demand for higher wages and undertook his first fast in India. The dispute ended with a thirty-five per cent wage increase.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 445c6e8a5bf8e42f992834a5cefd9373, type: 3}
   image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
   shownEnlarged: 0

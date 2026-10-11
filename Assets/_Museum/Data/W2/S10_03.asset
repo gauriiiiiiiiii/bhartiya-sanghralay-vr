@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_03
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "c. 375\u2013415 CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: Chandragupta II
   text: Chandragupta the Second, also called Vikramaditya, ruled from about 375 to 415 CE. He defeated the Western Shakas, adding Gujarat and Malwa and access to the western ports. The Chinese pilgrim Faxian visited India in his reign, and tradition links the poet Kalidasa to his court.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 123a2d0dfb13b4ef685c740d734c8b00, type: 3}
   image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
   shownEnlarged: 0

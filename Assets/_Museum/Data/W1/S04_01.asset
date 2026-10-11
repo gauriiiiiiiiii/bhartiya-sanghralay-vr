@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_01
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "6th c. BCE \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Jainism
   text: Jainism teaches that the soul can be freed through right faith, right knowledge and right conduct. Jains revere twenty-four tirthankaras, or ford-makers; the first was Rishabhanatha, the twenty-third Parshvanatha and the twenty-fourth Mahavira.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: 883741a3ba5e14f4d8b3afeee03a2ceb, type: 3}
+  image: {fileID: 21300000, guid: 903a0c1137357449fad90f5b6d90a0c5, type: 3}
   shownEnlarged: 0

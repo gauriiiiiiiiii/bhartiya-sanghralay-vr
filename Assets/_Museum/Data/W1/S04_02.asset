@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_02
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "c. 599\u2013527 BCE \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Mahavira
   text: Vardhamana Mahavira was born, according to tradition, around 599 BCE near Vaishali in Bihar, though some scholars place him later. After twelve years of austerity he attained kevala jnana, perfect knowledge, and taught for about thirty years before his death at Pavapuri.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: 2be6656b713e64998bb7676be679fef2, type: 3}
+  image: {fileID: 21300000, guid: e8aa44a8e556e40099e57562f935b73a, type: 3}
   shownEnlarged: 0

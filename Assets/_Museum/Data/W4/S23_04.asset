@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_04
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1876\u201378 \xB7 1943 \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Famines under British rule
   text: Repeated famines killed millions, including the Great Famine of 1876 to 1878 and the Bengal Famine of 1943, in which about three million people died. Export policies, high revenue and slow relief made them worse.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
+  narration: {fileID: 8300000, guid: abf3c9f6c790043768dfae6a2f012a7f, type: 3}
+  image: {fileID: 21300000, guid: 4bea55223187943fa9a76e54103c68da, type: 3}
   shownEnlarged: 0

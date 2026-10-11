@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_05
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1930 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Surya Sen
   text: Surya Sen, known as Masterda, led the Chittagong Armoury Raid in April 1930 with the Indian Republican Army, which included young women such as Pritilata Waddedar and Kalpana Dutt. He was hanged in 1934.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4c2811fa13d9145d7b5f365bb7656353, type: 3}
   image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
   shownEnlarged: 0

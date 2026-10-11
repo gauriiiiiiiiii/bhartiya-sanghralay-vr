@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1857 \u2013 1859"
   title: 'Section 21: Revolt of 1857'
   text: A great uprising of soldiers, rulers and peasants shook British rule across north and central India and ended the rule of the East India Company.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1e172d30b276d4285a8b2a766414a50e, type: 3}
   image: {fileID: 21300000, guid: 4b4faa6c5947b4f2eb591ae8dfd9d1ef, type: 3}
   shownEnlarged: 0

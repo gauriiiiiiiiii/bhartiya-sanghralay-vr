@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_04
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "1st\u20133rd c. CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Kushanas
   text: The Kushanas, a branch of the Yuezhi of Central Asia, built an empire from Central Asia to the Ganga plain between the 1st and 3rd centuries CE. They issued many gold coins and fostered the Gandhara and Mathura schools of art.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 5c71e07417aa941cc8f637fd6c72a6c1, type: 3}
   image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
   shownEnlarged: 0

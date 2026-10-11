@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W4_05
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W4_05
+  era: 1858
+  title: Sikandar Bagh, Lucknow, photographed by Felice Beato
+  text: "Sikandar Bagh, Lucknow, photographed by Felice Beato. The photographer Felice Beato took this picture of the Sikandar Bagh in Lucknow a few months after British troops stormed it in November 1857, during the relief of the besieged Residency. It is one of the earliest photographs of the aftermath of war \u2013 a reminder of the violence of the uprising. Photography was only about twenty years old at the time. Long exposures meant that early photographers recorded ruins and landscapes rather than action."
+  narration: {fileID: 8300000, guid: 375e76703a7284713a3c0eaede0b74f8, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 405

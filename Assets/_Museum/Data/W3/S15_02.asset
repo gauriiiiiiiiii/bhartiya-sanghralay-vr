@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_02
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "6th\u20139th c. CE \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Alvars
   text: The twelve Alvars were Tamil poet-saints devoted to Vishnu, active between about the 6th and 9th centuries. Their hymns are collected in the Nalayira Divya Prabandham, and Andal is the only woman among them.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: cba037b23df0a41e6a3cd7ad2b270131, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

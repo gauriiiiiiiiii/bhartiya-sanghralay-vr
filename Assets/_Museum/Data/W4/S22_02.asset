@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_02
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1875 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Arya Samaj
   text: Swami Dayananda Saraswati founded the Arya Samaj in 1875, calling for a return to the Vedas. It opposed idol worship and caste by birth, promoted education through DAV schools and gurukuls, and began the shuddhi movement.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 38266af2c66754b14827655c95749c64, type: 3}
   image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
   shownEnlarged: 0

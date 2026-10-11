@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_02
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "c. 335\u2013375 CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: Samudragupta
   text: Samudragupta, who ruled from about 335 to 375 CE, campaigned across north and south India. His Allahabad Pillar inscription, composed by the poet Harishena, lists his conquests. A musician too, he appears playing the veena on his coins.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 808231ac5ec774097bb87c563db02bb1, type: 3}
   image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
   shownEnlarged: 0

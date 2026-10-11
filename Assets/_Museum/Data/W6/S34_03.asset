@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S34_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S34_03
-  era: "Section 34 \xB7 Art and Culture \xB7 Across the ages"
+  era: "c. 2nd c. BCE onwards \xB7 Section 34 \xB7 Art and Culture \xB7 Across the ages"
   title: Indian painting
   text: Indian painting includes the Ajanta murals, Pala manuscripts, Mughal, Rajput and Pahari miniatures, the Tanjore and Kalighat schools, folk forms such as Madhubani, Warli and Pattachitra, and modern artists such as Raja Ravi Varma and Amrita Sher-Gil.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 0b249d94742f64a3d9da013bda1a2a0c, type: 3}
   image: {fileID: 21300000, guid: f8eb314e72fba4fe7bf5f2a8ed3dcfcc, type: 3}
   shownEnlarged: 0

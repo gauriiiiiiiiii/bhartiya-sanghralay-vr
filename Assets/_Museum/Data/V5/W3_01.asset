@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W3_01
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W3_01
+  era: Completed 1010 CE
+  title: Brihadisvara Temple, Thanjavur
+  text: 'Brihadisvara Temple, Thanjavur. Raja Raja I, the great Chola emperor, built this temple to Shiva at his capital Thanjavur. Its tower rises about 66 metres and is crowned by a huge granite capstone. Inscriptions on its walls list the gifts, dancers, musicians and staff that served the temple. The Cholas were also a sea power: Raja Raja''s son Rajendra sent a naval expedition to South-East Asia, and Chola merchants traded as far as China.'
+  narration: {fileID: 8300000, guid: 6eabf8a49d6bd496d854b0a2597a9361, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 301

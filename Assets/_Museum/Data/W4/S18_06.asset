@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S18_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S18_06
-  era: "Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
+  era: "1600s\u20131700s \xB7 Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
   title: European trading companies
   text: European trading companies were joint-stock ventures backed by their governments, with the power to trade, keep armies and make treaties. They bought Indian cotton textiles, indigo, saltpetre and spices, paying largely in silver.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 7c4778a1b43534fc7a19b9a2b277b60f, type: 3}
   image: {fileID: 21300000, guid: dc0aca711b7f643e9a6eec84a0626553, type: 3}
   shownEnlarged: 0

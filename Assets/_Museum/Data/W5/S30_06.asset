@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S30_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S30_06
-  era: "Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
+  era: "1973 \xB7 Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
   title: Amendment process
   text: Article 368 allows Parliament to amend the Constitution, some changes also needing ratification by the states. In the Kesavananda Bharati case of 1973, the Supreme Court held that the basic structure of the Constitution cannot be destroyed.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 01186f22c9d1c452db43cd278ae5e95b, type: 3}
+  narration: {fileID: 8300000, guid: 326ca87b0749642828f43dbbcdfafd36, type: 3}
+  image: {fileID: 21300000, guid: 612026ce4f69b44d19102a349d6a418b, type: 3}
   shownEnlarged: 0

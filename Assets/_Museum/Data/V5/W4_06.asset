@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W4_06
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W4_06
+  era: "1772\u20131833"
+  title: Raja Ram Mohan Roy
+  text: Raja Ram Mohan Roy. Ram Mohan Roy, often called the father of the Indian Renaissance, founded the Brahmo Sabha in 1828 to promote a reformed faith. He campaigned against sati, the burning of widows, which was banned in Bengal in 1829, and argued for modern education and a free press. He died in Bristol in 1833. Later reformers such as Ishwar Chandra Vidyasagar, Jyotirao and Savitribai Phule, Swami Dayanand Saraswati and Syed Ahmad Khan carried this spirit of questioning and reform across India.
+  narration: {fileID: 8300000, guid: 0438200ab1072498681199504b2e5dda, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 406

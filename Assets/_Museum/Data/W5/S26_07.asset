@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_07
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1942\u20131946 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Indian National Army
   text: The Indian National Army was formed in South-East Asia in 1942 with Japanese support and revived by Subhas Chandra Bose in 1943, with the slogan Delhi Chalo. The INA trials at the Red Fort in 1945 and 1946 stirred nationwide support.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
+  narration: {fileID: 8300000, guid: f20348e2fdb6840ccb786ba18a22a7dd, type: 3}
+  image: {fileID: 21300000, guid: d115fc970807745a08a5b239df32607c, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S20_10
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S20_10
-  era: "Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
+  era: "1867\u20131901 \xB7 Section 20 \xB7 East India Company Rule \xB7 1765 \u2013 1858"
   title: Drain of Wealth
   text: Dadabhai Naoroji, in Poverty and Un-British Rule in India, argued that much of India's wealth was drained to Britain through home charges, salaries, pensions and profits, without equal return.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5570a78ec058c4f919cbf3c69e833615, type: 3}
+  narration: {fileID: 8300000, guid: 78175ed78681d4f1291c20715d5573b2, type: 3}
+  image: {fileID: 21300000, guid: 7d5f6c350d3a547818f13c6b267f0134, type: 3}
   shownEnlarged: 0

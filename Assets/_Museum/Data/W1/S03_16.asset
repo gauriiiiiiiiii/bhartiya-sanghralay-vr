@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_16
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_16
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 800\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Aranyakas
   text: The Aranyakas, or forest texts, were meant for study in seclusion. They move from outward ritual towards symbolic and mystical interpretation, bridging the Brahmanas and the Upanishads.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 4f9cc84ade6da449b8cf874f72dd62a3, type: 3}
+  image: {fileID: 21300000, guid: 72715e3254b3f455ba1787911226cb22, type: 3}
   shownEnlarged: 0

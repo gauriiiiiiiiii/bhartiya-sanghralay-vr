@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S34_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S34_09
-  era: "Section 34 \xB7 Art and Culture \xB7 Across the ages"
+  era: "2017, 2021 \xB7 Section 34 \xB7 Art and Culture \xB7 Across the ages"
   title: Festivals of India
   text: Festivals such as Diwali, Holi, Eid, Christmas, Durga Puja, Pongal, Onam, Baisakhi, Navratri and Buddha Purnima reflect India's diversity. The Kumbh Mela and Durga Puja in Kolkata are recognised by UNESCO as intangible cultural heritage.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f8eb314e72fba4fe7bf5f2a8ed3dcfcc, type: 3}
+  narration: {fileID: 8300000, guid: 3c464dcd8afcc4c9183e33a1df11bf58, type: 3}
+  image: {fileID: 21300000, guid: 532799f19b8234ac7a7175506ec77b81, type: 3}
   shownEnlarged: 0

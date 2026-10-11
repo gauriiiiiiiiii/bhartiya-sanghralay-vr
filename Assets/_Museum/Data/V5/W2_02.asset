@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_02
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_02
+  era: c. 3rd century BCE (date debated)
+  title: Didarganj Yakshi
+  text: Didarganj Yakshi. This life-size female attendant holding a fly-whisk was found on the bank of the Ganga at Didarganj, Patna, in 1917. Its mirror-like polish is typical of Mauryan stone carving, though some scholars date it later. Yakshis were nature spirits associated with fertility and abundance. Patna stands on the site of Pataliputra, the Mauryan capital, which the Greek ambassador Megasthenes described as a vast city protected by a timber wall.
+  narration: {fileID: 8300000, guid: 6fd53df318ccb4be58941c3b34373aad, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 202

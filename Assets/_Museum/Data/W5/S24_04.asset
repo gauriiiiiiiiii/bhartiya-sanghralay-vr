@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S24_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S24_04
-  era: "Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
+  era: "1905\u20131907 \xB7 Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
   title: Extremists
   text: Bal Gangadhar Tilak, Lala Lajpat Rai and Bipin Chandra Pal, known as Lal, Bal and Pal, demanded swaraj through mass action. Tilak declared that swaraj is my birthright and I shall have it. The Congress split at Surat in 1907.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 71cc57c99f3cf459ba356567093ec185, type: 3}
+  narration: {fileID: 8300000, guid: dab10af52c59c4850a3db5bd9c041e10, type: 3}
+  image: {fileID: 21300000, guid: 292a61eb07b39420092b4310cced7aeb, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S07_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S07_05
-  era: "Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
+  era: "c. 261 BCE \xB7 Section 7 \xB7 Mauryan Empire \xB7 c. 321 \u2013 185 BCE"
   title: Kalinga War
   text: Around 261 BCE Ashoka conquered Kalinga, in present-day Odisha. In his Thirteenth Rock Edict he records that a hundred thousand people were killed and a hundred and fifty thousand deported, and expresses deep remorse. He turned from conquest by war to conquest by Dhamma.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 1b324a84f71634f7da82d5a1e4ea9c29, type: 3}
+  narration: {fileID: 8300000, guid: 6239f55edf9794e5c8cb9cf65697ec10, type: 3}
+  image: {fileID: 21300000, guid: bb9d77e0bc39b4b5384dcb646aa4f9fa, type: 3}
   shownEnlarged: 0

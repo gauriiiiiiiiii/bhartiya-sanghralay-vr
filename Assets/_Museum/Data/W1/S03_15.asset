@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_15
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_15
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 900\u2013700 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Brahmanas
   text: The Brahmanas are prose texts explaining the meaning and correct performance of sacrifices. The Shatapatha Brahmana is among the most important, and records social and geographical details of its time.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: e930ec535aecc4650862355c0b483f0a, type: 3}
+  image: {fileID: 21300000, guid: 2fc1fa126384c4d95ba2ac451179d222, type: 3}
   shownEnlarged: 0

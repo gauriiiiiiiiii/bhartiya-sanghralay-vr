@@ -1,0 +1,31 @@
+{
+ "textures": {
+  "stone_buff": "sandstone_blocks_05",
+  "stone_buff2": "sandstone_blocks_04",
+  "stone_red": "sandstone_brick_wall_01",
+  "stone_castle": "castle_wall_varriation",
+  "brick_red": "medieval_red_brick",
+  "floor_slabs": "floor_tiles_04",
+  "floor_marble": "floor_tiles_02",
+  "floor_granite": "granite_tile_03",
+  "floor_pattern": "floor_pattern_02",
+  "floor_concrete": "concrete_floor_worn_001",
+  "plaster": "beige_wall_001",
+  "plaster_rough": "beige_wall_002",
+  "marble": "marble_01",
+  "wood": "wood_table_001",
+  "granite": "granite_wall"
+ },
+ "models": [
+  "Chandelier_01",
+  "Chandelier_02",
+  "Chandelier_03",
+  "Lantern_01",
+  "brass_vase_01",
+  "brass_vase_02",
+  "ceramic_vase_01",
+  "ceramic_vase_02",
+  "ceramic_vase_03"
+ ],
+ "complete": true
+}

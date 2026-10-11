@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_05
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u20131000 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Early Vedic economy
   text: The early Vedic economy was largely pastoral. Cattle were the main wealth and wars were fought over them; gavishti, the search for cows, meant battle. There was also some barley farming, weaving, carpentry and work in copper and bronze.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: f79dfc768ab8643f6a9d881ebd761f11, type: 3}
+  image: {fileID: 21300000, guid: 028fee6e4080e4e5787f133f645d8e8a, type: 3}
   shownEnlarged: 0

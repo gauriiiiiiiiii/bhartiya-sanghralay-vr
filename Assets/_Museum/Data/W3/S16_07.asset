@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_07
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1658\u20131707 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Aurangzeb
   text: Aurangzeb, who ruled from 1658 to 1707, expanded the empire to its greatest size, including the Deccan sultanates. Long wars against the Marathas, revolts, the reimposition of jizya and his orthodox policies strained the empire.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4d16d5b679dfc45dfb8cb4b4ce9ebeab, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

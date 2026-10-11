@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1850s \u2013 1910s"
   title: 'Section 24: Rise of Nationalism'
   text: Shared grievances, new ideas and new organisations turned scattered protest into a national movement for self-government.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: af712dc4823e04272a75a6807a7cab43, type: 3}
   image: {fileID: 21300000, guid: 71cc57c99f3cf459ba356567093ec185, type: 3}
   shownEnlarged: 0

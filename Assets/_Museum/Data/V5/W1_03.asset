@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W1_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W1_03
+  era: "c. 2300\u20131750 BCE"
+  title: The 'Dancing Girl'
+  text: The 'Dancing Girl'. Only 10.5 centimetres tall, this young woman stands with one hand on her hip and her left arm covered in bangles. She was found at Mohenjo-daro in 1926 and is one of the finest metal sculptures of the Indus Civilisation, cast about four thousand years ago. Lost-wax casting means the figure was first modelled in wax, covered in clay and heated so that the wax ran out, leaving a mould for molten metal. Bangles like hers are still worn across South Asia today.
+  narration: {fileID: 8300000, guid: 25ca71ea96d04492bbc0e7f2f828cf1c, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 103

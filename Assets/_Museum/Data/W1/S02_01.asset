@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_01
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "1921\u20131924 \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Discovery of the Indus cities
   text: In 1921 Daya Ram Sahni excavated at Harappa in Punjab, and in 1922 R. D. Banerji at Mohenjo-daro in Sindh. In 1924 John Marshall announced a new Bronze Age civilisation, among the earliest urban cultures in the world.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: ec7116696481246058c3df7fc4893b3c, type: 3}
+  image: {fileID: 21300000, guid: d829e1e17b11a4e9fa8588fdb8e0de09, type: 3}
   shownEnlarged: 0

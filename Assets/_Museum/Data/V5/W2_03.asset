@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_03
+  era: "3rd century BCE \u2013 1st century CE"
+  title: The Great Stupa at Sanchi
+  text: "The Great Stupa at Sanchi. Ashoka built the first brick stupa here to enshrine relics of the Buddha. It was later enlarged and cased in stone, and four magnificent gateways (toranas) were added, carved with stories from the Buddha's past and present lives. A stupa is a solid dome that pilgrims walk around clockwise in devotion. Many of the carvings at Sanchi were paid for by ordinary donors \u2013 ivory carvers, merchants, monks and nuns \u2013 whose names are inscribed in the stone."
+  narration: {fileID: 8300000, guid: fbb1ae0efb0b3431e8be05a0fd7892b9, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 203

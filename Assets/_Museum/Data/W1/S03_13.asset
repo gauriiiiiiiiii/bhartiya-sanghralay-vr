@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_13
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_13
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1500\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Vedic Literature
   text: Vedic literature is shruti, that which is heard. It was memorised and recited for centuries before it was written down. It includes the four Vedas, each with its Brahmanas, Aranyakas and Upanishads.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: fa31b8c44bf03420f9f3c33049ef4dbb, type: 3}
+  image: {fileID: 21300000, guid: bf0e9f51ffe5246f7be3be99a12872d6, type: 3}
   shownEnlarged: 0

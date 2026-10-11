@@ -1,4 +1,5 @@
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -10,7 +11,7 @@ public static partial class MuseumBuilder
 {
     const string PostProfilePath = "Assets/_Museum/Settings/MuseumPost.asset";
     const string SkyMatPath = "Assets/_Museum/Materials/Sky_Procedural.mat";
-    public static float PostExposure = 0.45f;
+    public static float PostExposure = 0.6f;
 
     static void ApplyRealism(System.Text.StringBuilder report)
     {
@@ -31,8 +32,20 @@ public static partial class MuseumBuilder
             SetI("m_AdditionalLightsRenderingMode", 1);
             SetI("m_AdditionalLightsPerObjectLimit", 4);
             so.ApplyModifiedPropertiesWithoutUndo();
+            // post-processing only runs when the renderer has its PostProcessData (it was empty in this project)
+            var list = so.FindProperty("m_RendererDataList");
+            for (int i = 0; list != null && i < list.arraySize; i++)
+            {
+                if (list.GetArrayElementAtIndex(i).objectReferenceValue is UniversalRendererData rd && rd.postProcessData == null)
+                {
+                    var ppd = AssetDatabase.LoadAssetAtPath<PostProcessData>("Packages/com.unity.render-pipelines.universal/Runtime/Data/PostProcessData.asset");
+                    if (ppd == null) ppd = AssetDatabase.FindAssets("t:PostProcessData").Select(g => AssetDatabase.LoadAssetAtPath<PostProcessData>(AssetDatabase.GUIDToAssetPath(g))).FirstOrDefault(x => x);
+                    if (ppd) { rd.postProcessData = ppd; EditorUtility.SetDirty(rd); report.AppendLine("Post-processing data assigned to " + rd.name); }
+                    else report.AppendLine("Warning: URP PostProcessData asset not found – post-processing stays off");
+                }
+            }
         }
-        report.AppendLine("Rendering: linear colour, HDR, ACES tone mapping, bloom, MSAA 4x, box-projected reflection probes");
+        report.AppendLine("Rendering: linear colour, HDR, neutral tone mapping, bloom, MSAA 4x, box-projected reflection probes");
     }
 
     static VolumeProfile PostProfile()
@@ -48,7 +61,7 @@ public static partial class MuseumBuilder
             if (!prof.TryGet<T>(out var c)) { c = prof.Add<T>(true); c.name = typeof(T).Name; AssetDatabase.AddObjectToAsset(c, prof); }
             return c;
         }
-        var tm = Get<Tonemapping>(); tm.mode.overrideState = true; tm.mode.value = TonemappingMode.ACES;
+        var tm = Get<Tonemapping>(); tm.mode.overrideState = true; tm.mode.value = TonemappingMode.Neutral;
         var bl = Get<Bloom>();
         bl.threshold.overrideState = true; bl.threshold.value = 1.1f;
         bl.intensity.overrideState = true; bl.intensity.value = 0.22f;
@@ -56,8 +69,8 @@ public static partial class MuseumBuilder
         bl.highQualityFiltering.overrideState = true; bl.highQualityFiltering.value = false;
         var ca = Get<ColorAdjustments>();
         ca.postExposure.overrideState = true; ca.postExposure.value = PostExposure;
-        ca.contrast.overrideState = true; ca.contrast.value = 6f;
-        ca.saturation.overrideState = true; ca.saturation.value = 4f;
+        ca.contrast.overrideState = true; ca.contrast.value = 4f;
+        ca.saturation.overrideState = true; ca.saturation.value = -4f;
         var wb = Get<WhiteBalance>(); wb.temperature.overrideState = true; wb.temperature.value = 9f;
         EditorUtility.SetDirty(prof);
         return prof;

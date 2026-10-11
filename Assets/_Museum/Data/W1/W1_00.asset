@@ -16,6 +16,7 @@ MonoBehaviour:
   era: Prehistory to the Mauryas' eve
   title: 'Wing 1: Ancient India'
   text: Welcome to Ancient India. Walk from the first stone tools through the cities of the Indus, the Vedic age, the new religions of the Ganga plain and the great states that followed.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d02b3baf064104d6ab7fd20a3484917b, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

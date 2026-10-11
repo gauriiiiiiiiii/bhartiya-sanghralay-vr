@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_05
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "c. 500 BCE \u2013 2009 CE \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Education through history
   text: From gurukuls and ancient universities such as Takshashila and Nalanda to madrasas, missionary schools and modern universities, education has steadily expanded. The Right to Education Act of 2009 made schooling free and compulsory for children aged six to fourteen.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
+  narration: {fileID: 8300000, guid: 8ee8f1033453745359961de0f6c699e8, type: 3}
+  image: {fileID: 21300000, guid: 83a672bdd3a4b4bd5af3e5cc0d111cb8, type: 3}
   shownEnlarged: 0

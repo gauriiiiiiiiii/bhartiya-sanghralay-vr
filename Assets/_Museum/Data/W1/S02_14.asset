@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_14
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_14
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2600\u20131900 BCE \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Harappan society
   text: Society seems to have included farmers, artisans, merchants and perhaps priests. Differences in house size and burial goods suggest some inequality, but no grand palaces or royal tombs have been found.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: 40f363e771c0549578f3a50f4cd186f5, type: 3}
+  image: {fileID: 21300000, guid: d15d46c5e1c3040378e48218e2734e6a, type: 3}
   shownEnlarged: 0

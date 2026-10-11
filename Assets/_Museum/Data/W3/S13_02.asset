@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S13_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S13_02
-  era: "Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
+  era: "c. 1026\u20131343 \xB7 Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
   title: Hoysalas
   text: The Hoysalas ruled southern Karnataka from the 11th to the 14th centuries, from Dvarasamudra, now Halebidu. Their star-shaped temples at Belur, Halebidu and Somanathapura, richly carved in soapstone, are UNESCO World Heritage Sites.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
+  narration: {fileID: 8300000, guid: dd88b734402c54e629ababb68954ee3e, type: 3}
+  image: {fileID: 21300000, guid: 60f78011f0bfb4797b643c85cb60ee5b, type: 3}
   shownEnlarged: 0

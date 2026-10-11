@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_06
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "c. 1498\u20131547 \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Mirabai
   text: Mirabai, a 16th-century Rajput princess, devoted herself to Krishna, defying royal and social expectations. Her songs in Rajasthani and Braj are still sung across India.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 45d3e00083f534f7f99a00f944865f8f, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

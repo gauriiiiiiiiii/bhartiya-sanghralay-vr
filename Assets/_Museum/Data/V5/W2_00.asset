@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_00
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_00
+  era: "321 BCE \u2013 750 CE"
+  title: Classical India
+  text: "Classical India. The age of empires. In 321 BCE Chandragupta Maurya founded an empire that, under his grandson Ashoka, covered most of the subcontinent. Later dynasties \u2013 the Shungas, Satavahanas, Kushans and Guptas \u2013 presided over flourishing trade, Buddhist and Hindu art, and advances in mathematics, astronomy and literature. In the far south, the Sangam poems of the Tamil country describe the kingdoms of the Cheras, Cholas and Pandyas."
+  narration: {fileID: 8300000, guid: 304cfa67912b34f0db138a6b9b319046, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 200

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S06_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S06_01
-  era: "Section 6 \xB7 Persian and Greek Invasions \xB7 c. 520 \u2013 300 BCE"
+  era: "c. 518 BCE \xB7 Section 6 \xB7 Persian and Greek Invasions \xB7 c. 520 \u2013 300 BCE"
   title: The Persian Achaemenid Empire
   text: In the late 6th century BCE Darius the First of Persia conquered Gandhara and the Indus region, which became a province paying rich tribute. Persian contact brought the Aramaic script, from which Kharosthi developed, and influenced later Mauryan art and administration.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 6d07066dcacc240ac871a5d5ec50ac00, type: 3}
+  narration: {fileID: 8300000, guid: 57156a1f4a92749ec8ba846eaa2e3de5, type: 3}
+  image: {fileID: 21300000, guid: 3e850715162bd40e29553d1841e2e950, type: 3}
   shownEnlarged: 0

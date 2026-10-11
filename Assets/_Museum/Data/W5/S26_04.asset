@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S26_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S26_04
-  era: "Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
+  era: "1931 \xB7 Section 26 \xB7 Revolutionary Nationalism \xB7 1900s \u2013 1945"
   title: Chandrashekhar Azad
   text: Chandrashekhar Azad led the HSRA and took part in the Kakori action. Vowing never to be captured alive, he died fighting police in Alfred Park, Allahabad, in 1931; the park now bears his name.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: a1292c661214d434f8de084c1945995a, type: 3}
   image: {fileID: 21300000, guid: d27ad00516e58459582fd0939c180a9c, type: 3}
   shownEnlarged: 0

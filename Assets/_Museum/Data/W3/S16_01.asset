@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_01
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1526\u20131530 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Babur
   text: Babur, a Timurid prince from Fergana, defeated Ibrahim Lodi at Panipat in 1526 using field guns and cavalry tactics, founding the Mughal empire. He then defeated Rana Sanga at Khanwa in 1527. His memoir, the Baburnama, describes India vividly.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 13ed84d15613749f492d543d7822a09b, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: S30_00C
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: S30_00C
+  era: "Special artifact \xB7 Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
+  title: Original handwritten Constitution of India (calligraphy by Prem Behari Narain Raizada, illustrations by Nandalal Bose and Santiniketan artists)
+  text: The Constitution of India, adopted in 1949, created a sovereign democratic republic and set out the rights of citizens and the duties of the state.
+  narration: {fileID: 8300000, guid: 58ffe6445f2a14dac8d74580e93af200, type: 3}
+  image: {fileID: 21300000, guid: 01186f22c9d1c452db43cd278ae5e95b, type: 3}
+  shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S21_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S21_04
-  era: "Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
+  era: "1857\u20131859 \xB7 Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
   title: Course of the revolt
   text: The British retook Delhi in September 1857 and Lucknow after a long siege. Rani Lakshmibai died fighting near Gwalior in June 1858. By 1859 the revolt had been suppressed with great severity.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4b4faa6c5947b4f2eb591ae8dfd9d1ef, type: 3}
+  narration: {fileID: 8300000, guid: b2985d9015aec46e5956e906c550d222, type: 3}
+  image: {fileID: 21300000, guid: 47a46aaee1f9b4cbc97a77735becfd22, type: 3}
   shownEnlarged: 0

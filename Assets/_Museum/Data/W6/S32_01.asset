@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_01
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "1961 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: Non-Aligned Movement
   text: India helped found the Non-Aligned Movement with Yugoslavia, Egypt, Indonesia and Ghana; its first summit was held in Belgrade in 1961. It sought independence from both Cold War blocs.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
+  narration: {fileID: 8300000, guid: e05337d8d070a4db396f468c85090965, type: 3}
+  image: {fileID: 21300000, guid: f6e9798a39a97478d81d7cc457bda37e, type: 3}
   shownEnlarged: 0

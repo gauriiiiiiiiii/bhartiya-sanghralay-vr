@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_08
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "1st\u20133rd c. CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Silk Route
   text: The Silk Route linked China with the Mediterranean through Central Asia. The Kushanas controlled key sections, and branches ran into India. Along it travelled silk, spices, horses and ideas, including Buddhism, which reached China this way.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 7e2348bc0da0a43d2b045fd1c840ff9c, type: 3}
   image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
   shownEnlarged: 0

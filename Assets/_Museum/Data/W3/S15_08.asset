@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_08
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "c. 1192 onward \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Sufi orders
   text: Sufism, the mystical path in Islam, reached India with orders, or silsilas, such as the Chishti, Suhrawardi, Qadiri and Naqshbandi. Chishti saints like Moinuddin Chishti of Ajmer and Nizamuddin Auliya of Delhi welcomed people of every background.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 9e08c7aa4200e48ec8470db4d4a12ebd, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

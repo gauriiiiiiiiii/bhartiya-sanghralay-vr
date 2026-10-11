@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1940s \u2013 present"
   title: 'Section 33: Science and Technology'
   text: From atomic energy to Moon landings and digital payments, India has built world-class science and technology institutions.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d6c18349b9fc942ee964d9d22c35197a, type: 3}
   image: {fileID: 21300000, guid: d1879ddb8aebf47cf96a0a0d1bf77472, type: 3}
   shownEnlarged: 0

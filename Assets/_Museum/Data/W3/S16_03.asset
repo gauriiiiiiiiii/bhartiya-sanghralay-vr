@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_03
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1540\u20131545 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Sher Shah Suri
   text: 'Sher Shah Suri, who ruled from 1540 to 1545, built an efficient administration: land measurement, the silver rupiya coin, roadside inns called sarais, and the highway later known as the Grand Trunk Road. Akbar adopted many of his reforms.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d0aa5c6f3b47a494b8fd3d2a1cf2617b, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

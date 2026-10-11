@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S12_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S12_02
-  era: "Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
+  era: "10th\u201313th c. CE \xB7 Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
   title: Temple architecture
   text: 'Temple styles matured: the Nagara style of the north, with curved towers, as at Khajuraho and Konark; the Dravida style of the south, with pyramidal towers and gateway gopurams; and the Vesara style of the Deccan, which blends the two.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3e79ee9fffdab4472861f7b4809cb68e, type: 3}
   image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
   shownEnlarged: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W4_03
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W4_03
+  era: c. 1795
+  title: Tipu's Tiger
+  text: Tipu's Tiger. Made for Tipu Sultan, ruler of Mysore, this life-size wooden tiger mauls a European soldier. Turning a handle works an organ inside that makes the tiger growl and the man wail. Tipu fought four wars against the East India Company; after he died defending Srirangapatna in 1799, the tiger was taken to London. Tipu called himself the Tiger of Mysore. Tiger stripes decorated his throne, his weapons and the uniforms of his soldiers.
+  narration: {fileID: 8300000, guid: c699c03ec1fff4169ba0c7b06a7a458d, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 403

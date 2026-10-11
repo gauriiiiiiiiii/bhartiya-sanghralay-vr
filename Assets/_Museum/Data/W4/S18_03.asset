@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S18_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S18_03
-  era: "Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
+  era: "1620 \xB7 Section 18 \xB7 Arrival of Europeans \xB7 1498 \u2013 1760s"
   title: Danish
   text: The Danish East India Company established Tranquebar, now Tharangambadi, in 1620, and later Serampore in Bengal. Missionaries at Serampore pioneered printing in Indian languages. Denmark sold its Indian settlements to Britain in 1845.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 41212db70f66847fb9b45de0c4afe97b, type: 3}
   image: {fileID: 21300000, guid: dc0aca711b7f643e9a6eec84a0626553, type: 3}
   shownEnlarged: 0

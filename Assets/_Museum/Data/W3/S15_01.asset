@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_01
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "12th\u201317th c. CE \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Bhakti saints
   text: 'Bhakti saints taught that sincere devotion matters more than ritual or caste. Across regions they sang in local languages: Basavanna in Kannada; Jnaneshwar, Namdev and Tukaram in Marathi; Tulsidas and Surdas in Hindi; and many more.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
+  narration: {fileID: 8300000, guid: f81680e5539a14af1af7b1d8b1813024, type: 3}
+  image: {fileID: 21300000, guid: e7b6d28cf37d645efa9534b2f489291a, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_06
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "1761\u20131782 \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Haidar Ali
   text: Haidar Ali, a soldier who rose to command Mysore's army, became its effective ruler from 1761. He built a modern army with European help and defeated the British in the First Anglo-Mysore War, from 1767 to 1769.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d8fc15e2d6f1a4a7ab033493f2b831df, type: 3}
   image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S34_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S34_04
-  era: "Section 34 \xB7 Art and Culture \xB7 Across the ages"
+  era: "c. 200 BCE\u2013200 CE \xB7 Section 34 \xB7 Art and Culture \xB7 Across the ages"
   title: Indian dance
   text: Classical dance forms include Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam and Sattriya, alongside many folk dances. Bharata's Natyashastra is the ancient treatise on performance.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 72b7bf572ba344b73a7a0de92b16a756, type: 3}
   image: {fileID: 21300000, guid: f8eb314e72fba4fe7bf5f2a8ed3dcfcc, type: 3}
   shownEnlarged: 0

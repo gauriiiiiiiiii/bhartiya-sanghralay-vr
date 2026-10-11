@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S33_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S33_04
-  era: "Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
+  era: "1975\u20132023 \xB7 Section 33 \xB7 Science and Technology \xB7 1940s \u2013 present"
   title: India's space missions
   text: Highlights include the satellite Aryabhata in 1975; Chandrayaan-1 in 2008, which found evidence of water on the Moon; Mangalyaan in 2013, the first Asian mission to reach Mars orbit; Chandrayaan-3's landing near the lunar south pole in 2023; and Aditya-L1, studying the Sun.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: d1879ddb8aebf47cf96a0a0d1bf77472, type: 3}
+  narration: {fileID: 8300000, guid: ebf68088e7e464f479cd0b814a860507, type: 3}
+  image: {fileID: 21300000, guid: 1a0a8ca4b0db84caf827f269da98f5f7, type: 3}
   shownEnlarged: 0

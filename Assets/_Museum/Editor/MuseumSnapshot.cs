@@ -26,7 +26,7 @@ public static class MuseumSnapshot
             t.SetPositionAndRotation(new Vector3(p0.x, 1.6f, p0.z) + fwd * 9f, Quaternion.LookRotation(Quaternion.Euler(0, 35, 0) * fwd)); Shot(cam, $"{dir}/{name}_b.png");
             t.SetPositionAndRotation(new Vector3(p0.x, 1.6f, p0.z) + fwd * 9f, Quaternion.LookRotation(Quaternion.Euler(-28, -40, 0) * fwd)); Shot(cam, $"{dir}/{name}_c.png");
             int k = 0;
-            foreach (var tp in Object.FindObjectsByType<TeleportPoint>(FindObjectsSortMode.None).Where(p => p.name.StartsWith("TP_View_")).OrderBy(p => p.name).Take(3))
+            foreach (var tp in Object.FindObjectsByType<TeleportPoint>(FindObjectsSortMode.None).Where(p => p.name.StartsWith("TP_View_") && !p.name.Contains("Table")).OrderBy(p => p.name).Take(3))
             {
                 t.SetPositionAndRotation(tp.transform.position + Vector3.up * 1.6f - tp.transform.forward * 0.6f, Quaternion.Euler(4, tp.transform.eulerAngles.y, 0));
                 Shot(cam, $"{dir}/{name}_v{k++}.png");
@@ -38,7 +38,7 @@ public static class MuseumSnapshot
 
     static void Shot(Camera cam, string file)
     {
-        var rt = new RenderTexture(960, 540, 24) { antiAliasing = 2 };
+        var rt = new RenderTexture(960, 540, 24, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB) { antiAliasing = 2 };
         var old = cam.targetTexture; cam.targetTexture = rt; cam.Render(); cam.targetTexture = old;
         RenderTexture.active = rt; var tex = new Texture2D(960, 540, TextureFormat.RGB24, false);
         tex.ReadPixels(new Rect(0, 0, 960, 540), 0, 0); tex.Apply(); RenderTexture.active = null;

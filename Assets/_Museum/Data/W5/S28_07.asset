@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S28_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S28_07
-  era: "Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
+  era: "15 August 1947 \xB7 Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
   title: Independence
   text: At midnight on 14 to 15 August 1947 India became independent. Jawaharlal Nehru, the first Prime Minister, spoke of India's tryst with destiny. Lord Mountbatten stayed on as Governor-General, followed by C. Rajagopalachari.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f2ddffb4098d44203bd36260bc71a857, type: 3}
+  narration: {fileID: 8300000, guid: bea36613993204baeb49d87e259dfb80, type: 3}
+  image: {fileID: 21300000, guid: adc9fd4e610fd481bae2a78235917a5c, type: 3}
   shownEnlarged: 0

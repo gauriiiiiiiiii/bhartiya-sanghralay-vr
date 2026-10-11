@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S31_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S31_03
-  era: "Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
+  era: "Mid-1960s \xB7 Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
   title: Green Revolution
   text: From the mid-1960s, high-yielding wheat and rice, irrigation and fertilisers raised harvests, especially in Punjab, Haryana and western Uttar Pradesh. The scientist M. S. Swaminathan is closely associated with it, and India became self-sufficient in food grains.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 8c9cdf1e9916b40feaffb66f060d6e03, type: 3}
   image: {fileID: 21300000, guid: 0974aeca171da4644b35ada7a8c6c62d, type: 3}
   shownEnlarged: 0

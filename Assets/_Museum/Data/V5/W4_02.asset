@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W4_02
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W4_02
+  era: Battle fought 23 June 1757; painted c. 1760
+  title: Clive meeting Mir Jafar after the Battle of Plassey
+  text: "Clive meeting Mir Jafar after the Battle of Plassey. At Plassey in Bengal, Robert Clive's East India Company army defeated the Nawab Siraj-ud-Daulah, largely because the Nawab's commander Mir Jafar had been bribed to hold back his troops. Mir Jafar became Nawab, and the Company became the real power in Bengal. In 1765, after the Battle of Buxar, the Mughal emperor granted the Company the right to collect the revenue of Bengal, Bihar and Orissa \u2013 the foundation of British rule in India."
+  narration: {fileID: 8300000, guid: 3063c64a080dd483a8f4120afa49a234, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 402

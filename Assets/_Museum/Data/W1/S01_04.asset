@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_04
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 40,000 yrs ago \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Upper Palaeolithic
   text: The Upper Palaeolithic, from about 40,000 years ago, brought long, thin stone blades, burins, bone tools and the first ornaments, such as ostrich-eggshell beads. Modern humans, Homo sapiens, spread across the subcontinent. Patne in Maharashtra and the Belan valley are key sites.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: ff88f4564718a45e59460f745e444a12, type: 3}
   image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
   shownEnlarged: 0

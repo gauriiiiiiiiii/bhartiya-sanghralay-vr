@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_08
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1000\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Vedic expansion eastward
   text: "People moved from Punjab into the Ganga\u2013Yamuna doab and on to Kosala and Videha. The Painted Grey Ware culture of this region, found at sites such as Hastinapur and Ahichchhatra, is linked with this period."
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: dafac37e8bf5d4e8292aabb5f3fef751, type: 3}
+  image: {fileID: 21300000, guid: 836717a3b5a72442e9bbd6402e0f1914, type: 3}
   shownEnlarged: 0

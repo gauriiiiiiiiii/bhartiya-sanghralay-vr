@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 6th \u2013 17th century"
   title: 'Section 15: Bhakti and Sufi Movements'
   text: Saints and mystics taught that love of God matters more than ritual or birth, and sang their message in the languages of the people.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4439d9404f37347829e96074ca72c318, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S38_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S38_04
-  era: "Section 38 \xB7 Historiography \xB7 How we know the past"
+  era: "c. 2nd c. BCE \xB7 Section 38 \xB7 Historiography \xB7 How we know the past"
   title: Numismatics
   text: The study of coins reveals rulers' names and dates, religion, trade and economic conditions. Indo-Greek and Kushana coins helped historians reconstruct dynasties that are otherwise little known.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: a4d16dc9259594888ac591f8de17e616, type: 3}
   image: {fileID: 21300000, guid: 6486b95f79d92443895880ddeee83da6, type: 3}
   shownEnlarged: 0

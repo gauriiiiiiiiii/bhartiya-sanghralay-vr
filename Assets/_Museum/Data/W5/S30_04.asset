@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S30_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S30_04
-  era: "Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
+  era: "1976 \xB7 Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
   title: Fundamental Duties
   text: Fundamental Duties were added by the 42nd Amendment in 1976, on the recommendation of the Swaran Singh Committee. Article 51A now lists eleven duties, such as respecting the Constitution and protecting the environment.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: c0bf0411a82a743b3aaf844df2f136a6, type: 3}
   image: {fileID: 21300000, guid: 01186f22c9d1c452db43cd278ae5e95b, type: 3}
   shownEnlarged: 0

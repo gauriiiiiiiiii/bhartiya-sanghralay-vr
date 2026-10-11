@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_02
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "1918 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: Kheda Satyagraha, 1918
   text: In 1918, after crops failed in Kheda, Gujarat, Gandhi and Vallabhbhai Patel led a satyagraha refusing to pay land tax. The government eased collection for the poorest farmers.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
+  narration: {fileID: 8300000, guid: 66d31137eaeb04133bfa137de568a0df, type: 3}
+  image: {fileID: 21300000, guid: a41d0e450be914df391035509e872e9d, type: 3}
   shownEnlarged: 0

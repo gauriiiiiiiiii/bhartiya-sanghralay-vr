@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S28_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S28_04
-  era: "Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
+  era: "3 June 1947 \xB7 Section 28 \xB7 Partition and Independence \xB7 1940 \u2013 1947"
   title: Mountbatten Plan
   text: The plan of 3 June 1947 by the Viceroy, Lord Mountbatten, provided for partition, with Punjab and Bengal divided, and an early transfer of power. The Indian Independence Act of July 1947 put it into effect.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d06c10ac1c67f432287d024c4a1cb757, type: 3}
   image: {fileID: 21300000, guid: f2ddffb4098d44203bd36260bc71a857, type: 3}
   shownEnlarged: 0

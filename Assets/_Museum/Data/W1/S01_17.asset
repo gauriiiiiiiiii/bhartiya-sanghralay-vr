@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_17
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_17
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Neolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Permanent settlements
   text: Farming tied people to their fields. They built houses of mud brick, as at Mehrgarh, or pit dwellings, as at Burzahom in Kashmir, and stored grain in bins and pits. The village became the basic unit of life.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: c7823205c181d466294294d5873980b4, type: 3}
   image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
   shownEnlarged: 0

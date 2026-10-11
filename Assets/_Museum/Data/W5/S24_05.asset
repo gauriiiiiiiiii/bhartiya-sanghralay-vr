@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S24_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S24_05
-  era: "Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
+  era: "1905\u20131911 \xB7 Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
   title: Partition of Bengal
   text: Lord Curzon partitioned Bengal in 1905, officially for administrative reasons, but it was widely seen as a move to divide Hindus and Muslims and weaken nationalism. Mass protests forced its reversal in 1911.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 71cc57c99f3cf459ba356567093ec185, type: 3}
+  narration: {fileID: 8300000, guid: ea158690952674e40b1d2d256b38c074, type: 3}
+  image: {fileID: 21300000, guid: 99fe12fd98af44499bb450b17acb324b, type: 3}
   shownEnlarged: 0

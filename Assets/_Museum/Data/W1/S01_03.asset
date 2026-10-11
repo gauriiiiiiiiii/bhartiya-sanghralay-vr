@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_03
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 385,000 yrs ago \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Middle Palaeolithic
   text: 'From roughly 385,000 years ago, toolmakers turned to smaller flake tools: scrapers, borers and points struck from carefully prepared cores. Middle Palaeolithic sites are found across India, including the Belan valley, Bhimbetka, and Nevasa on the Pravara river.'
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 63aa7debec9bb48678295f77a7277563, type: 3}
+  image: {fileID: 21300000, guid: b1aa4499785ab41dbafd615023f327a5, type: 3}
   shownEnlarged: 0

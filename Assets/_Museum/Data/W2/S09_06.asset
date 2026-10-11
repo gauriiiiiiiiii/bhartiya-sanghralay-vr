@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S09_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S09_06
-  era: "Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
+  era: "c. 300 BCE\u2013300 CE \xB7 Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
   title: Sangam economy
   text: Wet rice farming in the river valleys, cotton weaving, pearl fishing, and the export of pepper, ivory and gems supported the economy. Uraiyur was famous for its fine cotton cloth.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 032f205e0b96c494f9ddac149d3246c5, type: 3}
   image: {fileID: 21300000, guid: 3d3a8b699aba946769c82cea04c3bdf4, type: 3}
   shownEnlarged: 0

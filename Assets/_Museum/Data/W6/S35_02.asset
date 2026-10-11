@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S35_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S35_02
-  era: "Section 35 \xB7 Religion in India \xB7 Across the ages"
+  era: "1956 \xB7 Section 35 \xB7 Religion in India \xB7 Across the ages"
   title: Buddhism in India today
   text: Born in India, Buddhism declined here after about the 12th century but flourished across Asia. In 1956 Dr B. R. Ambedkar and hundreds of thousands of his followers embraced Buddhism at Nagpur, reviving it in India.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: d1ce348bc47d54c0487ecd0c6966ff13, type: 3}
   image: {fileID: 21300000, guid: 576da863a02b24fb3b49953e59a81799, type: 3}
   shownEnlarged: 0

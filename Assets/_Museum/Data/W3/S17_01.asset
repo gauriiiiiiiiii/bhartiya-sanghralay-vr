@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S17_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S17_01
-  era: "Section 17 \xB7 Regional Powers \xB7 18th century"
+  era: "17th\u201318th c. CE \xB7 Section 17 \xB7 Regional Powers \xB7 18th century"
   title: Marathas
   text: The Marathas rose in the Deccan in the 17th century, building on hill forts and mobile cavalry. After Shivaji, they resisted Aurangzeb, and in the 18th century became the leading power in India.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
+  narration: {fileID: 8300000, guid: ff9d6fb139b534ec2af94439f0c1c527, type: 3}
+  image: {fileID: 21300000, guid: f4fe5e3bec5764fd9b7687e98d64e607, type: 3}
   shownEnlarged: 0

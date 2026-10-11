@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S19_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S19_03
-  era: "Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
+  era: "1798 \xB7 Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
   title: Subsidiary Alliance
   text: Under Lord Wellesley's Subsidiary Alliance, from 1798, Indian rulers had to keep British troops at their own cost, accept a British resident and not deal with other powers. Hyderabad was the first state to accept it.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b2ffba05b605847fe96e496a4fb1d49a, type: 3}
   image: {fileID: 21300000, guid: 240f76881b5164cbead896a85792be68, type: 3}
   shownEnlarged: 0

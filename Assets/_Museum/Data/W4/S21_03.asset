@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S21_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S21_03
-  era: "Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
+  era: "1857\u20131858 \xB7 Section 21 \xB7 Revolt of 1857 \xB7 1857 \u2013 1859"
   title: Leaders of 1857
   text: Bahadur Shah Zafar was proclaimed emperor at Delhi. Other leaders included Rani Lakshmibai of Jhansi, Nana Saheb and Tantia Tope at Kanpur, Begum Hazrat Mahal at Lucknow, Kunwar Singh in Bihar and Maulvi Ahmadullah of Faizabad.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 25601ca4ca21f40c081fc39e2ec77e53, type: 3}
   image: {fileID: 21300000, guid: 4b4faa6c5947b4f2eb591ae8dfd9d1ef, type: 3}
   shownEnlarged: 0

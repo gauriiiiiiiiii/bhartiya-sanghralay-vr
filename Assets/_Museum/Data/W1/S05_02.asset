@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S05_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S05_02
-  era: "Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
+  era: "6th c. BCE \xB7 Section 5 \xB7 Mahajanapadas \xB7 c. 600 \u2013 321 BCE"
   title: 'Gana-sanghas: the republics'
   text: Some states, called gana-sanghas, were governed by assemblies of clan heads rather than a single king. The Vajji confederacy, with its capital at Vaishali, and the Mallas were prominent. Both the Buddha and Mahavira came from such clans.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 0ad8c0d14d75b4ca794a7c1a933c1317, type: 3}
+  narration: {fileID: 8300000, guid: 1c908cd04c34140208ba4be291b7a57f, type: 3}
+  image: {fileID: 21300000, guid: 0b76ef5d32965432cb3166789f133b2a, type: 3}
   shownEnlarged: 0

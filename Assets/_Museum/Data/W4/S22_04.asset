@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_04
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1867 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Prarthana Samaj
   text: The Prarthana Samaj was founded in Bombay in 1867 by Atmaram Pandurang, inspired by the Brahmo Samaj. M. G. Ranade and R. G. Bhandarkar promoted inter-caste dining, widow remarriage and education for women.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
+  narration: {fileID: 8300000, guid: eab6ea60fb6af447fa30514dbc1badde, type: 3}
+  image: {fileID: 21300000, guid: 1a304366c5763461d88d6e776a61495a, type: 3}
   shownEnlarged: 0

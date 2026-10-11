@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S12_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S12_06
-  era: "Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
+  era: "8th\u201312th c. CE \xB7 Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
   title: Early medieval society
   text: Castes, or jatis, multiplied as tribes and occupational groups were absorbed into society; land grants created a landed class; and Rajput codes of honour shaped elite values.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
+  narration: {fileID: 8300000, guid: 548e35ec97e8d4854a4c57133b142701, type: 3}
+  image: {fileID: 21300000, guid: 01c925a3331ce4dacacaf9f7e86071af, type: 3}
   shownEnlarged: 0

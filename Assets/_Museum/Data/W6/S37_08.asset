@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_08
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "1992 \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Rural society
   text: Most Indians have historically lived in villages organised around agriculture, caste and kinship. Panchayati Raj, given constitutional status in 1992, brought elected local government to every village.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
+  narration: {fileID: 8300000, guid: df88d7a858dd24bf79530587300885c0, type: 3}
+  image: {fileID: 21300000, guid: a0e3d8fa535394e57a8f0cb79317ab63, type: 3}
   shownEnlarged: 0

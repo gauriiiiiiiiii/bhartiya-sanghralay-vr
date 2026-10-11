@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "c. 550 \u2013 1000 CE"
   title: 'Section 11: Post-Gupta Period'
   text: After the Guptas, regional dynasties rose across India, fought over Kannauj, and built magnificent rock-cut and stone temples.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: e7902526de23c40ef8264781d4ad91e4, type: 3}
   image: {fileID: 21300000, guid: 231fd4ec3e0444d6e83d2049c01104d1, type: 3}
   shownEnlarged: 0

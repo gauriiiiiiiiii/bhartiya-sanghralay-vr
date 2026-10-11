@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_17
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_17
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 800 BCE onwards \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Upanishads
   text: The Upanishads, over a hundred in number with about thirteen principal ones, explore the self, or atman, ultimate reality, or brahman, karma and liberation. They form Vedanta, the end of the Vedas. India's motto, Satyameva Jayate, comes from the Mundaka Upanishad.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 55f5651b8aaaf48779fa56d8d8724e9b, type: 3}
+  image: {fileID: 21300000, guid: 1dda4d38adea940feb6e8904105a233b, type: 3}
   shownEnlarged: 0

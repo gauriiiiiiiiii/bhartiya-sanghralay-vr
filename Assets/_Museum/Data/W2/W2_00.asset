@@ -16,6 +16,7 @@ MonoBehaviour:
   era: Mauryas to the post-Gupta kingdoms
   title: 'Wing 2: Classical India'
   text: 'Welcome to Classical India: the Maurya and Gupta empires, the kingdoms of the Deccan and the far south, and the trade and art that linked India with the wider world.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 304cfa67912b34f0db138a6b9b319046, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

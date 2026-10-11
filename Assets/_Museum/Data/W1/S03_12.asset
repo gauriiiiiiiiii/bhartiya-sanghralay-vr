@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_12
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_12
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1000\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Later Vedic kingship
   text: Tribal chiefdoms grew into territorial kingdoms called janapadas. Kings performed grand sacrifices such as the Rajasuya and Ashvamedha to assert power, collected tribute called bali, and were helped by officials. The sabha and samiti lost importance.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 5e86106b99cb24abc87cee1c39a8485d, type: 3}
+  image: {fileID: 21300000, guid: 722dea56d82984d6887b0a101a20afa8, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S19_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S19_01
-  era: "Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
+  era: "1757 \xB7 Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
   title: Battle of Plassey
   text: On 23 June 1757 Robert Clive defeated Siraj-ud-Daula at Plassey in Bengal, helped by the betrayal of Mir Jafar, who was made Nawab. The battle marked the beginning of British political power in India.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 8d64c356ad32d48f3bbe34303709a3b9, type: 3}
   image: {fileID: 21300000, guid: 240f76881b5164cbead896a85792be68, type: 3}
   shownEnlarged: 0

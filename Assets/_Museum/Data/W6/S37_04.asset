@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_04
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "c. 700 BCE \u2013 present \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Women in Indian history
   text: Women's status has varied over time, from scholars such as Gargi in Vedic texts to restrictions in later periods, and leaders such as Rani Lakshmibai, Sarojini Naidu and Indira Gandhi. The law now guarantees equal rights, and a third of seats in local bodies are reserved for women.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 97e374e47522c4f8fa8d48691e69d084, type: 3}
   image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S23_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S23_03
-  era: "Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
+  era: "1853 \xB7 Section 23 \xB7 Economic History under British Rule \xB7 1757 \u2013 1947"
   title: Railways
   text: The first passenger train ran from Bombay to Thane on 16 April 1853. Railways served British trade and military needs, but also linked markets and people. By 1947 India had one of the largest rail networks in the world.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: ff7c061478b8b4e0395099695a6bb356, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

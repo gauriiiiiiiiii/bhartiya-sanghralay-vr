@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_13
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_13
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 7000 BCE \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Neolithic Age
   text: The Neolithic, or New Stone Age, brought farming, herding, polished stone tools and village life. In the north-west it began early, at Mehrgarh around 7000 BCE. In other parts of India it appeared later, at different times in different regions.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: d6187a752b1474116b8b77172a4d91e7, type: 3}
+  image: {fileID: 21300000, guid: 45058994d81d743e8aa496a4bb6b3d75, type: 3}
   shownEnlarged: 0

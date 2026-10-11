@@ -16,6 +16,7 @@ MonoBehaviour:
   era: The national movement to modern India
   title: 'Wing 5: Freedom and the Republic'
   text: 'Welcome to Freedom and the Republic: the rise of nationalism, Gandhi and the revolutionaries, partition and independence, the Constitution, and India since 1947.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 7deecce98a82848eca265d11918c4ecd, type: 3}
   image: {fileID: 0}
   shownEnlarged: 0
+  stop: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_05
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "1469\u20131539 \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Guru Nanak
   text: Guru Nanak, born in 1469 at Talwandi, now Nankana Sahib, founded Sikhism. He taught devotion to one God, honest work, sharing and equality, began the langar, the community kitchen, and travelled widely to spread his message. He died in 1539.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 81cf0f570573a46b8b33f80d8593490f, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

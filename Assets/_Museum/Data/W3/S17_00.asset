@@ -16,6 +16,6 @@ MonoBehaviour:
   era: 18th century
   title: 'Section 17: Regional Powers'
   text: As Mughal power declined, new regional states rose across India, from the Marathas and Sikhs to Mysore, Awadh, Hyderabad and Bengal.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 8de6751254348469196cf0ca2d843924, type: 3}
   image: {fileID: 21300000, guid: 3d6aeb0a77e08420e80aaf815bdf6689, type: 3}
   shownEnlarged: 0

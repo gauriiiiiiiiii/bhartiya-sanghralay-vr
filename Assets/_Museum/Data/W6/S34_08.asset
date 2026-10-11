@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S34_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S34_08
-  era: "Section 34 \xB7 Art and Culture \xB7 Across the ages"
+  era: "1950 \xB7 Section 34 \xB7 Art and Culture \xB7 Across the ages"
   title: Languages of India
   text: India's languages belong mainly to the Indo-Aryan, Dravidian, Austroasiatic and Tibeto-Burman families. The Eighth Schedule of the Constitution lists twenty-two languages; Hindi in the Devanagari script is the official language of the Union, with English also used.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: c668979026b49481389ade08b8e699fb, type: 3}
   image: {fileID: 21300000, guid: f8eb314e72fba4fe7bf5f2a8ed3dcfcc, type: 3}
   shownEnlarged: 0

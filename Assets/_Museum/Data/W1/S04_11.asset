@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S04_11
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S04_11
-  era: "Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
+  era: "1st c. CE onwards \xB7 Section 4 \xB7 Religious Movements \xB7 6th \u2013 5th century BCE onwards"
   title: Buddhist schools
   text: Theravada, the teaching of the elders, spread to Sri Lanka and South-East Asia. Mahayana, the great vehicle, emphasised the bodhisattva ideal and spread to China, Korea and Japan. Vajrayana developed later in Tibet and the Himalaya.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: eb841755f7dfd4bb4b6a068af655784c, type: 3}
+  narration: {fileID: 8300000, guid: 1bfb875350bf14b58ba6294f81708342, type: 3}
+  image: {fileID: 21300000, guid: d8e0596e19f9c49d6afff9d59b861410, type: 3}
   shownEnlarged: 0

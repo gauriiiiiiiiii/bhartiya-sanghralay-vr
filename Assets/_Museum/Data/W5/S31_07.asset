@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S31_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S31_07
-  era: "Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
+  era: "1991 \xB7 Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
   title: Liberalisation, 1991
   text: Facing a balance-of-payments crisis in 1991, the government of P. V. Narasimha Rao, with Finance Minister Manmohan Singh, devalued the rupee, dismantled industrial licensing, opened the economy to foreign investment and cut tariffs.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 686128441b9f749f1bc702e77d999bb0, type: 3}
   image: {fileID: 21300000, guid: 0974aeca171da4644b35ada7a8c6c62d, type: 3}
   shownEnlarged: 0

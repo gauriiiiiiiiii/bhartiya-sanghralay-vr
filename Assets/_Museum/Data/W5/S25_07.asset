@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S25_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S25_07
-  era: "Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
+  era: "1930\u20131932 \xB7 Section 25 \xB7 Gandhian Era \xB7 1917 \u2013 1947"
   title: Round Table Conferences
   text: Three Round Table Conferences in London, from 1930 to 1932, discussed constitutional reform. The Congress attended only the second, represented by Gandhi. Disagreement over minority representation led to the Communal Award and the Poona Pact of 1932.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: f04a9ed36feeb493893670acc5270f9a, type: 3}
   image: {fileID: 21300000, guid: 0f600a1ca2a8a4ad2910a9dd8ad69334, type: 3}
   shownEnlarged: 0

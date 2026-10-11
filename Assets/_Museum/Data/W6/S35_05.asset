@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S35_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S35_05
-  era: "Section 35 \xB7 Religion in India \xB7 Across the ages"
+  era: "7th c. CE \xB7 Section 35 \xB7 Religion in India \xB7 Across the ages"
   title: Islam in India
   text: Islam reached India through Arab traders on the Kerala coast in the 7th century, and later through conquest and Sufi saints. India has one of the largest Muslim populations in the world, about one in seven Indians.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: a66b4ddfe713f401d85788376e539d93, type: 3}
   image: {fileID: 21300000, guid: 576da863a02b24fb3b49953e59a81799, type: 3}
   shownEnlarged: 0

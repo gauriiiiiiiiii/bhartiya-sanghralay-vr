@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_05
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "c. 127 CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Kanishka
   text: Kanishka, the greatest Kushana ruler, is usually dated to the late 1st or early 2nd century CE. He patronised Buddhism and convened the Fourth Buddhist Council in Kashmir, and the poet Ashvaghosha and the physician Charaka are associated with his court.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
+  narration: {fileID: 8300000, guid: 1a3524ec1b4464269b101eb0097e7931, type: 3}
+  image: {fileID: 21300000, guid: 0f1931b9c55af4107b2e72fcd7904dd1, type: 3}
   shownEnlarged: 0

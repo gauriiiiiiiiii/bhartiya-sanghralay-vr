@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S02_17
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S02_17
-  era: "Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
+  era: "c. 2600 BCE \xB7 Section 2 \xB7 Indus Valley Civilisation \xB7 c. 3300 \u2013 1300 BCE (mature phase c. 2600 \u2013 1900 BCE)"
   title: Harappa
   text: On the Ravi river in Punjab, Pakistan, Harappa was the first site excavated, in 1921, and gave its name to the civilisation. It had a citadel, rows of workers' houses, working platforms and large storage halls.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 4f6aaaa432bf642cfa71abb6fa5076f2, type: 3}
+  narration: {fileID: 8300000, guid: 9f2cc5d260b314d74b122ae3169fb76e, type: 3}
+  image: {fileID: 21300000, guid: 8a8bbceee416145ca91617691f17803e, type: 3}
   shownEnlarged: 0

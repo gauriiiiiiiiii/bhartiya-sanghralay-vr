@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_10
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_10
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1000\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Later Vedic agriculture
   text: Farming became the main occupation. Texts mention heavy ploughs drawn by many oxen, and crops such as rice, called vrihi, wheat and barley. Agricultural surplus supported larger settlements and rulers.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 51a28c176e782424cb94bcc86161ab50, type: 3}
+  image: {fileID: 21300000, guid: 075f5f904867f40029125b4671a7780e, type: 3}
   shownEnlarged: 0

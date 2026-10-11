@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_09
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "Mesolithic \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Microliths
   text: Microliths are tiny stone blades, often less than five centimetres long, shaped into triangles, crescents and trapezes. Set in rows into wooden or bone handles, they made arrows, sickles and harpoons. They are the signature tool of the Mesolithic.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 9d1bf1d75b730414b920d6fa80b83d62, type: 3}
+  image: {fileID: 21300000, guid: 4d079a17b9f034d3c96fd3fa464f9f1d, type: 3}
   shownEnlarged: 0

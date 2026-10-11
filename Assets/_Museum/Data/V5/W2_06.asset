@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W2_06
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W2_06
+  era: Late 5th century CE
+  title: Padmapani, Ajanta Cave 1
+  text: Padmapani, Ajanta Cave 1. About thirty Buddhist caves were cut into a horseshoe-shaped cliff at Ajanta between the 2nd century BCE and the late 5th century CE. This bodhisattva of compassion, holding a lotus, is one of the most celebrated wall paintings of Cave 1. The caves were abandoned and forgotten for centuries until a British officer, John Smith, stumbled on them while hunting a tiger in 1819.
+  narration: {fileID: 8300000, guid: 7fe1be649c78446d79c4a7f0a08866d8, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 206

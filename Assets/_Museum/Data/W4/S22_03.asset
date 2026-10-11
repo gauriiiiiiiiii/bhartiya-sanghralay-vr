@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_03
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_03
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1893\u20131897 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Ramakrishna Mission
   text: Swami Vivekananda founded the Ramakrishna Mission in 1897 in the name of his teacher, Ramakrishna Paramahamsa. It joins spirituality with social service. Vivekananda's address to the Parliament of Religions in Chicago in 1893 is famous.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 9e4825161d582411da251fb11ae0858b, type: 3}
   image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S14_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S14_01
-  era: "Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
+  era: "1206\u20131290 \xB7 Section 14 \xB7 Delhi Sultanate \xB7 1206 \u2013 1526"
   title: The Mamluk or Slave dynasty
   text: The Mamluk, or Slave, dynasty, from 1206 to 1290, was founded by Qutbuddin Aibak. Iltutmish consolidated the sultanate and introduced the silver tanka; Razia was the only woman to rule as sultan of Delhi; and Balban strengthened royal power.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 5aed5f534582b4474ac412e62843311f, type: 3}
   image: {fileID: 21300000, guid: 2b90fe50e817b447d85f0f7a42b69131, type: 3}
   shownEnlarged: 0

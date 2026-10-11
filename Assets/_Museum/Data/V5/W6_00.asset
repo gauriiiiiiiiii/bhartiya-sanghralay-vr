@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W6_00
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W6_00
+  era: From antiquity to today
+  title: Themes of Indian History
+  text: 'Themes of Indian History. Threads through time. History is more than kings and battles. This gallery follows long threads that run through India''s past: centres of learning and science, art traditions, the meeting of many faiths, money and trade, and the work of historians who pieced the story together from inscriptions, coins, texts and archaeology.'
+  narration: {fileID: 8300000, guid: af2b8ad2ae4ad4d63b861cecf5360400, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 600

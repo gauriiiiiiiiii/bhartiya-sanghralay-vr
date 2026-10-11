@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S30_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S30_02
-  era: "Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
+  era: "1950 \xB7 Section 30 \xB7 Constitution of India \xB7 1946 \u2013 present"
   title: Fundamental Rights
   text: 'Part Three guarantees fundamental rights: equality, freedoms such as speech and expression, protection of life and liberty, rights against exploitation, freedom of religion, cultural and educational rights, and constitutional remedies under Article 32, which Ambedkar called the heart and soul of the Constitution.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 2966bbb95088341b5a147b922c7462c1, type: 3}
   image: {fileID: 21300000, guid: 01186f22c9d1c452db43cd278ae5e95b, type: 3}
   shownEnlarged: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W5_01
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W5_01
+  era: "28\u201331 December 1885"
+  title: The first Indian National Congress
+  text: 'The first Indian National Congress. Seventy-two delegates from across India met at Gokuldas Tejpal Sanskrit College in Bombay for the first session of the Indian National Congress, presided over by W. C. Bonnerjee. Early leaders such as Dadabhai Naoroji argued that British rule was draining India''s wealth, and asked for a greater Indian voice in government. Later leaders such as Bal Gangadhar Tilak demanded more: ''Swaraj is my birthright, and I shall have it.'''
+  narration: {fileID: 8300000, guid: 9c4bf9c6dcbd24f18a36b41b9c514b46, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 501

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S01_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S01_08
-  era: "Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
+  era: "c. 10,000 BCE \xB7 Section 1 \xB7 Prehistoric India \xB7 c. 1.5 million years ago \u2013 700 BCE"
   title: Mesolithic Age
   text: The Mesolithic, or Middle Stone Age, began about 10,000 BCE as the climate warmed after the Ice Age. People still hunted and gathered, but they used tiny stone tools, stayed longer in one place, and in some areas began to tame animals.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: f597274cda81a4e7f9032c2b7455ba84, type: 3}
+  narration: {fileID: 8300000, guid: 3dccb3b818a9a41bca80a6192fb0823b, type: 3}
+  image: {fileID: 21300000, guid: 6be3123c8d402489a8e260e231065dfa, type: 3}
   shownEnlarged: 0

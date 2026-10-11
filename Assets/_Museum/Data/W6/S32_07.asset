@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S32_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S32_07
-  era: "Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
+  era: "1991, 2014 \xB7 Section 32 \xB7 Foreign Policy \xB7 1947 \u2013 present"
   title: Look East and Act East
   text: The Look East Policy of 1991 built economic links with South-East Asia. In 2014 it became Act East, adding strategic and connectivity goals with ASEAN and the wider Indo-Pacific.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: e76e900bfb4464e04a5d390a47cd2e4d, type: 3}
   image: {fileID: 21300000, guid: 4e52be8e0ca7a4e0ea6fa35d0be9451a, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S09_08
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S09_08
-  era: "Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
+  era: "3rd c. BCE \xB7 Section 9 \xB7 Sangam Age \xB7 c. 3rd century BCE \u2013 3rd century CE"
   title: Sangam religion
   text: Murugan was the most popular deity, along with Mayon, or Vishnu, Vendan, or Indra, and Korravai, a goddess of war. Hero stones were worshipped, and Buddhism, Jainism and Vedic sacrifice also had a place.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1cad50b0894de44b48cf0ab9aa6209e5, type: 3}
   image: {fileID: 21300000, guid: 3d3a8b699aba946769c82cea04c3bdf4, type: 3}
   shownEnlarged: 0

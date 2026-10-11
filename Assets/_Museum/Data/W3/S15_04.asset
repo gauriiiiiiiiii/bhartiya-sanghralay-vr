@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S15_04
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S15_04
-  era: "Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
+  era: "c. 1440\u20131518 \xB7 Section 15 \xB7 Bhakti and Sufi Movements \xB7 c. 6th \u2013 17th century"
   title: Kabir
   text: Kabir, a 15th-century weaver of Varanasi, rejected ritual and caste in both Hinduism and Islam and praised a formless God. His sharp couplets, or dohas, are in everyday Hindi, and some appear in the Guru Granth Sahib.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: b7bea9e38312248d6933494c3a18363e, type: 3}
   image: {fileID: 21300000, guid: eb2775be473ea439d8d235c97d6eec59, type: 3}
   shownEnlarged: 0

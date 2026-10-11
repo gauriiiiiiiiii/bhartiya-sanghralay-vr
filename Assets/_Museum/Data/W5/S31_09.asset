@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S31_09
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S31_09
-  era: "Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
+  era: "2016\u20132017 \xB7 Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
   title: Continuing economic reform
   text: Reforms continued with privatisation, growth in telecom and information technology, the Insolvency and Bankruptcy Code of 2016, the Goods and Services Tax of 2017 and the spread of digital payments, making India one of the fastest-growing large economies.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4c35d86b35b9e4899979965e51155e45, type: 3}
   image: {fileID: 21300000, guid: 0974aeca171da4644b35ada7a8c6c62d, type: 3}
   shownEnlarged: 0

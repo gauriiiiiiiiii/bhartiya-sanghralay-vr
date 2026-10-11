@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S31_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S31_05
-  era: "Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
+  era: "1969 \xB7 Section 31 \xB7 Independent India \xB7 1947 \u2013 present"
   title: Bank nationalisation
   text: In July 1969 Indira Gandhi's government nationalised fourteen major banks to extend credit to agriculture and small businesses; six more followed in 1980.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 311f64e82ec0c41b1b8cfd28e566f137, type: 3}
   image: {fileID: 21300000, guid: 0974aeca171da4644b35ada7a8c6c62d, type: 3}
   shownEnlarged: 0

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_07
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "1st c. CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Trade with Rome
   text: Trade boomed. Indian pepper, spices, textiles, gems and ivory went to the Roman empire, and Roman gold coins and wine came back. Ports such as Barygaza, now Bharuch, and Muziris thrived, and merchant guilds funded monasteries and caves.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 1477ad7f8b37c40b099dced71379669a, type: 3}
   image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
   shownEnlarged: 0

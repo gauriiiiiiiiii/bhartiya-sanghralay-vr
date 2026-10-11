@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S13_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S13_01
-  era: "Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
+  era: "c. 850\u20131279 \xB7 Section 13 \xB7 South Indian Kingdoms \xB7 c. 850 \u2013 1650 CE"
   title: Imperial Cholas
   text: Founded by Vijayalaya in the 9th century, the Chola empire peaked under Rajaraja the First and Rajendra the First. They built the Brihadishvara temple at Thanjavur, sent naval expeditions to Sri Lanka and South-East Asia, and are famed for village assemblies and bronze sculpture.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5cae512f037f44913a270f6364f3f503, type: 3}
+  narration: {fileID: 8300000, guid: b27f03e6e98934840aa68daf340d0bf3, type: 3}
+  image: {fileID: 21300000, guid: 5cd20f66ada6b4adcb2086696abf52b0, type: 3}
   shownEnlarged: 0

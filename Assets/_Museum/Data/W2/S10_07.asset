@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S10_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S10_07
-  era: "Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
+  era: "499 CE \xB7 Section 10 \xB7 Gupta Empire \xB7 c. 319 \u2013 550 CE"
   title: Gupta-era mathematics
   text: The decimal place-value system with zero developed in India in this era. Aryabhata's Aryabhatiya, of 499 CE, gave a value of pi close to 3.1416 and methods in algebra and trigonometry. These ideas later reached Europe through the Arab world.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 779a82cd0b0684f17830c578fe64741c, type: 3}
+  narration: {fileID: 8300000, guid: 59d7bf583e9724d26a9e4bda634b1ffb, type: 3}
+  image: {fileID: 21300000, guid: 5093dd3a658134e77b8f349fe8ee48f2, type: 3}
   shownEnlarged: 0

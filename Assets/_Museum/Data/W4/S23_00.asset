@@ -16,6 +16,6 @@ MonoBehaviour:
   era: "1757 \u2013 1947"
   title: 'Section 23: Economic History under British Rule'
   text: 'Colonial rule reshaped India''s economy: old industries declined, railways and plantations spread, and famines exposed the costs of empire.'
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3b8c508c8c9f24f7081854dfb704f36b, type: 3}
   image: {fileID: 21300000, guid: 0e57f3ff129354dcf93df65787dafcf7, type: 3}
   shownEnlarged: 0

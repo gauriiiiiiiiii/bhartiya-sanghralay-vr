@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S19_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S19_02
-  era: "Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
+  era: "1764\u20131765 \xB7 Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
   title: Battle of Buxar
   text: In 1764 the Company defeated the combined forces of Mir Qasim, Shuja-ud-Daula of Awadh and the Mughal emperor Shah Alam the Second at Buxar. The Treaty of Allahabad in 1765 gave the Company the diwani, the right to collect revenue, of Bengal, Bihar and Orissa.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 61f366ad4efec4d42ae25a4616511c87, type: 3}
   image: {fileID: 21300000, guid: 240f76881b5164cbead896a85792be68, type: 3}
   shownEnlarged: 0

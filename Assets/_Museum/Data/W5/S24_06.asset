@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S24_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S24_06
-  era: "Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
+  era: "1905\u20131908 \xB7 Section 24 \xB7 Rise of Nationalism \xB7 1850s \u2013 1910s"
   title: Swadeshi Movement
   text: The Swadeshi movement, from 1905 to 1908, called for the boycott of British goods and the promotion of Indian products, national education and self-help. Rabindranath Tagore's songs and the cry of Bande Mataram rallied the people.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 3137d321f810046208454333f8c97b85, type: 3}
   image: {fileID: 21300000, guid: 71cc57c99f3cf459ba356567093ec185, type: 3}
   shownEnlarged: 0

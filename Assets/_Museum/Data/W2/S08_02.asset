@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S08_02
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S08_02
-  era: "Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
+  era: "c. 150 CE \xB7 Section 8 \xB7 Post-Mauryan India \xB7 c. 200 BCE \u2013 300 CE"
   title: Shakas
   text: The Shakas, or Scythians, from Central Asia ruled parts of northern and western India. The Western Kshatrapas held Gujarat and Malwa, and Rudradaman's Junagadh inscription of about 150 CE is an early long inscription in Sanskrit. The Shaka era of 78 CE is used in India's national calendar.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 21655a7dc329c4b859fece37f49d8f9b, type: 3}
   image: {fileID: 21300000, guid: 59984fd6289684b9db1fbd1fd88c9f6a, type: 3}
   shownEnlarged: 0

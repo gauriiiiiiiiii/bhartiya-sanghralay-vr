@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S37_07
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S37_07
-  era: "Section 37 \xB7 Society \xB7 Across the ages"
+  era: "c. 2500 BCE \u2013 present \xB7 Section 37 \xB7 Society \xB7 Across the ages"
   title: Urbanisation
   text: From Harappan cities to medieval capitals and colonial port cities like Bombay, Calcutta and Madras, cities have shaped India. Today about a third of Indians live in urban areas, and cities drive much of the economy.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 928dd685d94b042099b32a41c229c85a, type: 3}
+  narration: {fileID: 8300000, guid: 4166c22c199f04bc6802bba6fded0f94, type: 3}
+  image: {fileID: 21300000, guid: 005b8885ac1d04150af8c7afa59398e4, type: 3}
   shownEnlarged: 0

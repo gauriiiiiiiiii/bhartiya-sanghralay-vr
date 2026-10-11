@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_06
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_06
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1875 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Theosophical Society
   text: Founded in New York in 1875 by Helena Blavatsky and Henry Olcott, the Theosophical Society moved its headquarters to Adyar in Madras. Annie Besant led it, praised Indian culture, founded the Central Hindu College and later the Home Rule League.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
+  narration: {fileID: 8300000, guid: 85d51f13ec49b41ccbeaeb03b48fbb7c, type: 3}
+  image: {fileID: 21300000, guid: d7d48bc9301664a22a6d9a9b067a5edd, type: 3}
   shownEnlarged: 0

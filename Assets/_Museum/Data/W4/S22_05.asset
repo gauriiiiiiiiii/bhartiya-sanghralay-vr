@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S22_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S22_05
-  era: "Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
+  era: "1875 \xB7 Section 22 \xB7 Social and Religious Reform Movements \xB7 19th \u2013 early 20th century"
   title: Aligarh Movement
   text: Sir Syed Ahmad Khan promoted modern, scientific education among Muslims, founding the Muhammadan Anglo-Oriental College at Aligarh in 1875. It became Aligarh Muslim University in 1920.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 5771effc02eb84fd7a58987e3748287f, type: 3}
+  narration: {fileID: 8300000, guid: 6a64112e054bc4986a686ee38f33dd9c, type: 3}
+  image: {fileID: 21300000, guid: 5045f8900627144e3a28e218ac13a7ee, type: 3}
   shownEnlarged: 0

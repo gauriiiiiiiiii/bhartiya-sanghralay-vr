@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S03_11
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S03_11
-  era: "Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
+  era: "c. 1000\u2013600 BCE \xB7 Section 3 \xB7 Vedic Period \xB7 c. 1500 \u2013 600 BCE"
   title: Later Vedic social hierarchy
   text: The four varnas became more rigid and increasingly fixed by birth. Brahmins and kshatriyas claimed privileged positions, while shudras were placed at the bottom. Women's status declined compared with the earlier period.
-  narration: {fileID: 0}
-  image: {fileID: 21300000, guid: 7ee0e901d7ec64b5aa45b56f09d59cdb, type: 3}
+  narration: {fileID: 8300000, guid: 99f055c1d04a04706b39af9abb6b4618, type: 3}
+  image: {fileID: 21300000, guid: 7d7c042f7b5dd48aaa1495e80b096a42, type: 3}
   shownEnlarged: 0

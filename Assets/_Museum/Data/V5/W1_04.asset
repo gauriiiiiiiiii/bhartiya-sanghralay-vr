@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec6cbdb72e604c7ca7f5ef52922d7f9, type: 3}
+  m_Name: W1_04
+  m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
+  id: W1_04
+  era: "c. 2350\u20132000 BCE"
+  title: The 'Pashupati' seal
+  text: The 'Pashupati' seal. Indus seals were pressed into clay to mark goods. This one shows a horned figure seated cross-legged, surrounded by an elephant, a tiger, a rhinoceros and a buffalo. Early scholars linked the figure to the god Shiva as 'lord of animals', but its meaning is still debated. Hundreds of Indus seals have been found, many carrying a short inscription above an animal. Some reached Mesopotamia, showing that Indus merchants traded across the Arabian Sea more than four thousand years ago.
+  narration: {fileID: 8300000, guid: dd221706227544f21a81b7a9fef5a96f, type: 3}
+  image: {fileID: 0}
+  shownEnlarged: 0
+  stop: 104

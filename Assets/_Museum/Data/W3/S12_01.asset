@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S12_01
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S12_01
-  era: "Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
+  era: "1191\u20131192 \xB7 Section 12 \xB7 Early Medieval India \xB7 c. 700 \u2013 1200 CE"
   title: Rajputs
   text: From the 8th century, Rajput clans such as the Chauhans, Paramaras, Chandelas, Gahadavalas and Solankis ruled much of northern and western India. Prithviraj Chauhan defeated Muhammad of Ghor at Tarain in 1191, but lost to him there in 1192.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 4e3e0279a58cf420ba3dac34d1cd7507, type: 3}
   image: {fileID: 21300000, guid: ca894e9fbb1e44522aec4031a4ae8822, type: 3}
   shownEnlarged: 0

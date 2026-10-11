@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S16_15
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S16_15
-  era: "Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
+  era: "1707\u20131857 \xB7 Section 16 \xB7 Mughal Empire \xB7 1526 \u2013 1857"
   title: Decline of the Mughals
   text: After 1707, wars of succession, a crisis in the jagir system, rising regional powers such as the Marathas and Sikhs, and invasions by Nadir Shah in 1739 and Ahmad Shah Abdali weakened the empire. By 1803 the emperor was under British protection.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: 90dd2979ec9724224bc3fffcb0309d5e, type: 3}
   image: {fileID: 21300000, guid: 4856457200e244f1e9369947af1e2002, type: 3}
   shownEnlarged: 0

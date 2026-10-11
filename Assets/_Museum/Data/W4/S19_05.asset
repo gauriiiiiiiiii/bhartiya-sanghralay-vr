@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: S19_05
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactData
   id: S19_05
-  era: "Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
+  era: "1767\u20131799 \xB7 Section 19 \xB7 British Expansion \xB7 1757 \u2013 1856"
   title: Anglo-Mysore Wars
   text: Four wars between 1767 and 1799 between the Company and Mysore, under Haidar Ali and Tipu Sultan, ended with Tipu's death at Srirangapatna in 1799 and the restoration of the Wodeyars under British control.
-  narration: {fileID: 0}
+  narration: {fileID: 8300000, guid: dd8f85d9cbb124b51bfa1632a2d681d1, type: 3}
   image: {fileID: 21300000, guid: 240f76881b5164cbead896a85792be68, type: 3}
   shownEnlarged: 0
