@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Rock paintings of Bhimbetka
   text: Rock paintings of Bhimbetka. More than 750 rock shelters in the Vindhya hills hold paintings of hunters, dancers, horses, elephants and wild cattle, made with red and white mineral pigments. The oldest layers are thought to date from the Mesolithic period, making them among the earliest known art in India. The shelters were recognised by the archaeologist V. S. Wakankar in 1957, who noticed the rock formations from a train. Some shelters were used for many thousands of years, so later paintings often cover earlier ones.
   narration: {fileID: 8300000, guid: bd9681ed6aec94350a29544243d980f9, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 29d7720454ef44e67a906f32e402b885, type: 3}
   shownEnlarged: 0
   stop: 101

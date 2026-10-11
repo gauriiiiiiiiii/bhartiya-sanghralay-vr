@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Qutb Minar, Delhi
   text: "Qutb Minar, Delhi. Qutb-ud-din Aibak, founder of the Delhi Sultanate, began this victory tower beside the first mosque of Delhi; his successor Iltutmish added storeys, and Firuz Shah Tughlaq rebuilt the top in the 14th century. About 72.5 metres tall, it is carved with bands of Arabic inscriptions. The Iron Pillar, which you can see as a replica in the Classical India gallery, stands in the same courtyard \u2013 an older monument reused by the builders of the mosque."
   narration: {fileID: 8300000, guid: 7840d5103162b47a192287b8cf9e896c, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 965e9934cf82b4984a826d817178b015, type: 3}
   shownEnlarged: 0
   stop: 303

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Wine cup of Shah Jahan
   text: Wine cup of Shah Jahan. Carved from a single piece of white jade, this cup is shaped like half a gourd, with a handle in the form of a wild goat's head and a lotus base. An inscription records that it was made for Shah Jahan in 1657. It shows the Mughal love of carving hard stones. Jade was believed to change colour or crack if it touched poison, which made it a favourite material for royal cups.
   narration: {fileID: 8300000, guid: 85275333ffaef449cab95e1320e356c7, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 173216abd624542af8e30d3807df7e0c, type: 3}
   shownEnlarged: 0
   stop: 307

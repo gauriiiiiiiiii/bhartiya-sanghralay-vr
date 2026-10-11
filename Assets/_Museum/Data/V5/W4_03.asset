@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Tipu's Tiger
   text: Tipu's Tiger. Made for Tipu Sultan, ruler of Mysore, this life-size wooden tiger mauls a European soldier. Turning a handle works an organ inside that makes the tiger growl and the man wail. Tipu fought four wars against the East India Company; after he died defending Srirangapatna in 1799, the tiger was taken to London. Tipu called himself the Tiger of Mysore. Tiger stripes decorated his throne, his weapons and the uniforms of his soldiers.
   narration: {fileID: 8300000, guid: c699c03ec1fff4169ba0c7b06a7a458d, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 23714243aac1247b29414bbf665fb69b, type: 3}
   shownEnlarged: 0
   stop: 403

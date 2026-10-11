@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Harmandir Sahib (the Golden Temple), Amritsar
   text: Harmandir Sahib (the Golden Temple), Amritsar. The holiest gurdwara of Sikhism was built by Guru Arjan, who installed the Adi Granth here in 1604. Doors on all four sides welcome everyone, and its community kitchen feeds tens of thousands of people free every day. Maharaja Ranjit Singh covered its upper storeys in gilded copper. India is the birthplace of Hinduism, Buddhism, Jainism and Sikhism, and home for many centuries to Islam, Christianity, Judaism and Zoroastrianism.
   narration: {fileID: 8300000, guid: 611325aebcd054281ab9c76d4ff1cd1b, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8ca7b2415630e4affbb5cc4478d38cc4, type: 3}
   shownEnlarged: 0
   stop: 604

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The Salt March
   text: "The Salt March. Gandhi and 78 followers walked about 385 kilometres from Sabarmati Ashram to the sea at Dandi to make salt in defiance of the British salt tax. The march drew worldwide attention, civil disobedience spread across India, and tens of thousands of people were arrested. Salt was a brilliant choice: everyone needed it, rich or poor, and making it from seawater was simple \u2013 so anyone could join the protest."
   narration: {fileID: 8300000, guid: 2107c0f05ac744c029e9c89d529eafee, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: bd05dcdf7cd7b4edbb7557638b94bb5f, type: 3}
   shownEnlarged: 0
   stop: 503

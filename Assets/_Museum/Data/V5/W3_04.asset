@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The stone chariot, Hampi
   text: The stone chariot, Hampi. In the courtyard of the Vittala Temple stands a shrine for Garuda carved in the shape of a temple chariot. Hampi was Vijayanagara, capital of one of the largest empires in Indian history, which foreign visitors described as one of the richest cities in the world. Vijayanagara reached its height under Krishnadevaraya. In 1565 the city was defeated and sacked after the Battle of Talikota, and its ruins now spread across a landscape of giant boulders.
   narration: {fileID: 8300000, guid: a7c23a2fb0dec412482643a8a35d5a4e, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: b4823fc235f304aeda1a75f6b86f612e, type: 3}
   shownEnlarged: 0
   stop: 304

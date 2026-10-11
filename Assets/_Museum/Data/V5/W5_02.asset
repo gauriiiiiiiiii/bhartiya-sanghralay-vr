@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Mahatma Gandhi
   text: "Mahatma Gandhi. Mohandas Karamchand Gandhi returned from South Africa in 1915 and transformed the freedom movement with satyagraha \u2013 non-violent resistance. He led the Non-Cooperation Movement of 1920\u201322, the Salt March of 1930 and the Quit India Movement of 1942, and campaigned for Hindu\u2013Muslim unity and against untouchability. Gandhi was assassinated in Delhi on 30 January 1948, less than six months after independence. His ideas inspired civil rights movements around the world."
   narration: {fileID: 8300000, guid: 9e981cdc3bf44448da58328cea5590e0, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8ba2c2f14f0a54b4e955d4d36c7a99f4, type: 3}
   shownEnlarged: 0
   stop: 502

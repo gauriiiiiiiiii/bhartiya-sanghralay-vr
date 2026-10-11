@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Punch-marked coins
   text: "Punch-marked coins. India's earliest coins were small pieces of silver stamped with symbols such as the sun, animals, trees and hills, one punch at a time. They circulated in the Mahajanapadas \u2013 'great realms' such as Magadha, Kosala and Avanti \u2013 as trade and cities grew in the Ganga plain. Magadha, with its capital at Pataliputra, gradually defeated its rivals and became the heart of India's first great empire, the Mauryan Empire."
   narration: {fileID: 8300000, guid: 5606f0592aef14bafa35d96bd3eea2c0, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 24adb477f347043f7a8c641846a70497, type: 3}
   shownEnlarged: 0
   stop: 107

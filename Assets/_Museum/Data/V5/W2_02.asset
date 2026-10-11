@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Didarganj Yakshi
   text: Didarganj Yakshi. This life-size female attendant holding a fly-whisk was found on the bank of the Ganga at Didarganj, Patna, in 1917. Its mirror-like polish is typical of Mauryan stone carving, though some scholars date it later. Yakshis were nature spirits associated with fertility and abundance. Patna stands on the site of Pataliputra, the Mauryan capital, which the Greek ambassador Megasthenes described as a vast city protected by a timber wall.
   narration: {fileID: 8300000, guid: 6fd53df318ccb4be58941c3b34373aad, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 58d4a8b58bad649838a5830995db82cf, type: 3}
   shownEnlarged: 0
   stop: 202

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Victoria Terminus, Bombay
   text: Victoria Terminus, Bombay. India's first passenger train ran from Bombay to Thane on 16 April 1853. By the 1880s railways linked ports with the interior, carrying cotton, grain and people. Bombay's Victoria Terminus, designed by F. W. Stevens, blends Victorian Gothic with Indian motifs. Railways helped British trade, but they also brought Indians from distant regions together, and later carried leaders and ideas of the national movement across the country.
   narration: {fileID: 8300000, guid: f7a1615ec7eb34fd29ccda32a4d70c29, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: dca1950adb0a4405ca6e59b8598650ba, type: 3}
   shownEnlarged: 0
   stop: 407

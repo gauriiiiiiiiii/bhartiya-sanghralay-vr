@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Standing Buddha from Gandhara
   text: "Standing Buddha from Gandhara. Under the Kushan emperors, sculptors in Gandhara \u2013 today's north-western Pakistan and eastern Afghanistan \u2013 created some of the earliest images of the Buddha in human form. Wavy hair, deeply folded robes and calm faces show the influence of Greek and Roman art blended with Indian ideas. At the same time, sculptors at Mathura in northern India were making Buddha images in red sandstone in a purely Indian style. The Kushan king Kanishka ruled over both regions and was a great patron of Buddhism."
   narration: {fileID: 8300000, guid: d4ce6dffbc4f64f1597c725856312891, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 6ff5fd8b733de42d29db6c568fa66acb, type: 3}
   shownEnlarged: 0
   stop: 204

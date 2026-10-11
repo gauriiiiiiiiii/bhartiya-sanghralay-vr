@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The Great Bath, Mohenjo-daro
   text: "The Great Bath, Mohenjo-daro. On Mohenjo-daro's raised citadel lies a watertight brick tank with steps at both ends. Its bricks were set in gypsum mortar and sealed with a layer of bitumen. It may have been used for ritual bathing \u2013 an early sign of the importance of water and purity in South Asian religion. The bath was surrounded by a colonnade and small rooms, and a large drain carried its water away. Careful planning like this, repeated across hundreds of Indus towns, is what makes the civilisation so remarkable."
   narration: {fileID: 8300000, guid: ac789d2825fee46e2ac551288e54e792, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 20de7b09478fa4872810edf013d5539a, type: 3}
   shownEnlarged: 0
   stop: 105

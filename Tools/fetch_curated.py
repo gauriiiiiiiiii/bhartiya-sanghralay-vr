@@ -6,7 +6,7 @@ Run from the project folder in macOS Terminal:
 
 For each object it takes the lead image of the named Wikipedia article (when that image is freely licensed on
 Wikimedia Commons), otherwise the best freely licensed result of a Commons search. Only public-domain, CC0,
-CC BY and CC BY-SA images are used. Photos go to Assets/_Museum/Curated/Photos/<id>.jpg (2000 px), the credits to
+CC BY and CC BY-SA images are used. Photos go to Assets/_Museum/Curated/Photos/<id>.jpg (1920 px), the credits to
 Docs/curated_credits.csv, and 4 alternatives per object to Tools/curated_candidates/ for review.
 Override any choice in Tools/curated_choices.json: {"W1_03": "File:Some file.jpg"} and run again.
 """
@@ -30,7 +30,22 @@ def get(url, out=None, tries=6):
         r = subprocess.run(["curl", "-sSL", "--max-time", "90", "-A", UA, "-o", target, "-w", "%{http_code}", url], capture_output=True)
         code = r.stdout.decode().strip()
         if r.returncode == 0 and code == "200":
-            return True if out else open(target, "rb").read()
+            if not out: return open(target, "rb").read()
+            head = open(target, "rb").read(8)
+            if head[:3] == b"\xff\xd8\xff": return True
+            if head[:8] == b"\x89PNG\r\n\x1a\n" or head[:4] in (b"GIF8", b"RIFF") or head[:2] in (b"II", b"MM"):
+                # not a JPEG: convert in place with macOS sips (keeps the .jpg name Unity expects)
+                conv = target + ".conv.jpg"
+                try:
+                    from PIL import Image
+                    im = Image.open(target)
+                    if im.mode in ("RGBA", "LA", "P"):
+                        im = im.convert("RGBA"); bg = Image.new("RGB", im.size, "white"); bg.paste(im, mask=im.split()[-1]); im = bg
+                    im.convert("RGB").save(conv, "JPEG", quality=90); os.replace(conv, target); return True
+                except Exception:
+                    if subprocess.run(["sips", "-s", "format", "jpeg", target, "--out", conv], capture_output=True).returncode == 0:
+                        os.replace(conv, target); return True
+            code = "bad-content"
         if code in ("404", "400"): return None
         print(f"   busy (HTTP {code or r.returncode}), waiting {wait}s", flush=True)
         time.sleep(wait); wait = min(wait * 2, 90)
@@ -56,7 +71,7 @@ def search(query, n=8):
 
 
 def info(title):
-    d = jget("https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=2000&titles=" + urllib.parse.quote(title))
+    d = jget("https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1920&titles=" + urllib.parse.quote(title))
     pages = (d or {}).get("query", {}).get("pages", {})
     for p in pages.values():
         ii = (p.get("imageinfo") or [None])[0]
@@ -85,7 +100,8 @@ def main():
     for it in items:
         oid = it["id"]; dest = os.path.join(OUT, oid + ".jpg")
         forced = choices.get(oid)
-        if os.path.exists(dest) and not forced and oid in credits:
+        valid = os.path.exists(dest) and open(dest, "rb").read(3) == b"\xff\xd8\xff"
+        if valid and not forced and oid in credits:
             print(f"{oid}: already have"); continue
         titles = []
         if forced: titles = [forced]
@@ -104,11 +120,15 @@ def main():
             if chosen and len(alts) >= 4: break
         if not chosen:
             print(f"{oid}: NO freely licensed photo found ({it['title']})"); continue
-        if not get(chosen["url"], dest):
-            print(f"{oid}: download failed"); continue
+        part = dest + ".part"
+        ok = get(chosen["url"], part)
+        if not ok:
+            if os.path.exists(part): os.remove(part)
+            print(f"{oid}: download failed (run the script again later)"); continue
+        os.replace(part, dest); time.sleep(1.5)
         credits[oid] = dict(id=oid, file=chosen["title"], author=chosen["author"], licence=chosen["licence"], licence_url=chosen["licence_url"], source=chosen["source"])
         for k, a in enumerate(alts):
-            get(a["url"].replace("2000px", "400px"), os.path.join(CAND, f"{oid}_alt{k + 1}.jpg"))
+            get(a["url"].replace("1920px", "330px"), os.path.join(CAND, f"{oid}_alt{k + 1}.jpg"))
         json.dump({oid + f"_alt{k + 1}": a["title"] for k, a in enumerate(alts)}, open(os.path.join(CAND, oid + "_alts.json"), "w"), indent=1)
         print(f"{oid}: {chosen['title']}  [{chosen['licence']}]")
         with open(CREDITS, "w", newline="") as f:
@@ -116,7 +136,7 @@ def main():
             for k in sorted(credits): wr.writerow(credits[k])
     tmp = os.path.join(CAND, ".tmp")
     if os.path.exists(tmp): os.remove(tmp)
-    have = sum(os.path.exists(os.path.join(OUT, i["id"] + ".jpg")) for i in items)
+    have = sum(os.path.exists(os.path.join(OUT, i["id"] + ".jpg")) and open(os.path.join(OUT, i["id"] + ".jpg"), "rb").read(3) == b"\xff\xd8\xff" for i in items)
     print(f"\nDONE. {have}/{len(items)} photos in Assets/_Museum/Curated/Photos. Credits: Docs/curated_credits.csv")
 
 

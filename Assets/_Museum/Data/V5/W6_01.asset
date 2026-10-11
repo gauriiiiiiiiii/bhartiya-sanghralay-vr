@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Nalanda Mahavihara
   text: Nalanda Mahavihara. Founded under the Guptas in the 5th century, Nalanda grew into a great Buddhist monastic university with thousands of monks and teachers, drawing scholars such as Xuanzang from China. It flourished for some seven hundred years before its decline and destruction around 1200. Students studied Buddhist philosophy, grammar, logic, medicine and astronomy. Its libraries were said to be so large that they burned for months when the monastery was destroyed.
   narration: {fileID: 8300000, guid: 4eec3027a74ad4751919192500bbd4f2, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 43d51a2c9c77e4287bb8d083349b3b85, type: 3}
   shownEnlarged: 0
   stop: 601

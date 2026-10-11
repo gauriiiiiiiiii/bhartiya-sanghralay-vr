@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Padmapani, Ajanta Cave 1
   text: Padmapani, Ajanta Cave 1. About thirty Buddhist caves were cut into a horseshoe-shaped cliff at Ajanta between the 2nd century BCE and the late 5th century CE. This bodhisattva of compassion, holding a lotus, is one of the most celebrated wall paintings of Cave 1. The caves were abandoned and forgotten for centuries until a British officer, John Smith, stumbled on them while hunting a tiger in 1819.
   narration: {fileID: 8300000, guid: 7fe1be649c78446d79c4a7f0a08866d8, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: a88fb91e8069d4c55bf3f937c706d272, type: 3}
   shownEnlarged: 0
   stop: 206

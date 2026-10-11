@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The 'Pashupati' seal
   text: The 'Pashupati' seal. Indus seals were pressed into clay to mark goods. This one shows a horned figure seated cross-legged, surrounded by an elephant, a tiger, a rhinoceros and a buffalo. Early scholars linked the figure to the god Shiva as 'lord of animals', but its meaning is still debated. Hundreds of Indus seals have been found, many carrying a short inscription above an animal. Some reached Mesopotamia, showing that Indus merchants traded across the Arabian Sea more than four thousand years ago.
   narration: {fileID: 8300000, guid: dd221706227544f21a81b7a9fef5a96f, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: cbe3356668f8a4522994ededce5f0fad, type: 3}
   shownEnlarged: 0
   stop: 104

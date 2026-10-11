@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Sikandar Bagh, Lucknow, photographed by Felice Beato
   text: "Sikandar Bagh, Lucknow, photographed by Felice Beato. The photographer Felice Beato took this picture of the Sikandar Bagh in Lucknow a few months after British troops stormed it in November 1857, during the relief of the besieged Residency. It is one of the earliest photographs of the aftermath of war \u2013 a reminder of the violence of the uprising. Photography was only about twenty years old at the time. Long exposures meant that early photographers recorded ruins and landscapes rather than action."
   narration: {fileID: 8300000, guid: 375e76703a7284713a3c0eaede0b74f8, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: cc16e2b4e19224e4682fbda9d4e032bf, type: 3}
   shownEnlarged: 0
   stop: 405

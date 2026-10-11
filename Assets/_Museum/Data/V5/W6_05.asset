@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The rupiya of Sher Shah Suri
   text: The rupiya of Sher Shah Suri. Sher Shah Suri, who briefly drove the Mughal emperor Humayun out of India, introduced a standard silver coin called the rupiya. The Mughals and later the British kept it, and its name lives on in the rupee used in India and several neighbouring countries. Sher Shah also rebuilt the great road from Bengal to the north-west, later called the Grand Trunk Road, with rest houses and wells along the way.
   narration: {fileID: 8300000, guid: 6fb0e6fbfdb2f485cad4618094bf7d48, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 4d5cb656cd4854dff84562aa0cb7a675, type: 3}
   shownEnlarged: 0
   stop: 605

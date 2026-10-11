@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Jantar Mantar, Jaipur
   text: Jantar Mantar, Jaipur. Maharaja Sawai Jai Singh II built five astronomical observatories in north India. The one at Jaipur has 19 instruments, including the Samrat Yantra, a giant sundial that tells local time to an accuracy of about two seconds. It continued a long Indian tradition of astronomy going back to Aryabhata. Aryabhata, writing in 499 CE, explained that the Earth rotates on its axis, and calculated the value of pi to four decimal places.
   narration: {fileID: 8300000, guid: fadee21e6ca0f4a589cb543eb3316fa4, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 59686b65c21b948d8925e157e444c8fd, type: 3}
   shownEnlarged: 0
   stop: 602

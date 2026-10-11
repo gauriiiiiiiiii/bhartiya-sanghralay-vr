@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Gold coin of Samudragupta
   text: "Gold coin of Samudragupta. The Gupta kings issued fine gold coins called dinaras. On this type Samudragupta is shown seated, playing a veena \u2013 a reminder that he was praised as a poet and musician as well as a conqueror. The Gupta period is often called a classical age of Indian art and learning. His achievements are recorded in a long Sanskrit poem carved on the Allahabad pillar, the same pillar that already carried an inscription of Ashoka six hundred years earlier."
   narration: {fileID: 8300000, guid: 42370f8f7d40f47bc8d41689c4bcef5e, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 62a2d7f3aee474fe7b20c32245799536, type: 3}
   shownEnlarged: 0
   stop: 205

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The Taj Mahal, Agra
   text: 'The Taj Mahal, Agra. The Mughal emperor Shah Jahan built this tomb for his wife Mumtaz Mahal, who died in 1631. Thousands of craftsmen worked for over twenty years on the marble mausoleum, its gardens, mosque and guest house. Its inlaid stonework and perfect symmetry made it a symbol of India across the world. The flowers on its walls are not painted: they are made of carnelian, jasper, lapis and other stones cut and set into the marble, a technique called pietra dura.'
   narration: {fileID: 8300000, guid: bfa95e9f745524142ac2707758947d2e, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 1dbc4e37d315343fca059b84a9c3ccc2, type: 3}
   shownEnlarged: 0
   stop: 306

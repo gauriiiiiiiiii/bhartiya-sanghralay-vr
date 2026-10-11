@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The first Indian National Congress
   text: 'The first Indian National Congress. Seventy-two delegates from across India met at Gokuldas Tejpal Sanskrit College in Bombay for the first session of the Indian National Congress, presided over by W. C. Bonnerjee. Early leaders such as Dadabhai Naoroji argued that British rule was draining India''s wealth, and asked for a greater Indian voice in government. Later leaders such as Bal Gangadhar Tilak demanded more: ''Swaraj is my birthright, and I shall have it.'''
   narration: {fileID: 8300000, guid: 9c4bf9c6dcbd24f18a36b41b9c514b46, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: ec5f4f6b33342400b914b8c10d99a5bf, type: 3}
   shownEnlarged: 0
   stop: 501

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Bhagat Singh
   text: "Bhagat Singh. Bhagat Singh was a young revolutionary of the Hindustan Socialist Republican Association. In April 1929 he and Batukeshwar Dutt threw harmless bombs into the Central Legislative Assembly in Delhi and courted arrest, using their trial to spread their ideas. He was hanged in Lahore in March 1931, aged 23. His slogan 'Inquilab Zindabad' \u2013 'Long live the revolution' \u2013 became one of the most famous cries of the freedom struggle."
   narration: {fileID: 8300000, guid: 96cafffe0d9a5456cbce1d33dd05b313, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 38b2c016c116948a88a5d80ae6e4809a, type: 3}
   shownEnlarged: 0
   stop: 504

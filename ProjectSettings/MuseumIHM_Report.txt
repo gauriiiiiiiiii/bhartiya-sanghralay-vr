@@ -1,13 +1,13 @@
-RESULT: BUILT 8 scenes, 47 items with text + narration slots (8s)
+RESULT: BUILT 8 scenes, 47 items with text + narration slots (13s)
 Scenes (build order): Menu, Lobby, Wing1, Wing2, Wing3, Wing4, Wing5, Wing6
 Art import settings fixed: 0
 Font: Lora SDF
 Narration assigned: 491/491
 Mobile: bundle com.jaykumarpatel.indianhistorymuseumvr, iOS 15+, landscape, XR starts from the menu, URP shadows off, occlusion culling baked
 Rendering: linear colour, HDR, neutral tone mapping, bloom, MSAA 4x, box-projected reflection probes
-Wing1: Ancient India (arches gallery) — 8 objects, 0/7 photos
-Wing2: Classical India (skylit gallery) — 8 objects, 0/7 photos
-Wing3: Medieval India (octagon gallery) — 8 objects, 0/7 photos
-Wing4: Colonial India (pictures gallery) — 8 objects, 0/7 photos
-Wing5: Freedom and the Republic (rotunda gallery) — 8 objects, 0/7 photos
-Wing6: Themes of Indian History (modern gallery) — 7 objects, 0/6 photos
+Wing1: Ancient India (arches gallery) — 8 objects, 7/7 photos
+Wing2: Classical India (skylit gallery) — 8 objects, 7/7 photos
+Wing3: Medieval India (octagon gallery) — 8 objects, 7/7 photos
+Wing4: Colonial India (pictures gallery) — 8 objects, 7/7 photos
+Wing5: Freedom and the Republic (rotunda gallery) — 8 objects, 7/7 photos
+Wing6: Themes of Indian History (modern gallery) — 7 objects, 6/6 photos

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: Lion Capital of Ashoka
   text: "Lion Capital of Ashoka. Four lions stand back to back on a drum carved with a horse, a bull, an elephant and a lion separated by wheels, above an inverted lotus. The capital crowned a pillar Ashoka set up where the Buddha gave his first sermon. Adopted as India's national emblem in 1950, its wheel also appears on the national flag. Ashoka turned to Buddhism after his bloody conquest of Kalinga, and spread messages of dhamma \u2013 moral conduct and tolerance \u2013 through edicts carved on rocks and pillars across his empire."
   narration: {fileID: 8300000, guid: c0e9aab6f495e46ce8f72c0f0ff2ad41, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 9e48cffe537104860a1c105be5c0086a, type: 3}
   shownEnlarged: 0
   stop: 201

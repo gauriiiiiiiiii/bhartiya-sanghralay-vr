@@ -1,6 +1,6 @@
 RESULT: SUCCEEDED
 Xcode project: /Users/jaykumarpatel/projects/ShivajiMuseumVR/Builds/iOS
-Time: 1.3 min  Size: 1296 MB  Errors: 0  Warnings: 350
+Time: 0.7 min  Size: 1809 MB  Errors: 0  Warnings: 350
 Scenes: Menu, Lobby, Wing1, Wing2, Wing3, Wing4, Wing5, Wing6
 
 Next: open Builds/iOS/Unity-iPhone.xcodeproj in Xcode, pick your team under Signing & Capabilities, connect the iPhone and press Run.

@@ -17,6 +17,6 @@ MonoBehaviour:
   title: The 'Dancing Girl'
   text: The 'Dancing Girl'. Only 10.5 centimetres tall, this young woman stands with one hand on her hip and her left arm covered in bangles. She was found at Mohenjo-daro in 1926 and is one of the finest metal sculptures of the Indus Civilisation, cast about four thousand years ago. Lost-wax casting means the figure was first modelled in wax, covered in clay and heated so that the wax ran out, leaving a mould for molten metal. Bangles like hers are still worn across South Asia today.
   narration: {fileID: 8300000, guid: 25ca71ea96d04492bbc0e7f2f828cf1c, type: 3}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 32f2cb3e25dc04b738ffc92f32e2d26f, type: 3}
   shownEnlarged: 0
   stop: 103
