@@ -167,8 +167,9 @@ public static partial class MuseumBuilder
         var dp = new Vector3(-4.2f, 0, -19.5f); var df = new Vector3(0.35f, 0, -1f).normalized;
         df = (new Vector3(0, 0, -21) - dp).normalized; df = new Vector3(0.25f, 0, -1).normalized;
         GMesh("Totem", "DirectoryTotem", mb => Geo.ChamferBox(mb, new Vector3(0, 1.35f, 0), new Vector3(1.5f, 2.7f, 0.14f), 0.015f), M["V5_Charcoal"], dir, dp, Quaternion.LookRotation(-df));
-        var lines = string.Join("\n", cur.wings.Select((w, i) => $"<b>{w.title}</b>  <size=70%><color=#C9C2B6>{w.years}</color></size>\n<size=70%>{DoorHint(i)}</size>"));
+        var lines = string.Join("\n", cur.wings.Select((w, i) => $"<b>{w.title}</b>  <size=85%><color=#C9C2B6>{w.years}</color></size>\n<size=85%>{DoorHint(i)}</size>"));
         var tt = Text3D("DirectoryText", $"<size=130%><b>Galleries</b></size>\n\n{lines}", dp + Vector3.up * 1.4f + df * 0.075f, df, new Vector2(1.3f, 2.4f), new Color(0.95f, 0.93f, 0.88f), dir, false, 1.2f);
+        tt.fontSizeMin = 0.75f;   // legible from ~2.5 m (see ReadK in MuseumV5.cs)
         tt.alignment = TMPro.TextAlignmentOptions.TopLeft;
 
         ProbeGrid(lights, new Vector3(-21, 1, -21), new Vector3(21, 17, 21), 6f);

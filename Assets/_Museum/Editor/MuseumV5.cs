@@ -34,7 +34,7 @@ public static partial class MuseumBuilder
 
     class WSlot
     {
-        public Vector3 c, n, spot; public float maxW, maxH; public string frame = "mount";
+        public Vector3 c, n, spot; public float maxW, maxH; public string frame = "mount"; public float curveR;   // curveR > 0: concave wall of that radius
         public WSlot(Vector3 c, Vector3 n, float maxW, float maxH, Vector3 spot, string frame = "mount") { this.c = c; this.n = n.normalized; this.maxW = maxW; this.maxH = maxH; this.spot = spot; this.frame = frame; }
     }
 
@@ -62,7 +62,10 @@ public static partial class MuseumBuilder
         Lit("V5_PaintWhite", new Color(0.9f, 0.9f, 0.88f), 0f, 0.3f);
         Lit("V5_Charcoal", new Color(0.11f, 0.11f, 0.115f), 0f, 0.5f);
         Lit("V5_MountBoard", new Color(0.93f, 0.92f, 0.89f), 0f, 0.05f);
-        Lit("V5_LabelBoard", new Color(0.96f, 0.95f, 0.93f), 0f, 0.2f);
+        // labels are lit in real galleries; a faint warm glow keeps them crisp white whatever the probes give them
+        var lb = Lit("V5_LabelBoard", new Color(0.96f, 0.95f, 0.92f), 0f, 0.15f);
+        lb.EnableKeyword("_EMISSION"); lb.SetColor("_EmissionColor", new Color(0.97f, 0.95f, 0.9f) * 0.3f);
+        lb.globalIlluminationFlags = MaterialGlobalIlluminationFlags.None; EditorUtility.SetDirty(lb);
         Lit("V5_Gilt", new Color(0.83f, 0.66f, 0.33f), 1f, 0.62f);
         Lit("V5_Brass", new Color(0.78f, 0.6f, 0.34f), 1f, 0.7f);
         Lit("V5_Steel", new Color(0.62f, 0.63f, 0.65f), 1f, 0.55f);
@@ -289,29 +292,81 @@ public static partial class MuseumBuilder
         return m;
     }
 
-    /// Museum label: a small printed panel with stop number, title, tombstone details, a short text and the photo credit.
-    static void ObjectLabel(Transform p, CItemJ it, int stop, Vector3 center, Vector3 normal, float w = 0.62f, float h = 0.5f, bool showText = true)
+    // ---- Legibility on a phone ------------------------------------------------------------------------------
+    // A phone in a Cardboard viewer gives each eye roughly 14 px per degree, so world text is sized by the angle it
+    // covers from where the visitor stands: TMP world font size f has a cap height of about 0.07·f metres, and a cap
+    // height of at least ~1.2° (0.021·distance) reads comfortably. Hence f >= 0.3 × viewing distance for text that
+    // must be read, and long texts move to the audio guide's large on-screen captions instead of the wall.
+    public const float ReadK = 0.34f;
+    static float Legible(float distance) => ReadK * distance;
+
+    /// Large-print object label ("tombstone"): audio stop, title, date and place. The long label text is spoken by the
+    /// audio guide and shown as large captions, so the wall only carries what can be read from the viewing point.
+    static void ObjectLabel(Transform p, CItemJ it, int stop, Vector3 center, Vector3 normal, float viewDist, float w = 0.95f)
     {
         var g = Group(p, "Label_" + it.id);
-        GMesh("Board", $"LabelBoard_{w:0.##}x{h:0.##}", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(w, h, 0.012f), 0.003f), M["V5_LabelBoard"], g, center + normal * 0.006f, FaceTo(normal), false);
+        var rot = FaceTo(normal);
+        Vector3 up = rot * Vector3.up, pad = normal * 0.014f;
+        float f = Legible(viewDist), m = 0.045f, iw = w - 2 * m, em = f * 0.1f;
+        // lay the board out top-down from the text it carries: chip, title (wrapped), date and place.
+        // Lora averages ~0.55 em per character (bold ~0.6); word wrapping loses a little more, hence the 0.9.
+        int Lines(string t, float size, float perEm) => string.IsNullOrEmpty(t) ? 0 : Mathf.Max(1, Mathf.CeilToInt(t.Length / (0.9f * iw / (size * 0.1f * perEm))));
+        int titleLines = Lines(it.title, f, 0.6f);
+        int metaLines = Lines(it.date, f * 0.85f, 0.62f) + Lines(it.place?.name, f * 0.85f, 0.62f);
+        float chipH = em * 1.1f, titleH = titleLines * em * 1.15f, metaH = metaLines * em * 0.85f * 1.2f, gap = em * 0.4f;
+        float h = 2 * m + chipH + gap + titleH + gap + metaH + em * 0.3f;
+        GMesh("Board", $"LabelBoard_{w:0.##}x{h:0.##}", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(w, h, 0.012f), 0.003f), M["V5_LabelBoard"], g, center + normal * 0.006f, rot, true);   // lightmapped: warm gallery light, not the sky-tinted probes
+        var ink = new Color(0.12f, 0.12f, 0.12f);
+        float y = h / 2 - m;
+        TextMeshPro Row(string name, string text, float rowH, float size, Color c, bool bold)
+        {
+            var t = Text3D(name, text, center + up * (y - rowH / 2) + pad, normal, new Vector2(iw, rowH), c, g, bold, size);
+            t.alignment = TextAlignmentOptions.TopLeft; t.enableAutoSizing = false; t.fontSize = size;
+            t.overflowMode = TextOverflowModes.Overflow; y -= rowH;
+            return t;
+        }
+        Row("Stop", $"AUDIO {stop}", chipH, f * 0.8f, new Color(0.6f, 0.4f, 0.16f), true); y -= gap;
+        Row("Title", it.title, titleH, f, ink, true).lineSpacing = -8f; y -= gap;
+        Row("Meta", $"{it.date}\n<i>{it.place?.name ?? ""}</i>", metaH, f * 0.85f, new Color(0.16f, 0.16f, 0.16f), false);
+        // credit under the board, small (attribution, not meant to be read from the viewing point)
         var credit = it.kind == "replica" ? "Replica made for this museum" : CurCredit(it.id);
-        string txt = $"<size=70%><color=#9A6A2E><b>AUDIO {stop}</b></color></size>\n<b>{it.title}</b>\n<size=74%>{it.date}\n<i>{it.medium}</i>\n{it.where}</size>";
-        if (showText) txt += $"\n<size=70%><line-height=110%>\n{it.label}</size>";
-        if (!string.IsNullOrEmpty(credit)) txt += $"\n<size=50%><color=#8A8A8A>{credit}</color></size>";
-        var t = Text3D("Text", txt, center + normal * 0.014f, normal, new Vector2(w - 0.07f, h - 0.06f), new Color(0.13f, 0.13f, 0.13f), g, false, 0.6f);
-        t.alignment = TextAlignmentOptions.TopLeft; t.fontSizeMin = 0.05f;
+        if (!string.IsNullOrEmpty(credit))
+        {
+            var c = Text3D("Credit", credit, center - up * (h / 2 + 0.05f) + normal * 0.004f, normal, new Vector2(w, 0.07f), new Color(0.35f, 0.35f, 0.35f), g, false, 0.24f);
+            c.alignment = TextAlignmentOptions.TopLeft;
+        }
     }
 
-    /// Gallery introduction lettered directly on the wall.
-    static void WallIntro(Transform p, CWingJ w, Vector3 center, Vector3 normal, float width, Color ink)
+    /// Gallery introduction lettered directly on the wall, sized to be read from about 4 m. Only the opening
+    /// sentences that fit at that size are lettered; the full introduction is narrated when the visitor arrives.
+    static void WallIntro(Transform p, CWingJ w, Vector3 center, Vector3 normal, float width, Color ink, float viewDist = 4f)
     {
         var g = Group(p, "WallIntro");
         var title = Text3D("Title", w.title, center + Vector3.up * 1.25f + normal * 0.01f, normal, new Vector2(width, 0.75f), ink, g, false, 9f);
         title.alignment = TextAlignmentOptions.BottomLeft;
-        var sub = Text3D("Sub", $"{w.subtitle}  ·  {w.years}", center + Vector3.up * 0.72f + normal * 0.01f, normal, new Vector2(width, 0.28f), ink * 0.85f + new Color(0, 0, 0, 0.15f), g, false, 2.4f);
-        sub.alignment = TextAlignmentOptions.TopLeft; sub.fontStyle = FontStyles.Italic;
-        var body = Text3D("Body", w.intro, center - Vector3.up * 0.25f + normal * 0.01f, normal, new Vector2(width, 1.45f), ink, g, false, 1.25f);
-        body.alignment = TextAlignmentOptions.TopLeft;
+        float f = Legible(viewDist);
+        var sub = Text3D("Sub", $"{w.subtitle}  ·  {w.years}", center + Vector3.up * 0.72f + normal * 0.01f, normal, new Vector2(width, 0.28f), ink * 0.85f + new Color(0, 0, 0, 0.15f), g, false, Mathf.Max(2.4f, f * 1.4f));
+        sub.alignment = TextAlignmentOptions.TopLeft; sub.fontStyle = FontStyles.Italic; sub.fontSizeMin = f;
+        // capacity at size f: ~0.5 em per character, 1.25 em per line
+        float em = f * 0.1f, boxH = 1.45f;
+        int perLine = Mathf.FloorToInt(width / (em * 0.5f)), lines = Mathf.FloorToInt(boxH / (em * 1.3f));
+        var body = Text3D("Body", FitSentences(w.intro, (int)(perLine * lines * 0.85f)), center - Vector3.up * 0.25f + normal * 0.01f, normal, new Vector2(width, boxH), ink, g, false, f * 1.15f);
+        body.alignment = TextAlignmentOptions.TopLeft; body.fontSizeMin = f;
+    }
+
+    /// The leading whole sentences of text that fit in maxChars (at least one sentence).
+    static string FitSentences(string text, int maxChars)
+    {
+        if (string.IsNullOrEmpty(text) || text.Length <= maxChars) return text;
+        var parts = System.Text.RegularExpressions.Regex.Split(text.Trim(), @"(?<=[.!?])\s+");
+        var sb = new System.Text.StringBuilder();
+        foreach (var part in parts)
+        {
+            if (sb.Length > 0 && sb.Length + 1 + part.Length > maxChars) break;
+            if (sb.Length > 0) sb.Append(' ');
+            sb.Append(part);
+        }
+        return sb.ToString();
     }
 
     /// A framed print on a wall: photo, mount, frame, label beside it, baked spot + realtime highlight, stand point.
@@ -341,7 +396,7 @@ public static partial class MuseumBuilder
         {
             margin = Mathf.Clamp(Mathf.Min(w, h) * 0.12f, 0.06f, 0.16f); fw = 0.03f;
             float W = w + 2 * margin, H = h + 2 * margin;
-            GMesh("Mount", $"Mount_{W:0.##}x{H:0.##}", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(W, H, 0.02f), 0.001f), M["V5_MountBoard"], g, s.c + s.n * 0.012f, rot, false);
+            GMesh("Mount", $"Mount_{W:0.##}x{H:0.##}", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(W, H, 0.02f), 0.001f), M["V5_MountBoard"], g, s.c + s.n * 0.012f, rot, true);
             GMesh("Frame", $"BlackFrame_{W:0.##}x{H:0.##}", mb =>
             {
                 float t = 0.03f, d = 0.04f;
@@ -361,15 +416,27 @@ public static partial class MuseumBuilder
         }
         // label to the right of the frame, at a comfortable reading height
         float half = w / 2 + margin + fw;
-        var lc = new Vector3(s.c.x, 1.32f, s.c.z) + right * (half + 0.55f);
-        ObjectLabel(g, it, stop, lc, s.n);
+        const float standDist = 1.9f;
+        var lc = new Vector3(s.c.x, 1.4f, s.c.z) + right * (half + 0.6f);
+        var ln = s.n;
+        if (s.curveR > 0f)
+        {
+            // follow the curve: the label sits on the wall circle at the same arc distance
+            var C = s.c + s.n * s.curveR; C.y = 0;
+            var d0 = new Vector3(s.c.x, 0, s.c.z) - C;
+            float th = (half + 0.6f) / s.curveR * Mathf.Rad2Deg;
+            var d1 = Quaternion.Euler(0, th, 0) * d0;
+            if (Vector3.Dot(d1 - d0, right) < 0) d1 = Quaternion.Euler(0, -th, 0) * d0;
+            lc = C + d1 + Vector3.up * 1.4f; ln = -d1.normalized;
+        }
+        ObjectLabel(g, it, stop, lc, ln, Mathf.Sqrt(standDist * standDist + (half + 0.6f) * (half + 0.6f)));
         // lights
         float dist = Vector3.Distance(s.spot, s.c);
         float ang = 2f * Mathf.Atan((Mathf.Max(w, h) / 2f + margin + 0.35f) / dist) * Mathf.Rad2Deg;
         AimSpot("Spot_" + it.id, x.lights, s.spot, s.c, Mathf.Clamp(ang, 18f, 70f), 3.2f * dist * dist);
         var hl = HighlightSpot(g, s.spot + Vector3.down * 0.05f, s.c, Mathf.Clamp(ang, 18f, 70f));
         // stand point and the selectable object
-        var stand = s.c + s.n * 2.3f; stand.y = 0;
+        var stand = s.c + s.n * standDist; stand.y = 0;
         var tp = MakePoint("View_" + it.id, stand, Quaternion.LookRotation(-s.n).eulerAngles.y, x.pts);
         var data = CurData(it, stop);
         var art = MakeArtifact(photo, data, tp, s.c + s.n * 0.5f, s.n);
@@ -391,7 +458,7 @@ public static partial class MuseumBuilder
         var lect = Group(g, "Lectern");
         GMesh("Post", "LecternPost", mb => Geo.ChamferBox(mb, new Vector3(0, 0.45f, 0), new Vector3(0.08f, 0.9f, 0.08f), 0.01f), M["V5_Charcoal"], lect, lp, Quaternion.Euler(0, yaw, 0), false);
         var face = Quaternion.Euler(0, yaw, 0) * Quaternion.Euler(-35, 0, 0) * Vector3.forward;
-        ObjectLabel(lect, it, stop, lp + Vector3.up * 1.0f, face, 0.62f, 0.52f);
+        ObjectLabel(lect, it, stop, lp + Vector3.up * 1.05f, face, 1.9f);
         // lights from the ceiling, front-left and front-right
         var c = pos + Vector3.up * (top * 0.6f);
         foreach (var s in new[] { -1f, 1f })
@@ -417,13 +484,13 @@ public static partial class MuseumBuilder
         GMesh("Pedestal", "TablePedestal", mb => { Geo.ChamferBox(mb, new Vector3(0, 0.45f, 0), new Vector3(0.5f, 0.9f, 0.4f), 0.02f); Geo.ChamferBox(mb, new Vector3(0, 0.01f, 0), new Vector3(0.7f, 0.02f, 0.55f), 0.005f); }, M["V5_Charcoal"], g, pos, g.rotation, false);
         var tilt = Quaternion.Euler(0, yaw, 0) * Quaternion.Euler(-28, 0, 0);
         var top = pos + Vector3.up * 1.0f;
-        GMesh("Top", "TableTop", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(1.18f, 0.06f, 0.82f), 0.012f), M["V5_Charcoal"], g, top, tilt, false);
+        GMesh("Top", "TableTop", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(1.55f, 0.06f, 1.08f), 0.012f), M["V5_Charcoal"], g, top, tilt, false);
         var screenGo = new GameObject("Screen", typeof(RectTransform));
         screenGo.transform.SetParent(g, false);
         screenGo.transform.position = top + tilt * new Vector3(0, 0.032f, 0);
         screenGo.transform.rotation = Quaternion.LookRotation(-(tilt * Vector3.up), tilt * Vector3.forward);
         var canvas = screenGo.AddComponent<Canvas>(); canvas.renderMode = RenderMode.WorldSpace;
-        var rt = (RectTransform)screenGo.transform; rt.sizeDelta = new Vector2(1240, 840); rt.localScale = Vector3.one * 0.00088f;
+        var rt = (RectTransform)screenGo.transform; rt.sizeDelta = new Vector2(1240, 840); rt.localScale = Vector3.one * 0.00115f;   // 1.43 m screen: 26 px text ≈ 1.4° from the stand point
         var k = screenGo.AddComponent<KioskScreen>();
         k.font = font; k.accent = x.accent; k.mapSprite = AssetDatabase.LoadAssetAtPath<Sprite>($"{ArtDir}/UI/india_map.png");
         k.sectionTitle = x.w.title; k.period = x.w.years;
@@ -437,7 +504,7 @@ public static partial class MuseumBuilder
         }
         k.wingId = x.w.id;
         foreach (var c in screenGo.GetComponentsInChildren<Transform>(true)) c.gameObject.layer = interactiveLayer;
-        var tp = MakePoint("View_Table", pos + Quaternion.Euler(0, yaw, 0) * new Vector3(0, 0, -1.3f), yaw, x.pts);
+        var tp = MakePoint("View_Table", pos + Quaternion.Euler(0, yaw, 0) * new Vector3(0, 0, -1.25f), yaw, x.pts);
     }
 
     /// A doorway portal: a short dark passage with a sign; selecting it changes scene.

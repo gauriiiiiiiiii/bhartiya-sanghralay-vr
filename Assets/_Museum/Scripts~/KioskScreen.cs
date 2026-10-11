@@ -81,13 +81,18 @@ public class KioskScreen : MonoBehaviour
         var i = R(name, parent, x, y, w, h).gameObject.AddComponent<Image>(); i.color = c; i.raycastTarget = false; return i;
     }
 
+    const float MinText = 24f;
+
     TMP_Text Txt(string name, Transform parent, float x, float y, float w, float h, string text, float size, Color c,
                  TextAlignmentOptions align = TextAlignmentOptions.TopLeft, FontStyles style = FontStyles.Normal)
     {
         var t = R(name, parent, x, y, w, h).gameObject.AddComponent<TextMeshProUGUI>();
         if (font) t.font = font;
+        // the table screen is 1.43 m wide (0.00115 m per unit) and read from ~1.2 m: 24 units ≈ 1.2° cap height,
+        // the smallest size that stays readable on a phone in a Cardboard viewer
+        size = Mathf.Max(size, MinText + 2);
         t.text = text; t.fontSize = size; t.color = c; t.alignment = align; t.fontStyle = style; t.raycastTarget = false;
-        t.enableAutoSizing = true; t.fontSizeMax = size; t.fontSizeMin = size * 0.55f; t.textWrappingMode = TextWrappingModes.Normal;
+        t.enableAutoSizing = true; t.fontSizeMax = size; t.fontSizeMin = Mathf.Max(size * 0.8f, MinText); t.textWrappingMode = TextWrappingModes.Normal;
         return t;
     }
 

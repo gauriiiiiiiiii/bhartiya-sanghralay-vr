@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
@@ -130,16 +131,35 @@ public class AudioGuide : MonoBehaviour
         var list = new List<string>();
         foreach (var p in parts)
         {
-            if (p.Length > 150)
-            {
-                int cut = p.IndexOf(", ", p.Length / 2 - 20);
-                if (cut > 0) { list.Add(p.Substring(0, cut + 1)); list.Add(p.Substring(cut + 2)); continue; }
-            }
-            if (list.Count > 0 && list[list.Count - 1].Length < 40) list[list.Count - 1] += " " + p; else list.Add(p);
+            if (p.Length > MaxCaption) { foreach (var piece in Chop(p)) list.Add(piece); continue; }
+            if (list.Count > 0 && list[list.Count - 1].Length < 40 && list[list.Count - 1].Length + p.Length < MaxCaption) list[list.Count - 1] += " " + p; else list.Add(p);
         }
         float total = 0; foreach (var s in list) total += s.Length + 12;     // +12: pause after each sentence
         float acc = 0;
         foreach (var s in list) { acc += s.Length + 12; sentences.Add(s); sentenceEnd.Add(acc / Mathf.Max(1, total)); }
+    }
+
+    // a caption chunk must fit three lines of the bar at CaptionSize (~55 characters per line in the VR strip)
+    const int MaxCaption = 150;
+
+    /// Splits a long sentence at commas, semicolons or dashes (else at a space) into pieces of at most MaxCaption.
+    static List<string> Chop(string p)
+    {
+        var res = new List<string>();
+        while (p.Length > MaxCaption)
+        {
+            int cut = -1;
+            foreach (var sep in new[] { "; ", ", ", " – ", " — " })
+            {
+                int i = p.LastIndexOf(sep, MaxCaption, StringComparison.Ordinal);
+                if (i > MaxCaption / 3 && i > cut) cut = i + sep.Length - 1;
+            }
+            if (cut < 0) cut = p.LastIndexOf(' ', MaxCaption);
+            if (cut <= 0) break;
+            res.Add(p.Substring(0, cut + 1).Trim()); p = p.Substring(cut + 1).Trim();
+        }
+        if (p.Length > 0) res.Add(p);
+        return res;
     }
 
     void ShowHint(string text)
@@ -187,17 +207,26 @@ public class AudioGuide : MonoBehaviour
         return i;
     }
 
+    // Text sizes are chosen for a phone: in phone mode the canvas is 1080 units tall, so 44 units is ~2.6 mm on a
+    // 6.1-inch iPhone held sideways (about iOS body text). In VR the strip is 1.3 m away and 46 units at 0.0009 m per
+    // unit gives a cap height of ~1.4°, comfortably above the ~0.8° a Cardboard viewer can resolve.
+    const float TitleSize = 46f, CaptionSize = 44f, BadgeSize = 92f;
+
     View Fill(Transform bar, float scale)
     {
         var v = new View();
-        Box(bar, "Back", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, new Color(0.06f, 0.06f, 0.06f, 0.82f));
-        var badge = Box(bar, "Badge", new Vector2(0, 0), new Vector2(0, 1), new Vector2(18, 18) * scale, new Vector2(18 + 64, -18) * scale, accent);
-        v.stop = Text(badge.transform, "Stop", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, 30 * scale, Color.white, FontStyles.Bold, TextAlignmentOptions.Center);
-        v.title = Text(bar, "Title", new Vector2(0, 1), new Vector2(1, 1), new Vector2(100, -52) * scale, new Vector2(-24, -10) * scale, 25 * scale, new Color(0.95f, 0.85f, 0.65f), FontStyles.Bold, TextAlignmentOptions.TopLeft);
+        Box(bar, "Back", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, new Color(0.05f, 0.05f, 0.05f, 0.86f));
+        float pad = 20f, b = BadgeSize;
+        var badge = Box(bar, "Badge", new Vector2(0, 1), new Vector2(0, 1), new Vector2(pad, -pad - b), new Vector2(pad + b, -pad), accent);
+        v.stop = Text(badge.transform, "Stop", Vector2.zero, Vector2.one, new Vector2(4, 4), new Vector2(-4, -4), 40, Color.white, FontStyles.Bold, TextAlignmentOptions.Center);
+        v.stop.enableAutoSizing = true; v.stop.fontSizeMin = 26; v.stop.fontSizeMax = 40;
+        float left = pad * 2 + b;
+        v.title = Text(bar, "Title", new Vector2(0, 1), new Vector2(1, 1), new Vector2(left, -pad - TitleSize * 1.3f), new Vector2(-pad, -pad + 4), TitleSize, new Color(0.97f, 0.86f, 0.64f), FontStyles.Bold, TextAlignmentOptions.TopLeft);
         v.title.textWrappingMode = TextWrappingModes.NoWrap; v.title.overflowMode = TextOverflowModes.Ellipsis;
-        v.caption = Text(bar, "Caption", Vector2.zero, Vector2.one, new Vector2(100, 16) * scale, new Vector2(-24, -52) * scale, 27 * scale, new Color(0.97f, 0.96f, 0.93f), FontStyles.Normal, TextAlignmentOptions.TopLeft);
-        v.caption.enableAutoSizing = true; v.caption.fontSizeMin = 16 * scale; v.caption.fontSizeMax = 27 * scale;
-        var track = Box(bar, "Track", new Vector2(0, 0), new Vector2(1, 0), new Vector2(0, 0), new Vector2(0, 5 * scale), new Color(1, 1, 1, 0.15f));
+        v.caption = Text(bar, "Caption", Vector2.zero, Vector2.one, new Vector2(left, pad + 6), new Vector2(-pad, -pad - TitleSize * 1.35f), CaptionSize, new Color(0.98f, 0.97f, 0.94f), FontStyles.Normal, TextAlignmentOptions.TopLeft);
+        v.caption.enableAutoSizing = true; v.caption.fontSizeMin = CaptionSize * 0.85f; v.caption.fontSizeMax = CaptionSize;
+        v.caption.lineSpacing = -6f;
+        var track = Box(bar, "Track", new Vector2(0, 0), new Vector2(1, 0), new Vector2(0, 0), new Vector2(0, 8), new Color(1, 1, 1, 0.15f));
         v.progress = Box(track.transform, "Progress", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, accent);
         v.progress.type = Image.Type.Filled; v.progress.fillMethod = Image.FillMethod.Horizontal; v.progress.fillAmount = 0f;
         v.progress.sprite = Sprite.Create(Texture2D.whiteTexture, new Rect(0, 0, 4, 4), Vector2.one * 0.5f);
@@ -213,17 +242,19 @@ public class AudioGuide : MonoBehaviour
         scaler.referenceResolution = new Vector2(1920, 1080); scaler.matchWidthOrHeight = 1f;
         go.AddComponent<GraphicRaycaster>();
         var bar = new GameObject("Bar", typeof(RectTransform)); bar.transform.SetParent(go.transform, false);
-        var rt = (RectTransform)bar.transform; rt.anchorMin = new Vector2(0.5f, 0); rt.anchorMax = new Vector2(0.5f, 0);
-        rt.pivot = new Vector2(0.5f, 0); rt.sizeDelta = new Vector2(1180, 150); rt.anchoredPosition = new Vector2(0, 36);
+        var rt = (RectTransform)bar.transform; rt.anchorMin = new Vector2(0.07f, 0); rt.anchorMax = new Vector2(0.93f, 0);
+        // 1080 units tall; a 19.5:9 phone is ~2340 wide. The bar spans most of the width and holds a title and
+        // three caption lines, leaving the upper two thirds of the screen for the exhibit.
+        rt.pivot = new Vector2(0.5f, 0); rt.sizeDelta = new Vector2(0, 290); rt.anchoredPosition = new Vector2(0, 24);
         var v = Fill(bar.transform, 1f);
         // stop button
         var btnGo = new GameObject("StopButton", typeof(RectTransform)); btnGo.transform.SetParent(bar.transform, false);
         var brt = (RectTransform)btnGo.transform; brt.anchorMin = brt.anchorMax = new Vector2(1, 1); brt.pivot = new Vector2(1, 1);
-        brt.sizeDelta = new Vector2(64, 64); brt.anchoredPosition = new Vector2(-14, -14);
+        brt.sizeDelta = new Vector2(96, 96); brt.anchoredPosition = new Vector2(-12, -12);   // ≥ 44 pt touch target
         var img = btnGo.AddComponent<Image>(); img.color = new Color(1, 1, 1, 0.12f);
         var btn = btnGo.AddComponent<Button>(); btn.onClick.AddListener(Stop);
-        Text(btnGo.transform, "X", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, 30, Color.white, FontStyles.Bold, TextAlignmentOptions.Center).text = "×";
-        v.title.rectTransform.offsetMax = new Vector2(-90, -10);
+        Text(btnGo.transform, "X", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, 56, Color.white, FontStyles.Bold, TextAlignmentOptions.Center).text = "×";
+        v.title.rectTransform.offsetMax = new Vector2(-124, v.title.rectTransform.offsetMax.y);
         v.root = go; v.hintRoot = new GameObject("NoHint"); v.hintRoot.transform.SetParent(go.transform, false);
         return v;
     }
@@ -233,19 +264,20 @@ public class AudioGuide : MonoBehaviour
         var cam = Camera.main; if (!cam) return null;
         var go = new GameObject("AudioGuideVR", typeof(RectTransform));
         go.transform.SetParent(cam.transform, false);
-        go.transform.localPosition = new Vector3(0, -0.36f, 1.25f);
-        go.transform.localRotation = Quaternion.Euler(14, 0, 0);
+        go.transform.localPosition = new Vector3(0, -0.42f, 1.3f);     // ~18° below the line of sight
+        go.transform.localRotation = Quaternion.Euler(18, 0, 0);
         var canvas = go.AddComponent<Canvas>(); canvas.renderMode = RenderMode.WorldSpace; canvas.sortingOrder = 20;
-        var rt = (RectTransform)go.transform; rt.sizeDelta = new Vector2(1000, 260); rt.localScale = Vector3.one * 0.0009f;
+        var rt = (RectTransform)go.transform; rt.sizeDelta = new Vector2(1200, 400); rt.localScale = Vector3.one * 0.0009f;     // 1.08 m wide ≈ 45°
         var bar = new GameObject("Bar", typeof(RectTransform)); bar.transform.SetParent(go.transform, false);
         var brt = (RectTransform)bar.transform; brt.anchorMin = Vector2.zero; brt.anchorMax = new Vector2(1, 0); brt.pivot = new Vector2(0.5f, 0);
-        brt.sizeDelta = new Vector2(0, 150); brt.anchoredPosition = Vector2.zero;
+        brt.sizeDelta = new Vector2(0, 290); brt.anchoredPosition = Vector2.zero;
         var v = Fill(bar.transform, 1f);
         var hint = new GameObject("Hint", typeof(RectTransform)); hint.transform.SetParent(go.transform, false);
         var hrt = (RectTransform)hint.transform; hrt.anchorMin = new Vector2(0, 1); hrt.anchorMax = new Vector2(1, 1); hrt.pivot = new Vector2(0.5f, 1);
-        hrt.sizeDelta = new Vector2(0, 70); hrt.anchoredPosition = new Vector2(0, -20);
+        hrt.sizeDelta = new Vector2(0, 84); hrt.anchoredPosition = new Vector2(0, 0);
         Box(hint.transform, "Back", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, new Color(0.06f, 0.06f, 0.06f, 0.7f));
-        v.hint = Text(hint.transform, "Text", Vector2.zero, Vector2.one, new Vector2(20, 6), new Vector2(-20, -6), 28, Color.white, FontStyles.Normal, TextAlignmentOptions.Center);
+        v.hint = Text(hint.transform, "Text", Vector2.zero, Vector2.one, new Vector2(20, 6), new Vector2(-20, -6), 44, Color.white, FontStyles.Normal, TextAlignmentOptions.Center);
+        v.hint.textWrappingMode = TextWrappingModes.NoWrap; v.hint.enableAutoSizing = true; v.hint.fontSizeMin = 34; v.hint.fontSizeMax = 44;
         v.hintRoot = hint; v.root = go;
         return v;
     }

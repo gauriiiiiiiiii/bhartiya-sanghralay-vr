@@ -358,7 +358,7 @@ public static partial class MuseumBuilder
         foreach (var deg in new[] { 300f, 338f, 16f, 54f, 126f, 164f, 202f })
         {
             float ang = deg * Mathf.Deg2Rad; var o = new Vector3(Mathf.Cos(ang), 0, Mathf.Sin(ang));
-            slots.Add(new WSlot(o * (R - 0.12f) + Vector3.up * 1.75f, -o, 2.0f, 1.7f, o * 10.6f + Vector3.up * (slab - 0.1f)));
+            slots.Add(new WSlot(o * (R - 0.12f) + Vector3.up * 1.75f, -o, 2.0f, 1.7f, o * 10.6f + Vector3.up * (slab - 0.1f)) { curveR = R - 0.12f });
         }
         PlaceItems(x, slots);
         Centrepiece(x, x.w.centre, Vector3.zero, 180f, 12f);

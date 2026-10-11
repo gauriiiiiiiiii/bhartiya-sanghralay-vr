@@ -28,7 +28,7 @@ public static class MuseumSnapshot
             int k = 0;
             foreach (var tp in Object.FindObjectsByType<TeleportPoint>(FindObjectsSortMode.None).Where(p => p.name.StartsWith("TP_View_") && !p.name.Contains("Table")).OrderBy(p => p.name).Take(3))
             {
-                t.SetPositionAndRotation(tp.transform.position + Vector3.up * 1.6f - tp.transform.forward * 0.6f, Quaternion.Euler(4, tp.transform.eulerAngles.y, 0));
+                t.SetPositionAndRotation(tp.transform.position + Vector3.up * 1.6f, Quaternion.Euler(4, tp.transform.eulerAngles.y + 14f, 0));   // turned slightly towards the label, which hangs to the right
                 Shot(cam, $"{dir}/{name}_v{k++}.png");
             }
             t.SetPositionAndRotation(p0, r0);

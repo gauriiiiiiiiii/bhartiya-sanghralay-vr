@@ -139,7 +139,7 @@ public static partial class MuseumBuilder
             var scenes = new List<string>();
             int items = 0;
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Menu", 0.02f);
-            scenes.Add(BuildMenu(museum));
+            scenes.Add(BuildMenu(museum, V5Available ? JsonUtility.FromJson<CurJ>(File.ReadAllText(CurPath)) : null));
             if (V5Available)
             {
                 // v5: the Great Court and six real-museum galleries from Content/curated.json
@@ -147,7 +147,7 @@ public static partial class MuseumBuilder
                 ApplyRealism(report);
                 CreateV5Materials();
                 curCredits = null;
-                if (font) { font.TryAddCharacters(File.ReadAllText(CurPath) + "×₹–—‘’“”", out _); EditorUtility.SetDirty(font); }
+                if (font) { font.TryAddCharacters(File.ReadAllText(CurPath) + "×₹–—‘’“”…·°", out _); EditorUtility.SetDirty(font); }
                 EditorUtility.DisplayProgressBar("Museum of Indian History", "The Great Court", 0.05f);
                 scenes.Add(BuildCourtV5(cur));
                 for (int i = 0; i < cur.wings.Count; i++)
@@ -1489,7 +1489,8 @@ public static partial class MuseumBuilder
         c.renderMode = RenderMode.ScreenSpaceOverlay; c.sortingOrder = order;
         var sc = go.AddComponent<CanvasScaler>();
         sc.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        sc.referenceResolution = new Vector2(1920, 1080); sc.matchWidthOrHeight = 0.5f;
+        sc.referenceResolution = new Vector2(1920, 1080); sc.matchWidthOrHeight = 1f;   // landscape phones: size by height
+        // On a 6.1" phone held sideways, 1080 units ≈ 64 mm, so 36 units ≈ 2.1 mm ≈ iOS body text; nothing smaller than 30.
         go.AddComponent<GraphicRaycaster>();
         return c;
     }
@@ -1523,22 +1524,22 @@ public static partial class MuseumBuilder
         var safe = Rect("SafeArea", canvas.transform, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
         safe.gameObject.AddComponent<SafeArea>();
 
-        var btn = Rect("MenuButton", safe, new Vector2(0, 1), new Vector2(0, 1), new Vector2(36, -132), new Vector2(276, -36));
+        var btn = Rect("MenuButton", safe, new Vector2(0, 1), new Vector2(0, 1), new Vector2(36, -140), new Vector2(296, -36));
         var img = btn.gameObject.AddComponent<Image>(); img.color = new Color(0.1f, 0.05f, 0.03f, 0.75f);
         var b = btn.gameObject.AddComponent<Button>(); b.targetGraphic = img;
         UnityEventTools.AddPersistentListener(b.onClick, hud.GoMenu);
-        Label(btn, "Label", "< Menu", 40, new Color(1f, 0.85f, 0.55f), FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        Label(btn, "Label", "< Menu", 46, new Color(1f, 0.85f, 0.55f), FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
 
-        var hint = Rect("Hint", safe, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(-640, 36), new Vector2(640, 116));
+        var hint = Rect("Hint", safe, new Vector2(0.08f, 0), new Vector2(0.92f, 0), new Vector2(0, 30), new Vector2(0, 130));
         hint.gameObject.AddComponent<Image>().color = new Color(0.1f, 0.05f, 0.03f, 0.7f);
         hint.GetComponent<Image>().raycastTarget = false;
-        Label(hint, "Text", "Drag to look around  ·  Tap a circle on the floor to walk  ·  Tap an object to hear its audio guide", 30, Color.white, FontStyles.Normal,
+        Label(hint, "Text", "Drag to look around  ·  Tap a circle on the floor to walk  ·  Tap an object to hear its audio guide", 38, Color.white, FontStyles.Normal,
               TextAlignmentOptions.Center, Vector2.zero, Vector2.one, new Vector2(20, 0), new Vector2(-20, 0));
         hud.root = canvas.gameObject; hud.hint = hint.gameObject;
     }
 
     /// 2D start screen for phones: viewer mode + a card per scene.
-    static string BuildMenu(MuseumJ museum)
+    static string BuildMenu(MuseumJ museum, CurJ cur = null)
     {
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
         SetupLighting();
@@ -1561,25 +1562,28 @@ public static partial class MuseumBuilder
         var gold = new Color(1f, 0.82f, 0.5f);
         int nEx = museum.wings.Sum(w => w.sections.Sum(s => s.exhibits.Count)), nSec = museum.wings.Sum(w => w.sections.Count);
         Label(safe, "Title", museum.title, 76, gold, FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -150), new Vector2(0, -50));
-        Label(safe, "Subtitle", $"From the first stone tools to the present day  ·  {museum.wings.Count} wings  ·  {nSec} sections  ·  {nEx} exhibits",
-              30, new Color(1f, 0.92f, 0.8f, 0.85f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -210), new Vector2(0, -150));
+        string subLine = cur != null
+            ? $"From the first rock paintings to the Republic  ·  {cur.wings.Count} galleries  ·  {cur.wings.Sum(w => w.items.Count + (w.centre != null ? 1 : 0))} objects"
+            : $"From the first stone tools to the present day  ·  {museum.wings.Count} wings  ·  {nSec} sections  ·  {nEx} exhibits";
+        Label(safe, "Subtitle", subLine,
+              40, new Color(1f, 0.92f, 0.8f, 0.85f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -230), new Vector2(0, -150));
 
         // viewer mode pills (top right)
-        Label(safe, "ModeLabel", "VIEW WITH", 24, new Color(1f, 1f, 1f, 0.6f), FontStyles.Bold, TextAlignmentOptions.Right, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-660, -100), new Vector2(-80, -64));
+        Label(safe, "ModeLabel", "VIEW WITH", 30, new Color(1f, 1f, 1f, 0.6f), FontStyles.Bold, TextAlignmentOptions.Right, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-760, -100), new Vector2(-80, -60));
         (Image, TMP_Text) Pill(string name, string text, float x0, bool vr)
         {
-            var r = Rect(name, safe, new Vector2(1, 1), new Vector2(1, 1), new Vector2(x0, -196), new Vector2(x0 + 286, -110));
+            var r = Rect(name, safe, new Vector2(1, 1), new Vector2(1, 1), new Vector2(x0, -210), new Vector2(x0 + 330, -108));
             var im = r.gameObject.AddComponent<Image>();
             var bt = r.gameObject.AddComponent<Button>(); bt.targetGraphic = im;
             UnityEventTools.AddBoolPersistentListener(bt.onClick, menu.SetVR, vr);
-            var l = Label(r, "Label", text, 30, Color.white, FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            var l = Label(r, "Label", text, 38, Color.white, FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             return (im, l);
         }
-        (menu.vrPill, menu.vrLabel) = Pill("Pill_Cardboard", "Cardboard viewer", -666, true);
-        (menu.phonePill, menu.phoneLabel) = Pill("Pill_Phone", "Phone only", -366, false);
+        (menu.vrPill, menu.vrLabel) = Pill("Pill_Cardboard", "Cardboard viewer", -760, true);
+        (menu.phonePill, menu.phoneLabel) = Pill("Pill_Phone", "Phone only", -410, false);
 
         // horizontally scrolling cards
-        var view = Rect("Cards", safe, new Vector2(0, 0), new Vector2(1, 1), new Vector2(0, 200), new Vector2(0, -250));
+        var view = Rect("Cards", safe, new Vector2(0, 0), new Vector2(1, 1), new Vector2(0, 190), new Vector2(0, -250));
         var scroll = view.gameObject.AddComponent<ScrollRect>();
         view.gameObject.AddComponent<RectMask2D>();
         view.gameObject.AddComponent<Image>().color = new Color(0, 0, 0, 0.001f);       // catches drags between cards
@@ -1595,20 +1599,37 @@ public static partial class MuseumBuilder
         void Card(string sceneName, Texture art, Color col, string kicker, string title, string sub, string stats)
         {
             var c = Rect("Card_" + sceneName, content, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
-            c.gameObject.AddComponent<LayoutElement>().preferredWidth = 440;
+            c.gameObject.AddComponent<LayoutElement>().preferredWidth = 540;
             var im = c.gameObject.AddComponent<Image>(); im.color = new Color(0.16f, 0.08f, 0.05f, 0.96f);
             var bt = c.gameObject.AddComponent<Button>(); bt.targetGraphic = im;
             var colors = bt.colors; colors.highlightedColor = new Color(1f, 0.92f, 0.8f); colors.pressedColor = new Color(1f, 0.7f, 0.4f); bt.colors = colors;
             UnityEventTools.AddStringPersistentListener(bt.onClick, menu.Enter, sceneName);
-            var pic = Rect("Art", c, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, -283), Vector2.zero).gameObject.AddComponent<RawImage>();
+            var pic = Rect("Art", c, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, -240), Vector2.zero).gameObject.AddComponent<RawImage>();
             pic.texture = art; pic.raycastTarget = false;
-            var bar = Rect("Bar", c, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, -293), new Vector2(0, -283)).gameObject.AddComponent<Image>();
+            if (art) { float ta = art.width / (float)Mathf.Max(1, art.height), ra = 540f / 240f; pic.uvRect = ta > ra ? new UnityEngine.Rect((1 - ra / ta) / 2, 0, ra / ta, 1) : new UnityEngine.Rect(0, (1 - ta / ra) / 2, 1, ta / ra); }
+            var bar = Rect("Bar", c, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, -250), new Vector2(0, -240)).gameObject.AddComponent<Image>();
             bar.color = col; bar.raycastTarget = false;
-            Label(c, "Kicker", kicker, 24, Color.Lerp(col, Color.white, 0.55f), FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(1, 1), new Vector2(28, -345), new Vector2(-28, -310));
-            Label(c, "Title", title, 40, gold, FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(1, 1), new Vector2(28, -450), new Vector2(-28, -345));
-            Label(c, "Subtitle", sub, 26, new Color(1f, 0.92f, 0.82f, 0.9f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 0), new Vector2(1, 1), new Vector2(28, 60), new Vector2(-28, -455));
-            Label(c, "Stats", stats, 24, new Color(1f, 1f, 1f, 0.6f), FontStyles.Normal, TextAlignmentOptions.BottomLeft, new Vector2(0, 0), new Vector2(1, 0), new Vector2(28, 18), new Vector2(-28, 56));
+            Label(c, "Kicker", kicker, 30, Color.Lerp(col, Color.white, 0.55f), FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(1, 1), new Vector2(28, -306), new Vector2(-28, -266));
+            var tl = Label(c, "Title", title, 50, gold, FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(1, 1), new Vector2(28, -430), new Vector2(-28, -306));
+            tl.enableAutoSizing = true; tl.fontSizeMin = 40; tl.fontSizeMax = 50; tl.lineSpacing = -10f;
+            var sl = Label(c, "Subtitle", sub, 36, new Color(1f, 0.92f, 0.82f, 0.9f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 0), new Vector2(1, 1), new Vector2(28, 66), new Vector2(-28, -436));
+            sl.enableAutoSizing = true; sl.fontSizeMin = 30; sl.fontSizeMax = 36; sl.overflowMode = TextOverflowModes.Ellipsis;
+            Label(c, "Stats", stats, 30, new Color(1f, 1f, 1f, 0.65f), FontStyles.Normal, TextAlignmentOptions.BottomLeft, new Vector2(0, 0), new Vector2(1, 0), new Vector2(28, 18), new Vector2(-28, 62));
         }
+        if (cur != null)
+        {
+            Texture Photo(CItemJ it) => it != null ? (Texture)CurSprite(it.id)?.texture : null;
+            Card("Lobby", Photo(cur.wings[0].items.FirstOrDefault()) ?? Art("Lobby/lobby_title.png"), new Color(1f, 0.53f, 0.08f), "START HERE", "The Great Court",
+                 "Information desk and doorways to all six galleries.", "Entrance");
+            for (int i = 0; i < cur.wings.Count; i++)
+            {
+                var w = cur.wings[i];
+                Card("Wing" + (i + 1), Photo(w.items.FirstOrDefault()), Hex(w.color), $"GALLERY {i + 1}", w.title, w.subtitle,
+                     $"{w.years}  ·  {w.items.Count + (w.centre != null ? 1 : 0)} objects");
+            }
+        }
+        else
+        {
         Card("Lobby", Art("Lobby/lobby_title.png"), new Color(1f, 0.53f, 0.08f), "START HERE", "Grand Hall", "Welcome, directory, visitor guide and a timeline of India. Archways lead to every wing.", "Lobby");
         for (int i = 0; i < museum.wings.Count; i++)
         {
@@ -1617,9 +1638,10 @@ public static partial class MuseumBuilder
             Card("Wing" + (i + 1), Art($"Wings/{w.id}_title.png"), Hex(w.color), $"WING {i + 1}", w.title, w.subtitle,
                  $"Sections {w.sections.First().num}–{w.sections.Last().num}  ·  {ex} exhibits");
         }
+        }
 
-        menu.modeHint = Label(safe, "ModeHint", "", 27, new Color(1f, 1f, 1f, 0.75f), FontStyles.Normal, TextAlignmentOptions.MidlineLeft,
-                              new Vector2(0, 0), new Vector2(1, 0), new Vector2(80, 40), new Vector2(-80, 180));
+        menu.modeHint = Label(safe, "ModeHint", "", 34, new Color(1f, 1f, 1f, 0.75f), FontStyles.Normal, TextAlignmentOptions.MidlineLeft,
+                              new Vector2(0, 0), new Vector2(1, 0), new Vector2(80, 30), new Vector2(-80, 180));
 
         var path = $"{SceneDir}/{MuseumApp.MenuScene}.unity";
         EditorSceneManager.MarkSceneDirty(scene);
