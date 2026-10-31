@@ -260,7 +260,8 @@ public static partial class MuseumBuilder
         AreaLight("OculusSky", x.lights, Vector3.up * (domeTop - 0.2f), new Vector2(3.4f, 3.4f), Vector3.down, 22f, new Color(0.95f, 0.97f, 1f));
         ProbeGrid(x.lights, new Vector3(-10, 0.6f, -10), new Vector3(10, 9f, 10), 4f);
         ReflectionProbeBox(x.lights, new Vector3(0, 6f, 0), new Vector3(2 * R, 12f, 2 * R));
-        Doorway(a, "Court", new Vector3(0, 0, -R - 0.8f), Vector3.forward, 5.0f, 5.6f, "Lobby", "W3", "The Great Court", M["V5_RedStone"]);
+        // the passage fills the whole cusped arch (5.6 m span, apex at 6.2 m) so no slit is left beside or above it
+        Doorway(a, "Court", new Vector3(0, 0, -R - 0.8f), Vector3.forward, 5.6f, 6.3f, "Lobby", "W3", "The Great Court", M["V5_RedStone"], 0.85f);
         var ring = new List<Vector3>(); for (int k = 0; k < 8; k++) { float th = (-90f + 45f * k + 22.5f) * Mathf.Deg2Rad; ring.Add(new Vector3(Mathf.Cos(th), 0, Mathf.Sin(th)) * 6.5f); }
         Walk(x, ring, 0f);
         return (new Vector3(0, 0, -9.6f), 0f);
@@ -352,7 +353,7 @@ public static partial class MuseumBuilder
 
         {   // intro on the curved wall left of the entrance
             float ang = 245f * Mathf.Deg2Rad; var o = new Vector3(Mathf.Cos(ang), 0, Mathf.Sin(ang));
-            WallIntro(x.decor, x.w, o * (R - 0.12f) + Vector3.up * 2.0f, -o, 4.2f, new Color(0.12f, 0.12f, 0.12f));
+            WallIntro(x.decor, x.w, o * (R - 0.12f) + Vector3.up * 2.0f, -o, 4.2f, new Color(0.12f, 0.12f, 0.12f), 4f, R - 0.12f);
         }
         var slots = new List<WSlot>();
         foreach (var deg in new[] { 300f, 338f, 16f, 54f, 126f, 164f, 202f })
@@ -372,8 +373,8 @@ public static partial class MuseumBuilder
         }
         ProbeGrid(x.lights, new Vector3(-12, 0.6f, -12), new Vector3(12, 12f, 12), 4f);
         ReflectionProbeBox(x.lights, new Vector3(0, 7f, 0), new Vector3(2 * R, 14f, 2 * R));
-        Doorway(a, "Court", new Vector3(0, 0, -R - 0.4f), Vector3.forward, 3.8f, 4.4f, "Lobby", "W5", "The Great Court", M["V5_Plaster"]);
-        Doorway(a, "Next", new Vector3(0, 0, R + 0.4f), Vector3.back, 3.0f, 3.4f, SceneOfWing[5], "Entry", "Next gallery\n<size=70%>Themes of Indian History</size>", M["V5_Plaster"]);
+        Doorway(a, "Court", new Vector3(0, 0, -R - 0.4f), Vector3.forward, 3.8f, 4.4f, "Lobby", "W5", "The Great Court", M["V5_Plaster"], 0.7f);
+        Doorway(a, "Next", new Vector3(0, 0, R + 0.4f), Vector3.back, 3.0f, 3.4f, SceneOfWing[5], "Entry", "Next gallery\n<size=70%>Themes of Indian History</size>", M["V5_Plaster"], 0.7f);
         var ring = new List<Vector3>(); foreach (var d in new[] { 45f, 135f, 225f, 315f }) { float ang = d * Mathf.Deg2Rad; ring.Add(new Vector3(Mathf.Cos(ang), 0, Mathf.Sin(ang)) * 4.6f); }
         ring.Add(new Vector3(0, 0, 11.5f));
         Walk(x, ring, 0f);

@@ -31,6 +31,15 @@ public static class MuseumSnapshot
                 t.SetPositionAndRotation(tp.transform.position + Vector3.up * 1.6f, Quaternion.Euler(4, tp.transform.eulerAngles.y + 14f, 0));   // turned slightly towards the label, which hangs to the right
                 Shot(cam, $"{dir}/{name}_v{k++}.png");
             }
+            // each gallery introduction, from 4.5 m in front of it
+            foreach (var intro in Object.FindObjectsByType<Transform>().Where(tr => tr.name == "WallIntro"))
+            {
+                var body = intro.Find("Body"); if (!body) continue;
+                var viewer = -body.forward; var target = body.position + Vector3.up * 0.4f;
+                var from = target + viewer * 4.5f; from.y = 1.6f;
+                t.SetPositionAndRotation(from, Quaternion.LookRotation(target - from));
+                Shot(cam, $"{dir}/{name}_intro.png");
+            }
             // the information desk's welcome wall (built in edit mode for the picture only; the scene is not saved)
             foreach (var desk in Object.FindObjectsByType<InfoDesk>())
             {

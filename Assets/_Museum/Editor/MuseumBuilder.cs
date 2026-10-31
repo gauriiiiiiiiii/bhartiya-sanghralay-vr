@@ -157,7 +157,7 @@ public static partial class MuseumBuilder
                     scenes.Add(BuildGalleryV5(cur, i));
                     int n = cur.wings[i].items.Count + 1; items += n;
                     int photos = cur.wings[i].items.Count(it => CurSprite(it.id) != null);
-                    report.AppendLine($"Wing{i + 1}: {cur.wings[i].title} ({cur.wings[i].gallery} gallery) — {n} objects, {photos}/{cur.wings[i].items.Count} photos");
+                    report.AppendLine($"Wing{i + 1}: {cur.wings[i].title} ({cur.wings[i].gallery} gallery) — {n} artifacts, {photos}/{cur.wings[i].items.Count} photos");
                 }
             }
             else
@@ -1569,7 +1569,7 @@ public static partial class MuseumBuilder
         int nEx = museum.wings.Sum(w => w.sections.Sum(s => s.exhibits.Count)), nSec = museum.wings.Sum(w => w.sections.Count);
         Label(safe, "Title", museum.title, 76, gold, FontStyles.Bold, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -150), new Vector2(0, -50));
         string subLine = cur != null
-            ? $"From the first rock paintings to the Republic  ·  {cur.wings.Count} galleries  ·  {cur.wings.Sum(w => w.items.Count + (w.centre != null ? 1 : 0))} objects"
+            ? $"From the first rock paintings to the Republic  ·  {cur.wings.Count} galleries  ·  {cur.wings.Sum(w => w.items.Count + (w.centre != null ? 1 : 0))} artifacts"
             : $"From the first stone tools to the present day  ·  {museum.wings.Count} wings  ·  {nSec} sections  ·  {nEx} exhibits";
         Label(safe, "Subtitle", subLine,
               40, new Color(1f, 0.92f, 0.8f, 0.85f), FontStyles.Normal, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(80, -230), new Vector2(0, -150));
@@ -1631,7 +1631,7 @@ public static partial class MuseumBuilder
             {
                 var w = cur.wings[i];
                 Card("Wing" + (i + 1), Photo(w.items.FirstOrDefault()), Hex(w.color), $"GALLERY {i + 1}", w.title, w.subtitle,
-                     $"{w.years}  ·  {w.items.Count + (w.centre != null ? 1 : 0)} objects");
+                     $"{w.years}  ·  {w.items.Count + (w.centre != null ? 1 : 0)} artifacts");
             }
         }
         else

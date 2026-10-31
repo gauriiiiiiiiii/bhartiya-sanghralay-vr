@@ -166,7 +166,7 @@ public static partial class MuseumBuilder
         eb.characterSpacing = 14f;
         var hl = UText(safe, "Headline", "Five thousand years of India,\nin six galleries.", 74, UiInk, true, TextAlignmentOptions.TopLeft, new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(96, -306), new Vector2(0, -126));
         hl.lineSpacing = -14f; hl.enableAutoSizing = true; hl.fontSizeMin = 56; hl.fontSizeMax = 74;
-        UText(safe, "Sub", $"{nObjects} objects  ·  an audio guide in every room  ·  on your phone or in a Cardboard viewer", 32, UiMuted, false, TextAlignmentOptions.TopLeft,
+        UText(safe, "Sub", $"{nObjects} artifacts  ·  an audio guide in every room  ·  on your phone or in a Cardboard viewer", 32, UiMuted, false, TextAlignmentOptions.TopLeft,
               new Vector2(0, 1), new Vector2(0.62f, 1), new Vector2(96, -370), new Vector2(0, -318));
 
         // segmented control (right)
@@ -229,7 +229,7 @@ public static partial class MuseumBuilder
         {
             var w = cur.wings[i];
             Card("Wing" + (i + 1), Photo(w.items.FirstOrDefault()), Hex(w.color), $"GALLERY {i + 1}", w.title,
-                 $"{w.years}  ·  {w.items.Count + (w.centre != null ? 1 : 0)} objects", false);
+                 $"{w.years}  ·  {w.items.Count + (w.centre != null ? 1 : 0)} artifacts", false);
         }
 
         // footer hint

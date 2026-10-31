@@ -319,7 +319,14 @@ public static partial class MuseumBuilder
         int titleLines = Lines(it.title, f, 0.6f);
         int metaLines = Lines(it.date, f * 0.85f, 0.62f) + Lines(it.place?.name, f * 0.85f, 0.62f);
         float chipH = em * 1.1f, titleH = titleLines * em * 1.15f, metaH = metaLines * em * 0.85f * 1.2f, gap = em * 0.4f;
-        float h = 2 * m + chipH + gap + titleH + gap + metaH + em * 0.3f;
+        // the photo credit is printed small at the foot of the label (below it, it could fall behind a dado or rail)
+        var credit = it.kind == "replica" ? "Replica made for this museum" : CurCredit(it.id);
+        const float creditSize = 0.26f;
+        int creditLines = Lines(credit, creditSize, 0.55f);
+        float creditH = creditLines * creditSize * 0.1f * 1.2f;
+        float h = 2 * m + chipH + gap + titleH + gap + metaH + em * 0.3f + (creditLines > 0 ? gap + creditH : 0f);
+        // wall labels keep clear of dados and rails (picture gallery rail top: 1.05 m); lecterns are tilted and exempt
+        if (Mathf.Abs(normal.y) < 0.1f && center.y - h / 2 < 1.12f) center.y = 1.12f + h / 2;
         GMesh("Board", $"LabelBoard_{w:0.##}x{h:0.##}", mb => Geo.ChamferBox(mb, Vector3.zero, new Vector3(w, h, 0.012f), 0.003f), M["V5_LabelBoard"], g, center + normal * 0.006f, rot, true);   // lightmapped: warm gallery light, not the sky-tinted probes
         var ink = new Color(0.12f, 0.12f, 0.12f);
         float y = h / 2 - m;
@@ -333,20 +340,23 @@ public static partial class MuseumBuilder
         Row("Stop", $"AUDIO {stop}", chipH, f * 0.8f, new Color(0.6f, 0.4f, 0.16f), true); y -= gap;
         Row("Title", it.title, titleH, f, ink, true).lineSpacing = -8f; y -= gap;
         Row("Meta", $"{it.date}\n<i>{it.place?.name ?? ""}</i>", metaH, f * 0.85f, new Color(0.16f, 0.16f, 0.16f), false);
-        // credit under the board, small (attribution, not meant to be read from the viewing point)
-        var credit = it.kind == "replica" ? "Replica made for this museum" : CurCredit(it.id);
-        if (!string.IsNullOrEmpty(credit))
-        {
-            var c = Text3D("Credit", credit, center - up * (h / 2 + 0.05f) + normal * 0.004f, normal, new Vector2(w, 0.07f), new Color(0.35f, 0.35f, 0.35f), g, false, 0.24f);
-            c.alignment = TextAlignmentOptions.TopLeft;
-        }
+        if (creditLines > 0) { y = -h / 2 + m + creditH; Row("Credit", credit, creditH, creditSize, new Color(0.4f, 0.4f, 0.4f), false); }
     }
 
     /// Gallery introduction lettered directly on the wall, sized to be read from about 4 m. Only the opening
     /// sentences that fit at that size are lettered; the full introduction is narrated when the visitor arrives.
-    static void WallIntro(Transform p, CWingJ w, Vector3 center, Vector3 normal, float width, Color ink, float viewDist = 4f)
+    static void WallIntro(Transform p, CWingJ w, Vector3 center, Vector3 normal, float width, Color ink, float viewDist = 4f, float curveR = 0f)
     {
         var g = Group(p, "WallIntro");
+        if (curveR > 0f)
+        {
+            // on a curved wall the lettering goes on a flat panel standing just proud of the curve at its ends
+            float pw = width + 0.4f, sag = pw * pw / 4f / (2f * curveR), d = sag + 0.06f;
+            var pc = center + normal * d + Vector3.up * 0.33f;
+            var panel = Box("IntroPanel", pc, new Vector3(pw, 2.95f, 0.06f), M["V5_PaintWhite"], g);
+            panel.transform.rotation = FaceTo(normal);
+            center += normal * (d + 0.035f);
+        }
         var title = Text3D("Title", w.title, center + Vector3.up * 1.25f + normal * 0.01f, normal, new Vector2(width, 0.75f), ink, g, false, 9f);
         title.alignment = TextAlignmentOptions.BottomLeft;
         float f = Legible(viewDist);
@@ -513,16 +523,19 @@ public static partial class MuseumBuilder
     }
 
     /// A doorway portal: a short dark passage with a sign; selecting it changes scene.
-    static void Doorway(Transform p, string name, Vector3 floorCenter, Vector3 inward, float w, float h, string scene, string arrival, string sign, Material passage)
+    /// floorCenter is the outer face of the wall opening; the passage starts `back` metres inside it (into the wall's
+    /// thickness) so no slit is left between wall and passage. A curved wall needs more (its face bows away at the edges).
+    static void Doorway(Transform p, string name, Vector3 floorCenter, Vector3 inward, float w, float h, string scene, string arrival, string sign, Material passage, float back = 0.05f)
     {
         var g = Group(p, "Door_" + name);
         var right = Vector3.Cross(Vector3.up, inward).normalized;
         var outward = -inward; float depth = 4f;
-        var c = floorCenter + outward * (depth / 2 + 0.2f);
+        float s0 = -back, s1 = depth + 0.2f, len = s1 - s0;
+        var c = floorCenter + outward * ((s0 + s1) / 2);
         // passage: floor, ceiling, sides and an end wall
-        Box("PassFloor", c + Vector3.down * 0.05f, Abs(right * w + outward * depth) + Vector3.up * 0.1f, passage, g);
-        Box("PassCeil", c + Vector3.up * (h + 0.05f), Abs(right * w + outward * depth) + Vector3.up * 0.1f, passage, g);
-        foreach (var s in new[] { -1f, 1f }) Box("PassSide", c + right * s * (w / 2 + 0.1f) + Vector3.up * h / 2, Abs(right * 0.2f + outward * depth) + Vector3.up * h, passage, g);
+        Box("PassFloor", c + Vector3.down * 0.053f, Abs(right * (w + 0.4f) + outward * len) + Vector3.up * 0.1f, passage, g);
+        Box("PassCeil", c + Vector3.up * (h + 0.05f), Abs(right * (w + 0.4f) + outward * len) + Vector3.up * 0.1f, passage, g);
+        foreach (var s in new[] { -1f, 1f }) Box("PassSide", c + right * s * (w / 2 + 0.1f) + Vector3.up * h / 2, Abs(right * 0.2f + outward * len) + Vector3.up * h, passage, g);
         Box("PassEnd", floorCenter + outward * (depth + 0.3f) + Vector3.up * h / 2, Abs(right * (w + 0.4f) + outward * 0.2f) + Vector3.up * h, passage, g);
         var t = Text3D("Sign", sign, floorCenter + outward * (depth + 0.19f) + Vector3.up * (h * 0.55f), inward, new Vector2(w * 0.8f, 1.2f), new Color(0.92f, 0.9f, 0.85f), g, false, 4f);
         AreaLight("PassageLight", g, floorCenter + outward * (depth * 0.6f) + Vector3.up * (h - 0.05f), new Vector2(w * 0.7f, depth * 0.6f), Vector3.down, 7f, new Color(1f, 0.95f, 0.88f));
