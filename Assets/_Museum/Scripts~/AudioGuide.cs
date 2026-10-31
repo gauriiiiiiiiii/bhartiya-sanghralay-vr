@@ -36,6 +36,7 @@ public class AudioGuide : MonoBehaviour
     {
         Instance = this;
         if (!source) { source = gameObject.AddComponent<AudioSource>(); source.playOnAwake = false; source.spatialBlend = 0f; }
+        EnsureGlyphs(font);
         phone = BuildPhoneView();
         vr = BuildVrView();
         SetVisible(false);
@@ -187,6 +188,15 @@ public class AudioGuide : MonoBehaviour
         }
     }
 
+    /// Dynamic font atlases are cleared for builds and refilled on demand; TMP looks up the ellipsis glyph without
+    /// adding it, so put the punctuation the captions use into the atlas up front.
+    public static void EnsureGlyphs(TMP_FontAsset f)
+    {
+        if (f && f.atlasPopulationMode != AtlasPopulationMode.Static) f.TryAddCharacters("\u2026\u00B7\u2013\u2014\u2018\u2019\u201C\u201D\u00D7\u20B9", out _);
+    }
+
+    static bool HasEllipsis(TMP_FontAsset f) => f && f.HasCharacter('\u2026', true, true);
+
     // ---------------------------------------------------------------- UI construction
     TMP_Text Text(Transform parent, string name, Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax, float size, Color c, FontStyles style, TextAlignmentOptions align)
     {
@@ -222,7 +232,7 @@ public class AudioGuide : MonoBehaviour
         v.stop.enableAutoSizing = true; v.stop.fontSizeMin = 26; v.stop.fontSizeMax = 40;
         float left = pad * 2 + b;
         v.title = Text(bar, "Title", new Vector2(0, 1), new Vector2(1, 1), new Vector2(left, -pad - TitleSize * 1.3f), new Vector2(-pad, -pad + 4), TitleSize, new Color(0.97f, 0.86f, 0.64f), FontStyles.Bold, TextAlignmentOptions.TopLeft);
-        v.title.textWrappingMode = TextWrappingModes.NoWrap; v.title.overflowMode = TextOverflowModes.Ellipsis;
+        v.title.textWrappingMode = TextWrappingModes.NoWrap; v.title.overflowMode = HasEllipsis(font) ? TextOverflowModes.Ellipsis : TextOverflowModes.Truncate;
         v.caption = Text(bar, "Caption", Vector2.zero, Vector2.one, new Vector2(left, pad + 6), new Vector2(-pad, -pad - TitleSize * 1.35f), CaptionSize, new Color(0.98f, 0.97f, 0.94f), FontStyles.Normal, TextAlignmentOptions.TopLeft);
         v.caption.enableAutoSizing = true; v.caption.fontSizeMin = CaptionSize * 0.85f; v.caption.fontSizeMax = CaptionSize;
         v.caption.lineSpacing = -6f;

@@ -54,7 +54,7 @@ public static class MuseumURPConverter
         }
         File.WriteAllText(ReportFile, report.ToString());
         Debug.Log("[Museum URP]\n" + report);
-        EditorUtility.DisplayDialog("Shivaji Museum VR — URP", report.ToString().Split('\n')[0] +
+        EditorUtility.DisplayDialog("Museum of Indian History VR — URP", report.ToString().Split('\n')[0] +
             "\n\nDetails: ProjectSettings/MuseumURPReport.txt", "OK");
     }
 

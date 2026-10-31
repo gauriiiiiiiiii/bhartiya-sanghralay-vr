@@ -91,9 +91,6 @@ public static partial class MuseumBuilder
             var frame = Box("DrumWindowFrame", o * (Rd + 0.03f) + Vector3.up * 13.45f, new Vector3(1.8f, 0.25f, 0.08f), stone, drum);
             frame.transform.rotation = Quaternion.LookRotation(o);
         }
-        var doorsDrum = Box("ReadingRoomDoors", new Vector3(0, 2.6f, -Rd - 0.01f), new Vector3(4.2f, 5.2f, 0.06f), M["V5_Screen"], drum);
-        Box("ReadingRoomCase", new Vector3(0, 5.45f, -Rd - 0.12f), new Vector3(5.2f, 0.5f, 0.3f), stone, drum);
-        Text3D("ReadingRoom", "READING ROOM", new Vector3(0, 6.1f, -Rd - 0.05f), Vector3.back, new Vector2(5f, 0.4f), new Color(0.36f, 0.33f, 0.29f), drum, false, 3f).characterSpacing = 14f;
         GMesh("InfoDesk", "InfoDesk", mb => Geo.RingWall(mb, 12.0f, 12.8f, 0, 1.0f, 240f, 300f, 24), M["V5_Oak"], decor, Vector3.zero, Quaternion.identity, true, true);
         GMesh("InfoDeskTop", "InfoDeskTop", mb => Geo.RingWall(mb, 11.95f, 12.9f, 1.0f, 1.06f, 239f, 301f, 24), M["V5_PaintWhite"], decor, Vector3.zero, Quaternion.identity);
         Text3D("Info", "Information", new Vector3(0, 0.62f, -12.81f), Vector3.back, new Vector2(2.2f, 0.3f), new Color(0.95f, 0.93f, 0.88f), decor, false, 2.5f);
@@ -175,7 +172,7 @@ public static partial class MuseumBuilder
         ProbeGrid(lights, new Vector3(-21, 1, -21), new Vector3(21, 17, 21), 6f);
         ReflectionProbeBox(lights, new Vector3(0, 9f, 0), new Vector3(2 * S, 18f, 2 * S), 256);
         foreach (var p in new[] { new Vector3(0, 0, -15f), new Vector3(-9, 0, -15f), new Vector3(9, 0, -15f), new Vector3(-17, 0, -15f), new Vector3(17, 0, -15f),
-                                   new Vector3(-17, 0, 0), new Vector3(17, 0, 0), new Vector3(0, 0, 18f), new Vector3(-17, 0, 17f), new Vector3(17, 0, 17f), new Vector3(0, 0, -12.6f) })
+                                   new Vector3(-17, 0, 0), new Vector3(17, 0, 0), new Vector3(0, 0, 18f), new Vector3(-17, 0, 17f), new Vector3(17, 0, 17f) })
             MakePoint("Walk", p, 0f, pts);
         var spawn = new Vector3(0, 0, -18.5f);
         Marker("Arrive_Entry", spawn, 0f, pts);
@@ -185,6 +182,7 @@ public static partial class MuseumBuilder
         var clip = AssetDatabase.LoadAssetAtPath<AudioClip>($"{CurAudio}/L00.ogg"); if (clip) welcome.narration = clip;
         welcome.stop = 0; EditorUtility.SetDirty(welcome);
         MakeAudioGuide(welcome, new Color(0.86f, 0.62f, 0.28f));
+        InfoDeskV5(cur, decor, pts, welcome, Rd);
         RealCamera();
         MuseumLighting.Configure(scene);
         BuildPhoneHUD();

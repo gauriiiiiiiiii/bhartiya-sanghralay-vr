@@ -1,11 +1,12 @@
-# Shivaji Museum VR — setup
+# Museum of Indian History VR — setup
 
-Google Cardboard VR museum of Chhatrapati Shivaji Maharaj-era artifacts. Unity 6000.6.3f1, Android + iOS.
-Full build guide: the "Shivaji-Era VR Museum" doc (floor plan, artifacts, prompts, scene steps).
+A Google Cardboard / phone VR museum of Indian history: a Great Court and six galleries, 47 objects with an audio
+guide. Unity 6000.6.3f1, iOS + Android. The museum is generated from `Assets/_Museum/Content/curated.json` by
+**Museum → Rebuild All Scenes**; lighting is baked automatically afterwards.
 
 ## First open (automatic)
 
-Open this folder from Unity Hub (Add → Add project from disk → `~/projects/ShivajiMuseumVR`).
+Open this folder from Unity Hub (Add → Add project from disk → `~/projects/IndianHistoryMuseumVR`).
 On first open, `Assets/_Museum/Editor/MuseumProjectSetup.cs` runs by itself and:
 
 1. Installs packages: Google Cardboard XR Plugin (git), XR Plugin Management, Input System,
@@ -13,7 +14,7 @@ On first open, `Assets/_Museum/Editor/MuseumProjectSetup.cs` runs by itself and:
 2. Copies the 8 museum scripts from `Assets/_Museum/Scripts~` into `Assets/_Museum/Scripts`.
 3. Sets player settings: Landscape Left, IL2CPP, ARM64, min API 26, target API 35,
    OpenGLES3, Internet Access Require, Activity entry point, frame pacing off, iOS camera text,
-   iOS deferred edge gestures, bundle id `com.jaykumarpatel.shivajimuseumvr`,
+   iOS deferred edge gestures, bundle id `com.jaykumarpatel.indianhistorymuseumvr`,
    Active Input Handling = Input System (New).
 4. Adds layers `Interactive` and `Teleport`.
 

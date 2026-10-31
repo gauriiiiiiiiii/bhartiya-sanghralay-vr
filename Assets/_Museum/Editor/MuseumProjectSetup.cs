@@ -8,7 +8,7 @@ using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-/// One-time project setup for Shivaji Museum VR. Runs automatically the first time the project opens:
+/// One-time project setup for Museum of Indian History VR. Runs automatically the first time the project opens:
 ///   1. Installs packages through the Package Manager Client API (Cardboard XR Plugin, Input System, ...).
 ///   2. Moves the museum runtime scripts from Scripts~ (ignored by Unity) into Scripts, so they only
 ///      compile once their packages exist.
@@ -18,7 +18,7 @@ using UnityEngine.Rendering;
 public static class MuseumProjectSetup
 {
     const string StateFile = "ProjectSettings/MuseumSetupState.txt";
-    const string BundleId = "com.jaykumarpatel.shivajimuseumvr";
+    const string BundleId = "com.jaykumarpatel.indianhistorymuseumvr";
 
     static readonly string[] PackagesToAdd =
     {
@@ -94,7 +94,7 @@ public static class MuseumProjectSetup
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             Debug.Log("[Museum] Setup complete. See SETUP.md for the few remaining manual steps.");
-            EditorUtility.DisplayDialog("Shivaji Museum VR",
+            EditorUtility.DisplayDialog("Museum of Indian History VR",
                 "Packages, scripts, player settings and layers are set up.\n\n" +
                 "Finish the manual steps in SETUP.md (project root):\n" +
                 "• XR Plug-in Management → tick Cardboard XR Plugin (Android + iOS)\n" +
@@ -123,7 +123,7 @@ public static class MuseumProjectSetup
     static void ConfigurePlayerSettings()
     {
         PlayerSettings.companyName = "Jaykumar Patel";
-        PlayerSettings.productName = "Shivaji Museum VR";
+        PlayerSettings.productName = "Museum of Indian History VR";
         PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
 
         // Android (Google Cardboard quickstart values)

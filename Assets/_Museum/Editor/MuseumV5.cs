@@ -492,7 +492,7 @@ public static partial class MuseumBuilder
         var canvas = screenGo.AddComponent<Canvas>(); canvas.renderMode = RenderMode.WorldSpace;
         var rt = (RectTransform)screenGo.transform; rt.sizeDelta = new Vector2(1240, 840); rt.localScale = Vector3.one * 0.00115f;   // 1.43 m screen: 26 px text ≈ 1.4° from the stand point
         var k = screenGo.AddComponent<KioskScreen>();
-        k.font = font; k.accent = x.accent; k.mapSprite = AssetDatabase.LoadAssetAtPath<Sprite>($"{ArtDir}/UI/india_map.png");
+        k.font = uiFont ? uiFont : font; k.accent = x.accent; k.mapSprite = AssetDatabase.LoadAssetAtPath<Sprite>($"{ArtDir}/UI/india_map.png");
         k.sectionTitle = x.w.title; k.period = x.w.years;
         k.questions = (x.w.quiz ?? new List<QuizJ>()).Select(q => new KioskScreen.Question { text = q.q, options = q.options.ToArray(), answer = q.answer, why = q.why }).ToList();
         k.entries = new List<KioskScreen.Entry>();
@@ -536,7 +536,7 @@ public static partial class MuseumBuilder
     {
         var go = new GameObject("AudioGuide");
         var src = go.AddComponent<AudioSource>(); src.playOnAwake = false; src.spatialBlend = 0f;
-        var ag = go.AddComponent<AudioGuide>(); ag.font = font; ag.source = src; ag.intro = intro; ag.accent = accent;
+        var ag = go.AddComponent<AudioGuide>(); ag.font = uiFont ? uiFont : font; ag.source = src; ag.intro = intro; ag.accent = accent;
         return ag;
     }
 }

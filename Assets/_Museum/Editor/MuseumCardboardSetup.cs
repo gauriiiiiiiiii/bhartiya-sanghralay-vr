@@ -57,7 +57,7 @@ public static class MuseumCardboardSetup
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
         Debug.Log("[Museum] Cardboard setup:\n" + log);
-        EditorUtility.DisplayDialog("Shivaji Museum VR — Cardboard setup", log.ToString(), "OK");
+        EditorUtility.DisplayDialog("Museum of Indian History VR — Cardboard setup", log.ToString(), "OK");
     }
 
     static void Step(System.Text.StringBuilder log, string name, System.Func<string> action)
@@ -140,7 +140,9 @@ public static class MuseumCardboardSetup
         var pkg = "Packages/com.unity.ugui/Package Resources/TMP Essential Resources.unitypackage";
         var full = Path.GetFullPath(pkg);
         if (!File.Exists(full)) throw new System.Exception("TMP Essential Resources package not found");
+#pragma warning disable CS0618   // one-time setup step; the replacement API differs between Unity 6 minor versions
         AssetDatabase.ImportPackage(full, false);
+#pragma warning restore CS0618
         return "imported";
     }
 

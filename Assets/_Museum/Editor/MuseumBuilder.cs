@@ -139,7 +139,8 @@ public static partial class MuseumBuilder
             var scenes = new List<string>();
             int items = 0;
             EditorUtility.DisplayProgressBar("Museum of Indian History", "Menu", 0.02f);
-            scenes.Add(BuildMenu(museum, V5Available ? JsonUtility.FromJson<CurJ>(File.ReadAllText(CurPath)) : null));
+            if (V5Available) { EnsureUIAssets(); scenes.Add(BuildMenuModern(JsonUtility.FromJson<CurJ>(File.ReadAllText(CurPath)))); }
+            else scenes.Add(BuildMenu(museum));
             if (V5Available)
             {
                 // v5: the Great Court and six real-museum galleries from Content/curated.json
@@ -1524,17 +1525,22 @@ public static partial class MuseumBuilder
         var safe = Rect("SafeArea", canvas.transform, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
         safe.gameObject.AddComponent<SafeArea>();
 
-        var btn = Rect("MenuButton", safe, new Vector2(0, 1), new Vector2(0, 1), new Vector2(36, -140), new Vector2(296, -36));
-        var img = btn.gameObject.AddComponent<Image>(); img.color = new Color(0.1f, 0.05f, 0.03f, 0.75f);
+        // a translucent dark pill (matches the start menu); the old builder look is kept for non-v5 museums
+        var dark = new Color(0.047f, 0.051f, 0.06f, 0.72f);
+        var btn = Rect("MenuButton", safe, new Vector2(0, 1), new Vector2(0, 1), new Vector2(36, -136), new Vector2(276, -40));
+        var img = btn.gameObject.AddComponent<Image>(); img.color = uiFont ? dark : new Color(0.1f, 0.05f, 0.03f, 0.75f);
+        if (uiRounded) { img.sprite = uiRounded; img.type = Image.Type.Sliced; img.pixelsPerUnitMultiplier = 1f; }
         var b = btn.gameObject.AddComponent<Button>(); b.targetGraphic = img;
         UnityEventTools.AddPersistentListener(b.onClick, hud.GoMenu);
-        Label(btn, "Label", "< Menu", 46, new Color(1f, 0.85f, 0.55f), FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        var ml = Label(btn, "Label", uiFont ? "\u2039  Menu" : "< Menu", 42, uiFont ? Color.white : new Color(1f, 0.85f, 0.55f), FontStyles.Bold, TextAlignmentOptions.Center, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+        if (uiFont) ml.font = uiFont;
 
-        var hint = Rect("Hint", safe, new Vector2(0.08f, 0), new Vector2(0.92f, 0), new Vector2(0, 30), new Vector2(0, 130));
-        hint.gameObject.AddComponent<Image>().color = new Color(0.1f, 0.05f, 0.03f, 0.7f);
-        hint.GetComponent<Image>().raycastTarget = false;
-        Label(hint, "Text", "Drag to look around  ·  Tap a circle on the floor to walk  ·  Tap an object to hear its audio guide", 38, Color.white, FontStyles.Normal,
-              TextAlignmentOptions.Center, Vector2.zero, Vector2.one, new Vector2(20, 0), new Vector2(-20, 0));
+        var hint = Rect("Hint", safe, new Vector2(0.1f, 0), new Vector2(0.9f, 0), new Vector2(0, 30), new Vector2(0, 126));
+        var hi = hint.gameObject.AddComponent<Image>(); hi.color = uiFont ? dark : new Color(0.1f, 0.05f, 0.03f, 0.7f); hi.raycastTarget = false;
+        if (uiRounded) { hi.sprite = uiRounded; hi.type = Image.Type.Sliced; hi.pixelsPerUnitMultiplier = 1f; }
+        var hl = Label(hint, "Text", "Drag to look around  \u00B7  Tap a circle on the floor to walk  \u00B7  Tap an object to hear its audio guide", 36, Color.white, FontStyles.Normal,
+              TextAlignmentOptions.Center, Vector2.zero, Vector2.one, new Vector2(32, 0), new Vector2(-32, 0));
+        if (uiFont) hl.font = uiFont;
         hud.root = canvas.gameObject; hud.hint = hint.gameObject;
     }
 
@@ -1649,11 +1655,14 @@ public static partial class MuseumBuilder
         return path;
     }
 
+    // XR Plug-in Management config key (XRGeneralSettings.k_SettingsKey, deprecated in 4.7; same value)
+    const string XRSettingsKey = "com.unity.xr.management.loader_settings";
+
     /// Phone / iOS / Android settings for a Cardboard app that starts in a 2D menu.
     static void ApplyMobileSettings(StringBuilder report)
     {
         // XR must not start with the app: the menu is 2D; MuseumApp starts Cardboard when VR mode is chosen
-        if (EditorBuildSettings.TryGetConfigObject(XRGeneralSettings.k_SettingsKey, out XRGeneralSettingsPerBuildTarget perTarget) && perTarget)
+        if (EditorBuildSettings.TryGetConfigObject(XRSettingsKey, out XRGeneralSettingsPerBuildTarget perTarget) && perTarget)
         {
             foreach (var g in new[] { BuildTargetGroup.iOS, BuildTargetGroup.Android })
             {
