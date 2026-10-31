@@ -168,7 +168,12 @@ public static partial class MuseumBuilder
         var mesh = MeshKit.Save("V5_" + key, mb, lightmap);
         var go = MeshObj(name, mesh, m, parent, pos, rot, true);
         if (!lightmap) go.GetComponent<MeshRenderer>().receiveGI = ReceiveGI.LightProbes;
-        if (collider) go.AddComponent<MeshCollider>().sharedMesh = mesh;
+        if (collider)
+        {
+            // Unity 6.6 no longer pre-bakes collision data for meshes implicitly at build time; opt in per mesh
+            if (!mesh.HasPreBakeCollisionMesh(false)) { mesh.SetPreBakeCollisionMesh(false, true); EditorUtility.SetDirty(mesh); }
+            go.AddComponent<MeshCollider>().sharedMesh = mesh;
+        }
         return go;
     }
 
