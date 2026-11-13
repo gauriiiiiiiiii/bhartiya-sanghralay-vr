@@ -131,7 +131,7 @@ public static class MuseumProjectSetup
         PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
         PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
         PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
-        PlayerSettings.Android.targetSdkVersion = (AndroidSdkVersions)35;
+        PlayerSettings.Android.targetSdkVersion = (AndroidSdkVersions)36;
         PlayerSettings.Android.optimizedFramePacing = false;
         PlayerSettings.Android.forceInternetPermission = true;
         PlayerSettings.Android.applicationEntry = AndroidApplicationEntry.Activity;

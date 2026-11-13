@@ -12,7 +12,7 @@ On first open, `Assets/_Museum/Editor/MuseumProjectSetup.cs` runs by itself and:
 1. Installs packages: Google Cardboard XR Plugin (git), XR Plugin Management, Input System,
    uGUI/TextMeshPro, ProBuilder, glTFast. (Needs `git` on your Mac: `xcode-select --install`.)
 2. Copies the 8 museum scripts from `Assets/_Museum/Scripts~` into `Assets/_Museum/Scripts`.
-3. Sets player settings: Landscape Left, IL2CPP, ARM64, min API 26, target API 35,
+3. Sets player settings: Landscape Left, IL2CPP, ARM64, min API 26, target API 36,
    OpenGLES3, Internet Access Require, Activity entry point, frame pacing off, iOS camera text,
    iOS deferred edge gestures, bundle id `com.jaykumarpatel.indianhistorymuseumvr`,
    Active Input Handling = Input System (New).
