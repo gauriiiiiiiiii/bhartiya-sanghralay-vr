@@ -13,7 +13,7 @@ import json, os, subprocess, sys, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = os.path.join(ROOT, "Assets", "_Museum", "PolyHaven")
-UA = "IndianHistoryMuseumVR/1.0 (educational VR museum; Unity project)"
+UA = "BhartiyaSanghralayVR/1.0 (educational VR museum; Unity project)"
 
 # key -> candidate slugs (first one that exists is used)
 TEXTURES = {

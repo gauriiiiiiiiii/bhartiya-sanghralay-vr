@@ -21,7 +21,7 @@ CAND = os.path.join(TOOLS, "photo_candidates")
 PHOTOS = os.path.join(ROOT, "Assets", "_Museum", "Photos")
 CREDITS = os.path.join(ROOT, "Docs", "photo_credits.csv")
 API = "https://commons.wikimedia.org/w/api.php"
-UA = "IndianHistoryMuseumVR/1.0 (educational VR museum; Unity project)"
+UA = "BhartiyaSanghralayVR/1.0 (educational VR museum; Unity project)"
 OK_LICENCE = re.compile(r"(public domain|^pd|cc0|cc[ -]by(-sa)?[ -]?\d|cc[ -]by(-sa)?$|attribution)", re.I)
 BAD_LICENCE = re.compile(r"(\bnc\b|non-?commercial|\bnd\b|no ?deriv|fair use|copyrighted)", re.I)
 

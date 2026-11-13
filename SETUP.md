@@ -1,4 +1,4 @@
-# Museum of Indian History VR — setup
+# Bhartiya Sanghralay VR (Museum of Indian History VR) — setup
 
 A Google Cardboard / phone VR museum of Indian history: a Great Court and six galleries, 47 objects with an audio
 guide. Unity 6000.6.3f1, iOS + Android. The museum is generated from `Assets/_Museum/Content/curated.json` by
@@ -6,7 +6,7 @@ guide. Unity 6000.6.3f1, iOS + Android. The museum is generated from `Assets/_Mu
 
 ## First open (automatic)
 
-Open this folder from Unity Hub (Add → Add project from disk → `~/projects/IndianHistoryMuseumVR`).
+Open this folder from Unity Hub (Add → Add project from disk → `~/projects/bhartiya-sanghralay-vr`).
 On first open, `Assets/_Museum/Editor/MuseumProjectSetup.cs` runs by itself and:
 
 1. Installs packages: Google Cardboard XR Plugin (git), XR Plugin Management, Input System,

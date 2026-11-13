@@ -18,7 +18,7 @@ OUT = os.path.join(ROOT, "Assets", "_Museum", "Curated", "Photos")
 CAND = os.path.join(ROOT, "Tools", "curated_candidates")
 CREDITS = os.path.join(ROOT, "Docs", "curated_credits.csv")
 CHOICES = os.path.join(ROOT, "Tools", "curated_choices.json")
-UA = "IndianHistoryMuseumVR/1.0 (educational VR museum; contact via project)"
+UA = "BhartiyaSanghralayVR/1.0 (educational VR museum; contact via project)"
 OK = re.compile(r"^(public domain|pd|cc0|cc[- ]by(-sa)?([- ]\d(\.\d)?)?|cc[- ]by[- ]sa[- ][\d.]+.*|attribution|gfdl.*cc[- ]by.*)", re.I)
 BAD = re.compile(r"\b(nc|nd|non-?commercial|no ?deriv|fair use|non-free)\b", re.I)
 
